@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4fcf00ddc0283844e8a554b1e006fa75
+guid: 945553c1eed24a24392d21e65767d58f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7411974349392773033
-    second: House_0
+      213: -2198796718316464779
+    second: SPR_DroneArmOut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House_0
+      name: SPR_DroneArmOut_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1061
-        height: 670
+        width: 92
+        height: 683
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 750032c7990632990800000000000000
-      internalID: -7411974349392773033
+      spriteID: 575d37fc80e4c71e0800000000000000
+      internalID: -2198796718316464779
       vertices: []
       indices: 
       edges: []
