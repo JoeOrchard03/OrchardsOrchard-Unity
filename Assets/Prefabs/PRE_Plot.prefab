@@ -172,6 +172,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &9049354826259758139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2006907405835441650}
+  m_Layer: 0
+  m_Name: SaplingLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2006907405835441650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049354826259758139}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6296687033552596266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9191735802560756219
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,8 +215,9 @@ GameObject:
   - component: {fileID: 4503794586341938546}
   - component: {fileID: 8371953552430817328}
   - component: {fileID: 7945043659215082369}
+  - component: {fileID: 2023822623208072204}
   m_Layer: 0
-  m_Name: Plot
+  m_Name: PRE_Plot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,6 +238,7 @@ Transform:
   m_Children:
   - {fileID: 7423083102397754295}
   - {fileID: 1450508214787469006}
+  - {fileID: 2006907405835441650}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4503794586341938546
@@ -220,9 +253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7fc8c24143d0042a130bc0cd85ebd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  highlighted: 0
-  highlightEffect: {fileID: 5751211717645576599}
+  AppleTreePrefab: {fileID: 2499254726488180106, guid: 1501c1ea1384737428c04acb68dcf50d, type: 3}
+  SaplingMenu: {fileID: 3713843625853535769, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
+  SaplingSpawnLocation: {fileID: 9049354826259758139}
 --- !u!50 &8371953552430817328
 Rigidbody2D:
   serializedVersion: 4
@@ -287,3 +320,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0044779778, y: 0}
   m_Size: {x: 1.1, y: 1.27}
   m_Direction: 1
+--- !u!114 &2023822623208072204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191735802560756219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4604bb403ed17a841a0ad1ec1830c7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightEffect: {fileID: 5751211717645576599}
+  stopHighlight: 0

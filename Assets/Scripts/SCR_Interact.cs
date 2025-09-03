@@ -5,21 +5,29 @@ using UnityEngine;
 public class SCR_Interact : MonoBehaviour
 {
     public GameObject hoveredInteractable;
+    public GameObject selectedPlot;
+    public bool menuOpen = false;
     
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             if (hoveredInteractable == null) { return;} 
-            Debug.Log("Pressing on: " + hoveredInteractable.name);
+            if (hoveredInteractable.GetComponent<INT_Interactable>() == null) { Debug.Log("Item does not have interactable script"); return;}
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && menuOpen)
+        {
+            GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+            selectedPlot = null;
+            menuOpen = false;
         }
     }
 }

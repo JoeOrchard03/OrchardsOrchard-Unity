@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d6722380a033714bb67ff8be3f4e213
+guid: 87ae1f38012f1bc49b7f55804af52b2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4154330273797782174
-    second: SPR_SaplingStage3_0
+      213: 6321008988332179071
+    second: SPR_MenuBox2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_SaplingStage3_0
+      name: SPR_MenuBox2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 450
-        height: 526
-      alignment: 9
-      pivot: {x: 0.465, y: 0}
+        x: 17
+        y: 21
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 265c1a660aad856c0800000000000000
-      internalID: -4154330273797782174
+      spriteID: f7e379b4f2cb8b750800000000000000
+      internalID: 6321008988332179071
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a59d75318fe8dce49a606b7106014e1f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_SaplingStage3_0: -4154330273797782174
+      SPR_MenuBox2_0: 6321008988332179071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
