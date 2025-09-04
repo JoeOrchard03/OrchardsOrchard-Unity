@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000a125baa777c1fd20
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1142,7 +1142,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_Sprite: {fileID: -4987114208932593567, guid: 57e44ea652ad66f4a83cdb9598934e8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1163,7 +1163,7 @@ Transform:
   m_GameObject: {fileID: 1222767701}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.063631, y: -9.228678, z: 0}
+  m_LocalPosition: {x: -27.063631, y: -9.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1377,6 +1377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoveredInteractable: {fileID: 0}
   selectedPlot: {fileID: 0}
+  matureFruits: []
   menuOpen: 0
 --- !u!4 &1587891969
 Transform:
@@ -1479,6 +1480,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2224393760897337176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521821999051757567, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956276657442235123, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_Size.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_Size.y
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2059763590275686756, guid: 68e33af70aa78c64594690142aaa998a, type: 3}
+    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698323142340022489, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: m_Name
+      value: PRE_Drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: armExtendSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: droneDriveSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: targetFruitTransform
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1493,3 +1583,4 @@ SceneRoots:
   - {fileID: 1587891969}
   - {fileID: 1222767703}
   - {fileID: 677920596}
+  - {fileID: 2224393760897337176}

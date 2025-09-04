@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a0dfd3131beb844ca94d76232a65095
+guid: 7d73a6d8a7be8404487bee31e3aa933c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -337564167921560862
-    second: SPR_DroneRetracted_0
+      213: -6818773934197672059
+    second: SPR_DroneArm_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_DroneRetracted_0
+      name: SPR_DroneArm_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 91
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 63
+        height: 595
+      alignment: 9
+      pivot: {x: 0.495, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e292228d2bb05bf0800000000000000
-      internalID: -337564167921560862
+      spriteID: 5877478fb39de51a0800000000000000
+      internalID: -6818773934197672059
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2e11d05ead1bbd4408aa28a14904ed59
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_DroneRetracted_0: -337564167921560862
+      SPR_DroneArm_0: -6818773934197672059
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,6 +7,7 @@ public class SCR_Highlightable : MonoBehaviour
     [SerializeField] public GameObject highlightEffect;
     private SCR_Interact playerInteractScriptRef;
     public bool stopHighlight = false;
+    public bool canHighlight = true;
 
 
     private void Start()
@@ -21,7 +22,9 @@ public class SCR_Highlightable : MonoBehaviour
             highlightEffect.SetActive(false); 
             return;
         }
-        
+
+        if (!canHighlight) { return; }
+
         if (highlightEffect.activeSelf == true)
         {
             return;

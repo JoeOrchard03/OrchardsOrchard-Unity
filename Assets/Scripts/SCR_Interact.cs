@@ -6,6 +6,9 @@ public class SCR_Interact : MonoBehaviour
 {
     public GameObject hoveredInteractable;
     public GameObject selectedPlot;
+
+    public List<GameObject> matureFruits;
+    
     public bool menuOpen = false;
     
     void Start()
