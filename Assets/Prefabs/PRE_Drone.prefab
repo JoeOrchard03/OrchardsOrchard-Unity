@@ -196,12 +196,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8600921943658194235, guid: 58656bef6223a2848a9b32d6b1e4ca7a, type: 3}
+  m_Sprite: {fileID: 2059763590275686756, guid: 68e33af70aa78c64594690142aaa998a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.63, y: 6}
+  m_Size: {x: 0.93, y: 0.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -219,13 +219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf410b5e7525f54b99e0077bb548cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droneDriveSpeed: 5
-  armExtendSpeed: 2
+  droneDriveSpeed: 7
+  armExtendSpeed: 10
   armAnchor: {fileID: 5962941243244488488}
   droneArm: {fileID: 9115197463071557937}
   harvestTime: 0.25
   fruitRenderer: {fileID: 2628783001601893469}
+  targetFruitTransforms: []
   targetFruitTransform: {fileID: 0}
+  fruitTransforms: []
 --- !u!1 &8980796111504577205
 GameObject:
   m_ObjectHideFlags: 0

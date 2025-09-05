@@ -17,11 +17,11 @@ public class SCR_Drone : MonoBehaviour
 
     public float harvestTime = 0.25f;
     public SpriteRenderer fruitRenderer;
-    
+
+    public List<Transform> targetFruitTransforms =  new List<Transform>();
     public Transform targetFruitTransform;
     private float targetLength;
-
-    private bool hasOrders = false;
+    
     public List<Transform> fruitTransforms;
     
     private bool movingToFruit = false;
@@ -29,23 +29,23 @@ public class SCR_Drone : MonoBehaviour
     private bool retracting = false;
     private bool returningArmPosition = false;
     private bool returningToCharger = false;
+    private bool idle = true;
 
     private void Start()
     {
         chargerPosition = transform.position;
         originalArmPosition = droneArm.transform.localPosition;
-        armInventoryPosition = new Vector2(originalArmPosition.x, originalArmPosition.y - 1.0f);
+        armInventoryPosition = new Vector3(originalArmPosition.x, originalArmPosition.y - 1.0f, originalArmPosition.z);
     }
 
     public void SetTarget(Transform fruitTransform)
     {
-        targetFruitTransform = fruitTransform;
-        
-        float armHeight = droneArm.GetComponent<SpriteRenderer>().bounds.size.y;
-        Vector3 localTargetPos = armAnchor.transform.InverseTransformPoint(fruitTransform.position);
-        targetLength = localTargetPos.y - 0.1f - armHeight;
+        targetFruitTransforms.Add(fruitTransform);
 
-        movingToFruit = true;
+        if (idle)
+        {
+            AssignNextTarget();
+        }
     }
 
     private void MoveUnderFruit()
@@ -58,6 +58,27 @@ public class SCR_Drone : MonoBehaviour
             movingToFruit = false;
             extending = true;
         }
+    }
+
+    private void AssignNextTarget()
+    {
+        while (targetFruitTransforms.Count > 0)
+        {
+            if (targetFruitTransforms[0] == null)
+            {
+                targetFruitTransforms.RemoveAt(0);
+            }
+            
+            targetFruitTransform = targetFruitTransforms[0];
+            
+            float armHeight = droneArm.GetComponent<SpriteRenderer>().bounds.size.y;
+            Vector3 localTargetPos = armAnchor.transform.InverseTransformPoint(targetFruitTransform.position);
+            targetLength = localTargetPos.y - 0.1f - armHeight;
+            
+            movingToFruit = true;
+            return;
+        }
+        returningToCharger = true;
     }
     
     private void Update()
@@ -86,6 +107,13 @@ public class SCR_Drone : MonoBehaviour
         {
             ReturnToCharger();
         }
+
+        if (!movingToFruit && !extending && !retracting && !returningArmPosition)
+        {
+            idle = true;
+            return;
+        }
+        idle = false;
     }
 
     private void ExtendArm()
@@ -99,14 +127,17 @@ public class SCR_Drone : MonoBehaviour
         else
         {
             extending = false;
-            StartCoroutine(harvestDelay());
+            StartCoroutine(HarvestDelay());
         }
     }
 
-    IEnumerator harvestDelay()
+    IEnumerator HarvestDelay()
     {
-        fruitRenderer.sprite = targetFruitTransform.gameObject.GetComponent<SpriteRenderer>().sprite;
-        Destroy(targetFruitTransform.gameObject);
+        if (targetFruitTransform != null)
+        {
+            fruitRenderer.sprite = targetFruitTransform.GetComponent<SpriteRenderer>().sprite;
+            Destroy(targetFruitTransform.gameObject);
+        }
         yield return new WaitForSeconds(harvestTime);
         retracting = true;
     }
@@ -114,17 +145,32 @@ public class SCR_Drone : MonoBehaviour
     private void RetractArm()
     {
         Vector3 pos = droneArm.transform.localPosition;
-        if (pos.y > armInventoryPosition.y)
+        pos.y -= armExtendSpeed * Time.deltaTime;
+
+        if (pos.y <= armInventoryPosition.y)
         {
-            pos.y -= armExtendSpeed * Time.deltaTime;
-            droneArm.transform.localPosition = pos;
-        }
-        else
-        {
+            pos.y = armInventoryPosition.y; // clamp
             retracting = false;
             returningArmPosition = true;
         }
+
+        droneArm.transform.localPosition = pos;
     }
+    
+    // private void RetractArm()
+    // {
+    //     Vector3 pos = droneArm.transform.localPosition;
+    //     if (pos.y > armInventoryPosition.y)
+    //     {
+    //         pos.y -= armExtendSpeed * Time.deltaTime;
+    //         droneArm.transform.localPosition = pos;
+    //     }
+    //     else
+    //     {
+    //         retracting = false;
+    //         returningArmPosition = true;
+    //     }
+    // }
 
     private void ReturnArmToRegularPos()
     {
@@ -138,10 +184,13 @@ public class SCR_Drone : MonoBehaviour
         else
         {
             returningArmPosition = false;
-            if (!hasOrders)
+            
+            if (targetFruitTransforms.Count > 0)
             {
-                returningToCharger = true;
+                targetFruitTransforms.RemoveAt(0);
             }
+            
+            AssignNextTarget();
         }
     }
 

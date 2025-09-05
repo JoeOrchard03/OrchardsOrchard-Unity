@@ -15,6 +15,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;
     [SerializeField] private bool readyToHarvest = false;
+    private bool harvested = false;
 
     private void Awake()
     {
@@ -46,6 +47,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     public void Interact(GameObject interactor)
     {
         if (!readyToHarvest) { Debug.Log("Fruit not ready to harvest"); return;}
+        if (harvested) { Debug.Log("Fruit already harvested"); return;}
+        harvested = true;
         Debug.Log("Harvesting fruit");
         drone.GetComponent<SCR_Drone>().SetTarget(this.gameObject.transform);
     }

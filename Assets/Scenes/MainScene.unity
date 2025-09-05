@@ -1528,41 +1528,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4956276657442235123, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.546
-      objectReference: {fileID: 0}
-    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: m_Size.x
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: m_Size.y
-      value: 0.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2059763590275686756, guid: 68e33af70aa78c64594690142aaa998a, type: 3}
-    - target: {fileID: 5553711897725135468, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7698323142340022489, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
       propertyPath: m_Name
       value: PRE_Drone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: armExtendSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: droneDriveSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: targetFruitTransform
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

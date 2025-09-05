@@ -143,10 +143,10 @@ MonoBehaviour:
   - {fileID: 364011696542487278, guid: 953b5a4213a8d5047b5c88780b048bc6, type: 3}
   - {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
   growthTimes:
-  - 2
-  - 2
-  - 2
-  - 2
+  - 1
+  - 1
+  - 1
+  - 1
   readyToHarvest: 0
 --- !u!114 &8428701817006282944
 MonoBehaviour:
