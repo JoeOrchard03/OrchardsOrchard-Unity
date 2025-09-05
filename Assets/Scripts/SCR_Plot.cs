@@ -6,7 +6,8 @@ using UnityEngine;
 public class SCR_Plot : MonoBehaviour, INT_Interactable
 {
     [Header("Saplings")] [SerializeField] 
-    private GameObject AppleTreePrefab;
+    public GameObject AppleTreePrefab;
+    public GameObject CherryTreePrefab;
 
     [SerializeField] private GameObject SaplingMenu;
     public GameObject SaplingSpawnLocation;
@@ -40,6 +41,9 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         {
             case "AppleTree":
                 Plant(AppleTreePrefab);
+                break;
+            case "CherryTree":
+                Plant(CherryTreePrefab);
                 break;
             default:
                 Debug.Log(SaplingName + " is not a valid sapling name");

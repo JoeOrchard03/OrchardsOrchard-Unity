@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AppleTreePrefab: {fileID: 2499254726488180106, guid: 1501c1ea1384737428c04acb68dcf50d, type: 3}
+  CherryTreePrefab: {fileID: 2499254726488180106, guid: 47bf43a3381b79441b83d454dd3fb020, type: 3}
   SaplingMenu: {fileID: 3713843625853535769, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
   SaplingSpawnLocation: {fileID: 9049354826259758139}
 --- !u!50 &8371953552430817328
@@ -334,3 +335,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 5751211717645576599}
   stopHighlight: 0
+  canHighlight: 1

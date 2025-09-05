@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -147,7 +147,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -719,7 +719,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_Collection_0: -8545190937156353170
+      SPR_Collection_1: -5221960839879341849
+      SPR_Collection_10: 4479558706785385233
+      SPR_Collection_11: -6369816724214887944
+      SPR_Collection_12: -7784877532007702880
+      SPR_Collection_13: 6726501446214116979
+      SPR_Collection_14: -6984266745525896157
+      SPR_Collection_15: 7284885651527022897
+      SPR_Collection_16: -2530406248408560079
+      SPR_Collection_17: 9186668805569690124
+      SPR_Collection_18: 31387844926466074
+      SPR_Collection_19: -2182849710306115133
+      SPR_Collection_2: -3592033800629989001
+      SPR_Collection_20: 6227347773159045210
+      SPR_Collection_21: -2576412069780812513
+      SPR_Collection_22: -3855946494053311341
+      SPR_Collection_23: -2542813318916003415
+      SPR_Collection_24: -3207999701406205407
+      SPR_Collection_3: -2647132049337835948
+      SPR_Collection_4: 5785935227316744342
+      SPR_Collection_5: -2986840195616600357
+      SPR_Collection_6: 463385652897929069
+      SPR_Collection_7: 5659462402098377018
+      SPR_Collection_8: -2721468235688723204
+      SPR_Collection_9: -7442551352125572991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
