@@ -18,8 +18,8 @@ public class SCR_Drone : MonoBehaviour
     public SpriteRenderer fruitRenderer;
     
     //Que of fruit transforms that have been clicked on for harvest
-    private Queue<Transform> fruitQueue = new Queue<Transform>();
-    private Transform currentTarget;
+    private Queue<SCR_FruitBloom> fruitQueue = new Queue<SCR_FruitBloom>();
+    private SCR_FruitBloom currentFruit;
     private bool busy = false;
 
     private void Start()
@@ -32,7 +32,7 @@ public class SCR_Drone : MonoBehaviour
         armInventoryPosition = new Vector3(originalArmPosition.x, originalArmPosition.y - 1.0f, originalArmPosition.z);
     }
 
-    public void SetTarget(Transform fruitTransform)
+    public void SetTarget(SCR_FruitBloom fruitTransform)
     {
         //Sanity check
         if (fruitTransform == null) return;
@@ -63,16 +63,18 @@ public class SCR_Drone : MonoBehaviour
         while (fruitQueue.Count > 0)
         {
             //Remove the current fruit from the que so it is not handled twice
-            currentTarget = fruitQueue.Dequeue();
+            currentFruit = fruitQueue.Dequeue();
             //Sanity check
-            if (currentTarget == null) continue;
+            if (currentFruit == null) continue;
 
+            Transform targetTransform = currentFruit.transform;
+            
             //Move drone under the target fruit
-            yield return MoveUnderFruit(currentTarget);
+            yield return MoveUnderFruit(targetTransform);
             //Extend arm to the fruit
-            yield return ExtendArm(currentTarget);
-            //Grabs the fruit
-            yield return GrabFruit(currentTarget);
+            yield return ExtendArm(targetTransform);
+            //Grab fruit
+            yield return GrabFruit(currentFruit.gameObject.GetComponent<SpriteRenderer>());
             //Returns the fruit to the inventory and makes the sprite disappear
             yield return RetractToInventory();
             //Returns the arm to its retracted location
@@ -88,12 +90,12 @@ public class SCR_Drone : MonoBehaviour
     private IEnumerator MoveUnderFruit(Transform target)
     {
         //While the drone is not almost under the fruit
-        while (Mathf.Abs(transform.position.x - currentTarget.position.x) > 0.05f)
+        while (Mathf.Abs(transform.position.x - target.position.x) > 0.05f)
         {
             //Move towards the fruit
             transform.position = Vector2.MoveTowards(
                 transform.position,
-                new Vector2(currentTarget.position.x, transform.position.y),
+                new Vector2(target.position.x, transform.position.y),
                 droneDriveSpeed * Time.deltaTime
             );
             yield return null;
@@ -104,7 +106,7 @@ public class SCR_Drone : MonoBehaviour
     {
         // Calculate target arm extension length
         float armHeight = droneArm.GetComponent<SpriteRenderer>().bounds.size.y;
-        Vector3 localTargetPos = armAnchor.transform.InverseTransformPoint(currentTarget.position);
+        Vector3 localTargetPos = armAnchor.transform.InverseTransformPoint(target.position);
         //Sets the target lenght to the pos of the fruit - a small offset - the arm height as the pivot of the arm is at the bottom of it
         float targetLength = localTargetPos.y - 0.1f - armHeight;
 
@@ -120,15 +122,15 @@ public class SCR_Drone : MonoBehaviour
         }
     }
 
-    private IEnumerator GrabFruit(Transform target)
+    private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
         //Sanity check
-        if (currentTarget != null)
+        if (currentFruit != null)
         {
             //Sets the sprite renderer for the held fruit to be the sprite of the fruit grabbed
-            fruitRenderer.sprite = currentTarget.GetComponent<SpriteRenderer>().sprite;
+            fruitRenderer.sprite = fruitSprite.sprite;
             //Destroys the fruit that was just grabbed
-            Destroy(currentTarget.gameObject);
+            Destroy(currentFruit.gameObject);
         }
         //Small delay for harvest time
         yield return new WaitForSeconds(harvestTime);
@@ -146,13 +148,14 @@ public class SCR_Drone : MonoBehaviour
             droneArm.transform.localPosition = pos;
             yield return null;
         }
+        
+        // Clear sprite from arm (putting in inventory)
+        fruitRenderer.sprite = null;
+        Debug.Log("Harvested: " + currentFruit.fruitType);
     }
 
     private IEnumerator ReturnArmToStart()
     {
-        // Clear sprite from arm (putting in inventory)
-        fruitRenderer.sprite = null;
-
         // While arm is lower then target pos
         while (droneArm.transform.localPosition.y < originalArmPosition.y)
         {
