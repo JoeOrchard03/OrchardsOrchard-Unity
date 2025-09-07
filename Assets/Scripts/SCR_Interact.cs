@@ -9,6 +9,8 @@ public class SCR_Interact : MonoBehaviour
 
     public List<GameObject> matureFruits;
     
+    private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
+    
     public bool menuOpen = false;
     
     void Start()
@@ -31,6 +33,22 @@ public class SCR_Interact : MonoBehaviour
             GameObject.FindGameObjectWithTag("Menu").SetActive(false);
             selectedPlot = null;
             menuOpen = false;
+        }
+    }
+
+    public void AddFruits(Dictionary<FruitType, int> newFruits)
+    {
+        foreach (var fruit in newFruits)
+        {
+            if (!fruits.ContainsKey(fruit.Key))
+            {
+                fruits[fruit.Key] = fruit.Value;
+            }
+        }
+
+        foreach (var fruit in fruits)
+        {
+            Debug.Log(fruit.Key + " : "  + fruit.Value + " added to inventory");
         }
     }
 }

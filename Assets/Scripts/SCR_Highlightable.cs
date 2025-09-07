@@ -8,6 +8,7 @@ public class SCR_Highlightable : MonoBehaviour
     private SCR_Interact playerInteractScriptRef;
     public bool stopHighlight = false;
     public bool canHighlight = true;
+    public bool bypassHighlight = false;
 
 
     private void Start()
@@ -17,6 +18,12 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void OnMouseOver()
     {
+        if (bypassHighlight)
+        {
+            playerInteractScriptRef.hoveredInteractable = this.gameObject;
+            return;
+        }
+        
         if (stopHighlight)
         {
             highlightEffect.SetActive(false); 
@@ -36,6 +43,11 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void OnMouseExit()
     {
+        if (bypassHighlight)
+        {
+            return;
+        }
+        
         if (highlightEffect.activeSelf == false)
         {
             return;

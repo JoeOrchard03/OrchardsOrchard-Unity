@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+public enum FruitType {Apple, Cherry}
+
 public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 {
     private SCR_Interact playerInteractScriptRef;
@@ -12,7 +14,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     private int currentStage = 0;
 
-    public string fruitType;
+    public FruitType fruitType;
     
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;

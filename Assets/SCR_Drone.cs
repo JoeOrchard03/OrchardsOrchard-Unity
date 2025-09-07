@@ -12,6 +12,7 @@ public class SCR_Drone : MonoBehaviour
     private Vector3 originalArmPosition;
     private Vector3 armInventoryPosition;
     private Coroutine returnCoroutine;
+    private SCR_Interact playerInventory;
     
     public GameObject armAnchor;
     public GameObject droneArm;
@@ -19,11 +20,16 @@ public class SCR_Drone : MonoBehaviour
     
     //Que of fruit transforms that have been clicked on for harvest
     private Queue<SCR_FruitBloom> fruitQueue = new Queue<SCR_FruitBloom>();
+    
+    //Picked up fruits
+    private Dictionary<FruitType, int> droneInventory = new Dictionary<FruitType, int>();
+    
     private SCR_FruitBloom currentFruit;
     private bool busy = false;
 
     private void Start()
     {
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
         //Set spawn pos as the charger's pos
         chargerPosition = transform.position;
         //Store the original arm location
@@ -127,6 +133,16 @@ public class SCR_Drone : MonoBehaviour
         //Sanity check
         if (currentFruit != null)
         {
+            //If the drone does not have atleast one of the harvested fruit already
+            if(!droneInventory.ContainsKey(currentFruit.fruitType))
+            {
+                //Add it to the dictionary
+                droneInventory[currentFruit.fruitType] = 0;
+            }
+            
+            //Increment the fruit type
+            droneInventory[currentFruit.fruitType]++;
+            
             //Sets the sprite renderer for the held fruit to be the sprite of the fruit grabbed
             fruitRenderer.sprite = fruitSprite.sprite;
             //Destroys the fruit that was just grabbed
@@ -182,5 +198,9 @@ public class SCR_Drone : MonoBehaviour
             );
             yield return null;
         }
+
+        playerInventory.AddFruits(droneInventory);
+
+        droneInventory.Clear();
     }
 }
