@@ -45,6 +45,7 @@ public class SCR_Highlightable : MonoBehaviour
     {
         if (bypassHighlight)
         {
+            playerInteractScriptRef.hoveredInteractable = null;
             return;
         }
         
