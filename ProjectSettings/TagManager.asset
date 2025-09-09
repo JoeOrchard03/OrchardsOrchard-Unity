@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Menu
   - Drone
+  - ShopMenu
   layers:
   - Default
   - TransparentFX
