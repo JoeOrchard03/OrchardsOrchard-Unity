@@ -6,11 +6,16 @@ public class SCR_Interact : MonoBehaviour
 {
     public GameObject hoveredInteractable;
     public GameObject selectedPlot;
+    public GameObject openShopObj;
+
+    public GameObject inventoryBoxPrefab;
+    public Transform fruitSellInventory;
 
     public List<GameObject> matureFruits;
     
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
+    public bool shopMenuOpen = false;
     public bool menuOpen = false;
     
     void Start()
@@ -21,33 +26,50 @@ public class SCR_Interact : MonoBehaviour
     
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (menuOpen)
+            {
+                GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+                selectedPlot = null;
+                menuOpen = false;
+            }
+
+            if (shopMenuOpen)
+            {
+                GameObject.FindGameObjectWithTag("ShopMenu").SetActive(false);
+                openShopObj.GetComponent<SCR_OpenShop>().shopOpen = false;
+                shopMenuOpen = false;
+            }
+        }
+
+        if (shopMenuOpen) return;
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (hoveredInteractable == null) { return;} 
             if (hoveredInteractable.GetComponent<INT_Interactable>() == null) { Debug.Log("Item does not have interactable script"); return;}
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape) && menuOpen)
-        {
-            GameObject.FindGameObjectWithTag("Menu").SetActive(false);
-            selectedPlot = null;
-            menuOpen = false;
-        }
+        
     }
 
     public void AddFruits(Dictionary<FruitType, int> newFruits)
     {
         foreach (var fruit in newFruits)
         {
-            if (!fruits.ContainsKey(fruit.Key))
+            for (int i = 0; i < fruit.Value; i++)
             {
-                fruits[fruit.Key] = fruit.Value;
+                GameObject box = Instantiate(inventoryBoxPrefab, fruitSellInventory);
+                
+                SCR_InventoryFruit fruitUI = box.GetComponentInChildren<SCR_InventoryFruit>();
+                if (fruitUI != null)
+                {
+                    fruitUI.fruitType = fruit.Key;
+                    fruitUI.returnParent = box.transform;
+                }
             }
-        }
-
-        foreach (var fruit in fruits)
-        {
+            
             Debug.Log(fruit.Key + " : "  + fruit.Value + " added to inventory");
         }
     }

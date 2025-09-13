@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(RectTransform))]
 [RequireComponent(typeof(CanvasGroup))]
 public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public SCR_FruitDatabase fruitDatabase; 
     public FruitType fruitType;
-    public int amount;
+    public UnityEngine.UI.Image fruitImage;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -19,6 +21,7 @@ public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler
 
     void Awake()
     {
+        fruitImage.sprite = fruitDatabase.GetFruit(fruitType).fruitSprite;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();

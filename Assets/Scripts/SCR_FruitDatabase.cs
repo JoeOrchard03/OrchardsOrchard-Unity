@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(menuName = "Fruit Database")]
 public class SCR_FruitDatabase : ScriptableObject
@@ -8,8 +9,12 @@ public class SCR_FruitDatabase : ScriptableObject
     [System.Serializable]
     public class Fruit
     {
-        public FruitType type;  // Uses your existing enum
-        public float value;
+        public FruitType type;
+        public Sprite saplingSprite;
+        public Sprite fruitSprite;
+        public float sellValue;
+        public float saplingPrice;
+        public float shopSpawnChance;
     }
 
     public Fruit[] fruits;
@@ -20,9 +25,31 @@ public class SCR_FruitDatabase : ScriptableObject
         foreach (var fruit in fruits)
         {
             if (fruit.type == type)
-                return fruit.value;
+                return fruit.sellValue;
         }
         Debug.LogWarning($"No value defined for fruit type {type}");
+        return 0f;
+    }
+
+    public Fruit GetFruit(FruitType type)
+    {
+        foreach (var fruit in fruits)
+        {
+            if (fruit.type == type)
+                return fruit;
+        }
+        Debug.LogWarning($"No fruit defined for fruit type {type}");
+        return null;
+    }
+    
+    public float GetSaplingPrice(FruitType type)
+    {
+        foreach (var fruit in fruits)
+        {
+            if (fruit.type == type)
+                return fruit.saplingPrice;
+        }
+        Debug.LogWarning($"No sapling price defined for fruit type {type}");
         return 0f;
     }
 }

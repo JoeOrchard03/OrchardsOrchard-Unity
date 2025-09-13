@@ -9,6 +9,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;
     public float timeToFirstBloom;
+    public float timeBetweenBloomWaves = 5f;
 
     private int currentStage = 0;
     public GameObject motherPlot;
@@ -53,18 +54,40 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
         yield return new WaitForSeconds(timeToFirstBloom);
         StartBloomCycle();
     }
-    
+
     public void StartBloomCycle()
     {
-        int numberOfBloomsToActivate =  Random.Range(minNumberOfBloomsToActivate, maxNumberOfBloomsToActivate);
-        Debug.Log("Activating " + numberOfBloomsToActivate + " blooms");
-        for (int i = 0; i < numberOfBloomsToActivate; i++)
+        StartCoroutine(BloomCycleCoroutine());
+    }
+
+    private IEnumerator BloomCycleCoroutine()
+    {
+        while (true)
         {
-            int bloomToActivateIndex = Random.Range(0, inactiveFruitBloomObjects.Count);
-            inactiveFruitBloomObjects[bloomToActivateIndex].SetActive(true);
-            inactiveFruitBloomObjects[bloomToActivateIndex].GetComponent<SCR_FruitBloom>().StartGrowthCycle();
-            activeBloomObjects.Add(inactiveFruitBloomObjects[bloomToActivateIndex]);
-            inactiveFruitBloomObjects.RemoveAt(bloomToActivateIndex);
+            if (inactiveFruitBloomObjects.Count > 0)
+            {
+                int numberToActivate = Random.Range(minNumberOfBloomsToActivate, maxNumberOfBloomsToActivate);
+
+                for (int i = 0; i < numberToActivate; i++)
+                {
+                    if (inactiveFruitBloomObjects.Count == 0) break;
+                    
+                    int index = Random.Range(0, inactiveFruitBloomObjects.Count);
+                    GameObject fruitBloom = inactiveFruitBloomObjects[index];
+
+                    if (!fruitBloom.activeSelf)
+                    {
+                        fruitBloom.SetActive(true);
+                        fruitBloom.GetComponent<SCR_FruitBloom>().ResetFruit();
+                        fruitBloom.GetComponent<SCR_FruitBloom>().StartGrowthCycle();
+                    }
+                    
+                    activeBloomObjects.Add(fruitBloom);
+                    inactiveFruitBloomObjects.RemoveAt(index);
+                }
+            }
+            
+            yield return new WaitForSeconds(timeBetweenBloomWaves);
         }
     }
 }

@@ -30,7 +30,17 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     
     public void StartGrowthCycle()
     {
+        ResetFruit();
         StartCoroutine(GrowFruit());
+    }
+    
+    public void ResetFruit()
+    {
+        currentStage = 0;
+        readyToHarvest = false;
+        harvested = false;
+        spriteRenderer.sprite = spriteGrowthStages[currentStage];
+        gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
     
     IEnumerator GrowFruit()

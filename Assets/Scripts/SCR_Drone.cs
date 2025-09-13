@@ -146,7 +146,11 @@ public class SCR_Drone : MonoBehaviour
             //Sets the sprite renderer for the held fruit to be the sprite of the fruit grabbed
             fruitRenderer.sprite = fruitSprite.sprite;
             //Destroys the fruit that was just grabbed
-            Destroy(currentFruit.gameObject);
+            
+            SCR_TreeGrowthCycle parentTreeScript = currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>();
+            parentTreeScript.activeBloomObjects.Remove(currentFruit.gameObject);
+            parentTreeScript.inactiveFruitBloomObjects.Add(currentFruit.gameObject);
+            currentFruit.gameObject.SetActive(false);
         }
         //Small delay for harvest time
         yield return new WaitForSeconds(harvestTime);

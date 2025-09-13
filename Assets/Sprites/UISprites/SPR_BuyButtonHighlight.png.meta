@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 87ae1f38012f1bc49b7f55804af52b2a
+guid: a4568730b651b524983ef0b41fc1cc41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6321008988332179071
-    second: SPR_MenuBox2_0
+      213: 4425707151711956936
+    second: SPR_BuyButtonHighlight_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_MenuBox2_0
+      name: SPR_BuyButtonHighlight_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 21
-        width: 153
-        height: 153
+        x: 0
+        y: 5
+        width: 142
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e379b4f2cb8b750800000000000000
-      internalID: 6321008988332179071
+      spriteID: 8cf62b1c4354b6d30800000000000000
+      internalID: 4425707151711956936
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_MenuBox2_0: 6321008988332179071
+      SPR_BuyButtonHighlight_0: 4425707151711956936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

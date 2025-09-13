@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruits:
   - type: 0
-    value: 5
+    saplingSprite: {fileID: -2604440402899750777, guid: 2c26cf8750dea3e45bf87105ad7dbabc, type: 3}
+    fruitSprite: {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
+    sellValue: 10
+    saplingPrice: 5
+    shopSpawnChance: 0.5
   - type: 1
-    value: 10
+    saplingSprite: {fileID: 2110848668328559642, guid: 3e0ea0553a4e7c146bbeba181beda9d0, type: 3}
+    fruitSprite: {fileID: -578275665296064992, guid: 72793a48feaee03479d028dfba7da2ef, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2

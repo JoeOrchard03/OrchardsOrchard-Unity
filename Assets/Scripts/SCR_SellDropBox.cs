@@ -14,7 +14,6 @@ public class SCR_SellDropBox : MonoBehaviour, IDropHandler
         if (fruit != null)
         {
             storedFruitType = fruit.fruitType;
-            storedAmount += fruit.amount;
             
             fruit.transform.SetParent(transform);
             fruit.transform.localPosition = Vector3.zero;

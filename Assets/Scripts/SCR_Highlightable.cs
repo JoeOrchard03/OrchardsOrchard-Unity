@@ -18,6 +18,8 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void OnMouseOver()
     {
+        if (playerInteractScriptRef.shopMenuOpen) { return;}
+        
         if (bypassHighlight)
         {
             playerInteractScriptRef.hoveredInteractable = this.gameObject;

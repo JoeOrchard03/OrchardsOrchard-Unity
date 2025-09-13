@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class SCR_OpenShop : MonoBehaviour, INT_Interactable
 {
+    private GameObject player;
     public GameObject shopMenu;
-    private bool shopOpen = false;
+    public bool shopOpen = false;
+
+    public void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     
     public void Interact(GameObject interactor)
     {
@@ -13,14 +19,24 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
         if (!shopOpen)
         {
             Debug.Log("Opening shop menu");
+            player.GetComponent<SCR_Interact>().shopMenuOpen = true;
             shopOpen = true;
             shopMenu.SetActive(true);
         }
         else
         {
             Debug.Log("Closing shop menu");
+            player.GetComponent<SCR_Interact>().shopMenuOpen = false;
             shopOpen = false;
             shopMenu.SetActive(false);
         }
+    }
+
+    public void CloseMenu()
+    {
+        Debug.Log("Closing shop menu");
+        player.GetComponent<SCR_Interact>().shopMenuOpen = false;
+        shopOpen = false;
+        shopMenu.SetActive(false);
     }
 }

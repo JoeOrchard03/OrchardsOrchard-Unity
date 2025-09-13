@@ -2,25 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SCR_MenuBox : MonoBehaviour, INT_Interactable
+public class SCR_MenuBox : MonoBehaviour
 {
-    [SerializeField] private string SaplingName;
-    [SerializeField] private Sprite SaplingIcon;
-    [SerializeField] private SpriteRenderer SaplingRenderer;
+    public SCR_FruitDatabase fruitDatabase;
+    public FruitType fruitType;
+
+    private GameObject player;
+    public Image saplingImage;
     private GameObject selectedPlot;
 
-    private void Start()
+    private void Awake()
     {
-        SaplingRenderer.sprite = SaplingIcon;
+        player = GameObject.FindGameObjectWithTag("Player");
+        saplingImage.sprite = fruitDatabase.GetFruit(fruitType).saplingSprite;
     }
-
-    public void Interact(GameObject interactor)
+    
+    public void Plant()
     {
-        if (interactor.GetComponent<SCR_Interact>().selectedPlot == null) { return; }
-        GetComponent<SCR_Highlightable>().highlightEffect.SetActive(false);
-        selectedPlot = interactor.GetComponent<SCR_Interact>().selectedPlot;
-        selectedPlot.GetComponent<SCR_Plot>().SaplingToPlant(SaplingName);
-        interactor.GetComponent<SCR_Interact>().hoveredInteractable = null;
+        if (player.GetComponent<SCR_Interact>().selectedPlot == null) { return; }
+        selectedPlot = player.GetComponent<SCR_Interact>().selectedPlot;
+        selectedPlot.GetComponent<SCR_Plot>().SaplingToPlant(fruitType.ToString());
+        player.GetComponent<SCR_Interact>().hoveredInteractable = null;
+        Destroy(this.gameObject);
     }
 }

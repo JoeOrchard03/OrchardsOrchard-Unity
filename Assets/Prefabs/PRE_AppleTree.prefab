@@ -132,6 +132,7 @@ MonoBehaviour:
   - 1
   - 1
   timeToFirstBloom: 1
+  timeBetweenBloomWaves: 10
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []

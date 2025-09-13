@@ -158,8 +158,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1109873635
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2230548468693792540, guid: 0aecaa7fa77db864c962edc56d45f765, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AppleTreePrefab: {fileID: 2499254726488180106, guid: 1501c1ea1384737428c04acb68dcf50d, type: 3}
   CherryTreePrefab: {fileID: 2499254726488180106, guid: 47bf43a3381b79441b83d454dd3fb020, type: 3}
-  SaplingMenu: {fileID: 3713843625853535769, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
+  SaplingMenu: {fileID: 0}
   SaplingSpawnLocation: {fileID: 9049354826259758139}
 --- !u!50 &8371953552430817328
 Rigidbody2D:
@@ -336,3 +336,4 @@ MonoBehaviour:
   highlightEffect: {fileID: 5751211717645576599}
   stopHighlight: 0
   canHighlight: 1
+  bypassHighlight: 0

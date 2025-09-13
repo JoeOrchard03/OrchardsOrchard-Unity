@@ -39,10 +39,10 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     {
         switch (SaplingName)
         {
-            case "AppleTree":
+            case "Apple":
                 Plant(AppleTreePrefab);
                 break;
-            case "CherryTree":
+            case "Cherry":
                 Plant(CherryTreePrefab);
                 break;
             default:
@@ -57,6 +57,7 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;;
         playerInteractScriptRef.selectedPlot = null;
         SaplingMenu.SetActive(false);
+        playerInteractScriptRef.menuOpen = false;
         plotOccupied = true;
         GetComponent<SCR_Highlightable>().stopHighlight = true;
     }
