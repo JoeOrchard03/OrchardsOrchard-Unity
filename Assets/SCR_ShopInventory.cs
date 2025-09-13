@@ -2,29 +2,77 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Random = UnityEngine.Random;
 
 public class SCR_ShopInventory : MonoBehaviour
 {
-    public float shopRefreshTime = 30f; // seconds per refresh
+    [Header("References")]
+    [SerializeField] private SCR_FruitDatabase fruitDatabase;
+
+    [Header("Shop settings")]
+    public float shopRefreshTime = 30f;
     private float shopTimer;
 
-    public static event Action OnShopRefresh; 
-    public static event Action<float> OnShopTimerUpdated;
+    [Header("Shop slots")]
+    public List<SCR_BuyableSapling> shopSlots = new List<SCR_BuyableSapling>();
 
+    public static event Action<float> OnShopTimerUpdated;
+    public static event Action OnShopRefreshed;
+    
     private void Start()
     {
         shopTimer = shopRefreshTime;
+        RefreshShopInventory(); // initial stock
     }
 
     private void Update()
     {
         shopTimer -= Time.deltaTime;
+        
         OnShopTimerUpdated?.Invoke(shopTimer);
-
+        
         if (shopTimer <= 0f)
         {
-            OnShopRefresh?.Invoke();
+            RefreshShopInventory();
+            OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
         }
+    }
+
+    public void RefreshShopInventory()
+    {
+        if (shopSlots == null || shopSlots.Count == 0) return;
+
+        foreach (SCR_BuyableSapling slot in shopSlots)
+        {
+            if (slot == null) continue;
+
+            var fruit = GetRandomFruitBySpawnChance();
+            slot.fruitType = fruit.type;
+            slot.fruitDatabase = fruitDatabase;
+            slot.ApplyFruitInfo();
+        }
+    }
+
+    private SCR_FruitDatabase.Fruit GetRandomFruitBySpawnChance()
+    {
+        var fruits = fruitDatabase.fruits;
+        if (fruits == null || fruits.Length == 0) return null;
+
+        float totalWeight = 0f;
+        foreach (var fruit in fruits)
+            totalWeight += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
+
+        float randomValue = Random.Range(0f, totalWeight);
+        float cumulative = 0f;
+
+        foreach (var fruit in fruits)
+        {
+            cumulative += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
+            if (randomValue <= cumulative)
+                return fruit;
+        }
+
+        return fruits[Random.Range(0, fruits.Length)];
     }
 }

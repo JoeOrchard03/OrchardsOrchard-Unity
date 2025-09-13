@@ -8,89 +8,82 @@ using Random = UnityEngine.Random;
 
 public class SCR_ShopMenu : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private SCR_FruitDatabase fruitDatabase;
+    public SCR_ShopInventory shopInventory;
 
+    [Header("UI")]
     public TextMeshProUGUI shopTimerText;
+    public TextMeshProUGUI moneyTotalText;
+    public TextMeshProUGUI SellTotalText;
     
+    [Header("Prefabs")]
     public GameObject shopSaplingPrefab;
     
+    [Header("Shop & Inventory slots")]
     public List<SCR_BuyableSapling> shopSlots =  new List<SCR_BuyableSapling>();
     public List<SCR_InventorySlot> inventorySlots = new List<SCR_InventorySlot>();
     
+    [Header("Canvases")]
     public GameObject saplingCanvas;
     public GameObject sellCanvas;
 
+    [Header("Misc references")]
     private float sellTotal;
     public float moneyTotal;
     private GameObject player;
-    
-    public TextMeshProUGUI moneyTotalText;
-    public TextMeshProUGUI SellTotalText;
     [HideInInspector] public float totalFruitValue;
-
-    private void Awake()
-    {
-        moneyTotalText.text = moneyTotal.ToString();
-        saplingCanvas.SetActive(true);
-        sellCanvas.SetActive(false);
-    }
 
     private void OnEnable()
     {
-        SCR_ShopTimer.OnShopRefresh += RefreshShopInventory;
-        SCR_ShopTimer.OnShopTimerUpdated += UpdateTimerText;
+        if (shopInventory != null)
+        {
+            SCR_ShopInventory.OnShopTimerUpdated += UpdateTimerText;
+            SCR_ShopInventory.OnShopRefreshed += UpdateShopUI;
+        }
+        
+        moneyTotalText.text = moneyTotal.ToString();
+        saplingCanvas.SetActive(true);
+        sellCanvas.SetActive(false);
+        UpdateShopUI();
     }
 
     private void OnDisable()
     {
-        SCR_ShopTimer.OnShopRefresh -= RefreshShopInventory;
-        SCR_ShopTimer.OnShopTimerUpdated -= UpdateTimerText;
+        if (shopInventory != null)
+        {
+            SCR_ShopInventory.OnShopTimerUpdated -= UpdateTimerText;
+            SCR_ShopInventory.OnShopRefreshed -= UpdateShopUI;
+        }
     }
 
     private void UpdateTimerText(float timeRemaining)
     {
         if (shopTimerText != null)
+        {
             shopTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
-    }
-
-    private void RefreshShopInventory()
-    {
-        foreach (SCR_BuyableSapling sapling in shopSlots)
-        {
-            SCR_FruitDatabase.Fruit fruit = GetRandomFruitBySpawnChance();
-            sapling.fruitType = fruit.type;
-            sapling.ApplyFruitInfo();
         }
     }
-
-    private SCR_FruitDatabase.Fruit GetRandomFruitBySpawnChance()
+    
+    public void UpdateShopUI()
     {
-        var fruits = fruitDatabase.fruits;
-        if (fruits == null || fruits.Length == 0)
-            return null;
-        
-        float totalWeight = 0f;
-        foreach (var fruit in fruits)
-        {
-            totalWeight += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
-        }
+        if (shopInventory == null || shopInventory.shopSlots == null) return;
 
-        // Pick a random point within total weight
-        float randomValue = Random.Range(0f, totalWeight);
-        float cumulative = 0f;
-
-        foreach (var fruit in fruits)
+        for (int i = 0; i < shopSlots.Count; i++)
         {
-            cumulative += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
-            if (randomValue <= cumulative)
+            if (i >= shopInventory.shopSlots.Count) break;
+
+            var uiSlot = shopSlots[i];
+            var stockSlot = shopInventory.shopSlots[i];
+
+            if (uiSlot != null && stockSlot != null)
             {
-                return fruit;
+                uiSlot.fruitType = stockSlot.fruitType;
+                uiSlot.fruitDatabase = stockSlot.fruitDatabase;
+                uiSlot.ApplyFruitInfo();
             }
         }
-        
-        return fruits[Random.Range(0, fruits.Length)];
     }
-
     
     public void OpenSaplingsTab()
     {
