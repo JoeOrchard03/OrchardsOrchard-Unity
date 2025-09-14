@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 3105045830281236175}
-  fruitType: Apple
+  fruitType: 0
   spriteGrowthStages:
   - {fileID: -9009158248438509561, guid: 66303e6635b14834591aadae3faeb121, type: 3}
   - {fileID: -3108510562415113668, guid: b19bd781b7ff95a479515c5127b9a0de, type: 3}
@@ -144,10 +144,10 @@ MonoBehaviour:
   - {fileID: 364011696542487278, guid: 953b5a4213a8d5047b5c88780b048bc6, type: 3}
   - {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
   growthTimes:
-  - 1
-  - 1
-  - 1
-  - 1
+  - 4
+  - 4
+  - 4
+  - 4
   readyToHarvest: 0
 --- !u!114 &8428701817006282944
 MonoBehaviour:
@@ -164,6 +164,7 @@ MonoBehaviour:
   highlightEffect: {fileID: 5560398658557167744}
   stopHighlight: 0
   canHighlight: 1
+  bypassHighlight: 0
 --- !u!61 &7091864561993075135
 BoxCollider2D:
   m_ObjectHideFlags: 0

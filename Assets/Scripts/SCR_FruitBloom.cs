@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public enum FruitType {Apple, Cherry}
-
 public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 {
     private SCR_Interact playerInteractScriptRef;

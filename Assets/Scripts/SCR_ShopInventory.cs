@@ -16,6 +16,8 @@ public class SCR_ShopInventory : MonoBehaviour
     [Header("Shop slots")]
     public List<SCR_BuyableSapling> shopSlots = new List<SCR_BuyableSapling>();
 
+    public GameObject shopRefreshNotif;
+    
     public static event Action<float> OnShopTimerUpdated;
     public static event Action OnShopRefreshed;
     
@@ -33,6 +35,7 @@ public class SCR_ShopInventory : MonoBehaviour
         
         if (shopTimer <= 0f)
         {
+            shopRefreshNotif.SetActive(true);
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;

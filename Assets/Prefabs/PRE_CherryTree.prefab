@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6910650185011215988}
   - component: {fileID: 9220909520486006075}
   - component: {fileID: 8769018331628885152}
+  - component: {fileID: 1077072480660823820}
+  - component: {fileID: 3012485338378827516}
   m_Layer: 0
   m_Name: PRE_CherryTree
   m_TagString: Untagged
@@ -98,7 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -366230195331004614, guid: 41e17749597b8e64c8477db61e1d97c5, type: 3}
+  m_Sprite: {fileID: 2325768411794122353, guid: 19396ef46ce54f34a869e426306b513e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,22 +124,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 9220909520486006075}
+  normalLeavesSprite: {fileID: 2325768411794122353, guid: 19396ef46ce54f34a869e426306b513e, type: 3}
+  alternateLeavesSprite: {fileID: 7897893491733195873, guid: 5cfd9f69d57bcd94bace614e79dbbbe5, type: 3}
   spriteGrowthStages:
   - {fileID: -366230195331004614, guid: 41e17749597b8e64c8477db61e1d97c5, type: 3}
   - {fileID: -4467846455346243221, guid: 1cdab7833605a104ab57e87f20a56321, type: 3}
   - {fileID: 1240691093174828256, guid: 5ac85f6c2ce7cb64c9a0f0f11a58f84e, type: 3}
   - {fileID: 2325768411794122353, guid: 19396ef46ce54f34a869e426306b513e, type: 3}
   growthTimes:
-  - 1
-  - 1
-  - 1
-  timeToFirstBloom: 1
+  - 4
+  - 4
+  - 4
+  timeToFirstBloom: 4
   timeBetweenBloomWaves: 10
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []
   minNumberOfBloomsToActivate: 4
   maxNumberOfBloomsToActivate: 7
+--- !u!61 &1077072480660823820
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499254726488180106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0060516596, y: 2.167129}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.4760061, y: 0}
+    oldSize: {x: 6.93, y: 7.19}
+    newSize: {x: 1.21, y: 1.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.2185149, y: 4.3834944}
+  m_EdgeRadius: 0
+--- !u!50 &3012485338378827516
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499254726488180106}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1001 &27635065531485022
 PrefabInstance:
   m_ObjectHideFlags: 0

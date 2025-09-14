@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 41e17749597b8e64c8477db61e1d97c5
+guid: 893a3485c1727fc4a90a27cbb9f22014
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -366230195331004614
-    second: SPR_CherrySaplingStage1_0
+      213: 8216850906019771212
+    second: SPR_OrangeBloomStage2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_CherrySaplingStage1_0
+      name: SPR_OrangeBloomStage2_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 43
-        width: 123
-        height: 152
-      alignment: 9
-      pivot: {x: 0.42, y: -0.18}
+        x: 13
+        y: 19
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a370645e393eaeaf0800000000000000
-      internalID: -366230195331004614
+      spriteID: c43b7a14d5e180270800000000000000
+      internalID: 8216850906019771212
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e91ea9f2c1725744abb44b1977f4f466
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_CherrySaplingStage1_0: -366230195331004614
+      SPR_OrangeBloomStage2_0: 8216850906019771212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

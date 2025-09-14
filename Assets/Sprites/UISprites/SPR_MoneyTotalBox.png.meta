@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 19396ef46ce54f34a869e426306b513e
+guid: e5846df9e98c08f48a04e6f92953895b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2325768411794122353
-    second: SPR_CherryTree_0
+      213: -8952009876377748794
+    second: SPR_MoneyTotalBox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_CherryTree_0
+      name: SPR_MoneyTotalBox_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 32
-        width: 693
-        height: 719
-      alignment: 9
-      pivot: {x: 0.47600606, y: 0}
+        x: 43
+        y: 39
+        width: 452
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17620de4c0ac64020800000000000000
-      internalID: 2325768411794122353
+      spriteID: 6ca37bc727214c380800000000000000
+      internalID: -8952009876377748794
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 60d1bdb482cfd504ea7a21f5c001b86b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_CherryTree_0: 2325768411794122353
+      SPR_MoneyTotalBox_0: -8952009876377748794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

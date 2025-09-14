@@ -16,6 +16,7 @@ public class SCR_ShopMenu : MonoBehaviour
     public TextMeshProUGUI shopTimerText;
     public TextMeshProUGUI moneyTotalText;
     public TextMeshProUGUI SellTotalText;
+    public GameObject shopRefreshNotif;
     
     [Header("Prefabs")]
     public GameObject shopSaplingPrefab;
@@ -83,6 +84,8 @@ public class SCR_ShopMenu : MonoBehaviour
                 uiSlot.ApplyFruitInfo();
             }
         }
+
+        shopRefreshNotif.SetActive(false);
     }
     
     public void OpenSaplingsTab()

@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class SCR_Interact : MonoBehaviour
 {
+    [Header("Interactable variables")]
     public GameObject hoveredInteractable;
+    public bool composting = false;
+    
+    [Header("GameObjects")]
     public GameObject selectedPlot;
     public GameObject openShopObj;
+    public List<GameObject> matureFruits;
 
+    [Header("Inventory variables")]
     public GameObject inventoryBoxPrefab;
     public Transform fruitSellInventory;
-
-    public List<GameObject> matureFruits;
     
-    private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
-    
+    [Header("UI variables")]
     public bool shopMenuOpen = false;
     public bool menuOpen = false;
+    
+    [Header("Cursor variables")]
+    public Texture2D cursorTexture;
+    
+    private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        
+        Vector2 cursorHotspot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
+        Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
     }
     
     void Update()

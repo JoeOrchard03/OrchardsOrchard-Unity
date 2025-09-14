@@ -255,8 +255,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AppleTreePrefab: {fileID: 2499254726488180106, guid: 1501c1ea1384737428c04acb68dcf50d, type: 3}
   CherryTreePrefab: {fileID: 2499254726488180106, guid: 47bf43a3381b79441b83d454dd3fb020, type: 3}
+  LemonTreePrefab: {fileID: 2499254726488180106, guid: 6194db6d69de3184e9f4cc8e9baa6dd2, type: 3}
+  LimeTreePrefab: {fileID: 2499254726488180106, guid: 6486d62f9658ea64ab325ae601324aa0, type: 3}
+  LycheTreePrefab: {fileID: 2499254726488180106, guid: 52593ac46389fca4f9cc8b2a6574b1e5, type: 3}
+  OrangeTreePrefab: {fileID: 2499254726488180106, guid: 84f469d9fc00c8d43a562cfb9611f62d, type: 3}
+  PeachTreePrefab: {fileID: 2499254726488180106, guid: b574f92505595ba4f9995f2431c13c5d, type: 3}
   SaplingMenu: {fileID: 0}
   SaplingSpawnLocation: {fileID: 9049354826259758139}
+  plotOccupied: 0
 --- !u!50 &8371953552430817328
 Rigidbody2D:
   serializedVersion: 4

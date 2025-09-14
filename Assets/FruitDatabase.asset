@@ -18,10 +18,40 @@ MonoBehaviour:
     fruitSprite: {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
     sellValue: 10
     saplingPrice: 5
-    shopSpawnChance: 0.5
+    shopSpawnChance: 0
   - type: 1
     saplingSprite: {fileID: 2110848668328559642, guid: 3e0ea0553a4e7c146bbeba181beda9d0, type: 3}
     fruitSprite: {fileID: -578275665296064992, guid: 72793a48feaee03479d028dfba7da2ef, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0
+  - type: 2
+    saplingSprite: {fileID: 2879947056001019073, guid: c0c2523bf90b1dd43a88a75c012f3b17, type: 3}
+    fruitSprite: {fileID: 4227137209780453131, guid: c0c2523bf90b1dd43a88a75c012f3b17, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 3
+    saplingSprite: {fileID: -3999617200748337115, guid: bbbe359cf01e5704fa39e1212334d3dd, type: 3}
+    fruitSprite: {fileID: 6525807644869554140, guid: 38d03ae79266a0243882e7fe7f413871, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 4
+    saplingSprite: {fileID: -2705549857334424933, guid: ae51968aae0f7d945a4274d42c59b957, type: 3}
+    fruitSprite: {fileID: -7105201611031678245, guid: 7b50ca578fdb1fc49b7ea257f184b967, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 5
+    saplingSprite: {fileID: -4878176621397035354, guid: 67c969b81ecbb6f45bb742d4f8572a4e, type: 3}
+    fruitSprite: {fileID: 5184839221721332569, guid: 55db1b98653a6514a8d0ccc1f6647b6e, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 6
+    saplingSprite: {fileID: 7396629201680866417, guid: faabc9e4ac7e17b48aaa12375ab51be1, type: 3}
+    fruitSprite: {fileID: -4953285647705180160, guid: 807844937af887b43986400eda45e365, type: 3}
     sellValue: 20
     saplingPrice: 10
     shopSpawnChance: 0.2
