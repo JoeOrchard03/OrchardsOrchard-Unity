@@ -6,6 +6,9 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
 
+    public Sprite normalLeavesSprite;
+    public Sprite alternateLeavesSprite;
+    
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;
     public float timeToFirstBloom;
@@ -43,10 +46,20 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
     {
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
         
+        Vector3 originalPos = transform.localPosition;
+        transform.localPosition = originalPos + new Vector3(0f, 0.3f, 0f);
+        
         while (currentStage < spriteGrowthStages.Count - 1)
         {
             yield return new WaitForSeconds(growthTimes[currentStage]);
             currentStage++;
+            
+            if (spriteGrowthStages[currentStage] == spriteGrowthStages[1])
+            {
+                transform.localPosition = originalPos;
+                motherPlot.SetActive(false);
+            }
+            
             if(spriteGrowthStages[currentStage] == spriteGrowthStages[1]) {motherPlot.SetActive(false);}
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
@@ -66,5 +79,26 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
             activeBloomObjects.Add(inactiveFruitBloomObjects[bloomToActivateIndex]);
             inactiveFruitBloomObjects.RemoveAt(bloomToActivateIndex);
         }
+    }
+
+    public void OnFruitHarvested(GameObject fruit)
+    {
+        if (activeBloomObjects.Contains(fruit))
+        {
+            activeBloomObjects.Remove(fruit);
+            inactiveFruitBloomObjects.Add(fruit);
+            fruit.SetActive(false);
+        }
+
+        if (activeBloomObjects.Count == 0)
+        {
+            StartCoroutine(RestartBloomCycle());
+        }
+    }
+
+    private IEnumerator RestartBloomCycle()
+    {
+        yield return new WaitForSeconds(timeToFirstBloom);
+        StartBloomCycle();
     }
 }

@@ -19,6 +19,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [SerializeField] private bool readyToHarvest = false;
     private bool harvested = false;
 
+    private GameObject motherTree;
+
     private void Awake()
     {
         playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
@@ -40,6 +42,23 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
+
+    private void CheckForBloomLeaves()
+    {
+        motherTree = transform.parent.gameObject;
+        if (motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite != null)
+        {
+            motherTree.GetComponent<SpriteRenderer>().sprite = motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite;
+        }
+    }
+
+    private void SetLeavesToNormal()
+    {
+        if (motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite != null)
+        {
+            motherTree.GetComponent<SpriteRenderer>().sprite = motherTree.GetComponent<SCR_TreeGrowthCycle>().normalLeavesSprite;
+        }
+    }
     
     IEnumerator GrowFruit()
     {
@@ -47,6 +66,16 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         
         while (currentStage < spriteGrowthStages.Count - 1)
         {
+            if (currentStage == 0)
+            {
+                CheckForBloomLeaves();
+            }
+
+            if (currentStage == 1)
+            {
+                SetLeavesToNormal();
+            }
+            
             yield return new WaitForSeconds(growthTimes[currentStage]);
             currentStage++;
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
