@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_PeachHighlight_0: 3667946468921996230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

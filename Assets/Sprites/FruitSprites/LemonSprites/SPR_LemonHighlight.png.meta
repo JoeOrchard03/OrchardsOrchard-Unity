@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_LemonHighlight_0: -7893305802527066918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
