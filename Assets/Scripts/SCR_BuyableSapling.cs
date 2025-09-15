@@ -18,6 +18,7 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject inventorySaplingPrefab;
     public Transform saplingInventory;
 
+    public GameObject BuyTextObj;
     public GameObject outOfStockObj;
     public GameObject buttonObj;
     public GameObject moneyIcon;
@@ -35,6 +36,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         {
             outOfStockObj.SetActive(false);
             buttonObj.SetActive(true);
+            BuyTextObj.SetActive(true);
             moneyIcon.SetActive(true);
             saplingPrice = fruit.saplingPrice;
             saplingSprite.sprite = fruit.saplingSprite;
@@ -51,6 +53,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         outOfStockObj.SetActive(true);
         buttonObj.SetActive(false);
         moneyIcon.SetActive(false);
+        BuyTextObj.SetActive(false);
         saplingSprite.sprite = null;
         priceText.text = "";
     }

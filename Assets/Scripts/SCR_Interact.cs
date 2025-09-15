@@ -20,19 +20,12 @@ public class SCR_Interact : MonoBehaviour
     [Header("UI variables")]
     public bool shopMenuOpen = false;
     public bool menuOpen = false;
-    
-    [Header("Cursor variables")]
-    public Texture2D cursorTexture;
-    
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        
-        Vector2 cursorHotspot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 2);
-        Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
     }
     
     void Update()
