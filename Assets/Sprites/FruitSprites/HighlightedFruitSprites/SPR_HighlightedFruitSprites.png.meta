@@ -1,0 +1,664 @@
+fileFormatVersion: 2
+guid: 7ba739ef0f0de8f4fbe32116ed173863
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8949463908641792151
+    second: SPR_HighlightedFruitSprites_0
+  - first:
+      213: 1594688174031532293
+    second: SPR_HighlightedFruitSprites_1
+  - first:
+      213: -7830889191015583631
+    second: SPR_HighlightedFruitSprites_2
+  - first:
+      213: -7783783961977391201
+    second: SPR_HighlightedFruitSprites_3
+  - first:
+      213: -7885307652872054787
+    second: SPR_HighlightedFruitSprites_4
+  - first:
+      213: -1595645871051035712
+    second: SPR_HighlightedFruitSprites_5
+  - first:
+      213: -6627231127324454945
+    second: SPR_HighlightedFruitSprites_6
+  - first:
+      213: -186598949447913809
+    second: SPR_HighlightedFruitSprites_7
+  - first:
+      213: 9104871414898597424
+    second: SPR_HighlightedFruitSprites_8
+  - first:
+      213: -1233571417998200691
+    second: SPR_HighlightedFruitSprites_9
+  - first:
+      213: 830344631279673247
+    second: SPR_HighlightedFruitSprites_10
+  - first:
+      213: -8780743418752885488
+    second: SPR_HighlightedFruitSprites_11
+  - first:
+      213: 952601652177076183
+    second: SPR_HighlightedFruitSprites_12
+  - first:
+      213: -8951279359258315323
+    second: SPR_HighlightedFruitSprites_13
+  - first:
+      213: -4990062832854365555
+    second: SPR_HighlightedFruitSprites_14
+  - first:
+      213: 8566455701183826584
+    second: SPR_HighlightedFruitSprites_15
+  - first:
+      213: 5692425997502145450
+    second: SPR_HighlightedFruitSprites_16
+  - first:
+      213: -8987895503723156675
+    second: SPR_HighlightedFruitSprites_17
+  - first:
+      213: -6434491299891733261
+    second: SPR_HighlightedFruitSprites_18
+  - first:
+      213: 2121894827773389726
+    second: SPR_HighlightedFruitSprites_19
+  - first:
+      213: 7387117497895302021
+    second: SPR_HighlightedFruitSprites_20
+  - first:
+      213: 7049216711994757254
+    second: SPR_HighlightedFruitSprites_21
+  - first:
+      213: 8432795024872248592
+    second: SPR_HighlightedFruitSprites_22
+  - first:
+      213: -2993389991990549239
+    second: SPR_HighlightedFruitSprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_GraprefruitHighlight
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 587
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9774f11ab17af390800000000000000
+      internalID: -7783783961977391201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AppleHighlight
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 602
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df754e5c772c19290800000000000000
+      internalID: -7885307652872054787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CherryHighlight
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 452
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb2facc8802bd9e0800000000000000
+      internalID: -1595645871051035712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_LemonHighlight
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 452
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf0a6bf6685704a0800000000000000
+      internalID: -6627231127324454945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_OrangeHighlight
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 452
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae22be7e31196df0800000000000000
+      internalID: -186598949447913809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_KumquatHighlight
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 437
+        width: 93
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e93aaef400b5e70800000000000000
+      internalID: 9104871414898597424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_MullberryHighlight
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 452
+        width: 108
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d807421c45971eee0800000000000000
+      internalID: -1233571417998200691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_LycheeHighlight
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 437
+        width: 78
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fd394fa0af58b00800000000000000
+      internalID: 830344631279673247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_BannanaHighlight
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 317
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d926d0268842680800000000000000
+      internalID: -8780743418752885488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_LimeHighlight
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 332
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dff672d722583d00800000000000000
+      internalID: 952601652177076183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PlumHighlight
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 317
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c53f1249daa6c380800000000000000
+      internalID: -8951279359258315323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearHighlight
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 287
+        width: 93
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a06d0ca4cbfbab0800000000000000
+      internalID: -4990062832854365555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutHighlight
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 272
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a8e2db21a22e670800000000000000
+      internalID: 8566455701183826584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CrabAppleHighlight
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 287
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa36053f84f8ffe40800000000000000
+      internalID: 5692425997502145450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoHighlight
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 167
+        width: 93
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b2046c8a4944380800000000000000
+      internalID: -8987895503723156675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PapayaHighlight
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 152
+        width: 93
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc9c9f014814b6a0800000000000000
+      internalID: -6434491299891733261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CocoaHighlight
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 122
+        width: 108
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9beb248a1c727d10800000000000000
+      internalID: 2121894827773389726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateHighlight
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 122
+        width: 78
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5833f18c930548660800000000000000
+      internalID: 7387117497895302021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_OliveHighlight
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 152
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680d13f4049d3d160800000000000000
+      internalID: 7049216711994757254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloHighlight
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 107
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0151131756e470570800000000000000
+      internalID: 8432795024872248592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PeachHighlight
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 32
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905a13579a75576d0800000000000000
+      internalID: -2993389991990549239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 52ffc27fd1d574943aacbddf4eea4b00
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_AppleHighlight: -7885307652872054787
+      SPR_AvocadoHighlight: -8987895503723156675
+      SPR_BannanaHighlight: -8780743418752885488
+      SPR_CherryHighlight: -1595645871051035712
+      SPR_CocoaHighlight: 2121894827773389726
+      SPR_CoconutHighlight: 8566455701183826584
+      SPR_CrabAppleHighlight: 5692425997502145450
+      SPR_DateHighlight: 7387117497895302021
+      SPR_GraprefruitHighlight: -7783783961977391201
+      SPR_HighlightedFruitSprites_0: -8949463908641792151
+      SPR_HighlightedFruitSprites_1: 1594688174031532293
+      SPR_HighlightedFruitSprites_2: -7830889191015583631
+      SPR_KumquatHighlight: 9104871414898597424
+      SPR_LemonHighlight: -6627231127324454945
+      SPR_LimeHighlight: 952601652177076183
+      SPR_LycheeHighlight: 830344631279673247
+      SPR_MullberryHighlight: -1233571417998200691
+      SPR_OliveHighlight: 7049216711994757254
+      SPR_OrangeHighlight: -186598949447913809
+      SPR_PapayaHighlight: -6434491299891733261
+      SPR_PeachHighlight: -2993389991990549239
+      SPR_PearHighlight: -4990062832854365555
+      SPR_PlumHighlight: -8951279359258315323
+      SPR_PomeloHighlight: 8432795024872248592
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

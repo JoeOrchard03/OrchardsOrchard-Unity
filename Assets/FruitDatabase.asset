@@ -55,3 +55,33 @@ MonoBehaviour:
     sellValue: 20
     saplingPrice: 10
     shopSpawnChance: 0.2
+  - type: 7
+    saplingSprite: {fileID: 6902754700072168920, guid: 217d9ba26cb4a564ba4efa941bbc6c73, type: 3}
+    fruitSprite: {fileID: -8555439166801650353, guid: 76392cea5b439194bb4a80b79946931d, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 8
+    saplingSprite: {fileID: -3827010089873897311, guid: a698fbaf0d2ba454eaf4765d5af2b111, type: 3}
+    fruitSprite: {fileID: -5824171761365723291, guid: 018f892e4cd408b499c645a45110c21e, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 9
+    saplingSprite: {fileID: -7582457531663340076, guid: 0467d35abf67a75479af226645dc6097, type: 3}
+    fruitSprite: {fileID: 3103273808827075316, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 10
+    saplingSprite: {fileID: 3625539741419129381, guid: baa7a67f2cfb13e4d9e480032c566494, type: 3}
+    fruitSprite: {fileID: 2079807898959282341, guid: 7f3d5432507cd2c448d55651161a3d51, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2
+  - type: 11
+    saplingSprite: {fileID: 1078695587797035143, guid: 1aa64fe29de79a742988742b7c606d65, type: 3}
+    fruitSprite: {fileID: 1826326243440205682, guid: b2692d28a3c8771448b5bd1071fd2ee7, type: 3}
+    sellValue: 20
+    saplingPrice: 10
+    shopSpawnChance: 0.2

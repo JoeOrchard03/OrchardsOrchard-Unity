@@ -13,6 +13,11 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     public GameObject LycheTreePrefab;
     public GameObject OrangeTreePrefab;
     public GameObject PeachTreePrefab;
+    public GameObject PapayaTreePrefab;
+    public GameObject PlumTreePrefab;
+    public GameObject OliveTreePrefab;
+    public GameObject CocoaTreePrefab;
+    public GameObject MullberryTreePrefab;
     
 
     [SerializeField] private GameObject SaplingMenu;
@@ -65,6 +70,21 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
                 break;
             case "Lime":
                 Plant(LimeTreePrefab);
+                break;
+            case "Papaya":
+                Plant(PapayaTreePrefab);
+                break;
+            case "Plum":
+                Plant(PlumTreePrefab);
+                break;
+            case "Olive":
+                Plant(OliveTreePrefab);
+                break;
+            case "Cocoa":
+                Plant(CocoaTreePrefab);
+                break;
+            case "Mullbery":
+                Plant(MullberryTreePrefab);
                 break;
             default:
                 Debug.Log(SaplingName + " is not a valid sapling name");
