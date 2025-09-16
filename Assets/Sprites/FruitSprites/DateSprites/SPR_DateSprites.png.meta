@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: d6bd5ca856dbb944fb0e015233bebe4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7603544994812712040
+    second: SPR_DateSprites_0
+  - first:
+      213: -4648608097942986310
+    second: SPR_DateSprites_1
+  - first:
+      213: -4209487696220011725
+    second: SPR_DateSprites_2
+  - first:
+      213: 5177472558342958589
+    second: SPR_DateSprites_3
+  - first:
+      213: 8531708393426420709
+    second: SPR_DateSprites_4
+  - first:
+      213: -8699229343702943819
+    second: SPR_DateSprites_5
+  - first:
+      213: -8310786861260973108
+    second: SPR_DateSprites_6
+  - first:
+      213: 1195052750387913416
+    second: SPR_DateSprites_7
+  - first:
+      213: 3640246997068947861
+    second: SPR_DateSprites_8
+  - first:
+      213: -6665505295158779425
+    second: SPR_DateSprites_9
+  - first:
+      213: -4326899003817725274
+    second: SPR_DateSprites_10
+  - first:
+      213: -3118035739214270416
+    second: SPR_DateSprites_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_DateTree
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 973
+        width: 677
+        height: 962
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b2d7ecc18ca7690800000000000000
+      internalID: -7603544994812712040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Date
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 808
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1aa167093dc7fb0800000000000000
+      internalID: -4648608097942986310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSprites_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 823
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333cd6c3e35e495c0800000000000000
+      internalID: -4209487696220011725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSprites_3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 838
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd6d524cd31ad740800000000000000
+      internalID: 5177472558342958589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSprites_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 868
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e38665b497b66670800000000000000
+      internalID: 8531708393426420709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSprites_5
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 883
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b77eec9001264780800000000000000
+      internalID: -8699229343702943819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSeed
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 703
+        width: 137
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb5e82d1672aac80800000000000000
+      internalID: -8310786861260973108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSaplingStage3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 118
+        width: 332
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2a9b2152ea59010800000000000000
+      internalID: 1195052750387913416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSprites_8
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 538
+        width: 167
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5912af26b51c48230800000000000000
+      internalID: 3640246997068947861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 120
+        width: 167
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd16399df3e5f73a0800000000000000
+      internalID: -6665505295158779425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Dates
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 298
+        width: 77
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2f37ae744c3f3c0800000000000000
+      internalID: -4326899003817725274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_DateSaplingStage1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 118
+        width: 137
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0303927e3038ab4d0800000000000000
+      internalID: -3118035739214270416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f34e56358b9a582418392bde99df417d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_Date: -4648608097942986310
+      SPR_DateSaplingStage1: -3118035739214270416
+      SPR_DateSaplingStage2: -6665505295158779425
+      SPR_DateSaplingStage3: 1195052750387913416
+      SPR_DateSeed: -8310786861260973108
+      SPR_DateSprites_2: -4209487696220011725
+      SPR_DateSprites_3: 5177472558342958589
+      SPR_DateSprites_4: 8531708393426420709
+      SPR_DateSprites_5: -8699229343702943819
+      SPR_DateSprites_8: 3640246997068947861
+      SPR_DateTree: -7603544994812712040
+      SPR_Dates: -4326899003817725274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

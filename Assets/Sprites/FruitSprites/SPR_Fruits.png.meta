@@ -1,0 +1,1273 @@
+fileFormatVersion: 2
+guid: 9be911dea7505a144b8683e498dd6b0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7570181402009292618
+    second: SPR_Fruits_0
+  - first:
+      213: 6618491053616549588
+    second: SPR_Fruits_1
+  - first:
+      213: 6456415801438586577
+    second: SPR_Fruits_2
+  - first:
+      213: 2278450011652347292
+    second: SPR_Fruits_3
+  - first:
+      213: 1692981459873666870
+    second: SPR_Fruits_4
+  - first:
+      213: 8253744301147582731
+    second: SPR_Fruits_5
+  - first:
+      213: -4763181706670530291
+    second: SPR_Fruits_6
+  - first:
+      213: -6086722518008142550
+    second: SPR_Fruits_7
+  - first:
+      213: 4818427176116470979
+    second: SPR_Fruits_8
+  - first:
+      213: 7580219163153548051
+    second: SPR_Fruits_9
+  - first:
+      213: -2478541716857835428
+    second: SPR_Fruits_10
+  - first:
+      213: 1860976332791745052
+    second: SPR_Fruits_11
+  - first:
+      213: -5703716787390388712
+    second: SPR_Fruits_12
+  - first:
+      213: -6997710089047918707
+    second: SPR_Fruits_13
+  - first:
+      213: 8098658276706620545
+    second: SPR_Fruits_14
+  - first:
+      213: 8262644352616023403
+    second: SPR_Fruits_15
+  - first:
+      213: 6567829202639652171
+    second: SPR_Fruits_16
+  - first:
+      213: -6008092019064174450
+    second: SPR_Fruits_17
+  - first:
+      213: -5701419930489612893
+    second: SPR_Fruits_18
+  - first:
+      213: 3294651961591266341
+    second: SPR_Fruits_19
+  - first:
+      213: 3540224947132487131
+    second: SPR_Fruits_20
+  - first:
+      213: 3547493588735246278
+    second: SPR_Fruits_21
+  - first:
+      213: 4739052871220086276
+    second: SPR_Fruits_22
+  - first:
+      213: 2730570281907979685
+    second: SPR_Fruits_23
+  - first:
+      213: -596471439446310798
+    second: SPR_Fruits_24
+  - first:
+      213: -6321771238859821280
+    second: SPR_Fruits_25
+  - first:
+      213: 4074965921781679601
+    second: SPR_Fruits_26
+  - first:
+      213: -2693383143302719284
+    second: SPR_Fruits_27
+  - first:
+      213: 668710575638064451
+    second: SPR_Fruits_28
+  - first:
+      213: -5932880933929360899
+    second: SPR_Fruits_29
+  - first:
+      213: -307507516608455829
+    second: SPR_Fruits_30
+  - first:
+      213: -599536913930840451
+    second: SPR_Fruits_31
+  - first:
+      213: -8808180596671944499
+    second: SPR_Fruits_32
+  - first:
+      213: -6361264226586503945
+    second: SPR_Fruits_33
+  - first:
+      213: -3903764146903509306
+    second: SPR_Fruits_34
+  - first:
+      213: -8310798928462003406
+    second: SPR_Fruits_35
+  - first:
+      213: -829958642470041097
+    second: SPR_Fruits_36
+  - first:
+      213: -2642388308699621937
+    second: SPR_Fruits_37
+  - first:
+      213: -4726563347917290977
+    second: SPR_Fruits_38
+  - first:
+      213: -9088051717755027747
+    second: SPR_Fruits_39
+  - first:
+      213: 1225977750884197244
+    second: SPR_Fruits_40
+  - first:
+      213: 2134394253505764230
+    second: SPR_Fruits_41
+  - first:
+      213: 3866817241240071575
+    second: SPR_Fruits_42
+  - first:
+      213: -5738300243584574786
+    second: SPR_Fruits_43
+  - first:
+      213: -5437157502842217257
+    second: SPR_Fruits_44
+  - first:
+      213: 5377974019557599375
+    second: SPR_Fruits_45
+  - first:
+      213: -6585711023141645461
+    second: SPR_Fruits_46
+  - first:
+      213: -4883849285390738050
+    second: SPR_Fruits_47
+  - first:
+      213: 2982477333416304490
+    second: SPR_Fruits_48
+  - first:
+      213: 3970613806826500075
+    second: SPR_Fruits_49
+  - first:
+      213: 1763214268386150961
+    second: SPR_Fruits_50
+  - first:
+      213: 4853062470945451369
+    second: SPR_Fruits_51
+  - first:
+      213: 2882222227065096029
+    second: SPR_Fruits_52
+  - first:
+      213: 88769463593323489
+    second: SPR_Fruits_53
+  - first:
+      213: -466307102026263029
+    second: SPR_Fruits_54
+  - first:
+      213: -209099000216538533
+    second: SPR_Fruits_55
+  - first:
+      213: -1447002395653818925
+    second: SPR_Fruits_56
+  - first:
+      213: 4669277509151643389
+    second: SPR_Fruits_57
+  - first:
+      213: -3044962478588303286
+    second: SPR_Fruits_58
+  - first:
+      213: 9038684968342996259
+    second: SPR_Fruits_59
+  - first:
+      213: 2568817004457844127
+    second: SPR_Fruits_60
+  - first:
+      213: 1537513666855152870
+    second: SPR_Fruits_61
+  - first:
+      213: 3924198096486652078
+    second: SPR_Fruits_62
+  - first:
+      213: 7085757254593644735
+    second: SPR_Fruits_63
+  - first:
+      213: -946417532330756467
+    second: SPR_Fruits_64
+  - first:
+      213: 9177358261927306011
+    second: SPR_Fruits_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gold_Apple
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1518
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de4ae70c8a99db50800000000000000
+      internalID: 6618491053616549588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Apple
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1518
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d647feb6fbc99950800000000000000
+      internalID: 6456415801438586577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Peach
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1518
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637971ffaadae7710800000000000000
+      internalID: 1692981459873666870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Peach
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1518
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b017ec036b03b8270800000000000000
+      internalID: 8253744301147582731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Cherry
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1383
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25e0c36e1e978ba0800000000000000
+      internalID: -6086722518008142550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Cherry
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1383
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4c280dcfd7ed240800000000000000
+      internalID: 4818427176116470979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Orange
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1383
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50b3bdb0737a9dd0800000000000000
+      internalID: -2478541716857835428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Orange
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1383
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a06736d1483d910800000000000000
+      internalID: 1860976332791745052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Banana
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1233
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87b12ddfb323ee90800000000000000
+      internalID: -6997710089047918707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Banana
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1233
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184106c4bc6346070800000000000000
+      internalID: 8098658276706620545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Lime
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1248
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8802d11428fe9ca0800000000000000
+      internalID: -6008092019064174450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Lime
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1248
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a595d7d7cc70e0b0800000000000000
+      internalID: -5701419930489612893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Lemon
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1113
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5dece15d7612130800000000000000
+      internalID: 3540224947132487131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Lemon
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1113
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf3a8f9f9a3b3130800000000000000
+      internalID: 3547493588735246278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Kumquat
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1113
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a50d57443fe4e520800000000000000
+      internalID: 2730570281907979685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Kumquat
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1113
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2700325d268e8b7f0800000000000000
+      internalID: -596471439446310798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Plum
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 993
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f58e9f6aef2d8830800000000000000
+      internalID: 4074965921781679601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Plum
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 993
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc89a632d4e2f9ad0800000000000000
+      internalID: -2693383143302719284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Pear
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 978
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1e37e693c2aada0800000000000000
+      internalID: -5932880933929360899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Pear
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 978
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b5acafa838bbbf0800000000000000
+      internalID: -307507516608455829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Mullberry
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 843
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc861e14a6e03c580800000000000000
+      internalID: -8808180596671944499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Mullberry
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 843
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f459eba3ef38b7a0800000000000000
+      internalID: -6361264226586503945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Lychee
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 843
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2334355386c1aac80800000000000000
+      internalID: -8310798928462003406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Lychee
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 843
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9ce4113056b74f0800000000000000
+      internalID: -829958642470041097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Avocado
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 693
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12420f6dafd76eb0800000000000000
+      internalID: -4726563347917290977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Avocado
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 693
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde35defc11c0e180800000000000000
+      internalID: -9088051717755027747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Coconut
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 693
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b98dad344ee9d10800000000000000
+      internalID: 2134394253505764230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Coconut
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 693
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d687b2bc1b9a530800000000000000
+      internalID: 3866817241240071575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_CrabApple
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 558
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc5d37fe065b84b0800000000000000
+      internalID: -5437157502842217257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_CrabApple
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 558
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88a20780e662aa40800000000000000
+      internalID: 5377974019557599375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Papaya
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 513
+        width: 62
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d5dbf53f4193cb0800000000000000
+      internalID: -4883849285390738050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Papaya
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 513
+        width: 62
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fdee83553e36920800000000000000
+      internalID: 2982477333416304490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Cocoa
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 363
+        width: 77
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a8e020902387810800000000000000
+      internalID: 1763214268386150961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Cocoa
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 363
+        width: 77
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dab7dca9a895340800000000000000
+      internalID: 4853062470945451369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Olive
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 378
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebc1685b5f5b3100800000000000000
+      internalID: 88769463593323489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Olive
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 378
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b069b7b49285789f0800000000000000
+      internalID: -466307102026263029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Date
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 183
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d53ae9dcf63bebe0800000000000000
+      internalID: -1447002395653818925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Date
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 183
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df654bad72b9cc040800000000000000
+      internalID: 4669277509151643389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Grapefruit
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 198
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3254fb6f61cdf6d70800000000000000
+      internalID: 9038684968342996259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Grapefruit
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 198
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d51b3947546a320800000000000000
+      internalID: 2568817004457844127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold_Pomelo
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 18
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8d951a06d857630800000000000000
+      internalID: 3924198096486652078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridescent_Pomelo
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb883bc5eaaa55260800000000000000
+      internalID: 7085757254593644735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 41f110a7e17be454386c803a1e6841d8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gold_Apple: 6618491053616549588
+      Gold_Avocado: -4726563347917290977
+      Gold_Banana: -6997710089047918707
+      Gold_Cherry: -6086722518008142550
+      Gold_Cocoa: 1763214268386150961
+      Gold_Coconut: 2134394253505764230
+      Gold_CrabApple: -5437157502842217257
+      Gold_Date: -1447002395653818925
+      Gold_Grapefruit: 9038684968342996259
+      Gold_Kumquat: 2730570281907979685
+      Gold_Lemon: 3540224947132487131
+      Gold_Lime: -6008092019064174450
+      Gold_Lychee: -8310798928462003406
+      Gold_Mullberry: -8808180596671944499
+      Gold_Olive: 88769463593323489
+      Gold_Orange: -2478541716857835428
+      Gold_Papaya: -4883849285390738050
+      Gold_Peach: 1692981459873666870
+      Gold_Pear: -5932880933929360899
+      Gold_Plum: 4074965921781679601
+      Gold_Pomelo: 3924198096486652078
+      Iridescent_Apple: 6456415801438586577
+      Iridescent_Avocado: -9088051717755027747
+      Iridescent_Banana: 8098658276706620545
+      Iridescent_Cherry: 4818427176116470979
+      Iridescent_Cocoa: 4853062470945451369
+      Iridescent_Coconut: 3866817241240071575
+      Iridescent_CrabApple: 5377974019557599375
+      Iridescent_Date: 4669277509151643389
+      Iridescent_Grapefruit: 2568817004457844127
+      Iridescent_Kumquat: -596471439446310798
+      Iridescent_Lemon: 3547493588735246278
+      Iridescent_Lime: -5701419930489612893
+      Iridescent_Lychee: -829958642470041097
+      Iridescent_Mullberry: -6361264226586503945
+      Iridescent_Olive: -466307102026263029
+      Iridescent_Orange: 1860976332791745052
+      Iridescent_Papaya: 2982477333416304490
+      Iridescent_Peach: 8253744301147582731
+      Iridescent_Pear: -307507516608455829
+      Iridescent_Plum: -2693383143302719284
+      Iridescent_Pomelo: 7085757254593644735
+      SPR_Fruits_0: -7570181402009292618
+      SPR_Fruits_12: -5703716787390388712
+      SPR_Fruits_15: 8262644352616023403
+      SPR_Fruits_16: 6567829202639652171
+      SPR_Fruits_19: 3294651961591266341
+      SPR_Fruits_22: 4739052871220086276
+      SPR_Fruits_25: -6321771238859821280
+      SPR_Fruits_28: 668710575638064451
+      SPR_Fruits_3: 2278450011652347292
+      SPR_Fruits_31: -599536913930840451
+      SPR_Fruits_34: -3903764146903509306
+      SPR_Fruits_37: -2642388308699621937
+      SPR_Fruits_40: 1225977750884197244
+      SPR_Fruits_43: -5738300243584574786
+      SPR_Fruits_46: -6585711023141645461
+      SPR_Fruits_49: 3970613806826500075
+      SPR_Fruits_52: 2882222227065096029
+      SPR_Fruits_55: -209099000216538533
+      SPR_Fruits_58: -3044962478588303286
+      SPR_Fruits_6: -4763181706670530291
+      SPR_Fruits_61: 1537513666855152870
+      SPR_Fruits_64: -946417532330756467
+      SPR_Fruits_65: 9177358261927306011
+      SPR_Fruits_9: 7580219163153548051
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

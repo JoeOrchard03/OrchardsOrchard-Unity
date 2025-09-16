@@ -5,24 +5,36 @@ using Random = UnityEngine.Random;
 
 public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 {
+    [Header("Object references")]
     private SCR_Interact playerInteractScriptRef;
     private GameObject drone;
-    
     public SpriteRenderer spriteRenderer;
-
-    private int currentStage = 0;
-
+    private GameObject motherTree;
+    
+    [Header("Fruit info")]
     public FruitType fruitType;
     
+    [Header("Growth variables")]
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;
+
+    [Header("Special Variant variables")] 
+    public Sprite goldSprite;
+    public Sprite iridescentSprite;
+    [Range(0f, 1f)] public float goldChance = 0.5f;
+    [Range(0f, 1f)] public float iridescentChance = 0.25f;
+    [HideInInspector] public bool isGold = false;
+    [HideInInspector] public bool isIridescent = false;
+    
+    [Header("Misc variables")]
     [SerializeField] private bool readyToHarvest = false;
     private bool harvested = false;
-
-    private GameObject motherTree;
+    private int currentStage = 0;
 
     private void Awake()
     {
+        goldChance = 0.10f;
+        iridescentChance = 0.03f;
         playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
         drone = GameObject.FindGameObjectWithTag("Drone");
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
@@ -39,6 +51,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         currentStage = 0;
         readyToHarvest = false;
         harvested = false;
+        isGold = false;
+        isIridescent = false;
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
@@ -80,6 +94,21 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             currentStage++;
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
+
+        float roll = Random.value;
+        if (roll < iridescentChance)
+        {
+            Debug.Log("IRIDESCENT SPOTTED!");
+            isIridescent = true;
+            spriteRenderer.sprite = iridescentSprite;
+        }
+        else if (roll < iridescentChance + goldChance)
+        {
+            Debug.Log("GOLD SPOTTED!");
+            isGold = true;
+            spriteRenderer.sprite = goldSprite;
+        }
+        
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
         readyToHarvest = true;
         playerInteractScriptRef.matureFruits.Add(this.gameObject);

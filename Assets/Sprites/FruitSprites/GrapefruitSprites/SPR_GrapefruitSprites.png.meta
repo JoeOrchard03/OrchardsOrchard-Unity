@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: 225c768fcdce8124aaea30ce77706439
+guid: 12ffb6719ea151b4fabfedae880403f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1826326243440205682
-    second: SPR_CocoaSprites_0
+      213: 2330800020099451266
+    second: SPR_GrapefruitSprites_0
   - first:
-      213: -6109444896374473458
-    second: SPR_CocoaSprites_1
+      213: -92679639592184425
+    second: SPR_GrapefruitSprites_1
   - first:
-      213: 6532944524871031958
-    second: SPR_CocoaSprites_2
+      213: 3563477791347283682
+    second: SPR_GrapefruitSprites_2
   - first:
-      213: -2979795549782010403
-    second: SPR_CocoaSprites_3
+      213: 6519327206015081275
+    second: SPR_GrapefruitSprites_3
   - first:
-      213: 6815460804164571973
-    second: SPR_CocoaSprites_4
+      213: -4887579377611931000
+    second: SPR_GrapefruitSprites_4
   - first:
-      213: -3107964708092234154
-    second: SPR_CocoaSprites_5
+      213: -8794423165242953731
+    second: SPR_GrapefruitSprites_5
   - first:
-      213: -1156780936987337196
-    second: SPR_CocoaSprites_6
+      213: -7077602205507347511
+    second: SPR_GrapefruitSprites_6
   - first:
-      213: -3747323101541596517
-    second: SPR_CocoaSprites_7
+      213: 1810467964723068247
+    second: SPR_GrapefruitSprites_7
+  - first:
+      213: 5331089892464983412
+    second: SPR_GrapefruitSprites_8
+  - first:
+      213: 3908681958933937150
+    second: SPR_GrapefruitSprites_9
+  - first:
+      213: -4091410107059175903
+    second: SPR_GrapefruitSprites_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,169 +143,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_CocoaSprites_0
+      name: SPR_GrapefruitTree
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1116
-        width: 77
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 28
+        y: 528
+        width: 587
+        height: 707
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27f1a38ca0a685910800000000000000
-      internalID: 1826326243440205682
+      spriteID: 2894088e44aa85020800000000000000
+      internalID: 2330800020099451266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_1
+      name: SPR_GrapefruitSaplingStage3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1146
-        width: 62
+        x: 643
+        y: 528
+        width: 452
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795523cdb5cb6bef0800000000000000
+      internalID: -92679639592184425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_GrapefruitSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 93
+        width: 317
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e69f3ecb24047130800000000000000
+      internalID: 3563477791347283682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_GrapefruitSeed
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 393
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b91119d8d497a50800000000000000
+      internalID: 6519327206015081275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_GrapefruitSprites_4
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 378
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8828ae99374db2cb0800000000000000
+      internalID: -4887579377611931000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Grapefruit
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 228
+        width: 107
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0db6c86c34e63ba0800000000000000
-      internalID: -6109444896374473458
+      spriteID: dff2a3fd9bee3f580800000000000000
+      internalID: -8794423165242953731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_2
+      name: SPR_GrapefruitSprites_6
       rect:
         serializedVersion: 2
-        x: 305
-        y: 1161
+        x: 1048
+        y: 273
         width: 47
-        height: 92
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69c554eae6ea9aa50800000000000000
-      internalID: 6532944524871031958
+      spriteID: 9cb9637fa4e47cd90800000000000000
+      internalID: -7077602205507347511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_3
+      name: SPR_GrapefruitSaplingStage1
       rect:
         serializedVersion: 2
-        x: 410
-        y: 1176
-        width: 47
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 658
+        y: 93
+        width: 122
+        height: 167
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd514ff2cb3a5a6d0800000000000000
-      internalID: -2979795549782010403
+      spriteID: 75dfa8a8503102910800000000000000
+      internalID: 1810467964723068247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_4
+      name: SPR_GrapefruitSprites_8
       rect:
         serializedVersion: 2
-        x: 500
-        y: 1206
+        x: 883
+        y: 108
         width: 77
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 543d3d4dd71659e50800000000000000
-      internalID: 6815460804164571973
+      spriteID: 47dfc0a0306dbf940800000000000000
+      internalID: 5331089892464983412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_5
+      name: SPR_GrapefruitSprites_9
       rect:
         serializedVersion: 2
-        x: 155
-        y: 771
-        width: 137
-        height: 152
+        x: 1048
+        y: 183
+        width: 47
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65636bf809a4ed4d0800000000000000
-      internalID: -3107964708092234154
+      spriteID: efb3c36588d6e3630800000000000000
+      internalID: 3908681958933937150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_CocoaSprites_6
+      name: SPR_GrapefruitSprites_10
       rect:
         serializedVersion: 2
-        x: 335
-        y: 771
-        width: 377
-        height: 347
+        x: 1048
+        y: 93
+        width: 47
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41e1defddd942ffe0800000000000000
-      internalID: -1156780936987337196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_CocoaSprites_7
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 6
-        width: 647
-        height: 737
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b928ff94e75defbc0800000000000000
-      internalID: -3747323101541596517
+      spriteID: 12e7b425f246837c0800000000000000
+      internalID: -4091410107059175903
       vertices: []
       indices: 
       edges: []
@@ -304,14 +376,25 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 95f42aaf64bc40748b8f932042953e36
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_Grapefruit: -8794423165242953731
+      SPR_GrapefruitSaplingStage1: 1810467964723068247
+      SPR_GrapefruitSaplingStage2: 3563477791347283682
+      SPR_GrapefruitSaplingStage3: -92679639592184425
+      SPR_GrapefruitSeed: 6519327206015081275
+      SPR_GrapefruitSprites_10: -4091410107059175903
+      SPR_GrapefruitSprites_4: -4887579377611931000
+      SPR_GrapefruitSprites_6: -7077602205507347511
+      SPR_GrapefruitSprites_8: 5331089892464983412
+      SPR_GrapefruitSprites_9: 3908681958933937150
+      SPR_GrapefruitTree: 2330800020099451266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

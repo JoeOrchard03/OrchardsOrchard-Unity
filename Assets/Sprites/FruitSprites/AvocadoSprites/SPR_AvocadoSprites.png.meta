@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: 2c3a8c7c0d6cf26449f97df2a33b6cd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3066933435267342382
+    second: SPR_AvocadoSprites_0
+  - first:
+      213: -327122638780455525
+    second: SPR_AvocadoSprites_1
+  - first:
+      213: 158183357040449589
+    second: SPR_AvocadoSprites_2
+  - first:
+      213: 6131098880799835556
+    second: SPR_AvocadoSprites_3
+  - first:
+      213: 1700375680199574315
+    second: SPR_AvocadoSprites_4
+  - first:
+      213: -6468752808430114638
+    second: SPR_AvocadoSprites_5
+  - first:
+      213: -434739011497250783
+    second: SPR_AvocadoSprites_6
+  - first:
+      213: 2524131690156111849
+    second: SPR_AvocadoSprites_7
+  - first:
+      213: 6394255695072010889
+    second: SPR_AvocadoSprites_8
+  - first:
+      213: -1912062513546181820
+    second: SPR_AvocadoSprites_9
+  - first:
+      213: -461159940671386618
+    second: SPR_AvocadoSprites_10
+  - first:
+      213: -7050320983763170385
+    second: SPR_AvocadoSprites_11
+  - first:
+      213: 2579403376799391293
+    second: SPR_AvocadoSprites_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_AvocadoTree
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 883
+        width: 587
+        height: 722
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95a08571b3d57bf0800000000000000
+      internalID: -327122638780455525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Avocado
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 688
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a58ed8b2f9061550800000000000000
+      internalID: 6131098880799835556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSprites_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 748
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2342031ca2f89710800000000000000
+      internalID: 1700375680199574315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSprites_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 748
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b866b9f79f5a36a0800000000000000
+      internalID: -6468752808430114638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSprites_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 733
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120b3b12c2f77f9f0800000000000000
+      internalID: -434739011497250783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSprites_7
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 703
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7bf061664870320800000000000000
+      internalID: 2524131690156111849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSaplingStage3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 103
+        width: 467
+        height: 542
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98229cb2da5fcb850800000000000000
+      internalID: 6394255695072010889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSaplingStage1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 523
+        width: 107
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4434db3464df675e0800000000000000
+      internalID: -1912062513546181820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 103
+        width: 242
+        height: 362
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c44af2a71a999f0800000000000000
+      internalID: -461159940671386618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSeed
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 313
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab40526b6a382e90800000000000000
+      internalID: -7050320983763170385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_AvocadoSprites_12
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 118
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e129674b1ebc320800000000000000
+      internalID: 2579403376799391293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f2aa3946d56ae844e83a63bd0b3561d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_Avocado: 6131098880799835556
+      SPR_AvocadoSaplingStage1: -1912062513546181820
+      SPR_AvocadoSaplingStage2: -461159940671386618
+      SPR_AvocadoSaplingStage3: 6394255695072010889
+      SPR_AvocadoSeed: -7050320983763170385
+      SPR_AvocadoSprites_0: -3066933435267342382
+      SPR_AvocadoSprites_12: 2579403376799391293
+      SPR_AvocadoSprites_2: 158183357040449589
+      SPR_AvocadoSprites_4: 1700375680199574315
+      SPR_AvocadoSprites_5: -6468752808430114638
+      SPR_AvocadoSprites_6: -434739011497250783
+      SPR_AvocadoSprites_7: 2524131690156111849
+      SPR_AvocadoTree: -327122638780455525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: b623663b9bb9ec547a9715051cbb68e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1310664772281837389
+    second: SPR_PearSprites_0
+  - first:
+      213: 3158777007426283222
+    second: SPR_PearSprites_1
+  - first:
+      213: 6787383604644411808
+    second: SPR_PearSprites_2
+  - first:
+      213: 8364100279165177742
+    second: SPR_PearSprites_3
+  - first:
+      213: -2829368226919957608
+    second: SPR_PearSprites_4
+  - first:
+      213: -312955420970306687
+    second: SPR_PearSprites_5
+  - first:
+      213: -3364714161223018515
+    second: SPR_PearSprites_6
+  - first:
+      213: 7009909335289472006
+    second: SPR_PearSprites_7
+  - first:
+      213: -8844276439874930266
+    second: SPR_PearSprites_8
+  - first:
+      213: -5703224204774795059
+    second: SPR_PearSprites_9
+  - first:
+      213: -6755562403609706726
+    second: SPR_PearSprites_10
+  - first:
+      213: -8778207433941903605
+    second: SPR_PearSprites_11
+  - first:
+      213: 882122300529507286
+    second: SPR_PearSprites_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_PearTree
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 522
+        width: 587
+        height: 707
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d472a7b8aaa603210800000000000000
+      internalID: 1310664772281837389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSeed
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1109
+        width: 122
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6a05cc3fa36db20800000000000000
+      internalID: 3158777007426283222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSprites_2
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1093
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9f3256d61a13e50800000000000000
+      internalID: 6787383604644411808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSaplingStage3
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 523
+        width: 452
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fc26593e0431470800000000000000
+      internalID: 8364100279165177742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 88
+        width: 317
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1833886e3b828abf0800000000000000
+      internalID: -312955420970306687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Pear
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 283
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de753912c422e41d0800000000000000
+      internalID: -3364714161223018515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSaplingStage1
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 87
+        width: 122
+        height: 167
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9f5e9df61d24580800000000000000
+      internalID: -8844276439874930266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSprites_9
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 178
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc81dff7dc31ad0b0800000000000000
+      internalID: -5703224204774795059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSprites_10
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 238
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ffbd259cb6f32a0800000000000000
+      internalID: -6755562403609706726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSprites_11
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 163
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07133709da8d2680800000000000000
+      internalID: -8778207433941903605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PearSprites_12
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 103
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbf2830f8ded3c00800000000000000
+      internalID: 882122300529507286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff1a4d42e6083994d8baa098b642acdb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_Pear: -3364714161223018515
+      SPR_PearSaplingStage1: -8844276439874930266
+      SPR_PearSaplingStage2: -312955420970306687
+      SPR_PearSaplingStage3: 8364100279165177742
+      SPR_PearSeed: 3158777007426283222
+      SPR_PearSprites_10: -6755562403609706726
+      SPR_PearSprites_11: -8778207433941903605
+      SPR_PearSprites_12: 882122300529507286
+      SPR_PearSprites_2: 6787383604644411808
+      SPR_PearSprites_4: -2829368226919957608
+      SPR_PearSprites_7: 7009909335289472006
+      SPR_PearSprites_9: -5703224204774795059
+      SPR_PearTree: 1310664772281837389
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

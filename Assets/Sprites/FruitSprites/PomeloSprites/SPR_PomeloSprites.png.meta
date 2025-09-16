@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: 34051878404c3c74caddc7f9df59e755
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 46790333541510531
+    second: SPR_PomeloSprites_0
+  - first:
+      213: -3332492252372274926
+    second: SPR_PomeloSprites_1
+  - first:
+      213: 7996170156407067476
+    second: SPR_PomeloSprites_2
+  - first:
+      213: 957618011548723959
+    second: SPR_PomeloSprites_3
+  - first:
+      213: 7249225382569713032
+    second: SPR_PomeloSprites_4
+  - first:
+      213: 6983574688746102641
+    second: SPR_PomeloSprites_5
+  - first:
+      213: -3197277170589549027
+    second: SPR_PomeloSprites_6
+  - first:
+      213: -1549840436196941710
+    second: SPR_PomeloSprites_7
+  - first:
+      213: 3051688127950877829
+    second: SPR_PomeloSprites_8
+  - first:
+      213: -5073526726366696331
+    second: SPR_PomeloSprites_9
+  - first:
+      213: -6062766350354817482
+    second: SPR_PomeloSprites_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_PomeloSaplingStage1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 773
+        width: 137
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38de9a97f8b36a000800000000000000
+      internalID: 46790333541510531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 773
+        width: 377
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211fb98e3fb90c1d0800000000000000
+      internalID: -3332492252372274926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSprites_2
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 818
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4531938446a18fe60800000000000000
+      internalID: 7996170156407067476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSprites_3
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 848
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faa0e002842a4d00800000000000000
+      internalID: 957618011548723959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSprites_4
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 848
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d10d0d31c6a9460800000000000000
+      internalID: 7249225382569713032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSeed
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 803
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17fde19cd24aae060800000000000000
+      internalID: 6983574688746102641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloTree
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 8
+        width: 647
+        height: 737
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e3b8e6a5df0a3d0800000000000000
+      internalID: -3197277170589549027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Pomelo
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 683
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270e1fda55cdd7ae0800000000000000
+      internalID: -1549840436196941710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSprites_8
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 668
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584f9cf0f26c95a20800000000000000
+      internalID: 3051688127950877829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 653
+        width: 182
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c6674b2563799b0800000000000000
+      internalID: -5073526726366696331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PomeloSaplingStage3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 53
+        width: 407
+        height: 542
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ed8e2502abcdba0800000000000000
+      internalID: -6062766350354817482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 03a393b7dba4a72469111bd9167fa58c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_Pomelo: -1549840436196941710
+      SPR_PomeloSaplingStage1: 46790333541510531
+      SPR_PomeloSaplingStage2: -3332492252372274926
+      SPR_PomeloSaplingStage3: -6062766350354817482
+      SPR_PomeloSeed: 6983574688746102641
+      SPR_PomeloSprites_2: 7996170156407067476
+      SPR_PomeloSprites_3: 957618011548723959
+      SPR_PomeloSprites_4: 7249225382569713032
+      SPR_PomeloSprites_8: 3051688127950877829
+      SPR_PomeloSprites_9: -5073526726366696331
+      SPR_PomeloTree: -3197277170589549027
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

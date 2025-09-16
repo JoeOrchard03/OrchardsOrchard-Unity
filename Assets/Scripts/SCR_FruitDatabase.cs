@@ -3,7 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum FruitType {Apple, Cherry, Orange, Peach, Lemon, Lime, Lyche, Mullbery, Plum, Papaya, Olive, Cocoa}
+public enum FruitType
+{
+    Apple,
+    Cherry,
+    Orange,
+    Peach,
+    Lemon,
+    Lime,
+    Lyche,
+    Mullbery,
+    Plum,
+    Papaya,
+    Olive,
+    Cocoa,
+    Date,
+    Avocado,
+    CrabApple,
+    Kumquat,
+    Banana,
+    Pear,
+    Coconut,
+    Pomelo,
+    Grapefruit
+}
 
 [CreateAssetMenu(menuName = "Fruit Database")]
 public class SCR_FruitDatabase : ScriptableObject

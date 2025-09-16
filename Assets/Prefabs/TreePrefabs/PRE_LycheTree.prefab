@@ -139,11 +139,10 @@ MonoBehaviour:
   - {fileID: -509546202248104892, guid: e1c0f63abfd988a48a596ccf1ec5d26c, type: 3}
   - {fileID: 3163576494555834623, guid: 0a4fac8f13099e6408cbd8244567da41, type: 3}
   growthTimes:
-  - 4
-  - 4
-  - 4
-  timeToFirstBloom: 4
-  timeBetweenBloomWaves: 10
+  - 2
+  - 2
+  - 2
+  timeToFirstBloom: 2
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []
@@ -248,7 +247,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.70000005
+      value: 0.84000003
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -302,6 +301,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -318,6 +321,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -358,7 +369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.13
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -412,6 +423,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -428,6 +443,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -468,7 +491,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5600001
+      value: -1.4200001
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -522,6 +545,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -538,6 +565,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -578,7 +613,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.019999996
+      value: 0.11999999
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -632,6 +667,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -648,6 +687,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -688,7 +735,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -742,6 +789,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -758,6 +809,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -798,7 +857,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.91
+      value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -852,6 +911,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -868,6 +931,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -908,7 +979,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8899999
+      value: 2.0299997
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -962,6 +1033,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -978,6 +1053,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1018,7 +1101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.51
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1072,6 +1155,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1088,6 +1175,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1128,7 +1223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.33
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1182,6 +1277,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1198,6 +1297,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1238,7 +1345,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4100001
+      value: -1.2700001
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1292,6 +1399,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1308,6 +1419,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1348,7 +1467,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.69
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1406,6 +1525,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1422,6 +1545,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1462,7 +1593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.030000001
+      value: 0.109999985
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1516,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1532,6 +1667,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1572,7 +1715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.24
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1626,6 +1769,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1642,6 +1789,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1682,7 +1837,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1499999
+      value: -2.0099998
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1736,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1752,6 +1911,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1792,7 +1959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.12
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1846,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1862,6 +2033,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -1902,7 +2081,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.85
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1956,6 +2135,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1972,6 +2155,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2012,7 +2203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: 0.54999995
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2066,6 +2257,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2082,6 +2277,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2122,7 +2325,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.76
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2176,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2192,6 +2399,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2232,7 +2447,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.04
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2286,6 +2501,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2302,6 +2521,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2342,7 +2569,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2396,6 +2623,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2412,6 +2643,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2452,7 +2691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.56
+      value: -0.42000002
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2506,6 +2745,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2522,6 +2765,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2562,7 +2813,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9499999
+      value: 1.0899999
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2616,6 +2867,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2632,6 +2887,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2672,7 +2935,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.04
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2726,6 +2989,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2742,6 +3009,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2782,7 +3057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8100001
+      value: -1.6700001
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2836,6 +3111,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2852,6 +3131,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -2892,7 +3179,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.13
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2946,6 +3233,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2962,6 +3253,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -3002,7 +3301,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.66999996
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3056,6 +3355,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3072,6 +3375,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -3112,7 +3423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.21
+      value: -2.0700002
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3166,6 +3477,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3182,6 +3497,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
@@ -3222,7 +3545,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.38
+      value: -2.2400002
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3276,6 +3599,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3292,6 +3619,14 @@ PrefabInstance:
       propertyPath: fruitType
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: -829958642470041097, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 

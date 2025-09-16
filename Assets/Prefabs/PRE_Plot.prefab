@@ -265,6 +265,15 @@ MonoBehaviour:
   OliveTreePrefab: {fileID: 2499254726488180106, guid: 38e3ca3ef98a42c46b5bd5787f6ff77e, type: 3}
   CocoaTreePrefab: {fileID: 2499254726488180106, guid: c5b5789af0d56414f8d81aaae0390758, type: 3}
   MullberryTreePrefab: {fileID: 2499254726488180106, guid: 730a7de5be78b2842ac9ad8886f7b094, type: 3}
+  DateTreePrefab: {fileID: 2499254726488180106, guid: d7590b83080edeb4d8ca4cdcd4e755a6, type: 3}
+  AvocadoTreePrefab: {fileID: 2499254726488180106, guid: 7f531928d0a0e8b40b259570fbf946a9, type: 3}
+  CrabAppleTreePrefab: {fileID: 2499254726488180106, guid: 200e47796d389564abace9005ba48b36, type: 3}
+  KumquatTreePrefab: {fileID: 2499254726488180106, guid: 808c3af5198e2d24a872f1afcbf78e04, type: 3}
+  BananaTreePrefab: {fileID: 2499254726488180106, guid: 4ae1466bc340b424aa5f4f5c21fa1baf, type: 3}
+  PearTreePrefab: {fileID: 2499254726488180106, guid: 5fcb9de80185a2641b0d0311d8483cd5, type: 3}
+  CoconutTreePrefab: {fileID: 2499254726488180106, guid: 609380dcd087059439d81882430619ac, type: 3}
+  PomeloTreePrefab: {fileID: 2499254726488180106, guid: ce6d6200470bd7e4aac53e5b47843d9b, type: 3}
+  GrapefruitTreePrefab: {fileID: 2499254726488180106, guid: 3cfc1bc888840f940ade16c3a5d28c39, type: 3}
   SaplingMenu: {fileID: 0}
   SaplingSpawnLocation: {fileID: 9049354826259758139}
   plotOccupied: 0

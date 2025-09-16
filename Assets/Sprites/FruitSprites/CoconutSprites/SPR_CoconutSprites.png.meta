@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: 236aa235a0627524c88f84df7e37bd59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6170624484364628121
+    second: SPR_CoconutSprites_0
+  - first:
+      213: -1644435621096954127
+    second: SPR_CoconutSprites_1
+  - first:
+      213: 2482745136958387568
+    second: SPR_CoconutSprites_2
+  - first:
+      213: 9016077717228977751
+    second: SPR_CoconutSprites_3
+  - first:
+      213: -7081324706277990098
+    second: SPR_CoconutSprites_4
+  - first:
+      213: 8522151873271283473
+    second: SPR_CoconutSprites_5
+  - first:
+      213: 1023537099158538977
+    second: SPR_CoconutSprites_6
+  - first:
+      213: -6436403565435748307
+    second: SPR_CoconutSprites_7
+  - first:
+      213: -6405681814406013677
+    second: SPR_CoconutSprites_8
+  - first:
+      213: 5088254293263468540
+    second: SPR_CoconutSprites_9
+  - first:
+      213: 5204850217510274650
+    second: SPR_CoconutSprites_10
+  - first:
+      213: 6662761588259191284
+    second: SPR_CoconutSprites_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_CoconutTree
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 112
+        width: 677
+        height: 962
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990b1e0764672a550800000000000000
+      internalID: 6170624484364628121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSprites_1
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 742
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f66484e38acd29e0800000000000000
+      internalID: -1644435621096954127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSprites_2
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 742
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075bb344c8b747220800000000000000
+      internalID: 2482745136958387568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 742
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e7fb22aea8f1d70800000000000000
+      internalID: 9016077717228977751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 742
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e216a17b2b41abd90800000000000000
+      internalID: -7081324706277990098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_Coconut
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 727
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fb348f9f3c44670800000000000000
+      internalID: 8522151873271283473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSeed
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 712
+        width: 137
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea47c99195543e00800000000000000
+      internalID: 1023537099158538977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSaplingStage
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 127
+        width: 332
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20052b0f0d4da6a0800000000000000
+      internalID: -6436403565435748307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 547
+        width: 167
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d562c14527a17a0800000000000000
+      internalID: -6405681814406013677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSaplingStage1
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 382
+        width: 137
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf743dc225c1d9640800000000000000
+      internalID: 5088254293263468540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_CoconutSaplingStage2
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 127
+        width: 167
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5680d342b75b3840800000000000000
+      internalID: 5204850217510274650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 56da606d1532be24aa98793e2c5143c7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SPR_Coconut: 8522151873271283473
+      SPR_CoconutSaplingStage: -6436403565435748307
+      SPR_CoconutSaplingStage1: 5088254293263468540
+      SPR_CoconutSaplingStage2: 5204850217510274650
+      SPR_CoconutSeed: 1023537099158538977
+      SPR_CoconutSprites_1: -1644435621096954127
+      SPR_CoconutSprites_11: 6662761588259191284
+      SPR_CoconutSprites_2: 2482745136958387568
+      SPR_CoconutSprites_3: 9016077717228977751
+      SPR_CoconutSprites_4: -7081324706277990098
+      SPR_CoconutSprites_8: -6405681814406013677
+      SPR_CoconutTree: 6170624484364628121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

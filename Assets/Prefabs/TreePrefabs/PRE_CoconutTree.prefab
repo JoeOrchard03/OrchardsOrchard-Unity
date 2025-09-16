@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4224179913496149133}
   - component: {fileID: 1073983826127581555}
   m_Layer: 0
-  m_Name: PRE_PapayaTree
+  m_Name: PRE_CoconutTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,10 +34,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2838482826825074327}
-  - {fileID: 2887814112377855832}
-  - {fileID: 3736337730039912899}
-  - {fileID: 4624773020314063075}
+  - {fileID: 9167246737432111075}
+  - {fileID: 2217918679844100488}
+  - {fileID: 2203350303215948577}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9220909520486006075
@@ -83,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -8888550462727364188, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+  m_Sprite: {fileID: 6170624484364628121, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,10 +109,10 @@ MonoBehaviour:
   normalLeavesSprite: {fileID: 0}
   alternateLeavesSprite: {fileID: 0}
   spriteGrowthStages:
-  - {fileID: 6474130746686850589, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-  - {fileID: 8647106191722894499, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-  - {fileID: -5196652516264489827, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-  - {fileID: -8888550462727364188, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+  - {fileID: 5088254293263468540, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+  - {fileID: 5204850217510274650, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+  - {fileID: -6436403565435748307, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+  - {fileID: 6170624484364628121, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
   growthTimes:
   - 2
   - 2
@@ -122,8 +121,8 @@ MonoBehaviour:
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []
-  minNumberOfBloomsToActivate: 4
-  maxNumberOfBloomsToActivate: 5
+  minNumberOfBloomsToActivate: 2
+  maxNumberOfBloomsToActivate: 4
 --- !u!50 &3788446757693308775
 Rigidbody2D:
   serializedVersion: 4
@@ -189,7 +188,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 6.03, y: 9.27}
+    oldSize: {x: 6.77, y: 9.62}
     newSize: {x: 1.21, y: 1.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -213,7 +212,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 1
---- !u!1001 &2729584761281109474
+--- !u!1001 &1384113665570052914
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -223,11 +222,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.292
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.227
+      value: 5.65
       objectReference: {fileID: 0}
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalPosition.z
@@ -260,397 +259,15 @@ PrefabInstance:
     - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_FlipX
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6434491299891733261, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Name
-      value: PRE_FruitBloom
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: fruitType
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: goldSprite
-      value: 
-      objectReference: {fileID: -4883849285390738050, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: iridescentSprite
-      value: 
-      objectReference: {fileID: 2982477333416304490, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8556560424551686775, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[1]'
-      value: 
-      objectReference: {fileID: 7460148107347623712, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[2]'
-      value: 
-      objectReference: {fileID: -5345005629802273819, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[3]'
-      value: 
-      objectReference: {fileID: 3135489096296227245, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[4]'
-      value: 
-      objectReference: {fileID: 3103273808827075316, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
---- !u!4 &2887814112377855832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-  m_PrefabInstance: {fileID: 2729584761281109474}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3068829681335272493
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6910650185011215988}
-    m_Modifications:
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.289
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.03129237
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6434491299891733261, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Name
-      value: PRE_FruitBloom (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: fruitType
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: goldSprite
-      value: 
-      objectReference: {fileID: -4883849285390738050, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: iridescentSprite
-      value: 
-      objectReference: {fileID: 2982477333416304490, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8556560424551686775, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[1]'
-      value: 
-      objectReference: {fileID: 7460148107347623712, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[2]'
-      value: 
-      objectReference: {fileID: -5345005629802273819, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[3]'
-      value: 
-      objectReference: {fileID: 3135489096296227245, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[4]'
-      value: 
-      objectReference: {fileID: 3103273808827075316, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
---- !u!4 &2838482826825074327 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-  m_PrefabInstance: {fileID: 3068829681335272493}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4479074045525334905
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6910650185011215988}
-    m_Modifications:
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.285
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.4290004
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.03129237
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6434491299891733261, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Name
-      value: PRE_FruitBloom (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: fruitType
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: goldSprite
-      value: 
-      objectReference: {fileID: -4883849285390738050, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: iridescentSprite
-      value: 
-      objectReference: {fileID: 2982477333416304490, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8556560424551686775, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[1]'
-      value: 
-      objectReference: {fileID: 7460148107347623712, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[2]'
-      value: 
-      objectReference: {fileID: -5345005629802273819, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[3]'
-      value: 
-      objectReference: {fileID: 3135489096296227245, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: 'spriteGrowthStages.Array.data[4]'
-      value: 
-      objectReference: {fileID: 3103273808827075316, guid: de180c9d68889ab4d9e974a364482867, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
---- !u!4 &3736337730039912899 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-  m_PrefabInstance: {fileID: 4479074045525334905}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5610504154360304217
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6910650185011215988}
-    m_Modifications:
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.293
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.4290004
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.03129237
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6434491299891733261, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
+      objectReference: {fileID: 8566455701183826584, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
     - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -681,43 +298,295 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: fruitType
-      value: 9
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
       value: 
-      objectReference: {fileID: -4883849285390738050, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+      objectReference: {fileID: 2134394253505764230, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: iridescentSprite
       value: 
-      objectReference: {fileID: 2982477333416304490, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+      objectReference: {fileID: 3866817241240071575, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[0]'
       value: 
-      objectReference: {fileID: 8556560424551686775, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+      objectReference: {fileID: -7081324706277990098, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[1]'
       value: 
-      objectReference: {fileID: 7460148107347623712, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+      objectReference: {fileID: 9016077717228977751, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[2]'
       value: 
-      objectReference: {fileID: -5345005629802273819, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+      objectReference: {fileID: 2482745136958387568, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[3]'
       value: 
-      objectReference: {fileID: 3135489096296227245, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+      objectReference: {fileID: -1644435621096954127, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: 'spriteGrowthStages.Array.data[4]'
       value: 
-      objectReference: {fileID: 3103273808827075316, guid: de180c9d68889ab4d9e974a364482867, type: 3}
+      objectReference: {fileID: 8522151873271283473, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
---- !u!4 &4624773020314063075 stripped
+--- !u!4 &2217918679844100488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-  m_PrefabInstance: {fileID: 5610504154360304217}
+  m_PrefabInstance: {fileID: 1384113665570052914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1396434945310790043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6910650185011215988}
+    m_Modifications:
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03129237
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8566455701183826584, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Name
+      value: PRE_FruitBloom (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: fruitType
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: 2134394253505764230, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: 3866817241240071575, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7081324706277990098, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9016077717228977751, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2482745136958387568, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[3]'
+      value: 
+      objectReference: {fileID: -1644435621096954127, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8522151873271283473, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+--- !u!4 &2203350303215948577 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+  m_PrefabInstance: {fileID: 1396434945310790043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8271537001235309913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6910650185011215988}
+    m_Modifications:
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03129237
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8566455701183826584, guid: 7ba739ef0f0de8f4fbe32116ed173863, type: 3}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Name
+      value: PRE_FruitBloom (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: fruitType
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: goldSprite
+      value: 
+      objectReference: {fileID: 2134394253505764230, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: iridescentSprite
+      value: 
+      objectReference: {fileID: 3866817241240071575, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7081324706277990098, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9016077717228977751, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2482745136958387568, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[3]'
+      value: 
+      objectReference: {fileID: -1644435621096954127, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: 'spriteGrowthStages.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8522151873271283473, guid: 236aa235a0627524c88f84df7e37bd59, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+--- !u!4 &9167246737432111075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1005144128542900922, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+  m_PrefabInstance: {fileID: 8271537001235309913}
   m_PrefabAsset: {fileID: 0}
