@@ -1,0 +1,1266 @@
+fileFormatVersion: 2
+guid: df07821bfbb28c94da75013144cebbfc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5391800982200616469
+    second: upscaled sheet 6 trans_0
+  - first:
+      213: 5974714731911872193
+    second: upscaled sheet 6 trans_1
+  - first:
+      213: 7162817078392299750
+    second: upscaled sheet 6 trans_2
+  - first:
+      213: -332609662767994835
+    second: upscaled sheet 6 trans_3
+  - first:
+      213: 2051493635659170786
+    second: upscaled sheet 6 trans_4
+  - first:
+      213: 7348595923763504332
+    second: upscaled sheet 6 trans_5
+  - first:
+      213: -7584501500500306090
+    second: upscaled sheet 6 trans_6
+  - first:
+      213: -1287145961793642737
+    second: upscaled sheet 6 trans_7
+  - first:
+      213: 6216337166382564467
+    second: upscaled sheet 6 trans_8
+  - first:
+      213: 1084494123361177968
+    second: upscaled sheet 6 trans_9
+  - first:
+      213: 1873466333736248074
+    second: upscaled sheet 6 trans_10
+  - first:
+      213: 857329488986219158
+    second: upscaled sheet 6 trans_11
+  - first:
+      213: 6675746105198969228
+    second: upscaled sheet 6 trans_12
+  - first:
+      213: -7931329709387748914
+    second: upscaled sheet 6 trans_13
+  - first:
+      213: 8428080550039883778
+    second: upscaled sheet 6 trans_14
+  - first:
+      213: 8580108840824120396
+    second: upscaled sheet 6 trans_15
+  - first:
+      213: 328590821257754454
+    second: upscaled sheet 6 trans_16
+  - first:
+      213: -8914990987383830128
+    second: upscaled sheet 6 trans_17
+  - first:
+      213: 5342788085710934297
+    second: upscaled sheet 6 trans_18
+  - first:
+      213: -8204431056640970303
+    second: upscaled sheet 6 trans_19
+  - first:
+      213: -5410318853059302442
+    second: upscaled sheet 6 trans_20
+  - first:
+      213: -985847600744203912
+    second: upscaled sheet 6 trans_21
+  - first:
+      213: 1663729582698862731
+    second: upscaled sheet 6 trans_22
+  - first:
+      213: 3398185817159486254
+    second: upscaled sheet 6 trans_23
+  - first:
+      213: 2562247243364479092
+    second: upscaled sheet 6 trans_24
+  - first:
+      213: 3045747157838130625
+    second: upscaled sheet 6 trans_25
+  - first:
+      213: 7252221617693224210
+    second: upscaled sheet 6 trans_26
+  - first:
+      213: 6861832089806123095
+    second: upscaled sheet 6 trans_27
+  - first:
+      213: 1454929525373385302
+    second: upscaled sheet 6 trans_28
+  - first:
+      213: 4727079490827157927
+    second: upscaled sheet 6 trans_29
+  - first:
+      213: -1409834156326643042
+    second: upscaled sheet 6 trans_30
+  - first:
+      213: -8578357081474701383
+    second: upscaled sheet 6 trans_31
+  - first:
+      213: -870536074294703469
+    second: upscaled sheet 6 trans_32
+  - first:
+      213: -415352740209410027
+    second: upscaled sheet 6 trans_33
+  - first:
+      213: 307092685433609577
+    second: upscaled sheet 6 trans_34
+  - first:
+      213: -6628100492303398181
+    second: upscaled sheet 6 trans_35
+  - first:
+      213: 458229887407111762
+    second: upscaled sheet 6 trans_36
+  - first:
+      213: -1863728011623321839
+    second: upscaled sheet 6 trans_37
+  - first:
+      213: -5083795734164194138
+    second: upscaled sheet 6 trans_38
+  - first:
+      213: 9221357705949350400
+    second: upscaled sheet 6 trans_39
+  - first:
+      213: -1099808987051935381
+    second: upscaled sheet 6 trans_40
+  - first:
+      213: -4975568687531195992
+    second: upscaled sheet 6 trans_41
+  - first:
+      213: -8818424499641122785
+    second: upscaled sheet 6 trans_42
+  - first:
+      213: 4567365705938755074
+    second: upscaled sheet 6 trans_43
+  - first:
+      213: 9044446783045241141
+    second: upscaled sheet 6 trans_44
+  - first:
+      213: -4832560905841150350
+    second: upscaled sheet 6 trans_45
+  - first:
+      213: -4032584811467092690
+    second: upscaled sheet 6 trans_46
+  - first:
+      213: -1216982771427973460
+    second: upscaled sheet 6 trans_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_0
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2871
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5168ba32d6683da40800000000000000
+      internalID: 5391800982200616469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2751
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce76eda4637ae250800000000000000
+      internalID: 5974714731911872193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2781
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0acacbe20776360800000000000000
+      internalID: 7162817078392299750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_3
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 2721
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28e9d12645526bf0800000000000000
+      internalID: -332609662767994835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2751
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e38074a79e587c10800000000000000
+      internalID: 2051493635659170786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_5
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 2736
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4aec1ee057bf560800000000000000
+      internalID: 7348595923763504332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 2706
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6571348d1107eb690800000000000000
+      internalID: -7584501500500306090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_7
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 2661
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f163d3193232ee0800000000000000
+      internalID: -1287145961793642737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2661
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3748a4e97bdd44650800000000000000
+      internalID: 6216337166382564467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2676
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07111f7c8a5ec0f00800000000000000
+      internalID: 1084494123361177968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_10
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2631
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03a00954b3eff910800000000000000
+      internalID: 1873466333736248074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_11
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 2646
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692ad7eb0a8d5eb00800000000000000
+      internalID: 857329488986219158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2586
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81051b86b305ac50800000000000000
+      internalID: 6675746105198969228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_13
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2616
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9e07bb6a14ee190800000000000000
+      internalID: -7931329709387748914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1821
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200918b3b9e86f470800000000000000
+      internalID: 8428080550039883778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1821
+        width: 377
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44a287088ba21770800000000000000
+      internalID: 8580108840824120396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_16
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1866
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657b5896c936f8400800000000000000
+      internalID: 328590821257754454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_17
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1896
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0998d2d3ee6974480800000000000000
+      internalID: -8914990987383830128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_18
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1896
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9115df6e475652a40800000000000000
+      internalID: 5342788085710934297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_19
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1851
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c17bb44c61042e80800000000000000
+      internalID: -8204431056640970303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1056
+        width: 647
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db2dc11bafaae4b0800000000000000
+      internalID: -5410318853059302442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_21
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1731
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87978f294d09152f0800000000000000
+      internalID: -985847600744203912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_22
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1716
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88131b9d31c61710800000000000000
+      internalID: 1663729582698862731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_23
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1701
+        width: 182
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bcf801ff7c82f20800000000000000
+      internalID: 3398185817159486254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_24
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1101
+        width: 407
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470b67fda4eee8320800000000000000
+      internalID: 2562247243364479092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_25
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 516
+        width: 587
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cde89a27eaa44a20800000000000000
+      internalID: 3045747157838130625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 66
+        width: 677
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d630b232115a460800000000000000
+      internalID: 7252221617693224210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_27
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 696
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750354d1eef1a3f50800000000000000
+      internalID: 6861832089806123095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 696
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65abb1dd1b2f03410800000000000000
+      internalID: 1454929525373385302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_29
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 696
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a189c370c5f99140800000000000000
+      internalID: 4727079490827157927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_30
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 696
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a10ffed434f6ce0800000000000000
+      internalID: -1409834156326643042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_31
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 681
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b76e3a3fad83f880800000000000000
+      internalID: -8578357081474701383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_32
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 666
+        width: 137
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a408f7d0c3be3f0800000000000000
+      internalID: -870536074294703469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_33
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 516
+        width: 452
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510455722ee5c3af0800000000000000
+      internalID: -415352740209410027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_34
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 81
+        width: 332
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d146c9b23034400800000000000000
+      internalID: 307092685433609577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_35
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 501
+        width: 167
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda0aac28b14404a0800000000000000
+      internalID: -6628100492303398181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_36
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 336
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e3e50a7a5fb5600800000000000000
+      internalID: 458229887407111762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_37
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 81
+        width: 167
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f2f357f35b226e0800000000000000
+      internalID: -1863728011623321839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_38
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 81
+        width: 317
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac3f7207bab279b0800000000000000
+      internalID: -5083795734164194138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_39
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 381
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a0ce90af7d8ff70800000000000000
+      internalID: 9221357705949350400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_40
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 366
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69bcf5ad81bcb0f0800000000000000
+      internalID: -1099808987051935381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_41
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 81
+        width: 257
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a18520f3aa33fab0800000000000000
+      internalID: -4975568687531195992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_42
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 216
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f100a4cb3a9ae9580800000000000000
+      internalID: -8818424499641122785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_43
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 261
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ed7cd19ea826f30800000000000000
+      internalID: 4567365705938755074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_44
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 81
+        width: 122
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539065dfd64548d70800000000000000
+      internalID: 9044446783045241141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_45
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 96
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276f5ebc57b4fecb0800000000000000
+      internalID: -4832560905841150350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_46
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 171
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d4ed1ca716908c0800000000000000
+      internalID: -4032584811467092690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upscaled sheet 6 trans_47
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 81
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6e3430e986c1fe0800000000000000
+      internalID: -1216982771427973460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -311,7 +311,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SPR_CocoaSprites_0: 1826326243440205682
+      SPR_CocoaSprites_1: -6109444896374473458
+      SPR_CocoaSprites_2: 6532944524871031958
+      SPR_CocoaSprites_3: -2979795549782010403
+      SPR_CocoaSprites_4: 6815460804164571973
+      SPR_CocoaSprites_5: -3107964708092234154
+      SPR_CocoaSprites_6: -1156780936987337196
+      SPR_CocoaSprites_7: -3747323101541596517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
