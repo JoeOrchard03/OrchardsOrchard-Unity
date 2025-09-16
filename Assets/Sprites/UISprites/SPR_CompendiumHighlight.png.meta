@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 50e49e25c420d2044b31a5cad2824df2
+guid: 305f362b01d1b974198cafd7b3e2732a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7691470525059037175
-    second: SPR_Apple_0
+      213: 8611566820710635053
+    second: SPR_CompendiumHighlight_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_Apple_0
+      name: SPR_CompendiumHighlight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 45
-        height: 45
+        x: 164
+        y: 164
+        width: 137
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f7f78ef0b79dba60800000000000000
-      internalID: 7691470525059037175
+      spriteID: d265ffbb56e628770800000000000000
+      internalID: 8611566820710635053
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1fa4bb68e9b8fb04bb6bb88a5e44bfff
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_Apple_0: 7691470525059037175
+      SPR_CompendiumHighlight_0: 8611566820710635053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
