@@ -237,6 +237,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1258,7 +1271,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      upscaled sheet 6 trans_0: 5391800982200616469
+      upscaled sheet 6 trans_1: 5974714731911872193
+      upscaled sheet 6 trans_10: 1873466333736248074
+      upscaled sheet 6 trans_11: 857329488986219158
+      upscaled sheet 6 trans_12: 6675746105198969228
+      upscaled sheet 6 trans_13: -7931329709387748914
+      upscaled sheet 6 trans_14: 8428080550039883778
+      upscaled sheet 6 trans_15: 8580108840824120396
+      upscaled sheet 6 trans_16: 328590821257754454
+      upscaled sheet 6 trans_17: -8914990987383830128
+      upscaled sheet 6 trans_18: 5342788085710934297
+      upscaled sheet 6 trans_19: -8204431056640970303
+      upscaled sheet 6 trans_2: 7162817078392299750
+      upscaled sheet 6 trans_20: -5410318853059302442
+      upscaled sheet 6 trans_21: -985847600744203912
+      upscaled sheet 6 trans_22: 1663729582698862731
+      upscaled sheet 6 trans_23: 3398185817159486254
+      upscaled sheet 6 trans_24: 2562247243364479092
+      upscaled sheet 6 trans_25: 3045747157838130625
+      upscaled sheet 6 trans_26: 7252221617693224210
+      upscaled sheet 6 trans_27: 6861832089806123095
+      upscaled sheet 6 trans_28: 1454929525373385302
+      upscaled sheet 6 trans_29: 4727079490827157927
+      upscaled sheet 6 trans_3: -332609662767994835
+      upscaled sheet 6 trans_30: -1409834156326643042
+      upscaled sheet 6 trans_31: -8578357081474701383
+      upscaled sheet 6 trans_32: -870536074294703469
+      upscaled sheet 6 trans_33: -415352740209410027
+      upscaled sheet 6 trans_34: 307092685433609577
+      upscaled sheet 6 trans_35: -6628100492303398181
+      upscaled sheet 6 trans_36: 458229887407111762
+      upscaled sheet 6 trans_37: -1863728011623321839
+      upscaled sheet 6 trans_38: -5083795734164194138
+      upscaled sheet 6 trans_39: 9221357705949350400
+      upscaled sheet 6 trans_4: 2051493635659170786
+      upscaled sheet 6 trans_40: -1099808987051935381
+      upscaled sheet 6 trans_41: -4975568687531195992
+      upscaled sheet 6 trans_42: -8818424499641122785
+      upscaled sheet 6 trans_43: 4567365705938755074
+      upscaled sheet 6 trans_44: 9044446783045241141
+      upscaled sheet 6 trans_45: -4832560905841150350
+      upscaled sheet 6 trans_46: -4032584811467092690
+      upscaled sheet 6 trans_47: -1216982771427973460
+      upscaled sheet 6 trans_5: 7348595923763504332
+      upscaled sheet 6 trans_6: -7584501500500306090
+      upscaled sheet 6 trans_7: -1287145961793642737
+      upscaled sheet 6 trans_8: 6216337166382564467
+      upscaled sheet 6 trans_9: 1084494123361177968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

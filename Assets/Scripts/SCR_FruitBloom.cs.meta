@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: d75d44bc9c5182a40810194ee2948596
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spriteRenderer: {instanceID: 0}
+  - goldSprite: {instanceID: 0}
+  - iridescentSprite: {instanceID: 0}
+  - goldParticlesPrefab: {fileID: 7346105286723186521, guid: 0b9880eecce4f4942b9c5556c055aaa8, type: 3}
+  - iridescentParticlesPrefab: {fileID: 1837912678586105089, guid: 60621472feba4224981ac459a8155e43, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

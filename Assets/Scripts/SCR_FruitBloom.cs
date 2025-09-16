@@ -21,6 +21,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [Header("Special Variant variables")] 
     public Sprite goldSprite;
     public Sprite iridescentSprite;
+    public GameObject goldParticlesPrefab;
+    public GameObject iridescentParticlesPrefab;
     [Range(0f, 1f)] public float goldChance = 0.5f;
     [Range(0f, 1f)] public float iridescentChance = 0.25f;
     [HideInInspector] public bool isGold = false;
@@ -30,11 +32,23 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [SerializeField] private bool readyToHarvest = false;
     private bool harvested = false;
     private int currentStage = 0;
+    private GameObject activeParticles;
 
     private void Awake()
     {
         goldChance = 0.10f;
         iridescentChance = 0.03f;
+
+        if (goldParticlesPrefab == null)
+        {
+            goldParticlesPrefab = Resources.Load<GameObject>("Particles/GoldParticles");
+        }
+
+        if (iridescentParticlesPrefab == null)
+        {
+            iridescentParticlesPrefab = Resources.Load<GameObject>("Particles/IridescentParticles");
+        }
+        
         playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
         drone = GameObject.FindGameObjectWithTag("Drone");
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
@@ -53,6 +67,13 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         harvested = false;
         isGold = false;
         isIridescent = false;
+
+        if (activeParticles != null)
+        {
+            Destroy(activeParticles);
+            activeParticles = null;
+        }
+        
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
@@ -98,15 +119,17 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         float roll = Random.value;
         if (roll < iridescentChance)
         {
-            Debug.Log("IRIDESCENT SPOTTED!");
             isIridescent = true;
             spriteRenderer.sprite = iridescentSprite;
+            activeParticles = Instantiate(iridescentParticlesPrefab, transform);
+            activeParticles.transform.localPosition = Vector3.zero;
         }
         else if (roll < iridescentChance + goldChance)
         {
-            Debug.Log("GOLD SPOTTED!");
             isGold = true;
             spriteRenderer.sprite = goldSprite;
+            activeParticles = Instantiate(goldParticlesPrefab, transform);
+            activeParticles.transform.localPosition = Vector3.zero;
         }
         
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
