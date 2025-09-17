@@ -14,14 +14,28 @@ public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler
     private CanvasGroup canvasGroup;
     private Canvas canvas;
     private Vector2 cursorOffset;
-    
+
+    public bool isGold = false;
+    public bool isIridescent = false;
     
     [HideInInspector] public Transform returnParent;
     private int returnSiblingIndex;
 
     void Awake()
     {
-        fruitImage.sprite = fruitDatabase.GetFruit(fruitType).fruitSprite;
+        if (isGold)
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).goldFruitSprite;
+        }
+        else if (isIridescent)
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).iridescentFruitSprite;
+        }
+        else
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).fruitSprite;
+        }
+        
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();

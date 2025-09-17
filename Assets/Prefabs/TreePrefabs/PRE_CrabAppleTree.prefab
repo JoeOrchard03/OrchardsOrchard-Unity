@@ -133,10 +133,10 @@ MonoBehaviour:
   - {fileID: -6758117189100561950, guid: f1df68dc99fd0984ca0111f4b739f392, type: 3}
   - {fileID: -1777523772588367797, guid: f1df68dc99fd0984ca0111f4b739f392, type: 3}
   growthTimes:
-  - 2
-  - 2
-  - 2
-  timeToFirstBloom: 2
+  - 4
+  - 4
+  - 4
+  timeToFirstBloom: 4
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []

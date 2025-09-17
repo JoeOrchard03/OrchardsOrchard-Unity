@@ -12,6 +12,10 @@ public class SCR_ShopMenu : MonoBehaviour
     [SerializeField] private SCR_FruitDatabase fruitDatabase;
     public SCR_ShopInventory shopInventory;
 
+    [Header("Rarity multipliers")] 
+    public int goldMultiplier;
+    public int iridescentMultiplier;
+    
     [Header("UI")]
     public TextMeshProUGUI shopTimerText;
     public TextMeshProUGUI moneyTotalText;
@@ -118,7 +122,18 @@ public class SCR_ShopMenu : MonoBehaviour
         {
             if (slot.fruitInBox != null)
             {
-                sellTotal += fruitDatabase.GetValue(slot.fruitInBox.fruitType);
+                float fruitValue = fruitDatabase.GetValue(slot.fruitInBox.fruitType);
+                
+                if (slot.fruitInBox.isGold)
+                {
+                    fruitValue *= goldMultiplier;
+                }
+                else if (slot.fruitInBox.isIridescent)
+                {
+                    fruitValue *= iridescentMultiplier;
+                }
+                
+                sellTotal += fruitValue;
             }
         }
         

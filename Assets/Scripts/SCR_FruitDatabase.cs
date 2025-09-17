@@ -37,6 +37,8 @@ public class SCR_FruitDatabase : ScriptableObject
         public FruitType type;
         public Sprite saplingSprite;
         public Sprite fruitSprite;
+        public Sprite goldFruitSprite;
+        public Sprite iridescentFruitSprite;
         public float sellValue;
         public float saplingPrice;
         public float shopSpawnChance;

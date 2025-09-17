@@ -17,12 +17,21 @@ public class SCR_Drone : MonoBehaviour
     public GameObject armAnchor;
     public GameObject droneArm;
     public SpriteRenderer fruitRenderer;
+
+    public struct HarvestedFruit
+    {
+        public FruitType fruitType;
+        public bool isGold;
+        public bool isIridescent;
+    }
+    
+    public SCR_Compendium compendium;
     
     //Que of fruit transforms that have been clicked on for harvest
     private Queue<SCR_FruitBloom> fruitQueue = new Queue<SCR_FruitBloom>();
     
     //Picked up fruits
-    private Dictionary<FruitType, int> droneInventory = new Dictionary<FruitType, int>();
+    private List<HarvestedFruit> droneInventory = new List<HarvestedFruit>();
     
     private SCR_FruitBloom currentFruit;
     private bool busy = false;
@@ -133,19 +142,30 @@ public class SCR_Drone : MonoBehaviour
         //Sanity check
         if (currentFruit != null)
         {
-            //If the drone does not have atleast one of the harvested fruit already
-            if(!droneInventory.ContainsKey(currentFruit.fruitType))
+            HarvestedFruit harvestedFruit = new HarvestedFruit
             {
-                //Add it to the dictionary
-                droneInventory[currentFruit.fruitType] = 0;
-            }
+                fruitType = currentFruit.fruitType,
+                isGold = currentFruit.isGold,
+                isIridescent = currentFruit.isIridescent,
+            };
             
-            //Increment the fruit type
-            droneInventory[currentFruit.fruitType]++;
+            droneInventory.Add(harvestedFruit);
             
             //Sets the sprite renderer for the held fruit to be the sprite of the fruit grabbed
             fruitRenderer.sprite = fruitSprite.sprite;
-            //Destroys the fruit that was just grabbed
+
+            if (harvestedFruit.isGold)
+            {
+                compendium.MarkFruit(currentFruit.fruitType, true, false);
+            }
+            else if (harvestedFruit.isIridescent)
+            {
+                compendium.MarkFruit(currentFruit.fruitType, false, true);
+            }
+            else
+            {
+                compendium.MarkFruit(currentFruit.fruitType, false, false);
+            }
             
             currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>().OnFruitHarvested(currentFruit.gameObject);
         }

@@ -39,21 +39,4 @@ public class SCR_InventorySlot : MonoBehaviour, IDropHandler
             Destroy(originalParent.gameObject);
         }
     }
-    
-    // public void OnDrop(PointerEventData eventData)
-    // {
-    //     fruitInBox = eventData.pointerDrag.GetComponent<SCR_InventoryFruit>();
-    //
-    //     if (fruitInBox != null)
-    //     {
-    //         fruitInBox.returnParent = transform;
-    //         fruitInBox.transform.SetParent(transform,true);
-    //
-    //         shopMenuScriptRef.UpdateTotal();
-    //     }
-    //     
-    //     GameObject dropped = eventData.pointerDrag;
-    //     SCR_InventoryFruit draggedFruit = dropped.GetComponent<SCR_InventoryFruit>();
-    //     draggedFruit.returnParent = transform;
-    // }
 }

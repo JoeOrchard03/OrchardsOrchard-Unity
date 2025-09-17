@@ -58,23 +58,22 @@ public class SCR_Interact : MonoBehaviour
         
     }
 
-    public void AddFruits(Dictionary<FruitType, int> newFruits)
+    public void AddFruits(List<SCR_Drone.HarvestedFruit> newFruits)
     {
         foreach (var fruit in newFruits)
         {
-            for (int i = 0; i < fruit.Value; i++)
-            {
-                GameObject box = Instantiate(inventoryBoxPrefab, fruitSellInventory);
-                
-                SCR_InventoryFruit fruitUI = box.GetComponentInChildren<SCR_InventoryFruit>();
-                if (fruitUI != null)
-                {
-                    fruitUI.fruitType = fruit.Key;
-                    fruitUI.returnParent = box.transform;
-                }
-            }
+            GameObject box = Instantiate(inventoryBoxPrefab, fruitSellInventory);
             
-            Debug.Log(fruit.Key + " : "  + fruit.Value + " added to inventory");
+            SCR_InventoryFruit fruitUI = box.GetComponentInChildren<SCR_InventoryFruit>();
+            if (fruitUI != null)
+            {
+                fruitUI.fruitType = fruit.fruitType;
+                fruitUI.isGold = fruit.isGold;
+                fruitUI.isIridescent = fruit.isIridescent;
+                fruitUI.returnParent = box.transform;
+            } 
+            
+            Debug.Log($"{fruit.fruitType} added (Gold: {fruit.isGold}, Iridescent: {fruit.isIridescent})");
         }
     }
 }
