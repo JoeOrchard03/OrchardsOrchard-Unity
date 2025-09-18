@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class SCR_TreeGrowthCycle : MonoBehaviour
 {
+    [Header("Fruit variables")]
+    public FruitType fruitType;
+    
+    [Header("Tree Sprites")]
     public SpriteRenderer spriteRenderer;
-
     public Sprite normalLeavesSprite;
     public Sprite alternateLeavesSprite;
-    
     public List<Sprite> spriteGrowthStages;
+    
+    [Header("Growth times")]
     public List<float> growthTimes;
     public float timeToFirstBloom;
 
+    [Header("Misc variables")]
     private int currentStage = 0;
     public GameObject motherPlot;
     
-    [Header("Bloom objects")]
+    [Header("Bloom variables")]
     public List<GameObject> inactiveFruitBloomObjects;
     public List<GameObject> activeBloomObjects;
-    
     public int minNumberOfBloomsToActivate;
     public int maxNumberOfBloomsToActivate;
     

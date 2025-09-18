@@ -41,6 +41,9 @@ public class SCR_ShopMenu : MonoBehaviour
 
     private void OnEnable()
     {
+        var saveData = SCR_SaveSystem.LoadGame();
+        moneyTotal = saveData.money;
+        
         if (shopInventory != null)
         {
             SCR_ShopInventory.OnShopTimerUpdated += UpdateTimerText;
@@ -158,5 +161,8 @@ public class SCR_ShopMenu : MonoBehaviour
         SellTotalText.text = "0";
         moneyTotalText.text = moneyTotal.ToString();
         Debug.Log("Selling items");
+        var saveData =  SCR_SaveSystem.LoadGame();
+        saveData.money = moneyTotal;
+        SCR_SaveSystem.SaveGame(saveData);
     }
 }

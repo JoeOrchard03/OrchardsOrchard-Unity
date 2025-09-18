@@ -23,8 +23,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     public Sprite iridescentSprite;
     public GameObject goldParticlesPrefab;
     public GameObject iridescentParticlesPrefab;
-    [Range(0f, 1f)] public float goldChance = 0.5f;
-    [Range(0f, 1f)] public float iridescentChance = 0.25f;
+    private float goldChance;
+    private float iridescentChance;
     [HideInInspector] public bool isGold = false;
     [HideInInspector] public bool isIridescent = false;
     
@@ -36,8 +36,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     private void Awake()
     {
-        goldChance = 0.07f;
-        iridescentChance = 0.01f;
+        goldChance = 0.05f;
+        iridescentChance = 0.005f;
 
         if (goldParticlesPrefab == null)
         {

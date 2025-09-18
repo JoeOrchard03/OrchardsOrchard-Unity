@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: 46126290d10c44740a0c69f414a941ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8334302975287967449
+    second: Collection 9_0
+  - first:
+      213: -5483647844086592051
+    second: Collection 9_1
+  - first:
+      213: -6561041123177797943
+    second: Collection 9_2
+  - first:
+      213: 3373882610120903630
+    second: Collection 9_3
+  - first:
+      213: -3018916682140193128
+    second: Collection 9_4
+  - first:
+      213: 5063560274341149227
+    second: Collection 9_5
+  - first:
+      213: 5180610568243985878
+    second: Collection 9_6
+  - first:
+      213: -6639199734032552344
+    second: Collection 9_7
+  - first:
+      213: 7664564714850291512
+    second: Collection 9_8
+  - first:
+      213: 5524529862089232511
+    second: Collection 9_9
+  - first:
+      213: -6338827589484352104
+    second: Collection 9_10
+  - first:
+      213: -4224264362188668854
+    second: Collection 9_11
+  - first:
+      213: -8022788284174191979
+    second: Collection 9_12
+  - first:
+      213: 6904885904779398455
+    second: Collection 9_13
+  - first:
+      213: -9047953317308767844
+    second: Collection 9_14
+  - first:
+      213: 3925495595844410352
+    second: Collection 9_15
+  - first:
+      213: 224755660139953724
+    second: Collection 9_16
+  - first:
+      213: 266942287663332874
+    second: Collection 9_17
+  - first:
+      213: -4274119698327051661
+    second: Collection 9_18
+  - first:
+      213: -8363932958524022270
+    second: Collection 9_19
+  - first:
+      213: -1621311826080672175
+    second: Collection 9_20
+  - first:
+      213: 7044347833509060523
+    second: Collection 9_21
+  - first:
+      213: -1873253647201972847
+    second: Collection 9_22
+  - first:
+      213: -2952288058888968451
+    second: Collection 9_23
+  - first:
+      213: -7127038316275441828
+    second: Collection 9_24
+  - first:
+      213: 3600113062353811022
+    second: Collection 9_25
+  - first:
+      213: 4136224427587888686
+    second: Collection 9_26
+  - first:
+      213: -6010627166300791697
+    second: Collection 9_27
+  - first:
+      213: 1221774480816280613
+    second: Collection 9_28
+  - first:
+      213: -5549168691730802169
+    second: Collection 9_29
+  - first:
+      213: -7607065380081402956
+    second: Collection 9_30
+  - first:
+      213: 7907287374504160389
+    second: Collection 9_31
+  - first:
+      213: 7791995242352346610
+    second: Collection 9_32
+  - first:
+      213: 4738383340461983402
+    second: Collection 9_33
+  - first:
+      213: -1648621696326003095
+    second: Collection 9_34
+  - first:
+      213: -3049397498952196531
+    second: Collection 9_35
+  - first:
+      213: 8511098855475078064
+    second: Collection 9_36
+  - first:
+      213: -8446274386650124117
+    second: Collection 9_37
+  - first:
+      213: -382322045191444787
+    second: Collection 9_38
+  - first:
+      213: -332222953529480732
+    second: Collection 9_39
+  - first:
+      213: 8844300786833556270
+    second: Collection 9_40
+  - first:
+      213: 3664461207167060754
+    second: Collection 9_41
+  - first:
+      213: -5223914614977991984
+    second: Collection 9_42
+  - first:
+      213: -8551715310327422210
+    second: Collection 9_43
+  - first:
+      213: -9079323796108357878
+    second: Collection 9_44
+  - first:
+      213: -4974500273240374073
+    second: Collection 9_45
+  - first:
+      213: 7972108522097064885
+    second: Collection 9_46
+  - first:
+      213: 4898152190965961207
+    second: Collection 9_47
+  - first:
+      213: 1665640322552583895
+    second: Collection 9_48
+  - first:
+      213: -284807040033739235
+    second: Collection 9_49
+  - first:
+      213: 8539093295662424898
+    second: Collection 9_50
+  - first:
+      213: -5353512285779721512
+    second: Collection 9_51
+  - first:
+      213: -6337648651133431898
+    second: Collection 9_52
+  - first:
+      213: -2322356064601261440
+    second: Collection 9_53
+  - first:
+      213: -2365731876365098160
+    second: Collection 9_54
+  - first:
+      213: 523252634210017136
+    second: Collection 9_55
+  - first:
+      213: -3488654394831857030
+    second: Collection 9_56
+  - first:
+      213: -8805345167067987775
+    second: Collection 9_57
+  - first:
+      213: -826413382759302496
+    second: Collection 9_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Collection 9_1
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 2758
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdc1e3e65b26e3b0800000000000000
+      internalID: -5483647844086592051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_2
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2758
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6e1404cdf72f4a0800000000000000
+      internalID: -6561041123177797943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_6
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 2608
+        width: 287
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd31df1dd935e740800000000000000
+      internalID: 5180610568243985878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2728
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e2f149403dcd3a0800000000000000
+      internalID: -6639199734032552344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_11
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 2548
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40076691f56065c0800000000000000
+      internalID: -4224264362188668854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2653
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d4af0952513df50800000000000000
+      internalID: 6904885904779398455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_17
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2593
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ef3b7a89e54b300800000000000000
+      internalID: 266942287663332874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_18
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2608
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37267b597c64fa4c0800000000000000
+      internalID: -4274119698327051661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_20
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2503
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1565258fb71ff79e0800000000000000
+      internalID: -1621311826080672175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2188
+        width: 167
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf9992380d82c160800000000000000
+      internalID: 7044347833509060523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2158
+        width: 332
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d42589bbdd006e0800000000000000
+      internalID: -1873253647201972847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_23
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2458
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6ab4ff6ad5707d0800000000000000
+      internalID: -2952288058888968451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collection 9_30
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1408
+        width: 1157
+        height: 902
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb731d37564e6690800000000000000
+      internalID: -7607065380081402956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 48583287a4cd96f40983c015a7432464
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Collection 9_0: 8334302975287967449
+      Collection 9_1: -5483647844086592051
+      Collection 9_10: -6338827589484352104
+      Collection 9_11: -4224264362188668854
+      Collection 9_12: -8022788284174191979
+      Collection 9_13: 6904885904779398455
+      Collection 9_14: -9047953317308767844
+      Collection 9_15: 3925495595844410352
+      Collection 9_16: 224755660139953724
+      Collection 9_17: 266942287663332874
+      Collection 9_18: -4274119698327051661
+      Collection 9_19: -8363932958524022270
+      Collection 9_2: -6561041123177797943
+      Collection 9_20: -1621311826080672175
+      Collection 9_21: 7044347833509060523
+      Collection 9_22: -1873253647201972847
+      Collection 9_23: -2952288058888968451
+      Collection 9_24: -7127038316275441828
+      Collection 9_25: 3600113062353811022
+      Collection 9_26: 4136224427587888686
+      Collection 9_27: -6010627166300791697
+      Collection 9_28: 1221774480816280613
+      Collection 9_29: -5549168691730802169
+      Collection 9_3: 3373882610120903630
+      Collection 9_30: -7607065380081402956
+      Collection 9_31: 7907287374504160389
+      Collection 9_32: 7791995242352346610
+      Collection 9_33: 4738383340461983402
+      Collection 9_34: -1648621696326003095
+      Collection 9_35: -3049397498952196531
+      Collection 9_36: 8511098855475078064
+      Collection 9_37: -8446274386650124117
+      Collection 9_38: -382322045191444787
+      Collection 9_39: -332222953529480732
+      Collection 9_4: -3018916682140193128
+      Collection 9_40: 8844300786833556270
+      Collection 9_41: 3664461207167060754
+      Collection 9_42: -5223914614977991984
+      Collection 9_43: -8551715310327422210
+      Collection 9_44: -9079323796108357878
+      Collection 9_45: -4974500273240374073
+      Collection 9_46: 7972108522097064885
+      Collection 9_47: 4898152190965961207
+      Collection 9_48: 1665640322552583895
+      Collection 9_49: -284807040033739235
+      Collection 9_5: 5063560274341149227
+      Collection 9_50: 8539093295662424898
+      Collection 9_51: -5353512285779721512
+      Collection 9_52: -6337648651133431898
+      Collection 9_53: -2322356064601261440
+      Collection 9_54: -2365731876365098160
+      Collection 9_55: 523252634210017136
+      Collection 9_56: -3488654394831857030
+      Collection 9_57: -8805345167067987775
+      Collection 9_58: -826413382759302496
+      Collection 9_6: 5180610568243985878
+      Collection 9_7: -6639199734032552344
+      Collection 9_8: 7664564714850291512
+      Collection 9_9: 5524529862089232511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
