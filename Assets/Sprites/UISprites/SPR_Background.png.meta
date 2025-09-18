@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c33de942337bab84a879ad8aa279f228
+guid: c77b3fbaed2c8634494ebeb2ef8ce422
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1320144475961707228
-    second: SPR_Cursor_0
+      213: 2296251189503053702
+    second: SPR_Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_Cursor_0
+      name: SPR_Background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 76
-        height: 76
+        width: 3840
+        height: 2160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 425bb12f797edade0800000000000000
-      internalID: -1320144475961707228
+      spriteID: 68fc5617a4ceddf10800000000000000
+      internalID: 2296251189503053702
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: df4063e5c79c97949aa20840de5aae89
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_Cursor_0: -1320144475961707228
+      SPR_Background_0: 2296251189503053702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -41,9 +41,7 @@ public class SCR_Interact : MonoBehaviour
 
             if (shopMenuOpen)
             {
-                GameObject.FindGameObjectWithTag("ShopMenu").SetActive(false);
-                openShopObj.GetComponent<SCR_OpenShop>().shopOpen = false;
-                shopMenuOpen = false;
+                CloseShop();
             }
         }
 
@@ -56,6 +54,13 @@ public class SCR_Interact : MonoBehaviour
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
         }
         
+    }
+
+    public void CloseShop()
+    {
+        GameObject.FindGameObjectWithTag("ShopMenu").SetActive(false);
+        openShopObj.GetComponent<SCR_OpenShop>().shopOpen = false;
+        shopMenuOpen = false;
     }
 
     public void AddFruits(List<SCR_Drone.HarvestedFruit> newFruits)
