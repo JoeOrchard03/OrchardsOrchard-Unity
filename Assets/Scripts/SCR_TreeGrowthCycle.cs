@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SCR_TreeGrowthCycle : MonoBehaviour
+public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 {
     [Header("Fruit variables")]
     public FruitType fruitType;
@@ -20,6 +20,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
     [Header("Misc variables")]
     private int currentStage = 0;
     public GameObject motherPlot;
+    private SCR_Interact playerScriptRef;
     
     [Header("Bloom variables")]
     public List<GameObject> inactiveFruitBloomObjects;
@@ -30,6 +31,8 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>(); 
+        
         if (spriteGrowthStages.Count > 1 && growthTimes.Count == spriteGrowthStages.Count - 1)
         {
             StartCoroutine(GrowTree());
@@ -45,6 +48,19 @@ public class SCR_TreeGrowthCycle : MonoBehaviour
             inactiveFruitBloomObjects.Add(gameObject.transform.GetChild(i).gameObject);
         }
     }
+    
+    public void Interact(GameObject interactor)
+    {
+        if (playerScriptRef.composting)
+        {
+            Debug.Log("Taking down tree");
+            motherPlot.SetActive(true);
+            motherPlot.GetComponent<SCR_Highlightable>().stopHighlight = false;
+            motherPlot.GetComponent<SCR_Plot>().plotOccupied  = false;
+            Destroy(this.gameObject);
+        }
+    }
+
     
     IEnumerator GrowTree()
     {

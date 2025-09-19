@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8769018331628885152}
   - component: {fileID: 1077072480660823820}
   - component: {fileID: 3012485338378827516}
+  - component: {fileID: -1181617009708958632}
   m_Layer: 0
   m_Name: PRE_CherryTree
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1750f7a73391a41b4fad9d8a4e2d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitType: 0
   spriteRenderer: {fileID: 9220909520486006075}
   normalLeavesSprite: {fileID: 2325768411794122353, guid: 19396ef46ce54f34a869e426306b513e, type: 3}
   alternateLeavesSprite: {fileID: 7897893491733195873, guid: 5cfd9f69d57bcd94bace614e79dbbbe5, type: 3}
@@ -175,7 +177,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0060516596, y: 2.167129}
+  m_Offset: {x: -0.012734652, y: 2.2154293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4760061, y: 0}
@@ -185,7 +187,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2185149, y: 4.3834944}
+  m_Size: {x: 1.4160557, y: 4.4757605}
   m_EdgeRadius: 0
 --- !u!50 &3012485338378827516
 Rigidbody2D:
@@ -214,6 +216,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &-1181617009708958632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499254726488180106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4604bb403ed17a841a0ad1ec1830c7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightEffect: {fileID: 0}
+  stopHighlight: 0
+  canHighlight: 0
+  bypassHighlight: 1
 --- !u!1001 &27635065531485022
 PrefabInstance:
   m_ObjectHideFlags: 0

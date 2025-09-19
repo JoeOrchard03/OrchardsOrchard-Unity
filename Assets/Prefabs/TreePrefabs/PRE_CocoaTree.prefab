@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1073983826127581555}
   m_Layer: 0
   m_Name: PRE_CocoaTree
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1750f7a73391a41b4fad9d8a4e2d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruitType: 0
   spriteRenderer: {fileID: 9220909520486006075}
   normalLeavesSprite: {fileID: 0}
   alternateLeavesSprite: {fileID: 0}
@@ -229,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 0}
   stopHighlight: 0
-  canHighlight: 1
+  canHighlight: 0
   bypassHighlight: 1
 --- !u!1001 &27635065531485022
 PrefabInstance:

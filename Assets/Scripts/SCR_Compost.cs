@@ -6,6 +6,9 @@ public class SCR_Compost : MonoBehaviour, INT_Interactable
 {
     private bool composting = false;
     private SCR_Interact playerScriptRef;
+    
+    public Texture2D shovelTexture;
+    public Texture2D cursorTexture;
 
     private void Start()
     {

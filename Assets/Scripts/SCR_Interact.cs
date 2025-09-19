@@ -22,10 +22,42 @@ public class SCR_Interact : MonoBehaviour
     public bool menuOpen = false;
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
+    [Header("Mouse variables")]
+    public Texture2D cursorTexture;
+    public Texture2D cursorHighlightTexture;
+    public Texture2D shovelIconTexture;
+    public Texture2D shovelIconHighlightTexture;
+    
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void SetCursorHighlight(bool cursorHighlight)
+    {
+        if (cursorHighlight)
+        {
+            Cursor.SetCursor(cursorHighlightTexture, Vector2.zero, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        }
+    }
+
+    public void SetShovelHighlight(bool shovelHighlight)
+    {
+        if (shovelHighlight)
+        {
+            Cursor.SetCursor(shovelIconHighlightTexture, Vector2.zero, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(shovelIconTexture, Vector2.zero, CursorMode.Auto);
+        }
     }
     
     void Update()

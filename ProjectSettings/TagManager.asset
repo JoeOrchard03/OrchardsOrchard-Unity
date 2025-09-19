@@ -7,6 +7,8 @@ TagManager:
   - Menu
   - Drone
   - ShopMenu
+  - Composter
+  - Tree
   layers:
   - Default
   - TransparentFX

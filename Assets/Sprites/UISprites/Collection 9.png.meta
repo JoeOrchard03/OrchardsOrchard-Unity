@@ -287,48 +287,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Collection 9_1
-      rect:
-        serializedVersion: 2
-        x: 1595
-        y: 2758
-        width: 152
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcdc1e3e65b26e3b0800000000000000
-      internalID: -5483647844086592051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Collection 9_2
-      rect:
-        serializedVersion: 2
-        x: 1805
-        y: 2758
-        width: 122
-        height: 122
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c6e1404cdf72f4a0800000000000000
-      internalID: -6561041123177797943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Collection 9_6
       rect:
         serializedVersion: 2
@@ -371,27 +329,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collection 9_11
-      rect:
-        serializedVersion: 2
-        x: 1625
-        y: 2548
-        width: 152
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a40076691f56065c0800000000000000
-      internalID: -4224264362188668854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Collection 9_13
       rect:
         serializedVersion: 2
@@ -413,27 +350,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collection 9_17
-      rect:
-        serializedVersion: 2
-        x: 1940
-        y: 2593
-        width: 47
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0ef3b7a89e54b300800000000000000
-      internalID: 266942287663332874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Collection 9_18
       rect:
         serializedVersion: 2
@@ -450,27 +366,6 @@ TextureImporter:
       bones: []
       spriteID: 37267b597c64fa4c0800000000000000
       internalID: -4274119698327051661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Collection 9_20
-      rect:
-        serializedVersion: 2
-        x: 2030
-        y: 2503
-        width: 77
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1565258fb71ff79e0800000000000000
-      internalID: -1621311826080672175
       vertices: []
       indices: 
       edges: []
@@ -518,27 +413,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collection 9_23
-      rect:
-        serializedVersion: 2
-        x: 1925
-        y: 2458
-        width: 77
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df6ab4ff6ad5707d0800000000000000
-      internalID: -2952288058888968451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Collection 9_30
       rect:
         serializedVersion: 2
@@ -573,20 +447,16 @@ TextureImporter:
       Collection 9_0: 8334302975287967449
       Collection 9_1: -5483647844086592051
       Collection 9_10: -6338827589484352104
-      Collection 9_11: -4224264362188668854
       Collection 9_12: -8022788284174191979
       Collection 9_13: 6904885904779398455
       Collection 9_14: -9047953317308767844
       Collection 9_15: 3925495595844410352
       Collection 9_16: 224755660139953724
-      Collection 9_17: 266942287663332874
       Collection 9_18: -4274119698327051661
       Collection 9_19: -8363932958524022270
-      Collection 9_2: -6561041123177797943
       Collection 9_20: -1621311826080672175
       Collection 9_21: 7044347833509060523
       Collection 9_22: -1873253647201972847
-      Collection 9_23: -2952288058888968451
       Collection 9_24: -7127038316275441828
       Collection 9_25: 3600113062353811022
       Collection 9_26: 4136224427587888686
@@ -629,6 +499,10 @@ TextureImporter:
       Collection 9_7: -6639199734032552344
       Collection 9_8: 7664564714850291512
       Collection 9_9: 5524529862089232511
+      Cursor: 266942287663332874
+      CursorHighlight: -2952288058888968451
+      ShovelCursor: -6561041123177797943
+      ShovelCursorHighlight: -4224264362188668854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

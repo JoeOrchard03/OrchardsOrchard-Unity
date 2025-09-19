@@ -19,6 +19,18 @@ public class SCR_Highlightable : MonoBehaviour
     private void OnMouseOver()
     {
         if (playerInteractScriptRef.shopMenuOpen) { return;}
+
+        if (gameObject.CompareTag("Tree"))
+        {
+            if (playerInteractScriptRef.composting)
+            {
+                playerInteractScriptRef.hoveredInteractable = this.gameObject;
+                playerInteractScriptRef.SetShovelHighlight(true);
+            }
+            return;
+        }
+        
+        if (playerInteractScriptRef.composting && !gameObject.CompareTag("Composter")) { return;}
         
         if (bypassHighlight)
         {
@@ -28,35 +40,51 @@ public class SCR_Highlightable : MonoBehaviour
         
         if (stopHighlight)
         {
-            highlightEffect.SetActive(false); 
+            if (highlightEffect != null)
+            {
+                highlightEffect.SetActive(false); 
+            }
             return;
         }
-
-        if (!canHighlight) { return; }
-
-        if (highlightEffect.activeSelf == true)
+        
+        if (canHighlight && !highlightEffect.activeSelf && highlightEffect != null)
         {
-            return;
+            highlightEffect.SetActive(true);
         }
-
-        highlightEffect.SetActive(true);
+        
+        playerInteractScriptRef.SetCursorHighlight(true);
         playerInteractScriptRef.hoveredInteractable = this.gameObject;
     }
 
     private void OnMouseExit()
     {
+        if (gameObject.CompareTag("Tree") && playerInteractScriptRef.composting)
+        {
+            playerInteractScriptRef.SetShovelHighlight(false);
+            playerInteractScriptRef.hoveredInteractable = null;
+            return;
+        }
+        
         if (bypassHighlight)
         {
             playerInteractScriptRef.hoveredInteractable = null;
             return;
         }
         
-        if (highlightEffect.activeSelf == false)
+        if (highlightEffect != null)
         {
-            return;
+            highlightEffect.SetActive(false);
         }
 
-        highlightEffect.SetActive(false);
+        if (!playerInteractScriptRef.composting)
+        {
+            playerInteractScriptRef.SetCursorHighlight(false);
+        }
+        else
+        {
+            playerInteractScriptRef.SetShovelHighlight(false);
+        }
+        
         playerInteractScriptRef.hoveredInteractable = null;
     }
 }
