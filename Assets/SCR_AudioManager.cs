@@ -1,0 +1,67 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+
+public class SCR_AudioManager : MonoBehaviour
+{
+    public static SCR_AudioManager instance;
+    
+    public AudioMixer masterAudioMixer;
+    public AudioMixer musicAudioMixer;
+    public string masterVolParameter = "masterVolume";
+    public string musicVolParameter = "musicVolume";
+
+    [Header("Defaults")] 
+    public float masterDefaultVol = 0.2f;
+    public float musicDefaultVol = 0.2f;
+    
+    private float currentMasterVolume;
+    private float currentMusicVolume;
+    
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        var saveData = SCR_SaveSystem.LoadGame();
+        currentMasterVolume = (saveData.masterVolume > 0f) ? saveData.masterVolume : masterDefaultVol;
+        currentMusicVolume = (saveData.musicVolume > 0f) ? saveData.musicVolume : musicDefaultVol;
+        
+        SetMasterVolume(currentMasterVolume);
+        SetMusicVolume(currentMusicVolume);
+    }
+    
+    public void SetMasterVolume(float value)
+    {
+        currentMasterVolume = Mathf.Clamp01(value);
+        float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(value));
+        masterAudioMixer.SetFloat(masterVolParameter, dB);
+        SaveVolumes();
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        currentMusicVolume = value;
+        float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(value));
+        musicAudioMixer.SetFloat(musicVolParameter, dB);
+        SaveVolumes();
+    }
+    
+    public float GetCurrentMasterVolume() => currentMasterVolume;
+    public float GetCurrentMusicVolume() => currentMusicVolume;
+
+    private void SaveVolumes()
+    {
+        var saveData = SCR_SaveSystem.LoadGame();
+        saveData.masterVolume = currentMasterVolume;
+        saveData.musicVolume = currentMusicVolume;
+        SCR_SaveSystem.SaveGame(saveData);
+    }
+}

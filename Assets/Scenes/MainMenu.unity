@@ -1180,6 +1180,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833213970}
   m_CullTransparentMesh: 1
+--- !u!1 &905238748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905238749}
+  - component: {fileID: 905238750}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905238749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905238748}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0332203, y: -0.40659314, z: -2.3456466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905238750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905238748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4acb83451a05f94a8ded143c92248c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterAudioMixer: {fileID: 24100000, guid: f68c81517a047e249b5ea0992f960d93, type: 2}
+  musicAudioMixer: {fileID: 24100000, guid: af66a3f41afa5f54785b0c56f7b1c2a7, type: 2}
+  masterVolParameter: masterVolume
+  musicVolParameter: musicVolume
+  masterDefaultVol: 0.2
+  musicDefaultVol: 0.2
 --- !u!1 &1034692176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,11 +1277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: MainScene
   settingsMenu: {fileID: 1234943232}
-  audioMixer: {fileID: 24100000, guid: f68c81517a047e249b5ea0992f960d93, type: 2}
-  masterVolParameter: masterVolume
-  musicVolParameter: musicVolume
-  masterDefaultVol: 0.1
-  musicDefaultVol: 0.1
   masterVolumeSlider: {fileID: 1997979737}
   musicVolumeSlider: {fileID: 717886844}
   cursorTexture: {fileID: 2800000, guid: ccd2ba0f8f829644fb3fe41baf274d93, type: 3}
@@ -1245,7 +1290,7 @@ AudioSource:
   m_GameObject: {fileID: 1034692176}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3158760803453033141, guid: f68c81517a047e249b5ea0992f960d93, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: af66a3f41afa5f54785b0c56f7b1c2a7, type: 2}
   m_audioClip: {fileID: 8300000, guid: 95b469a87d155f24691991cbe3862ee0, type: 3}
   m_Resource: {fileID: 8300000, guid: 95b469a87d155f24691991cbe3862ee0, type: 3}
   m_PlayOnAwake: 1
@@ -2924,3 +2969,4 @@ SceneRoots:
   - {fileID: 1349127264}
   - {fileID: 1156314093}
   - {fileID: 1034692177}
+  - {fileID: 905238749}
