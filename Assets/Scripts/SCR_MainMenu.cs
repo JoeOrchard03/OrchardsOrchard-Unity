@@ -9,17 +9,21 @@ public class SCR_MainMenu : MonoBehaviour
 {
     public string sceneToLoad;
     public GameObject settingsMenu;
-
+    
+    [Header("Audio settings")]
     public AudioMixer audioMixer;
-
+    public string masterVolParameter = "masterVolume";
+    public string musicVolParameter = "musicVolume";
     public float masterDefaultVol = 0.2f;
     public float musicDefaultVol = 0.2f;
     
-    public string masterVolParameter = "masterVolume";
-    public string musicVolParameter = "musicVolume";
-    
+    [Header("Audio sliders")]
     public Slider masterVolumeSlider;
     public Slider musicVolumeSlider;
+    
+    [Header("Mouse variables")]
+    public Texture2D cursorTexture;
+    public Texture2D cursorHighlightTexture;
     
     private void Start()
     {
@@ -27,6 +31,8 @@ public class SCR_MainMenu : MonoBehaviour
         
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
 
         if (saveData.masterVolume > 0f && saveData.musicVolume > 0f)
         {
@@ -47,7 +53,7 @@ public class SCR_MainMenu : MonoBehaviour
         masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
         musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
     }
-
+    
     public void SetMasterVolume(float value)
     {
         float dB = Mathf.Log10(Mathf.Max(value, 0.0001f)) * 20;
@@ -86,5 +92,17 @@ public class SCR_MainMenu : MonoBehaviour
     {
         Debug.Log("Quitting");
         Application.Quit();
+    }
+    
+    public void SetCursorHighlight(bool cursorHighlight)
+    {
+        if (cursorHighlight)
+        {
+            Cursor.SetCursor(cursorHighlightTexture, Vector2.zero, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        }
     }
 }

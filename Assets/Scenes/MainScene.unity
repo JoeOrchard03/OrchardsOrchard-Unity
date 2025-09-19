@@ -851,6 +851,7 @@ GameObject:
   - component: {fileID: 114242727}
   - component: {fileID: 114242726}
   - component: {fileID: 114242725}
+  - component: {fileID: 114242728}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -971,6 +972,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114242723}
   m_CullTransparentMesh: 1
+--- !u!114 &114242728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114242723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &127082264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,6 +2830,7 @@ GameObject:
   - component: {fileID: 414399559}
   - component: {fileID: 414399558}
   - component: {fileID: 414399560}
+  - component: {fileID: 414399561}
   m_Layer: 5
   m_Name: Saplings Text
   m_TagString: Untagged
@@ -2998,6 +3012,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &414399561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414399556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &419687810
 GameObject:
   m_ObjectHideFlags: 0
@@ -5060,7 +5086,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2995691930280106136, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1933525203}
   m_SourcePrefab: {fileID: 100100000, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
 --- !u!224 &706230943 stripped
 RectTransform:
@@ -8032,6 +8061,7 @@ GameObject:
   - component: {fileID: 1032906320}
   - component: {fileID: 1032906319}
   - component: {fileID: 1032906318}
+  - component: {fileID: 1032906321}
   m_Layer: 5
   m_Name: Decor Text
   m_TagString: Untagged
@@ -8213,6 +8243,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032906316}
   m_CullTransparentMesh: 1
+--- !u!114 &1032906321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032906316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1033272611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10997,6 +11039,7 @@ GameObject:
   - component: {fileID: 1358917152}
   - component: {fileID: 1358917151}
   - component: {fileID: 1358917153}
+  - component: {fileID: 1358917154}
   m_Layer: 5
   m_Name: Sell Text
   m_TagString: Untagged
@@ -11178,6 +11221,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1358917154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358917149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1360948289
 GameObject:
   m_ObjectHideFlags: 0
@@ -12782,10 +12837,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1814688288}
     m_Modifications:
-    - target: {fileID: 6192046940511198919, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
-      propertyPath: fruitType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
       propertyPath: m_Name
       value: PRE_saplingInventoryItem
@@ -15609,6 +15660,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933028590}
   m_CullTransparentMesh: 1
+--- !u!1 &1933525199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2995691930280106136, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+  m_PrefabInstance: {fileID: 706230942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933525203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933525199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1942315089
 GameObject:
   m_ObjectHideFlags: 0

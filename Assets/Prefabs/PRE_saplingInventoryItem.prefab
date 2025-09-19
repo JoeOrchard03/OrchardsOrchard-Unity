@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6192046940511198919}
   - component: {fileID: 8441939478569429619}
   - component: {fileID: 4744388593745569176}
+  - component: {fileID: 3929796533571446178}
   m_Layer: 5
   m_Name: PRE_saplingInventoryItem
   m_TagString: Untagged
@@ -224,3 +225,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3929796533571446178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729451776724655117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

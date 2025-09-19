@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 394054807}
   - component: {fileID: 394054806}
   - component: {fileID: 394054805}
+  - component: {fileID: 394054808}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -328,6 +329,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394054803}
   m_CullTransparentMesh: 1
+--- !u!114 &394054808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394054803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &487883636 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1112116524082497832, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
@@ -1180,7 +1193,7 @@ GameObject:
   - component: {fileID: 1034692179}
   m_Layer: 0
   m_Name: MenuManager
-  m_TagString: Untagged
+  m_TagString: MainMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1215,12 +1228,14 @@ MonoBehaviour:
   sceneToLoad: MainScene
   settingsMenu: {fileID: 1234943232}
   audioMixer: {fileID: 24100000, guid: f68c81517a047e249b5ea0992f960d93, type: 2}
-  masterDefaultVol: 0.1
-  musicDefaultVol: 0.1
   masterVolParameter: masterVolume
   musicVolParameter: musicVolume
+  masterDefaultVol: 0.1
+  musicDefaultVol: 0.1
   masterVolumeSlider: {fileID: 1997979737}
   musicVolumeSlider: {fileID: 717886844}
+  cursorTexture: {fileID: 2800000, guid: ccd2ba0f8f829644fb3fe41baf274d93, type: 3}
+  cursorHighlightTexture: {fileID: 2800000, guid: c8e3b1c348acd03458894b02c3bdbab6, type: 3}
 --- !u!82 &1034692179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1947,6 +1962,7 @@ GameObject:
   - component: {fileID: 1532310965}
   - component: {fileID: 1532310964}
   - component: {fileID: 1532310963}
+  - component: {fileID: 1532310966}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2069,6 +2085,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532310961}
   m_CullTransparentMesh: 1
+--- !u!114 &1532310966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532310961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536683751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2320,7 @@ GameObject:
   - component: {fileID: 1696479534}
   - component: {fileID: 1696479533}
   - component: {fileID: 1696479532}
+  - component: {fileID: 1696479535}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -2414,6 +2443,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696479530}
   m_CullTransparentMesh: 1
+--- !u!114 &1696479535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696479530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847303965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,8 +2894,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2995691930280106136, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5292507355017279868}
   m_SourcePrefab: {fileID: 100100000, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+--- !u!1 &5292507355017279867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2995691930280106136, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+  m_PrefabInstance: {fileID: 5292507355017279866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5292507355017279868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292507355017279867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

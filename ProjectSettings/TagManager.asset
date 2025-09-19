@@ -9,6 +9,7 @@ TagManager:
   - ShopMenu
   - Composter
   - Tree
+  - MainMenu
   layers:
   - Default
   - TransparentFX
