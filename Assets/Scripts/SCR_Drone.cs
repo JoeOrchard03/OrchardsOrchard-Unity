@@ -153,6 +153,7 @@ public class SCR_Drone : MonoBehaviour
             
             //Sets the sprite renderer for the held fruit to be the sprite of the fruit grabbed
             fruitRenderer.sprite = fruitSprite.sprite;
+            fruitRenderer.flipX = fruitSprite.flipX;
 
             if (harvestedFruit.isGold)
             {

@@ -28,6 +28,13 @@ public enum FruitType
     Grapefruit
 }
 
+public enum Rarity
+{
+    Common,
+    Uncommon,
+    Rare
+}
+
 [CreateAssetMenu(menuName = "Fruit Database")]
 public class SCR_FruitDatabase : ScriptableObject
 {
@@ -35,6 +42,7 @@ public class SCR_FruitDatabase : ScriptableObject
     public class Fruit
     {
         public FruitType type;
+        public Rarity rarity;
         public Sprite saplingSprite;
         public Sprite fruitSprite;
         public Sprite goldFruitSprite;

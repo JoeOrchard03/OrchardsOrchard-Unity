@@ -5,7 +5,7 @@ using UnityEngine;
 public class SCR_Highlightable : MonoBehaviour
 {
     [SerializeField] public GameObject highlightEffect;
-    private SCR_Interact playerInteractScriptRef;
+    public SCR_Interact playerInteractScriptRef;
     public bool stopHighlight = false;
     public bool canHighlight = true;
     public bool bypassHighlight = false;
@@ -18,7 +18,14 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (playerInteractScriptRef.shopMenuOpen) { return;}
+        if (playerInteractScriptRef.shopMenuOpen) return;
+        
+        SCR_FruitBloom fruit = GetComponent<SCR_FruitBloom>();
+        if (fruit != null && !fruit.readyToHarvest) 
+        {
+            playerInteractScriptRef.SetCursorHighlight(false);
+            return;
+        }
 
         if (gameObject.CompareTag("Tree"))
         {
@@ -29,29 +36,26 @@ public class SCR_Highlightable : MonoBehaviour
             }
             return;
         }
-        
-        if (playerInteractScriptRef.composting && !gameObject.CompareTag("Composter")) { return;}
-        
+
+        if (playerInteractScriptRef.composting && !gameObject.CompareTag("Composter")) return;
+
         if (bypassHighlight)
         {
             playerInteractScriptRef.hoveredInteractable = this.gameObject;
             return;
         }
-        
+
         if (stopHighlight)
         {
-            if (highlightEffect != null)
-            {
-                highlightEffect.SetActive(false); 
-            }
+            if (highlightEffect != null) highlightEffect.SetActive(false);
             return;
         }
-        
-        if (canHighlight && !highlightEffect.activeSelf && highlightEffect != null)
+
+        if (canHighlight && highlightEffect != null && !highlightEffect.activeSelf)
         {
             highlightEffect.SetActive(true);
         }
-        
+
         playerInteractScriptRef.SetCursorHighlight(true);
         playerInteractScriptRef.hoveredInteractable = this.gameObject;
     }

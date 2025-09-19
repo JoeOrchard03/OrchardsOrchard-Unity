@@ -127,7 +127,7 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     private void Plant(GameObject Sapling)
     {
         GameObject instantiatedSapling = Instantiate(Sapling, SaplingSpawnLocation.transform.position, transform.rotation);
-        instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;;
+        instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;
         playerInteractScriptRef.selectedPlot = null;
         SaplingMenu.SetActive(false);
         playerInteractScriptRef.SetCursorHighlight(false);

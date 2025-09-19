@@ -27,13 +27,14 @@ public class SCR_Interact : MonoBehaviour
     public Texture2D cursorHighlightTexture;
     public Texture2D shovelIconTexture;
     public Texture2D shovelIconHighlightTexture;
+    public Vector2 cursorHotspot;
     
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         
-        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
     }
 
     public void SetCursorHighlight(bool cursorHighlight)

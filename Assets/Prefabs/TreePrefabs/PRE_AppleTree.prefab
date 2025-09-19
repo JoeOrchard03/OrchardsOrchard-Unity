@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitType: 0
+  fruitDatabase: {fileID: 11400000, guid: dac69b27ba38ef24e9987cbd135086db, type: 2}
   spriteRenderer: {fileID: 9220909520486006075}
   normalLeavesSprite: {fileID: 0}
   alternateLeavesSprite: {fileID: 0}
@@ -134,10 +135,12 @@ MonoBehaviour:
   - {fileID: -4154330273797782174, guid: 3d6722380a033714bb67ff8be3f4e213, type: 3}
   - {fileID: -9000854809742389725, guid: bf98120c07c486a4ca45106a1c7b8d91, type: 3}
   growthTimes:
-  - 4
-  - 4
-  - 4
-  timeToFirstBloom: 4
+  - 10
+  - 10
+  - 10
+  uncommonFruitMultiplier: 2
+  rareFruitMultiplier: 3
+  timeToFirstBloom: 1
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []
@@ -229,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 0}
+  playerInteractScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 0
   bypassHighlight: 1

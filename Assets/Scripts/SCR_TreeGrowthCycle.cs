@@ -6,6 +6,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 {
     [Header("Fruit variables")]
     public FruitType fruitType;
+    public SCR_FruitDatabase fruitDatabase;
     
     [Header("Tree Sprites")]
     public SpriteRenderer spriteRenderer;
@@ -15,6 +16,8 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     [Header("Growth times")]
     public List<float> growthTimes;
+    public float uncommonFruitMultiplier;
+    public float rareFruitMultiplier;
     public float timeToFirstBloom;
 
     [Header("Misc variables")]
@@ -68,10 +71,23 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         
         Vector3 originalPos = transform.localPosition;
         transform.localPosition = originalPos + new Vector3(0f, 0.3f, 0f);
+
+        Rarity fruitRarity = fruitDatabase.GetFruit(fruitType).rarity;
         
         while (currentStage < spriteGrowthStages.Count - 1)
         {
-            yield return new WaitForSeconds(growthTimes[currentStage]);
+            float waitTime = growthTimes[currentStage];
+
+            if (fruitRarity == Rarity.Uncommon)
+            {
+                waitTime *= uncommonFruitMultiplier;
+            }
+            else if (fruitRarity == Rarity.Rare)
+            {
+                waitTime *= rareFruitMultiplier;
+            }
+            
+            yield return new WaitForSeconds(waitTime);
             currentStage++;
             
             if (spriteGrowthStages[currentStage] == spriteGrowthStages[1])

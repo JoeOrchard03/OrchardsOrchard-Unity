@@ -13,10 +13,14 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     
     [Header("Fruit info")]
     public FruitType fruitType;
+    public SCR_FruitDatabase fruitDatabase;
     
     [Header("Growth variables")]
     public List<Sprite> spriteGrowthStages;
     public List<float> growthTimes;
+    public float uncommonFruitMultiplier;
+    public float rareFruitMultiplier;
+    
 
     [Header("Special Variant variables")] 
     public Sprite goldSprite;
@@ -29,7 +33,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [HideInInspector] public bool isIridescent = false;
     
     [Header("Misc variables")]
-    [SerializeField] private bool readyToHarvest = false;
+    [SerializeField] public bool readyToHarvest = false;
     private bool harvested = false;
     private int currentStage = 0;
     private GameObject activeParticles;
@@ -99,6 +103,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     {
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
         
+        Rarity fruitRarity = fruitDatabase.GetFruit(fruitType).rarity;
+        
         while (currentStage < spriteGrowthStages.Count - 1)
         {
             if (currentStage == 0)
@@ -111,7 +117,18 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
                 SetLeavesToNormal();
             }
             
-            yield return new WaitForSeconds(growthTimes[currentStage]);
+            float waitTime = growthTimes[currentStage];
+
+            if (fruitRarity == Rarity.Uncommon)
+            {
+                waitTime *= uncommonFruitMultiplier;
+            }
+            else if (fruitRarity == Rarity.Rare)
+            {
+                waitTime *= rareFruitMultiplier;
+            }            
+            
+            yield return new WaitForSeconds(waitTime);
             currentStage++;
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
