@@ -67,9 +67,7 @@ public class SCR_Interact : MonoBehaviour
         {
             if (menuOpen)
             {
-                GameObject.FindGameObjectWithTag("Menu").SetActive(false);
-                selectedPlot = null;
-                menuOpen = false;
+                CloseSaplingMenu();
             }
 
             if (shopMenuOpen)
@@ -86,9 +84,24 @@ public class SCR_Interact : MonoBehaviour
             if (hoveredInteractable.GetComponent<INT_Interactable>() == null) { Debug.Log("Item does not have interactable script"); return;}
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
         }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            PlayerPrefs.DeleteKey("GameSave");
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            Debug.Log("Clearing save data...");
+        }
         
     }
 
+    public void CloseSaplingMenu()
+    {
+        GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+        selectedPlot = null;
+        menuOpen = false;
+    }
+    
     public void CloseShop()
     {
         GameObject.FindGameObjectWithTag("ShopMenu").SetActive(false);

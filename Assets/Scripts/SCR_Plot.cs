@@ -118,6 +118,9 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
             case "Grapefruit":
                 Plant(GrapefruitTreePrefab);
                 break;
+            case "Mullbery":
+                Plant(MullberryTreePrefab);
+                break;
             default:
                 Debug.Log(SaplingName + " is not a valid sapling name");
                 break;
