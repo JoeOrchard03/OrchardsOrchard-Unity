@@ -174,6 +174,7 @@ public class SCR_ShopMenu : MonoBehaviour
     {
         List<SCR_InventorySlot> freeSlots = new List<SCR_InventorySlot>();
         SCR_InventoryFruit[] contentHolderFruits = contentHolder.GetComponentsInChildren<SCR_InventoryFruit>();
+        
         foreach (SCR_InventorySlot slot in inventorySlots)
         {
             if (slot.fruitInBox == null)
@@ -186,11 +187,20 @@ public class SCR_ShopMenu : MonoBehaviour
         {
             if (freeSlots.Count >= 1)
             {
+                SCR_InventorySlot targetSlot = freeSlots[0];
+                freeSlots.RemoveAt(0);
                 Transform originalParent = fruit.returnParent;
-                freeSlots[freeSlots.Count - 1].fruitInBox = fruit;
-                //freeSlots.RemoveAt(freeSlots.Count - 1);
-                // If this is a sell box, destroy the original inventory box
-                Destroy(originalParent.gameObject);
+                
+                targetSlot.fruitInBox = fruit;
+                fruit.returnParent = targetSlot.transform;
+
+                fruit.transform.SetParent(targetSlot.transform, true);
+                fruit.transform.localPosition = Vector3.zero;
+
+                if (originalParent != null)
+                {
+                    Destroy(originalParent.gameObject);
+                }
             }
         }
         UpdateTotal();
