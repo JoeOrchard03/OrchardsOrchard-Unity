@@ -41,11 +41,11 @@ public class SCR_Interact : MonoBehaviour
     {
         if (cursorHighlight)
         {
-            Cursor.SetCursor(cursorHighlightTexture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(cursorHighlightTexture, cursorHotspot, CursorMode.Auto);
         }
         else
         {
-            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
         }
     }
 

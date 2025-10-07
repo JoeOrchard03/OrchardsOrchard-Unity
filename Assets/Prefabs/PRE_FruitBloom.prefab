@@ -116,7 +116,7 @@ Transform:
   m_GameObject: {fileID: 6010290930569528657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46480015, y: 4.9877105, z: -0.03129237}
+  m_LocalPosition: {x: 0.46480015, y: 4.9877105, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -145,10 +145,10 @@ MonoBehaviour:
   - {fileID: 364011696542487278, guid: 953b5a4213a8d5047b5c88780b048bc6, type: 3}
   - {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
   growthTimes:
-  - 10
-  - 10
-  - 10
-  - 10
+  - 1
+  - 1
+  - 1
+  - 1
   uncommonFruitMultiplier: 2
   rareFruitMultiplier: 3
   goldSprite: {fileID: 0}
@@ -219,8 +219,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4830005, y: 0.4830005}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.6, y: 0.6}
+  m_EdgeRadius: 0.1
 --- !u!50 &3309988535199932430
 Rigidbody2D:
   serializedVersion: 4
@@ -229,7 +229,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6010290930569528657}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

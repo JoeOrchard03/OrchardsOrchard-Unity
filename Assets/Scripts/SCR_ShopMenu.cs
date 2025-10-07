@@ -33,6 +33,10 @@ public class SCR_ShopMenu : MonoBehaviour
     public GameObject saplingCanvas;
     public GameObject sellCanvas;
 
+    [Header("Sell UI variables")] 
+    public GameObject contentHolder;
+    public GameObject movedItemHolder;
+    
     [Header("Misc references")]
     private float sellTotal;
     public float moneyTotal;
@@ -164,5 +168,31 @@ public class SCR_ShopMenu : MonoBehaviour
         var saveData =  SCR_SaveSystem.LoadGame();
         saveData.money = moneyTotal;
         SCR_SaveSystem.SaveGame(saveData);
+    }
+
+    public void QuickMove()
+    {
+        List<SCR_InventorySlot> freeSlots = new List<SCR_InventorySlot>();
+        SCR_InventoryFruit[] contentHolderFruits = contentHolder.GetComponentsInChildren<SCR_InventoryFruit>();
+        foreach (SCR_InventorySlot slot in inventorySlots)
+        {
+            if (slot.fruitInBox == null)
+            {
+                freeSlots.Add(slot);
+            }
+        }
+
+        foreach (var fruit in contentHolderFruits)
+        {
+            if (freeSlots.Count >= 1)
+            {
+                Transform originalParent = fruit.returnParent;
+                freeSlots[freeSlots.Count - 1].fruitInBox = fruit;
+                //freeSlots.RemoveAt(freeSlots.Count - 1);
+                // If this is a sell box, destroy the original inventory box
+                Destroy(originalParent.gameObject);
+            }
+        }
+        UpdateTotal();
     }
 }

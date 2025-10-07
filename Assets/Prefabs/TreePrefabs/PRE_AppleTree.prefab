@@ -135,9 +135,9 @@ MonoBehaviour:
   - {fileID: -4154330273797782174, guid: 3d6722380a033714bb67ff8be3f4e213, type: 3}
   - {fileID: -9000854809742389725, guid: bf98120c07c486a4ca45106a1c7b8d91, type: 3}
   growthTimes:
-  - 10
-  - 10
-  - 10
+  - 1
+  - 1
+  - 1
   uncommonFruitMultiplier: 2
   rareFruitMultiplier: 3
   timeToFirstBloom: 1
