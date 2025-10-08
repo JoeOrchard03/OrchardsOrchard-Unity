@@ -28,6 +28,12 @@ public class SCR_Interact : MonoBehaviour
     public Texture2D shovelIconTexture;
     public Texture2D shovelIconHighlightTexture;
     public Vector2 cursorHotspot;
+
+    [Header("Audio variables")] 
+    public AudioSource highlightAudio;
+    public AudioClip highlightSound;
+
+    private bool playedHover = false;
     
     void Start()
     {
@@ -41,10 +47,13 @@ public class SCR_Interact : MonoBehaviour
     {
         if (cursorHighlight)
         {
+            PlayHighlightNoise();
+            playedHover = true;
             Cursor.SetCursor(cursorHighlightTexture, cursorHotspot, CursorMode.Auto);
         }
         else
         {
+            playedHover = false;
             Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
         }
     }
@@ -53,10 +62,13 @@ public class SCR_Interact : MonoBehaviour
     {
         if (shovelHighlight)
         {
+            PlayHighlightNoise();
+            playedHover = true;
             Cursor.SetCursor(shovelIconHighlightTexture, Vector2.zero, CursorMode.Auto);
         }
         else
         {
+            playedHover = false;
             Cursor.SetCursor(shovelIconTexture, Vector2.zero, CursorMode.Auto);
         }
     }
@@ -125,6 +137,14 @@ public class SCR_Interact : MonoBehaviour
             } 
             
             Debug.Log($"{fruit.fruitType} added (Gold: {fruit.isGold}, Iridescent: {fruit.isIridescent})");
+        }
+    }
+
+    private void PlayHighlightNoise()
+    {
+        if (!highlightAudio.isPlaying && !playedHover)
+        {
+            highlightAudio.PlayOneShot(highlightSound);
         }
     }
 }

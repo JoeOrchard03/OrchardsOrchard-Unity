@@ -17,6 +17,15 @@ public class SCR_Drone : MonoBehaviour
     public GameObject armAnchor;
     public GameObject droneArm;
     public SpriteRenderer fruitRenderer;
+    
+    [Header("Audio")]
+    private AudioSource drivingAudio;
+    public AudioSource armAudio;
+    
+    public AudioClip fruitDropOff;
+    public AudioClip droneUnplug;
+    public AudioClip dronePlugin;
+    public AudioClip pickFruit;
 
     public struct HarvestedFruit
     {
@@ -38,6 +47,7 @@ public class SCR_Drone : MonoBehaviour
 
     private void Start()
     {
+        drivingAudio = GetComponent<AudioSource>();
         playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
         //Set spawn pos as the charger's pos
         chargerPosition = transform.position;
@@ -104,6 +114,12 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator MoveUnderFruit(Transform target)
     {
+        if (!(Mathf.Abs(transform.position.x - chargerPosition.x) > 0.03f))
+        {
+            armAudio.PlayOneShot(droneUnplug, 1.0f);
+        }
+        
+        ControlDroneDriveSound(true);
         //While the drone is not almost under the fruit
         while (Mathf.Abs(transform.position.x - target.position.x) > 0.05f)
         {
@@ -115,10 +131,12 @@ public class SCR_Drone : MonoBehaviour
             );
             yield return null;
         }
+        ControlDroneDriveSound(false);
     }
 
     private IEnumerator ExtendArm(Transform target)
     {
+        ControlDroneArmSound(true);
         // Calculate target arm extension length
         float armHeight = droneArm.GetComponent<SpriteRenderer>().bounds.size.y;
         Vector3 localTargetPos = armAnchor.transform.InverseTransformPoint(target.position);
@@ -139,6 +157,8 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
+        ControlDroneArmSound(false);
+        armAudio.PlayOneShot(pickFruit, 1.0f);
         //Sanity check
         if (currentFruit != null)
         {
@@ -176,6 +196,7 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator RetractToInventory()
     {
+        ControlDroneArmSound(true);
         // While drone is above the armInventoryPosition
         while (droneArm.transform.localPosition.y > armInventoryPosition.y)
         {
@@ -188,6 +209,7 @@ public class SCR_Drone : MonoBehaviour
         }
         
         // Clear sprite from arm (putting in inventory)
+        ControlDroneArmSound(false);
         fruitRenderer.sprite = null;
         Debug.Log("Harvested: " + currentFruit.fruitType);
     }
@@ -209,6 +231,7 @@ public class SCR_Drone : MonoBehaviour
     //Return drone to charger after harvest que is cleared
     private IEnumerator ReturnToCharger()
     {
+        ControlDroneDriveSound(true);
         // While drone is not close to charger
         while (Mathf.Abs(transform.position.x - chargerPosition.x) > 0.03f)
         {
@@ -221,8 +244,46 @@ public class SCR_Drone : MonoBehaviour
             yield return null;
         }
 
+        ControlDroneDriveSound(false);
+        drivingAudio.PlayOneShot(dronePlugin, 1.0f);
+        armAudio.PlayOneShot(fruitDropOff, 1.0f);
         playerInventory.AddFruits(droneInventory);
-
         droneInventory.Clear();
+    }
+
+    public void ControlDroneDriveSound(bool driving)
+    {
+        if (driving)
+        {
+            // if (!drivingAudio.isPlaying)
+            // {
+                drivingAudio.Play();
+            // }
+        }
+        else
+        {
+            // if (drivingAudio.isPlaying)
+            // {
+                drivingAudio.Stop();
+            // }
+        }
+    }
+
+    public void ControlDroneArmSound(bool usingArm)
+    {
+        if (usingArm)
+        {
+            if (!armAudio.isPlaying)
+            {
+                armAudio.Play();
+            }
+        }
+        else
+        {
+            if (armAudio.isPlaying)
+            {
+                armAudio.Stop();
+            }
+        }
     }
 }
