@@ -58,6 +58,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         {
             Debug.Log("Taking down tree");
             motherPlot.SetActive(true);
+            motherPlot.GetComponent<SCR_Plot>().PlayTreeDestroyAudio();
             motherPlot.GetComponent<SCR_Highlightable>().stopHighlight = false;
             motherPlot.GetComponent<SCR_Plot>().plotOccupied  = false;
             Destroy(this.gameObject);

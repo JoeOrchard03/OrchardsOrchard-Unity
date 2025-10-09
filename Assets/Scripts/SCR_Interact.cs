@@ -47,7 +47,7 @@ public class SCR_Interact : MonoBehaviour
     {
         if (cursorHighlight)
         {
-            PlayHighlightNoise();
+            //PlayHighlightNoise();
             playedHover = true;
             Cursor.SetCursor(cursorHighlightTexture, cursorHotspot, CursorMode.Auto);
         }
@@ -62,7 +62,7 @@ public class SCR_Interact : MonoBehaviour
     {
         if (shovelHighlight)
         {
-            PlayHighlightNoise();
+            //PlayHighlightNoise();
             playedHover = true;
             Cursor.SetCursor(shovelIconHighlightTexture, Vector2.zero, CursorMode.Auto);
         }

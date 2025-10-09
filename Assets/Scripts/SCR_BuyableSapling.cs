@@ -22,6 +22,7 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject outOfStockObj;
     public GameObject buttonObj;
     public GameObject moneyIcon;
+    public AudioSource buttonAudioSource;
 
     private void Awake()
     {
@@ -65,7 +66,8 @@ public class SCR_BuyableSapling : MonoBehaviour
             Debug.Log("Cannot afford sapling");
             return;
         }
-        
+
+        buttonAudioSource.Play();
         shopMenuScriptRef.moneyTotal -= saplingPrice;
         shopMenuScriptRef.moneyTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         

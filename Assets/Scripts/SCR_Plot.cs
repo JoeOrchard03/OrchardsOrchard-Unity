@@ -32,15 +32,20 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     public GameObject SaplingSpawnLocation;
     private SCR_Interact playerInteractScriptRef;
     public bool plotOccupied = false;
+    private AudioSource plotAudioSource;
+    public AudioClip plotInteract;
+    public AudioClip treeDestroyAudio;
 
     private void Start()
     {
+        plotAudioSource = GetComponent<AudioSource>();
         playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
     }
     
     public void Interact(GameObject interactor)
     {
         if (plotOccupied) { return;}
+        plotAudioSource.PlayOneShot(plotInteract, 0.6f);
         playerInteractScriptRef.selectedPlot = this.gameObject;
         playerInteractScriptRef.menuOpen = true;
         OpenSaplingMenu();
@@ -136,6 +141,12 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         playerInteractScriptRef.SetCursorHighlight(false);
         playerInteractScriptRef.menuOpen = false;
         plotOccupied = true;
+        GetComponent<AudioSource>().Play();
         GetComponent<SCR_Highlightable>().stopHighlight = true;
+    }
+    
+    public void PlayTreeDestroyAudio()
+    {
+        plotAudioSource.PlayOneShot(treeDestroyAudio);
     }
 }

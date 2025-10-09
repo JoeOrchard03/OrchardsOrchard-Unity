@@ -116,7 +116,7 @@ public class SCR_Drone : MonoBehaviour
     {
         if (!(Mathf.Abs(transform.position.x - chargerPosition.x) > 0.03f))
         {
-            armAudio.PlayOneShot(droneUnplug, 1.0f);
+            armAudio.PlayOneShot(droneUnplug, 0.5f);
         }
         
         ControlDroneDriveSound(true);
@@ -158,7 +158,7 @@ public class SCR_Drone : MonoBehaviour
     private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
         ControlDroneArmSound(false);
-        armAudio.PlayOneShot(pickFruit, 1.0f);
+        armAudio.PlayOneShot(pickFruit, 0.2f);
         //Sanity check
         if (currentFruit != null)
         {

@@ -9,6 +9,9 @@ public class SCR_Weather : MonoBehaviour
 
     public float minWeatherStateDuration = 1f;
     public float maxWeatherStateDuration = 3f;
+
+    public AudioSource rainAudioSource;
+    public AudioSource windAudioSource;
     
     // Start is called before the first frame update
     void Start()
@@ -25,16 +28,20 @@ public class SCR_Weather : MonoBehaviour
         if (windyLeaves.activeSelf)
         {
             windyLeaves.SetActive(false);
+            windAudioSource.Stop();
             if (random == 1)
             {
+                rainAudioSource.Play();
                 rain.SetActive(true);
             }
         }
         else if (rain.activeSelf)
         {
+            rainAudioSource.Stop();
             rain.SetActive(false);
             if (random == 1)
             {
+                windAudioSource.Play();
                 windyLeaves.SetActive(true);
             }
         }
@@ -42,11 +49,13 @@ public class SCR_Weather : MonoBehaviour
         {
             if (random == 1)
             {
+                rainAudioSource.Play();
                 rain.SetActive(true);
                 windyLeaves.SetActive(false);
             }
             else if (random == 0)
             {
+                windAudioSource.Play();
                 rain.SetActive(false);
                 windyLeaves.SetActive(true);
             }

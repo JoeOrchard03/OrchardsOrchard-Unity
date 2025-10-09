@@ -7,9 +7,11 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
     private GameObject player;
     public GameObject shopMenu;
     public bool shopOpen = false;
+    private AudioSource shopAudioSource;
 
     public void Start()
     {
+        shopAudioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
     
@@ -18,6 +20,7 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
         Debug.Log("Interacting with shop");
         if (!shopOpen)
         {
+            shopAudioSource.Play();
             Debug.Log("Opening shop menu");
             player.GetComponent<SCR_Interact>().shopMenuOpen = true;
             shopOpen = true;

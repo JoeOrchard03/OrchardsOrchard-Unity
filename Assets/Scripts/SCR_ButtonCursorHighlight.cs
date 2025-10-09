@@ -7,8 +7,7 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
 {
     private SCR_Interact playerInteractScriptRef;
     private SCR_MainMenu mainMenuScriptRef;
-    private AudioSource playerAudioSource;
-    public AudioClip buttonPressClip;
+    public AudioSource buttonAudioSource;
     
     // Start is called before the first frame update
     void Start()
@@ -17,7 +16,6 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
         if (playerObj != null)
         {
             playerObj.TryGetComponent(out playerInteractScriptRef);
-            playerObj.TryGetComponent(out playerAudioSource);
         }
         
         if (playerInteractScriptRef == null)
@@ -56,9 +54,12 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
     
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (buttonAudioSource != null)
+        {
+            buttonAudioSource.Play();
+        }
         if (playerInteractScriptRef != null)
         {
-            playerAudioSource.PlayOneShot(buttonPressClip, 1.0f);
             playerInteractScriptRef.SetCursorHighlight(false);
         }
         else if (mainMenuScriptRef != null)

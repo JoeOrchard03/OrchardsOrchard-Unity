@@ -42,6 +42,9 @@ public class SCR_ShopMenu : MonoBehaviour
     public float moneyTotal;
     private GameObject player;
     [HideInInspector] public float totalFruitValue;
+    private bool movedFruit = false;
+    private AudioSource shopMenuAudioSource;
+    public AudioClip sellAudio;
 
     private void OnEnable()
     {
@@ -54,6 +57,7 @@ public class SCR_ShopMenu : MonoBehaviour
             SCR_ShopInventory.OnShopRefreshed += UpdateShopUI;
         }
         
+        shopMenuAudioSource = GetComponent<AudioSource>();
         moneyTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
         sellCanvas.SetActive(false);
@@ -159,6 +163,11 @@ public class SCR_ShopMenu : MonoBehaviour
             
             slot.fruitInBox = null;
         }
+
+        if (sellTotal >= 1)
+        {
+            shopMenuAudioSource.PlayOneShot(sellAudio);
+        }
         
         moneyTotal += sellTotal;
         sellTotal = 0;
@@ -182,11 +191,12 @@ public class SCR_ShopMenu : MonoBehaviour
                 freeSlots.Add(slot);
             }
         }
-
+        
         foreach (var fruit in contentHolderFruits)
         {
             if (freeSlots.Count >= 1)
             {
+                movedFruit = true;
                 SCR_InventorySlot targetSlot = freeSlots[0];
                 freeSlots.RemoveAt(0);
                 Transform originalParent = fruit.returnParent;
@@ -203,6 +213,13 @@ public class SCR_ShopMenu : MonoBehaviour
                 }
             }
         }
+
+        if (movedFruit)
+        {
+            shopMenuAudioSource.Play();
+            movedFruit = false;
+        }
+        
         UpdateTotal();
     }
 }

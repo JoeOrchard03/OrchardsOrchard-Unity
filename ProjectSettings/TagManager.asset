@@ -10,6 +10,7 @@ TagManager:
   - Composter
   - Tree
   - MainMenu
+  - FruitAudioSource
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,8 @@ public class SCR_InventorySlot : MonoBehaviour, IDropHandler
     private SCR_ShopMenu shopMenuScriptRef;
     public bool shopSellBox = false;
     public SCR_InventoryFruit fruitInBox;
+    public AudioSource shopMenuAudioSource;
+    public AudioClip placeAudio;
 
     private void Awake()
     {
@@ -16,6 +18,7 @@ public class SCR_InventorySlot : MonoBehaviour, IDropHandler
     
     public void OnDrop(PointerEventData eventData)
     {
+        shopMenuAudioSource.PlayOneShot(placeAudio);
         GameObject dropped = eventData.pointerDrag;
         if (dropped == null) return;
 

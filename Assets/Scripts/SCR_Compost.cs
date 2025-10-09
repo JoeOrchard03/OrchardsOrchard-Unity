@@ -9,6 +9,9 @@ public class SCR_Compost : MonoBehaviour, INT_Interactable
     
     public Texture2D shovelTexture;
     public Texture2D cursorTexture;
+    public AudioSource composterAudioSource;
+    public AudioClip shovelPickUp;
+    public AudioClip shovelDrop;
 
     private void Start()
     {
@@ -19,12 +22,14 @@ public class SCR_Compost : MonoBehaviour, INT_Interactable
     {
         if (!composting)
         {
+            composterAudioSource.PlayOneShot(shovelPickUp);
             Debug.Log("Enabling composting");
             playerScriptRef.composting = true;
             composting = true;
         }
         else
         {
+            composterAudioSource.PlayOneShot(shovelDrop);
             Debug.Log("Disabling composting");
             playerScriptRef.composting = false;
             composting = false;

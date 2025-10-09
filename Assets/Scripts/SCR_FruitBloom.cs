@@ -32,6 +32,10 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [HideInInspector] public bool isGold = false;
     [HideInInspector] public bool isIridescent = false;
     
+    private AudioSource rareFruitAudioSource;
+    public AudioClip goldAppear;
+    public AudioClip iridescentAppear;
+    
     [Header("Misc variables")]
     [SerializeField] public bool readyToHarvest = false;
     private bool harvested = false;
@@ -40,8 +44,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     private void Awake()
     {
-        goldChance = 0.05f;
-        iridescentChance = 0.005f;
+        goldChance = 0.0f;
+        iridescentChance = 0.25f;
 
         if (goldParticlesPrefab == null)
         {
@@ -53,6 +57,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             iridescentParticlesPrefab = Resources.Load<GameObject>("Particles/IridescentParticles");
         }
         
+        rareFruitAudioSource = GameObject.Find("RareFruitAudioSource").GetComponent<AudioSource>();
         playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
         drone = GameObject.FindGameObjectWithTag("Drone");
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
@@ -137,6 +142,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         if (roll < iridescentChance)
         {
             isIridescent = true;
+            rareFruitAudioSource.PlayOneShot(iridescentAppear);
             spriteRenderer.sprite = iridescentSprite;
             activeParticles = Instantiate(iridescentParticlesPrefab, transform);
             activeParticles.transform.localPosition = Vector3.zero;
@@ -144,6 +150,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         else if (roll < iridescentChance + goldChance)
         {
             isGold = true;
+            rareFruitAudioSource.PlayOneShot(goldAppear);
             spriteRenderer.sprite = goldSprite;
             activeParticles = Instantiate(goldParticlesPrefab, transform);
             activeParticles.transform.localPosition = Vector3.zero;

@@ -18,6 +18,9 @@ public class SCR_AudioManager : MonoBehaviour
     
     private float currentMasterVolume;
     private float currentMusicVolume;
+
+    private AudioSource sliderAudioSource;
+    public AudioClip tick;
     
     private void Awake()
     {
@@ -27,6 +30,7 @@ public class SCR_AudioManager : MonoBehaviour
             return;
         }
 
+        sliderAudioSource = GetComponent<AudioSource>();
         instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -40,6 +44,7 @@ public class SCR_AudioManager : MonoBehaviour
     
     public void SetMasterVolume(float value)
     {
+        sliderAudioSource.Play();
         currentMasterVolume = Mathf.Clamp01(value);
         float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(value));
         masterAudioMixer.SetFloat(masterVolParameter, dB);
@@ -48,6 +53,7 @@ public class SCR_AudioManager : MonoBehaviour
 
     public void SetMusicVolume(float value)
     {
+        sliderAudioSource.Play();
         currentMusicVolume = value;
         float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(value));
         musicAudioMixer.SetFloat(musicVolParameter, dB);
