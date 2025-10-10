@@ -23,9 +23,11 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject buttonObj;
     public GameObject moneyIcon;
     public AudioSource buttonAudioSource;
+    public SCR_Interact interactScriptRef;
 
     private void Awake()
     {
+        interactScriptRef = GameObject.Find("PlayerOBJ").GetComponent<SCR_Interact>();
         shopMenuScriptRef = GameObject.FindGameObjectWithTag("ShopMenu").GetComponent<SCR_ShopMenu>();
         ApplyFruitInfo();
     }
@@ -75,7 +77,8 @@ public class SCR_BuyableSapling : MonoBehaviour
         sapling.GetComponent<SCR_MenuBox>().fruitType = fruitType;
         
         Debug.Log("Adding " + fruitType.ToString() + " sapling to inventory");
-        
+
+        interactScriptRef.currentSaplingCount++;
         DisableSlot();
     }
 }

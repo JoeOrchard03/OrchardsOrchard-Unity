@@ -34,7 +34,9 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     // Start is called before the first frame update
     void Start()
     {
-        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>(); 
+        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerScriptRef.currentTreeCount++;
+        playerScriptRef.currentSaplingCount--;
         
         if (spriteGrowthStages.Count > 1 && growthTimes.Count == spriteGrowthStages.Count - 1)
         {
@@ -54,14 +56,19 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     public void Interact(GameObject interactor)
     {
-        if (playerScriptRef.composting)
+        if (playerScriptRef.composting && (playerScriptRef.currentTreeCount > 1 || playerScriptRef.currentSaplingCount >= 1))
         {
             Debug.Log("Taking down tree");
             motherPlot.SetActive(true);
             motherPlot.GetComponent<SCR_Plot>().PlayTreeDestroyAudio();
             motherPlot.GetComponent<SCR_Highlightable>().stopHighlight = false;
             motherPlot.GetComponent<SCR_Plot>().plotOccupied  = false;
+            playerScriptRef.currentTreeCount--;
             Destroy(this.gameObject);
+        }
+        else
+        {
+            Debug.Log("Cannot take down tree");
         }
     }
 

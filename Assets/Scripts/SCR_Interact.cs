@@ -34,9 +34,28 @@ public class SCR_Interact : MonoBehaviour
     public AudioClip highlightSound;
 
     private bool playedHover = false;
+
+    public GameObject saplingContainer;
+    
+    public int currentTreeCount;
+    public int currentSaplingCount;
     
     void Start()
     {
+        List<GameObject> trees = new List<GameObject>();
+        foreach (GameObject tree in GameObject.FindGameObjectsWithTag("Tree"))
+        {
+            trees.Add(tree);
+        }
+        currentTreeCount = trees.Count;
+        
+        List<GameObject> saplings = new List<GameObject>();
+        foreach (Transform child in saplingContainer.transform)
+        {
+            saplings.Add(child.gameObject);
+        }
+        currentSaplingCount =  saplings.Count;
+        
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         

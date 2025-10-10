@@ -18,6 +18,8 @@ public class SCR_Compendium : MonoBehaviour
     
     private Dictionary<FruitType, SCR_FruitEntry> entries = new Dictionary<FruitType, SCR_FruitEntry>();
 
+    private AudioSource pageTurnAudioSource;
+
     private void Awake()
     {
         if(instance == null) instance = this;
@@ -31,6 +33,8 @@ public class SCR_Compendium : MonoBehaviour
                 entries.Add(fruitEntry.fruitType, fruitEntry);
             }
         }
+        
+        pageTurnAudioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void OpenCompendium()
@@ -55,26 +59,31 @@ public class SCR_Compendium : MonoBehaviour
         {
             case 1:
                 page2.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 2;
                 page1.SetActive(false);
                 break;
             case 2:
                 page3.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 3;
                 page2.SetActive(false);
                 break;
             case 3:
                 page4.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 4;
                 page3.SetActive(false);
                 break;
             case 4:
                 page5.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 5;
                 page4.SetActive(false);
                 break;
             case 5:
                 page6.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 6;
                 page5.SetActive(false);
                 break;
@@ -88,26 +97,31 @@ public class SCR_Compendium : MonoBehaviour
         {
             case 2:
                 page1.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 1;
                 page2.SetActive(false);
                 break;
             case 3:
                 page2.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 2;
                 page3.SetActive(false);
                 break;
             case 4:
                 page3.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 3;
                 page4.SetActive(false);
                 break;
             case 5:
                 page4.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 4;
                 page5.SetActive(false);
                 break;
             case 6:
                 page5.SetActive(true);
+                pageTurnAudioSource.Play();
                 currentPage = 5;
                 page6.SetActive(false);
                 break;
