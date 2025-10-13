@@ -38,9 +38,12 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     
     [Header("Misc variables")]
     [SerializeField] public bool readyToHarvest = false;
-    private bool harvested = false;
-    private int currentStage = 0;
+    public bool harvested = false;
+    public int currentStage = 0;
     private GameObject activeParticles;
+
+    [Header("Save variables")] 
+    public int fruitIndex = -1;
 
     private void Awake()
     {
@@ -63,9 +66,13 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
     
-    public void StartGrowthCycle()
+    public void StartGrowthCycle(bool reset = true)
     {
-        ResetFruit();
+        if (reset)
+        {
+            ResetFruit();
+        }
+        harvested = false;
         StartCoroutine(GrowFruit());
     }
     
@@ -89,18 +96,31 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     private void CheckForBloomLeaves()
     {
-        motherTree = transform.parent.gameObject;
-        if (motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite != null)
+        if (motherTree == null)
+            motherTree = transform.parent?.gameObject;
+
+        if (motherTree == null) return;
+
+        SCR_TreeGrowthCycle tree = motherTree.GetComponent<SCR_TreeGrowthCycle>();
+        
+        if (tree != null && tree.alternateLeavesSprite != null)
         {
-            motherTree.GetComponent<SpriteRenderer>().sprite = motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite;
+            motherTree.GetComponent<SpriteRenderer>().sprite = tree.alternateLeavesSprite;
         }
     }
 
     private void SetLeavesToNormal()
     {
-        if (motherTree.GetComponent<SCR_TreeGrowthCycle>().alternateLeavesSprite != null)
+        if (motherTree == null)
+            motherTree = transform.parent?.gameObject;
+
+        if (motherTree == null) return;
+
+        SCR_TreeGrowthCycle tree = motherTree.GetComponent<SCR_TreeGrowthCycle>();
+        
+        if (tree != null && tree.alternateLeavesSprite != null)
         {
-            motherTree.GetComponent<SpriteRenderer>().sprite = motherTree.GetComponent<SCR_TreeGrowthCycle>().normalLeavesSprite;
+            motherTree.GetComponent<SpriteRenderer>().sprite = tree.normalLeavesSprite;
         }
     }
     
@@ -135,6 +155,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             
             yield return new WaitForSeconds(waitTime);
             currentStage++;
+            UpdateSavedFruitStage();
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
 
@@ -165,8 +186,45 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     {
         if (!readyToHarvest) { Debug.Log("Fruit not ready to harvest"); return;}
         if (harvested) { Debug.Log("Fruit already harvested"); return;}
+        
         harvested = true;
+
+        if (fruitIndex != -1)
+        {
+            SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+            int plotNumber = transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
+            TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
+
+            if (tree != null && fruitIndex < tree.fruits.Count)
+            {
+                tree.fruits[fruitIndex].beenHarvested = true;
+                SCR_SaveSystem.SaveGame(saveData);
+            }
+        }
         
         drone.GetComponent<SCR_Drone>().SetTarget(gameObject.GetComponent<SCR_FruitBloom>());
+    }
+
+    private void UpdateSavedFruitStage()
+    {
+        if (fruitIndex == -1) return;
+        
+        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+
+        int plotNumber = transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
+
+        if (tree != null)
+        {
+            while (fruitIndex >= tree.fruits.Count)
+            {
+                tree.fruits.Add(new FruitData());
+            }
+
+            tree.fruits[fruitIndex].growthStage = currentStage;
+            tree.fruits[fruitIndex].isGold = isGold;
+            tree.fruits[fruitIndex].isIridescent = isIridescent;
+            SCR_SaveSystem.SaveGame(saveData);
+        }
     }
 }

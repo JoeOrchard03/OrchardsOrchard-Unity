@@ -21,7 +21,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     public float timeToFirstBloom;
 
     [Header("Misc variables")]
-    private int currentStage = 0;
+    public int currentStage = 0;
     public GameObject motherPlot;
     private SCR_Interact playerScriptRef;
     
@@ -30,27 +30,33 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     public List<GameObject> activeBloomObjects;
     public int minNumberOfBloomsToActivate;
     public int maxNumberOfBloomsToActivate;
+
+    private int currentBatch = 0;
     
-    // Start is called before the first frame update
     void Start()
     {
-        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        LoadFruits();
+        
         playerScriptRef.currentTreeCount++;
         playerScriptRef.currentSaplingCount--;
         
-        if (spriteGrowthStages.Count > 1 && growthTimes.Count == spriteGrowthStages.Count - 1)
+        if (currentStage < spriteGrowthStages.Count -1)
         {
-            StartCoroutine(GrowTree());
+            if (spriteGrowthStages.Count > 1 && growthTimes.Count == spriteGrowthStages.Count - 1)
+            {
+                StartCoroutine(GrowTree());
+            }
+            else
+            {
+                Debug.LogWarning("Growth stages or durations not set correctly");
+            }
         }
         else
         {
-            Debug.LogWarning("Growth stages or durations not set correctly.");
-        }
-        
-        var fruitBlooms = new Transform[gameObject.transform.childCount];
-        for (int i = 0; i < fruitBlooms.Length; i++)
-        {
-            inactiveFruitBloomObjects.Add(gameObject.transform.GetChild(i).gameObject);
+            if (activeBloomObjects.Count == 0)
+            {
+                StartCoroutine(RestartBloomCycle());
+            }
         }
     }
     
@@ -76,7 +82,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     IEnumerator GrowTree()
     {
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
-        
         Vector3 originalPos = transform.localPosition;
         transform.localPosition = originalPos + new Vector3(0f, 0.3f, 0f);
 
@@ -97,6 +102,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             
             yield return new WaitForSeconds(waitTime);
             currentStage++;
+            UpdateSavedGrowthStage();
             
             if (spriteGrowthStages[currentStage] == spriteGrowthStages[1])
             {
@@ -104,7 +110,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
                 motherPlot.SetActive(false);
             }
             
-            if(spriteGrowthStages[currentStage] == spriteGrowthStages[1]) {motherPlot.SetActive(false);}
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
         yield return new WaitForSeconds(timeToFirstBloom);
@@ -113,20 +118,70 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     public void StartBloomCycle()
     {
+        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
+        
+        if (tree == null)
+        {
+            Debug.LogWarning("TreeData not found for plot " + motherPlot.GetComponent<SCR_Plot>().plotNumber);
+            return;
+        }
+
+        bool batchActive = tree.fruits.Exists(f => f.batchID == currentBatch && !f.beenHarvested);
+        if (batchActive) return;
+        
         int numberOfBloomsToActivate =  Random.Range(minNumberOfBloomsToActivate, maxNumberOfBloomsToActivate);
         Debug.Log("Activating " + numberOfBloomsToActivate + " blooms");
+        
         for (int i = 0; i < numberOfBloomsToActivate; i++)
         {
-            int bloomToActivateIndex = Random.Range(0, inactiveFruitBloomObjects.Count);
-            inactiveFruitBloomObjects[bloomToActivateIndex].SetActive(true);
-            inactiveFruitBloomObjects[bloomToActivateIndex].GetComponent<SCR_FruitBloom>().StartGrowthCycle();
-            activeBloomObjects.Add(inactiveFruitBloomObjects[bloomToActivateIndex]);
-            inactiveFruitBloomObjects.RemoveAt(bloomToActivateIndex);
+            GameObject fruitOBJ = inactiveFruitBloomObjects.Find(f => f.GetComponent<SCR_FruitBloom>().fruitIndex == -1);
+            if (fruitOBJ == null) break;
+
+            SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
+
+            FruitData newFruit = new FruitData { batchID = currentBatch };
+            tree.fruits.Add(newFruit);
+            fruit.fruitIndex = tree.fruits.Count - 1;
+            
+            fruitOBJ.SetActive(true);
+            fruit.currentStage = 0;
+            fruit.readyToHarvest = false;
+            fruit.harvested = false;
+            fruit.StartGrowthCycle(false);
+            
+            activeBloomObjects.Add(fruitOBJ);
+            inactiveFruitBloomObjects.Remove(fruitOBJ);
+        }
+
+        if (numberOfBloomsToActivate > 0)
+        {
+            currentBatch++;
+            if (currentBatch > 1000) currentBatch = 0;
+            SCR_SaveSystem.SaveGame(saveData);
         }
     }
 
     public void OnFruitHarvested(GameObject fruit)
     {
+        SCR_FruitBloom fruitScriptRef = fruit.GetComponent<SCR_FruitBloom>();
+
+        if (fruitScriptRef.fruitIndex == -1)
+        {
+            Debug.LogWarning("Harvested fruit has no fruit Index assigned!");
+            return;
+        }
+        
+        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
+        if (tree != null && fruitScriptRef.fruitIndex < tree.fruits.Count)
+        {
+            tree.fruits[fruitScriptRef.fruitIndex].beenHarvested = true;
+            SCR_SaveSystem.SaveGame(saveData);
+        }
+
+        fruitScriptRef.fruitIndex = -1;
+        
         if (activeBloomObjects.Contains(fruit))
         {
             activeBloomObjects.Remove(fruit);
@@ -144,5 +199,81 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     {
         yield return new WaitForSeconds(timeToFirstBloom);
         StartBloomCycle();
+    }
+
+    private void UpdateSavedGrowthStage()
+    {
+        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
+        if (tree != null)
+        {
+            tree.dataGrowthStage = currentStage;
+            SCR_SaveSystem.SaveGame(saveData);
+        }
+        else
+        {
+            Debug.LogWarning("TreeData not found for plot " + motherPlot.GetComponent<SCR_Plot>().plotNumber);
+        }
+    }
+
+    private void LoadFruits()
+    {
+        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+
+        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
+
+        if (tree == null) return;
+
+        inactiveFruitBloomObjects.Clear();
+        activeBloomObjects.Clear();
+        
+        for (int i = 0; i < tree.fruits.Count; i++)
+        {
+            if (i >= gameObject.transform.childCount) break;
+            
+            GameObject fruitOBJ = gameObject.transform.GetChild(i).gameObject;
+            SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
+
+            fruit.fruitIndex = i;
+            FruitData savedFruit = tree.fruits[i];
+            fruit.currentStage = savedFruit.growthStage;
+            fruit.isGold = savedFruit.isGold;
+            fruit.isIridescent = savedFruit.isIridescent;
+
+            if (!savedFruit.beenHarvested)
+            {
+                fruitOBJ.SetActive(true);
+                
+                if (fruit.currentStage < fruit.spriteGrowthStages.Count - 1)
+                {
+                    fruit.StartGrowthCycle(false);
+                }
+                else
+                {
+                    fruit.readyToHarvest = true;
+                    fruit.spriteRenderer.sprite = fruit.spriteGrowthStages[fruit.currentStage];
+                    fruit.gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
+                }
+
+                activeBloomObjects.Add(fruitOBJ);
+            }
+            else
+            {
+                fruitOBJ.SetActive(false);
+                inactiveFruitBloomObjects.Add(fruitOBJ);
+            }
+
+            if (savedFruit.batchID >= currentBatch)
+            {
+                currentBatch = savedFruit.batchID + 1;
+            }
+        }
+
+        for (int i = tree.fruits.Count; i < gameObject.transform.childCount; i++)
+        {
+            inactiveFruitBloomObjects.Add(gameObject.transform.GetChild(i).gameObject);
+        }
     }
 }

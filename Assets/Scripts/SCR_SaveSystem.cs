@@ -27,4 +27,31 @@ public class SCR_SaveSystem : MonoBehaviour
         Debug.Log("No save data found, creating new save file...");
         return new SCR_SaveData();
     }
+
+    public static void SaveTrees(List<TreeData> trees)
+    {
+        SCR_SaveData data = LoadGame();
+        data.trees = trees;
+        SaveGame(data);
+    }
+
+    public static List<TreeData> LoadTrees()
+    {
+        SCR_SaveData data = LoadGame();
+        return data.trees ?? new List<TreeData>();
+    }
+
+    public static void RemoveTreeFromSave(int plotNumber)
+    {
+        SCR_SaveData data = LoadGame();
+        data.trees.RemoveAll(tree => tree.dataPlotNumber == plotNumber);
+        SaveGame(data);
+    }
+    
+    public void ClearSaveData()
+    {
+        PlayerPrefs.DeleteKey(saveKey);
+        PlayerPrefs.Save();
+        Debug.Log("Clearing save data...");
+    }
 }

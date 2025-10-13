@@ -865,6 +865,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -918,7 +922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (4)
+      value: PRE_Plot (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2111,6 +2115,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1246271017}
     m_Modifications:
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -2192,6 +2200,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -2245,7 +2257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (3)
+      value: PRE_Plot (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4772,7 +4784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (6)
+      value: PRE_Plot (0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5574,6 +5586,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &677649707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677649709}
+  - component: {fileID: 677649708}
+  m_Layer: 0
+  m_Name: TreeLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &677649708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677649707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49538b2910c0494cbb9461dfa42fe44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plots:
+  - {fileID: 1721534892}
+  - {fileID: 555408024}
+  - {fileID: 2017618067}
+  - {fileID: 75607662}
+  - {fileID: 66823810}
+  - {fileID: 268902715}
+  - {fileID: 1436964338}
+  - {fileID: 1615782321}
+--- !u!4 &677649709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677649707}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.21400556, y: 5.049881, z: 2.0840979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &706230942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9013,6 +9078,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -9066,7 +9135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (7)
+      value: PRE_Plot (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9730,6 +9799,50 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+--- !u!1 &1055154804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055154805}
+  - component: {fileID: 1055154806}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055154805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055154804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7795458, y: 6.319807, z: 2.0840979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055154806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055154804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed7976a7bcd77e4a875b9a351e6b917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079052291
 GameObject:
   m_ObjectHideFlags: 0
@@ -9966,6 +10079,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -10019,7 +10136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (5)
+      value: PRE_Plot (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10395,6 +10512,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -10448,7 +10569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (2)
+      value: PRE_Plot (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11236,14 +11357,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 621629503}
   - {fileID: 200761846}
-  - {fileID: 1127205973}
-  - {fileID: 208462152}
+  - {fileID: 996553604}
   - {fileID: 110899261}
   - {fileID: 1087733593}
-  - {fileID: 621629503}
-  - {fileID: 996553604}
   - {fileID: 1508325172}
+  - {fileID: 208462152}
+  - {fileID: 1127205973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250240730
@@ -14182,6 +14303,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1587891967}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: plotNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: SaplingMenu
       value: 
       objectReference: {fileID: 1159659343}
@@ -14235,7 +14360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: m_Name
-      value: PRE_Plot (8)
+      value: PRE_Plot (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21127,3 +21252,5 @@ SceneRoots:
   - {fileID: 1858254261}
   - {fileID: 1333318406}
   - {fileID: 905610168}
+  - {fileID: 677649709}
+  - {fileID: 1055154805}

@@ -36,6 +36,8 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     public AudioClip plotInteract;
     public AudioClip treeDestroyAudio;
 
+    public int plotNumber;
+    
     private void Start()
     {
         plotAudioSource = GetComponent<AudioSource>();
@@ -61,78 +63,17 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
 
     public void SaplingToPlant(string SaplingName)
     {
-        switch (SaplingName)
+        if(Enum.TryParse(SaplingName, out FruitType fruitType))
         {
-            case "Apple":
-                Plant(AppleTreePrefab);
-                break;
-            case "Cherry":
-                Plant(CherryTreePrefab);
-                break;
-            case "Orange":
-                Plant(OrangeTreePrefab);
-                break;
-            case "Lyche":
-                Plant(LycheTreePrefab);
-                break;
-            case "Peach":
-                Plant(PeachTreePrefab);
-                break;
-            case "Lemon":
-                Plant(LemonTreePrefab);
-                break;
-            case "Lime":
-                Plant(LimeTreePrefab);
-                break;
-            case "Papaya":
-                Plant(PapayaTreePrefab);
-                break;
-            case "Plum":
-                Plant(PlumTreePrefab);
-                break;
-            case "Olive":
-                Plant(OliveTreePrefab);
-                break;
-            case "Cocoa":
-                Plant(CocoaTreePrefab);
-                break;
-            case "Date":
-                Plant(DateTreePrefab);
-                break;
-            case "Avocado":
-                Plant(AvocadoTreePrefab);
-                break;
-            case "CrabApple":
-                Plant(CrabAppleTreePrefab);
-                break;
-            case "Kumquat":
-                Plant(KumquatTreePrefab);
-                break;
-            case "Banana":
-                Plant(BananaTreePrefab);
-                break;
-            case "Pear":
-                Plant(PearTreePrefab);
-                break;
-            case "Coconut":
-                Plant(CoconutTreePrefab);
-                break;
-            case "Pomelo":
-                Plant(PomeloTreePrefab);
-                break;
-            case "Grapefruit":
-                Plant(GrapefruitTreePrefab);
-                break;
-            case "Mullbery":
-                Plant(MullberryTreePrefab);
-                break;
-            default:
-                Debug.Log(SaplingName + " is not a valid sapling name");
-                break;
+            Plant(GetTreePrefab(fruitType), fruitType);
+        }
+        else
+        {
+            Debug.Log(SaplingName + " is not a valid sapling name");
         }
     }
 
-    private void Plant(GameObject Sapling)
+    private void Plant(GameObject Sapling, FruitType fruitType)
     {
         GameObject instantiatedSapling = Instantiate(Sapling, SaplingSpawnLocation.transform.position, transform.rotation);
         instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;
@@ -143,10 +84,69 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         plotOccupied = true;
         GetComponent<AudioSource>().Play();
         GetComponent<SCR_Highlightable>().stopHighlight = true;
+
+        TreeData newTreeData = new TreeData
+        {
+            dataFruitType = fruitType,
+            dataPlotNumber = plotNumber,
+        };
+
+        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        data.trees.Add(newTreeData);
+        SCR_SaveSystem.SaveGame(data);
+    }
+
+    public void LoadPlantedTree(FruitType fruitType, int growthStage)
+    {
+        GameObject prefab = GetTreePrefab(fruitType);
+        if (prefab == null)
+        {
+            Debug.LogWarning("No tree prefab found for fruit type: " + fruitType);
+            return;
+        }
+        
+        GameObject instantiatedPrefab = Instantiate(prefab, SaplingSpawnLocation.transform.position, transform.rotation);
+        SCR_TreeGrowthCycle growthCycleScriptRef = instantiatedPrefab.GetComponent<SCR_TreeGrowthCycle>();
+        growthCycleScriptRef.motherPlot = this.gameObject;
+        growthCycleScriptRef.currentStage = growthStage;
+        plotOccupied = true;
+        GetComponent<SCR_Highlightable>().stopHighlight = true;
     }
     
     public void PlayTreeDestroyAudio()
     {
+        SCR_SaveSystem.RemoveTreeFromSave(plotNumber);
         plotAudioSource.PlayOneShot(treeDestroyAudio);
+    }
+
+    public GameObject GetTreePrefab(FruitType fruitType)
+    {
+        switch (fruitType)
+        {
+            case FruitType.Apple: return AppleTreePrefab;
+            case FruitType.Cherry: return CherryTreePrefab;
+            case FruitType.Orange: return OrangeTreePrefab;
+            case FruitType.Lyche: return LycheTreePrefab;
+            case FruitType.Peach: return PeachTreePrefab;
+            case FruitType.Lemon: return LemonTreePrefab;
+            case FruitType.Lime: return LimeTreePrefab;
+            case FruitType.Papaya: return PapayaTreePrefab;
+            case FruitType.Plum: return PlumTreePrefab;
+            case FruitType.Olive: return OliveTreePrefab;
+            case FruitType.Cocoa: return CocoaTreePrefab;
+            case FruitType.Date: return DateTreePrefab;
+            case FruitType.Avocado: return AvocadoTreePrefab;
+            case FruitType.CrabApple: return CrabAppleTreePrefab;
+            case FruitType.Kumquat: return KumquatTreePrefab;
+            case FruitType.Banana: return BananaTreePrefab;
+            case FruitType.Pear: return PearTreePrefab;
+            case FruitType.Coconut: return CoconutTreePrefab;
+            case FruitType.Pomelo: return PomeloTreePrefab;
+            case FruitType.Grapefruit: return GrapefruitTreePrefab;
+            case FruitType.Mullbery: return MullberryTreePrefab;
+            default:
+                Debug.LogWarning($"No prefab found for {fruitType}");
+                return null;
+        }
     }
 }
