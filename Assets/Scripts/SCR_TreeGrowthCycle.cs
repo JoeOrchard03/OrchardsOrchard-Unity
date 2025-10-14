@@ -230,7 +230,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     private void LoadFruits()
     {
         playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
-
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
 
@@ -244,7 +243,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             if (i >= gameObject.transform.childCount) break;
             
             GameObject fruitOBJ = gameObject.transform.GetChild(i).gameObject;
-            
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
 
             fruit.fruitIndex = i;
@@ -257,6 +255,15 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             if (!savedFruit.beenHarvested)
             {
                 fruitOBJ.SetActive(true);
+
+                if (fruit.isGold || fruit.isIridescent)
+                {
+                    fruit.GoldOrIriVisuals(false);
+                }
+                else
+                {
+                    fruit.spriteRenderer.sprite = fruit.spriteGrowthStages[fruit.currentStage];
+                }
                 
                 if (fruit.currentStage < fruit.spriteGrowthStages.Count - 1)
                 {
@@ -265,8 +272,17 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
                 else
                 {
                     fruit.readyToHarvest = true;
-                    fruit.spriteRenderer.sprite = fruit.spriteGrowthStages[fruit.currentStage];
                     fruit.gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
+                    
+                    if (fruit.isGold || fruit.isIridescent)
+                    {
+                        Debug.Log("Fruit detected as either gold or iri, running coroutine");
+                        fruit.GoldOrIriVisuals(false);
+                    }
+                    else
+                    {
+                        fruit.spriteRenderer.sprite = fruit.spriteGrowthStages[fruit.currentStage];
+                    }
                 }
 
                 activeBloomObjects.Add(fruitOBJ);

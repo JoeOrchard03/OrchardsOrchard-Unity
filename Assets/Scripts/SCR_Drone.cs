@@ -189,6 +189,7 @@ public class SCR_Drone : MonoBehaviour
             }
             
             currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>().OnFruitHarvested(currentFruit.gameObject);
+            SaveHarvestedFruit();
         }
         //Small delay for harvest time
         yield return new WaitForSeconds(harvestTime);
@@ -277,6 +278,30 @@ public class SCR_Drone : MonoBehaviour
             if (armAudio.isPlaying)
             {
                 armAudio.Stop();
+            }
+        }
+    }
+
+    private void SaveHarvestedFruit()
+    {
+        if (currentFruit != null)
+        {
+            currentFruit.harvested = true;
+            currentFruit.isTargeted = false;
+
+            if (currentFruit.fruitIndex != -1)
+            {
+                SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+                int plotNumber = currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
+                TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
+
+                if (tree != null && currentFruit.fruitIndex < tree.fruits.Count)
+                {
+                    tree.fruits[currentFruit.fruitIndex].beenHarvested = true;
+                    tree.fruits[currentFruit.fruitIndex].isGold = currentFruit.isGold;
+                    tree.fruits[currentFruit.fruitIndex].isIridescent = currentFruit.isIridescent;
+                    SCR_SaveSystem.SaveGame(saveData);
+                }
             }
         }
     }

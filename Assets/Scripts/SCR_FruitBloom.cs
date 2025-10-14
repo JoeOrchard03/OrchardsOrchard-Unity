@@ -40,7 +40,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     [SerializeField] public bool readyToHarvest = false;
     public bool harvested = false;
     public int currentStage = 0;
-    private GameObject activeParticles;
+    public GameObject activeParticles;
     [HideInInspector] public bool isTargeted = false;
 
     [Header("Save variables")] 
@@ -79,7 +79,11 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             activeParticles = null;
         }
         harvested = false;
-        StartCoroutine(GrowFruit());
+        
+        if (currentStage < spriteGrowthStages.Count - 1)
+        {
+            StartCoroutine(GrowFruit());
+        }
     }
     
     public void ResetFruit()
@@ -133,7 +137,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     IEnumerator GrowFruit()
     {
         spriteRenderer.sprite = spriteGrowthStages[currentStage];
-        
         Rarity fruitRarity = fruitDatabase.GetFruit(fruitType).rarity;
         
         while (currentStage < spriteGrowthStages.Count - 1)
@@ -161,53 +164,77 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             
             yield return new WaitForSeconds(waitTime);
             currentStage++;
-            UpdateSavedFruitStage();
+            //UpdateSavedFruitStage();
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
 
-        float roll = Random.value;
-        if (roll < iridescentChance)
+        if (!isGold && !isIridescent)
         {
+            float roll = Random.value;
+            if (roll < iridescentChance)
+            {
+                isIridescent = true;
+                GoldOrIriVisuals(true);
+            }
+            else if (roll < iridescentChance + goldChance)
+            {
+                isGold = true;
+                GoldOrIriVisuals(true);
+            }
+        }
+        else
+        {
+            GoldOrIriVisuals(false);
+        }
+        
+        readyToHarvest = true;
+        gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
+        playerInteractScriptRef.matureFruits.Add(this.gameObject);
+        
+        UpdateSavedFruitStage();
+    }
+
+    public void GoldOrIriVisuals(bool playAudio = false)
+    {
+        Debug.Log("Running for fruit: " + gameObject.name);
+        if (activeParticles != null)
+        {
+            Destroy(activeParticles);
+            activeParticles = null;
+        }
+        
+        if (isIridescent)
+        {
+            Debug.Log(gameObject.name + " detected as iridescent");
+            if (playAudio)
+            {
+                rareFruitAudioSource.PlayOneShot(iridescentAppear);
+            }
             isIridescent = true;
-            rareFruitAudioSource.PlayOneShot(iridescentAppear);
             spriteRenderer.sprite = iridescentSprite;
             activeParticles = Instantiate(iridescentParticlesPrefab, transform);
             activeParticles.transform.localPosition = Vector3.zero;
         }
-        else if (roll < iridescentChance + goldChance)
+        else if (isGold)
         {
+            Debug.Log(gameObject.name + " detected as gold");
+            if (playAudio)
+            {
+                rareFruitAudioSource.PlayOneShot(goldAppear);
+            }
             isGold = true;
-            rareFruitAudioSource.PlayOneShot(goldAppear);
             spriteRenderer.sprite = goldSprite;
             activeParticles = Instantiate(goldParticlesPrefab, transform);
             activeParticles.transform.localPosition = Vector3.zero;
         }
-        
-        gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
-        readyToHarvest = true;
-        playerInteractScriptRef.matureFruits.Add(this.gameObject);
     }
-
+    
     public void Interact(GameObject interactor)
     {
         if (!readyToHarvest) { Debug.Log("Fruit not ready to harvest"); return;}
-        if (harvested) { Debug.Log("Fruit already harvested"); return;}
-        
-        harvested = true;
+        if (harvested || isTargeted) { Debug.Log("Fruit already being harvested"); return;}
 
-        if (fruitIndex != -1)
-        {
-            SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
-            int plotNumber = transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
-            TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
-
-            if (tree != null && fruitIndex < tree.fruits.Count)
-            {
-                tree.fruits[fruitIndex].beenHarvested = true;
-                SCR_SaveSystem.SaveGame(saveData);
-            }
-        }
-        
+        isTargeted = true;
         drone.GetComponent<SCR_Drone>().SetTarget(gameObject.GetComponent<SCR_FruitBloom>());
     }
 
@@ -216,7 +243,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         if (fruitIndex == -1) return;
         
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
-
         int plotNumber = transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
 
@@ -232,6 +258,18 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             tree.fruits[fruitIndex].isIridescent = isIridescent;
             tree.fruits[fruitIndex].fruitPos = transform.localPosition;
             SCR_SaveSystem.SaveGame(saveData);
+        }
+    }
+    
+    public IEnumerator ApplyGoldIriOnLoad()
+    {
+        yield return null;
+        
+        if (isGold || isIridescent)
+        {
+            GoldOrIriVisuals(false);
+            readyToHarvest = true;
+            gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
         }
     }
 }
