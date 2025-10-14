@@ -136,12 +136,13 @@ MonoBehaviour:
   - {fileID: -6062766350354817482, guid: 34051878404c3c74caddc7f9df59e755, type: 3}
   - {fileID: -3197277170589549027, guid: 34051878404c3c74caddc7f9df59e755, type: 3}
   growthTimes:
-  - 1
-  - 1
-  - 1
+  - 3
+  - 3
+  - 3
   uncommonFruitMultiplier: 2
   rareFruitMultiplier: 3
   timeToFirstBloom: 1
+  currentStage: 0
   motherPlot: {fileID: 0}
   inactiveFruitBloomObjects: []
   activeBloomObjects: []

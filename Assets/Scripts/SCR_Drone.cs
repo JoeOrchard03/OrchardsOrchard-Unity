@@ -158,7 +158,7 @@ public class SCR_Drone : MonoBehaviour
     private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
         ControlDroneArmSound(false);
-        armAudio.PlayOneShot(pickFruit, 0.2f);
+        armAudio.PlayOneShot(pickFruit, 0.1f);
         //Sanity check
         if (currentFruit != null)
         {
@@ -245,8 +245,8 @@ public class SCR_Drone : MonoBehaviour
         }
 
         ControlDroneDriveSound(false);
-        drivingAudio.PlayOneShot(dronePlugin, 1.0f);
-        armAudio.PlayOneShot(fruitDropOff, 1.0f);
+        drivingAudio.PlayOneShot(dronePlugin, 0.75f);
+        armAudio.PlayOneShot(fruitDropOff, 0.75f);
         playerInventory.AddFruits(droneInventory);
         droneInventory.Clear();
     }
@@ -255,17 +255,11 @@ public class SCR_Drone : MonoBehaviour
     {
         if (driving)
         {
-            // if (!drivingAudio.isPlaying)
-            // {
-                drivingAudio.Play();
-            // }
+            drivingAudio.Play();
         }
         else
         {
-            // if (drivingAudio.isPlaying)
-            // {
-                drivingAudio.Stop();
-            // }
+            drivingAudio.Stop();
         }
     }
 

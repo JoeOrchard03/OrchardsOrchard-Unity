@@ -157,10 +157,12 @@ MonoBehaviour:
   iridescentParticlesPrefab: {fileID: 0}
   isGold: 0
   isIridescent: 0
-  rareFruitAudioSource: {fileID: 0}
   goldAppear: {fileID: 8300000, guid: ec50bd5779dc45849b32f8c3e3966aef, type: 3}
   iridescentAppear: {fileID: 8300000, guid: 4fc8e312ccc9fcb439f584b3a14df787, type: 3}
   readyToHarvest: 0
+  harvested: 0
+  currentStage: 0
+  fruitIndex: -1
 --- !u!114 &8428701817006282944
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -41,14 +41,15 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     public bool harvested = false;
     public int currentStage = 0;
     private GameObject activeParticles;
+    [HideInInspector] public bool isTargeted = false;
 
     [Header("Save variables")] 
     public int fruitIndex = -1;
 
     private void Awake()
     {
-        goldChance = 0.025f;
-        iridescentChance = 0.005f;
+        goldChance = 0.325f;
+        iridescentChance = 0.105f;
 
         if (goldParticlesPrefab == null)
         {
@@ -71,6 +72,11 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         if (reset)
         {
             ResetFruit();
+        }
+        if (activeParticles != null)
+        {
+            Destroy(activeParticles);
+            activeParticles = null;
         }
         harvested = false;
         StartCoroutine(GrowFruit());
@@ -224,6 +230,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             tree.fruits[fruitIndex].growthStage = currentStage;
             tree.fruits[fruitIndex].isGold = isGold;
             tree.fruits[fruitIndex].isIridescent = isIridescent;
+            tree.fruits[fruitIndex].fruitPos = transform.localPosition;
             SCR_SaveSystem.SaveGame(saveData);
         }
     }

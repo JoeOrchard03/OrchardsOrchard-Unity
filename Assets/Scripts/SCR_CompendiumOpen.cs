@@ -33,7 +33,7 @@ public class SCR_CompendiumOpen : MonoBehaviour, INT_Interactable
 
     public void CloseCompendium()
     {
-        compendiumAudioSource.PlayOneShot(compendiumClose, 0.5f);
+        compendiumAudioSource.PlayOneShot(compendiumClose, 0.25f);
         compendiumCanvas.SetActive(false);
     }
 }

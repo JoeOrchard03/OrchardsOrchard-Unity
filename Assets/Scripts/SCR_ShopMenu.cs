@@ -166,7 +166,7 @@ public class SCR_ShopMenu : MonoBehaviour
 
         if (sellTotal >= 1)
         {
-            shopMenuAudioSource.PlayOneShot(sellAudio);
+            shopMenuAudioSource.PlayOneShot(sellAudio, 0.75f);
         }
         
         moneyTotal += sellTotal;
