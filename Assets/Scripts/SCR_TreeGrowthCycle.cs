@@ -149,7 +149,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             GameObject fruitOBJ = inactiveFruitBloomObjects[randomIndex];
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
 
-            FruitData newFruit = new FruitData { batchID = currentBatch };
+            FruitData newFruit = new FruitData { batchID = currentBatch, fruitPos = fruitOBJ.transform.localPosition};
             tree.fruits.Add(newFruit);
             fruit.fruitIndex = tree.fruits.Count - 1;
             

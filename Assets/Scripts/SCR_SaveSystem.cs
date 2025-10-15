@@ -5,6 +5,26 @@ using UnityEngine;
 public class SCR_SaveSystem : MonoBehaviour
 {
     private const string saveKey = "GameSave";
+    public List<SCR_Plot> plots;
+    
+    private void Awake()
+    {
+        plots = new List<SCR_Plot>(FindObjectsByType<SCR_Plot>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
+    }
+    
+    private void Start()
+    {
+        List<TreeData> savedTrees = SCR_SaveSystem.LoadTrees();
+
+        foreach (TreeData data in savedTrees)
+        {
+            SCR_Plot plot = plots.Find(p => p.plotNumber == data.dataPlotNumber);
+            if (plot != null)
+            {
+                plot.LoadPlantedTree(data.dataFruitType, data.dataGrowthStage);
+            }
+        }
+    }
     
     public static void SaveGame(SCR_SaveData saveData)
     {
@@ -54,4 +74,5 @@ public class SCR_SaveSystem : MonoBehaviour
         PlayerPrefs.Save();
         Debug.Log("Clearing save data...");
     }
+
 }

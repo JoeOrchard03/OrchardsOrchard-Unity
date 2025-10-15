@@ -9,6 +9,7 @@ public class SCR_SaveData
     public float masterVolume;
     public float musicVolume;
     public List<TreeData> trees = new List<TreeData>();
+    public InventoryFruits playerInventory =  new InventoryFruits();
 }
 
 [System.Serializable]
@@ -29,4 +30,10 @@ public class FruitData
     public bool isIridescent;
     public Vector3 fruitPos;
     public int batchID = 0;
+}
+
+[System.Serializable]
+public class InventoryFruits
+{
+    public List<FruitData> fruits = new List<FruitData>();
 }
