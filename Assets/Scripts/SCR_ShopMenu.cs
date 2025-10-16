@@ -169,7 +169,7 @@ public class SCR_ShopMenu : MonoBehaviour
                 bool isGold = slot.fruitInBox.isGold;
                 bool isIridescent = slot.fruitInBox.isIridescent;
 
-                var fruitToRemove = playerManager.inventoryFruits.fruits.Find(f => 
+                FruitData fruitToRemove = playerManager.inventoryFruits.fruits.Find(f => 
                     f.fruitType == type &&
                     f.isGold == isGold &&
                     f.isIridescent == isIridescent);

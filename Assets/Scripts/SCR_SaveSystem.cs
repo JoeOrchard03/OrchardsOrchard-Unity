@@ -7,14 +7,17 @@ public class SCR_SaveSystem : MonoBehaviour
     private const string saveKey = "GameSave";
     public List<SCR_Plot> plots;
     
+    public GameObject inventorySaplingPrefab;
+    public Transform saplingInventory;
+
     private void Awake()
     {
         plots = new List<SCR_Plot>(FindObjectsByType<SCR_Plot>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
     }
-    
+
     private void Start()
     {
-        List<TreeData> savedTrees = SCR_SaveSystem.LoadTrees();
+        List<TreeData> savedTrees = LoadTrees();
 
         foreach (TreeData data in savedTrees)
         {
@@ -30,8 +33,13 @@ public class SCR_SaveSystem : MonoBehaviour
         {
             LoadCompendiumData(saveData.compendiumEntries);
         }
+
+        if (saveData.saplings != null)
+        {
+            LoadSaplingData(saveData.saplings);
+        }
     }
-    
+
     public static void SaveGame(SCR_SaveData saveData)
     {
         string json = JsonUtility.ToJson(saveData);
@@ -67,6 +75,12 @@ public class SCR_SaveSystem : MonoBehaviour
         return data.trees ?? new List<TreeData>();
     }
 
+    public static List<SaplingData> LoadSaplings()
+    {
+        SCR_SaveData data = LoadGame();
+        return data.saplings ?? new List<SaplingData>();
+    }
+
     //Save fruit inventory
     public static void SaveFruitInventory(InventoryFruits fruitInventory)
     {
@@ -82,14 +96,14 @@ public class SCR_SaveSystem : MonoBehaviour
         //return player inventory if none exists, make a new one
         return data.playerInventory ?? new InventoryFruits();
     }
-    
+
     public static void RemoveTreeFromSave(int plotNumber)
     {
         SCR_SaveData data = LoadGame();
         data.trees.RemoveAll(tree => tree.dataPlotNumber == plotNumber);
         SaveGame(data);
     }
-    
+
     public void ClearSaveData()
     {
         PlayerPrefs.DeleteKey(saveKey);
@@ -110,9 +124,10 @@ public class SCR_SaveSystem : MonoBehaviour
                 goldCollected = entry.goldCollected,
                 iridescentCollected = entry.iridescentCollected
             };
-            
+
             data.Add(newEntry);
         }
+
         return data;
     }
 
@@ -129,10 +144,41 @@ public class SCR_SaveSystem : MonoBehaviour
                 entry.standardCollected
             );
         }
-        
+
         foreach (var fruitEntry in FindObjectsByType<SCR_FruitEntry>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             fruitEntry.RefreshEntries();
+        }
+    }
+
+    public static List<SaplingData> GetSaplingData(Transform saplingInventory)
+    {
+        Debug.Log("Getting sapling data...");
+        List<SaplingData> data = new List<SaplingData>();
+
+        foreach (var sapling in saplingInventory.GetComponentsInChildren<SCR_MenuBox>())
+        {
+            SaplingData newSapling = new SaplingData
+            {
+                dataFruitType = sapling.fruitType
+            };
+            
+            data.Add(newSapling);
+            Debug.Log("Got sapling data of type: " +  sapling.fruitType);
+        }
+
+        Debug.Log("Successfully returned sapling data");
+        return data;
+    }
+
+    private void LoadSaplingData(List<SaplingData> data)
+    {
+        foreach (var entry in data)
+        {
+            GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
+            sapling.GetComponent<SCR_MenuBox>().fruitType = entry.dataFruitType;
+        
+            Debug.Log("Adding " + entry.dataFruitType + " sapling to inventory");
         }
     }
 }

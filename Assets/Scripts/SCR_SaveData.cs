@@ -9,6 +9,7 @@ public class SCR_SaveData
     public float masterVolume;
     public float musicVolume;
     public List<TreeData> trees = new List<TreeData>();
+    public List<SaplingData> saplings = new List<SaplingData>();
     public InventoryFruits playerInventory =  new InventoryFruits();
     public List<CompendiumEntryData> compendiumEntries = new List<CompendiumEntryData>();
 }
@@ -20,6 +21,12 @@ public class TreeData
     public FruitType dataFruitType;
     public int dataGrowthStage;
     public List<FruitData> fruits = new List<FruitData>();
+}
+
+[System.Serializable]
+public class SaplingData
+{
+    public FruitType dataFruitType;
 }
 
 [System.Serializable]

@@ -429,6 +429,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &66823810 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
@@ -716,6 +719,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &106953759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1662,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &189416511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 1107058906}
-  playerInteractScriptRef: {fileID: 0}
+  playerPlayerManagerScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
@@ -2420,6 +2429,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &268902715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9191735802560756219, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
@@ -2476,6 +2488,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &311913257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,6 +2542,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &323970953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,6 +5454,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &651294195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,6 +6889,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &810672504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8741,7 +8765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 739651278}
-  playerInteractScriptRef: {fileID: 0}
+  playerPlayerManagerScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
@@ -9768,6 +9792,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1055154804
 GameObject:
   m_ObjectHideFlags: 0
@@ -9821,6 +9848,8 @@ MonoBehaviour:
   - {fileID: 1508325181}
   - {fileID: 1436964347}
   - {fileID: 1615782330}
+  inventorySaplingPrefab: {fileID: 1420065517}
+  saplingInventory: {fileID: 1814688288}
 --- !u!1 &1079052291
 GameObject:
   m_ObjectHideFlags: 0
@@ -10288,6 +10317,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1107058906
 GameObject:
   m_ObjectHideFlags: 0
@@ -11231,6 +11263,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1222767701
 GameObject:
   m_ObjectHideFlags: 0
@@ -11955,6 +11990,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1001 &1298602690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12443,6 +12481,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1358917149
 GameObject:
   m_ObjectHideFlags: 0
@@ -13109,6 +13150,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1401462096
 GameObject:
   m_ObjectHideFlags: 0
@@ -13228,7 +13272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 2003322467}
-  playerInteractScriptRef: {fileID: 0}
+  playerPlayerManagerScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
@@ -13419,6 +13463,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1420065517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
+  m_PrefabInstance: {fileID: 1521048722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1427073781
 GameObject:
   m_ObjectHideFlags: 0
@@ -13966,7 +14015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 128120764}
-  playerInteractScriptRef: {fileID: 0}
+  playerPlayerManagerScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
@@ -14290,6 +14339,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1001 &1508325171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15302,6 +15354,9 @@ MonoBehaviour:
   matureFruits: []
   inventoryBoxPrefab: {fileID: 9116533296283147768, guid: 29657acdaa9e3cc43a561ce7ae73ac74, type: 3}
   fruitSellInventory: {fileID: 134225567}
+  saplingContainer: {fileID: 1856335642}
+  currentTreeCount: 0
+  currentSaplingCount: 0
   shopMenuOpen: 0
   menuOpen: 0
   cursorTexture: {fileID: 2800000, guid: cdcaceb21f872864babea5456bb3ff95, type: 3}
@@ -15311,9 +15366,8 @@ MonoBehaviour:
   cursorHotspot: {x: 6, y: 12}
   highlightAudio: {fileID: 0}
   highlightSound: {fileID: 8300000, guid: c130d0bd4b88c2e40b1f9fe231bc1cde, type: 3}
-  saplingContainer: {fileID: 1856335642}
-  currentTreeCount: 0
-  currentSaplingCount: 0
+  inventoryFruits:
+    fruits: []
 --- !u!4 &1587891969
 Transform:
   m_ObjectHideFlags: 0
@@ -16616,6 +16670,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1711725403
 GameObject:
   m_ObjectHideFlags: 0
@@ -17585,6 +17642,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1894673554
 GameObject:
   m_ObjectHideFlags: 0
@@ -17636,6 +17696,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1908278293
 GameObject:
   m_ObjectHideFlags: 0
@@ -17773,6 +17836,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1933028590
 GameObject:
   m_ObjectHideFlags: 0
@@ -17978,6 +18044,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1977849933
 GameObject:
   m_ObjectHideFlags: 0
@@ -18115,6 +18184,9 @@ MonoBehaviour:
   standardFruit: {fileID: 0}
   goldFruit: {fileID: 0}
   iridescentFruit: {fileID: 0}
+  standardCollected: 0
+  goldCollected: 0
+  iridescentCollected: 0
 --- !u!1 &1993219999
 GameObject:
   m_ObjectHideFlags: 0
