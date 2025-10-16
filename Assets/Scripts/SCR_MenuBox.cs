@@ -21,10 +21,10 @@ public class SCR_MenuBox : MonoBehaviour
     
     public void Plant()
     {
-        if (player.GetComponent<SCR_Interact>().selectedPlot == null) { return; }
-        selectedPlot = player.GetComponent<SCR_Interact>().selectedPlot;
+        if (player.GetComponent<SCR_PlayerManager>().selectedPlot == null) { return; }
+        selectedPlot = player.GetComponent<SCR_PlayerManager>().selectedPlot;
         selectedPlot.GetComponent<SCR_Plot>().SaplingToPlant(fruitType.ToString());
-        player.GetComponent<SCR_Interact>().hoveredInteractable = null;
+        player.GetComponent<SCR_PlayerManager>().hoveredInteractable = null;
         Destroy(this.gameObject);
     }
 }

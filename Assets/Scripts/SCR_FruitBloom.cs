@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 {
     [Header("Object references")]
-    private SCR_Interact playerInteractScriptRef;
+    private SCR_PlayerManager playerPlayerManagerScriptRef;
     private GameObject drone;
     public SpriteRenderer spriteRenderer;
     private GameObject motherTree;
@@ -62,7 +62,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         }
         
         rareFruitAudioSource = GameObject.Find("RareFruitAudioSource").GetComponent<AudioSource>();
-        playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerPlayerManagerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         drone = GameObject.FindGameObjectWithTag("Drone");
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
     }
@@ -189,7 +189,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         
         readyToHarvest = true;
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
-        playerInteractScriptRef.matureFruits.Add(this.gameObject);
+        playerPlayerManagerScriptRef.matureFruits.Add(this.gameObject);
         
         UpdateSavedFruitStage();
     }

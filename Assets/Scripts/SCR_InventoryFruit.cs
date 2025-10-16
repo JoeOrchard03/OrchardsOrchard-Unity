@@ -23,22 +23,10 @@ public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler
 
     void Awake()
     {
-        if (isGold)
-        {
-            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).goldFruitSprite;
-        }
-        else if (isIridescent)
-        {
-            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).iridescentFruitSprite;
-        }
-        else
-        {
-            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).fruitSprite;
-        }
-        
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
+        ApplyVisuals();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -79,5 +67,25 @@ public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler
         rectTransform.SetParent(returnParent, true);
         rectTransform.SetSiblingIndex(returnSiblingIndex);
         canvasGroup.blocksRaycasts = true;
+    }
+
+    public void ApplyVisuals()
+    {
+        if (fruitDatabase == null || fruitImage == null) return;
+        
+        var data = fruitDatabase.GetFruit(fruitType);
+
+        if (isGold)
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).goldFruitSprite;
+        }
+        else if (isIridescent)
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).iridescentFruitSprite;
+        }
+        else
+        {
+            fruitImage.sprite = fruitDatabase.GetFruit(fruitType).fruitSprite;
+        }
     }
 }

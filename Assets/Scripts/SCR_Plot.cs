@@ -30,7 +30,7 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
 
     [SerializeField] private GameObject SaplingMenu;
     public GameObject SaplingSpawnLocation;
-    private SCR_Interact playerInteractScriptRef;
+    private SCR_PlayerManager playerPlayerManagerScriptRef;
     public bool plotOccupied = false;
     private AudioSource plotAudioSource;
     public AudioClip plotInteract;
@@ -41,15 +41,15 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     private void Start()
     {
         plotAudioSource = GetComponent<AudioSource>();
-        playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerPlayerManagerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
     }
     
     public void Interact(GameObject interactor)
     {
         if (plotOccupied) { return;}
         plotAudioSource.PlayOneShot(plotInteract, 0.6f);
-        playerInteractScriptRef.selectedPlot = this.gameObject;
-        playerInteractScriptRef.menuOpen = true;
+        playerPlayerManagerScriptRef.selectedPlot = this.gameObject;
+        playerPlayerManagerScriptRef.menuOpen = true;
         OpenSaplingMenu();
     }
 
@@ -77,10 +77,10 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     {
         GameObject instantiatedSapling = Instantiate(Sapling, SaplingSpawnLocation.transform.position, transform.rotation);
         instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;
-        playerInteractScriptRef.selectedPlot = null;
+        playerPlayerManagerScriptRef.selectedPlot = null;
         SaplingMenu.SetActive(false);
-        playerInteractScriptRef.SetCursorHighlight(false);
-        playerInteractScriptRef.menuOpen = false;
+        playerPlayerManagerScriptRef.SetCursorHighlight(false);
+        playerPlayerManagerScriptRef.menuOpen = false;
         plotOccupied = true;
         GetComponent<AudioSource>().Play();
         GetComponent<SCR_Highlightable>().stopHighlight = true;

@@ -12,7 +12,7 @@ public class SCR_Drone : MonoBehaviour
     private Vector3 originalArmPosition;
     private Vector3 armInventoryPosition;
     private Coroutine returnCoroutine;
-    private SCR_Interact playerInventory;
+    private SCR_PlayerManager playerInventory;
     
     public GameObject armAnchor;
     public GameObject droneArm;
@@ -48,7 +48,7 @@ public class SCR_Drone : MonoBehaviour
     private void Start()
     {
         drivingAudio = GetComponent<AudioSource>();
-        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         //Set spawn pos as the charger's pos
         chargerPosition = transform.position;
         //Store the original arm location
@@ -185,7 +185,7 @@ public class SCR_Drone : MonoBehaviour
             }
             else
             {
-                compendium.MarkFruit(currentFruit.fruitType, false, false);
+                compendium.MarkFruit(currentFruit.fruitType, false, false, true);
             }
             
             currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>().OnFruitHarvested(currentFruit.gameObject);

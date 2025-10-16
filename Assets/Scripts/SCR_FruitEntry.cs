@@ -10,9 +10,12 @@ public class SCR_FruitEntry : MonoBehaviour
     public GameObject goldFruit;
     public GameObject iridescentFruit;
 
-    private bool standardCollected = false;
-    private bool goldCollected = false;
-    private bool iridescentCollected = false;
+    [HideInInspector]
+    public bool standardCollected = false;
+    [HideInInspector]
+    public bool goldCollected = false;
+    [HideInInspector]
+    public bool iridescentCollected = false;
 
     private void Awake()
     {

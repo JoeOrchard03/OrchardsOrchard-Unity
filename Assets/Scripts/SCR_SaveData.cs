@@ -10,6 +10,7 @@ public class SCR_SaveData
     public float musicVolume;
     public List<TreeData> trees = new List<TreeData>();
     public InventoryFruits playerInventory =  new InventoryFruits();
+    public List<CompendiumEntryData> compendiumEntries = new List<CompendiumEntryData>();
 }
 
 [System.Serializable]
@@ -29,6 +30,7 @@ public class FruitData
     public bool isGold;
     public bool isIridescent;
     public Vector3 fruitPos;
+    public FruitType fruitType;
     public int batchID = 0;
 }
 
@@ -36,4 +38,13 @@ public class FruitData
 public class InventoryFruits
 {
     public List<FruitData> fruits = new List<FruitData>();
+}
+
+[System.Serializable]
+public class CompendiumEntryData
+{
+    public FruitType fruitType;
+    public bool standardCollected;
+    public bool goldCollected;
+    public bool iridescentCollected;
 }

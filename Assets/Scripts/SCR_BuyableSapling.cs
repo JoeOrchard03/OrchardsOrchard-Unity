@@ -23,11 +23,11 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject buttonObj;
     public GameObject moneyIcon;
     public AudioSource buttonAudioSource;
-    public SCR_Interact interactScriptRef;
+    public SCR_PlayerManager playerManagerScriptRef;
 
     private void Awake()
     {
-        interactScriptRef = GameObject.Find("PlayerOBJ").GetComponent<SCR_Interact>();
+        playerManagerScriptRef = GameObject.Find("PlayerOBJ").GetComponent<SCR_PlayerManager>();
         shopMenuScriptRef = GameObject.FindGameObjectWithTag("ShopMenu").GetComponent<SCR_ShopMenu>();
         ApplyFruitInfo();
     }
@@ -78,7 +78,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         
         Debug.Log("Adding " + fruitType.ToString() + " sapling to inventory");
 
-        interactScriptRef.currentSaplingCount++;
+        playerManagerScriptRef.currentSaplingCount++;
         DisableSlot();
     }
 }

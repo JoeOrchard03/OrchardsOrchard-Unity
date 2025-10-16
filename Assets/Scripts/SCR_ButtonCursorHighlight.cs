@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    private SCR_Interact playerInteractScriptRef;
+    private SCR_PlayerManager playerPlayerManagerScriptRef;
     private SCR_MainMenu mainMenuScriptRef;
     public AudioSource buttonAudioSource;
     
@@ -15,10 +15,10 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
         GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
         {
-            playerObj.TryGetComponent(out playerInteractScriptRef);
+            playerObj.TryGetComponent(out playerPlayerManagerScriptRef);
         }
         
-        if (playerInteractScriptRef == null)
+        if (playerPlayerManagerScriptRef == null)
         {
             GameObject menuObj = GameObject.FindWithTag("MainMenu");
             if (menuObj != null)
@@ -30,9 +30,9 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (playerInteractScriptRef != null)
+        if (playerPlayerManagerScriptRef != null)
         {
-            playerInteractScriptRef.SetCursorHighlight(true);
+            playerPlayerManagerScriptRef.SetCursorHighlight(true);
         }
         else if (mainMenuScriptRef != null)
         {
@@ -42,9 +42,9 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (playerInteractScriptRef != null)
+        if (playerPlayerManagerScriptRef != null)
         {
-            playerInteractScriptRef.SetCursorHighlight(false);
+            playerPlayerManagerScriptRef.SetCursorHighlight(false);
         }
         else if (mainMenuScriptRef != null)
         {
@@ -58,9 +58,9 @@ public class SCR_ButtonCursorHighlight : MonoBehaviour, IPointerEnterHandler, IP
         {
             buttonAudioSource.Play();
         }
-        if (playerInteractScriptRef != null)
+        if (playerPlayerManagerScriptRef != null)
         {
-            playerInteractScriptRef.SetCursorHighlight(false);
+            playerPlayerManagerScriptRef.SetCursorHighlight(false);
         }
         else if (mainMenuScriptRef != null)
         {

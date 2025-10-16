@@ -24,6 +24,12 @@ public class SCR_SaveSystem : MonoBehaviour
                 plot.LoadPlantedTree(data.dataFruitType, data.dataGrowthStage);
             }
         }
+
+        SCR_SaveData saveData = LoadGame();
+        if (saveData.compendiumEntries != null)
+        {
+            LoadCompendiumData(saveData.compendiumEntries);
+        }
     }
     
     public static void SaveGame(SCR_SaveData saveData)
@@ -31,7 +37,7 @@ public class SCR_SaveSystem : MonoBehaviour
         string json = JsonUtility.ToJson(saveData);
         PlayerPrefs.SetString(saveKey, json);
         PlayerPrefs.Save();
-        //Debug.Log("Game saved, stored at: " + json);
+        Debug.Log("Game saved, stored at: " + json);
     }
 
     public static SCR_SaveData LoadGame()
@@ -40,7 +46,7 @@ public class SCR_SaveSystem : MonoBehaviour
         {
             string json = PlayerPrefs.GetString(saveKey);
             SCR_SaveData data = JsonUtility.FromJson<SCR_SaveData>(json);
-           // Debug.Log("Game loaded from: " + json);
+            Debug.Log("Game loaded from: " + json);
             return data;
         }
 
@@ -61,6 +67,22 @@ public class SCR_SaveSystem : MonoBehaviour
         return data.trees ?? new List<TreeData>();
     }
 
+    //Save fruit inventory
+    public static void SaveFruitInventory(InventoryFruits fruitInventory)
+    {
+        SCR_SaveData data = LoadGame();
+        data.playerInventory = fruitInventory;
+        SaveGame(data);
+    }
+
+    //Load fruit inventory
+    public static InventoryFruits LoadFruitInventory()
+    {
+        SCR_SaveData data = LoadGame();
+        //return player inventory if none exists, make a new one
+        return data.playerInventory ?? new InventoryFruits();
+    }
+    
     public static void RemoveTreeFromSave(int plotNumber)
     {
         SCR_SaveData data = LoadGame();
@@ -75,4 +97,42 @@ public class SCR_SaveSystem : MonoBehaviour
         Debug.Log("Clearing save data...");
     }
 
+    public static List<CompendiumEntryData> GetCompendiumData()
+    {
+        List<CompendiumEntryData> data = new List<CompendiumEntryData>();
+
+        foreach (var entry in FindObjectsByType<SCR_FruitEntry>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            CompendiumEntryData newEntry = new CompendiumEntryData
+            {
+                fruitType = entry.fruitType,
+                standardCollected = entry.standardCollected,
+                goldCollected = entry.goldCollected,
+                iridescentCollected = entry.iridescentCollected
+            };
+            
+            data.Add(newEntry);
+        }
+        return data;
+    }
+
+    private void LoadCompendiumData(List<CompendiumEntryData> data)
+    {
+        foreach (var entry in data)
+        {
+            if (SCR_Compendium.instance == null) continue;
+
+            SCR_Compendium.instance.MarkFruit(
+                entry.fruitType,
+                entry.goldCollected,
+                entry.iridescentCollected,
+                entry.standardCollected
+            );
+        }
+        
+        foreach (var fruitEntry in FindObjectsByType<SCR_FruitEntry>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            fruitEntry.RefreshEntries();
+        }
+    }
 }

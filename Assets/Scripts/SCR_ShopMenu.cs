@@ -154,8 +154,32 @@ public class SCR_ShopMenu : MonoBehaviour
     
     public void SellAll()
     {
+        SCR_PlayerManager playerManager = GameObject.FindFirstObjectByType<SCR_PlayerManager>();
+        if (playerManager == null)
+        {
+            Debug.Log("SCR_ShopMenu can not find the player manager");
+            return;
+        }
+        
         foreach (SCR_InventorySlot slot in inventorySlots)
         {
+            if (slot.fruitInBox != null)
+            {
+                FruitType type = slot.fruitInBox.fruitType;
+                bool isGold = slot.fruitInBox.isGold;
+                bool isIridescent = slot.fruitInBox.isIridescent;
+
+                var fruitToRemove = playerManager.inventoryFruits.fruits.Find(f => 
+                    f.fruitType == type &&
+                    f.isGold == isGold &&
+                    f.isIridescent == isIridescent);
+
+                if (fruitToRemove != null)
+                {
+                    playerManager.inventoryFruits.fruits.Remove(fruitToRemove);
+                }
+            }
+            
             if (slot.transform.childCount > 0)
             {
                 Destroy(slot.transform.GetChild(0).gameObject);
@@ -164,6 +188,8 @@ public class SCR_ShopMenu : MonoBehaviour
             slot.fruitInBox = null;
         }
 
+        SCR_SaveSystem.SaveFruitInventory(playerManager.inventoryFruits);
+        
         if (sellTotal >= 1)
         {
             shopMenuAudioSource.PlayOneShot(sellAudio, 0.75f);

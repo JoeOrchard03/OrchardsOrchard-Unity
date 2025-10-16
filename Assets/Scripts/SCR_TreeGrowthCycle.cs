@@ -23,7 +23,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     [Header("Misc variables")]
     public int currentStage = 0;
     public GameObject motherPlot;
-    private SCR_Interact playerScriptRef;
+    private SCR_PlayerManager playerScriptRef;
     
     [Header("Bloom variables")]
     public List<GameObject> inactiveFruitBloomObjects;
@@ -229,7 +229,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private void LoadFruits()
     {
-        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
 

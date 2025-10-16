@@ -5,7 +5,7 @@ using UnityEngine;
 public class SCR_Highlightable : MonoBehaviour
 {
     [SerializeField] public GameObject highlightEffect;
-    public SCR_Interact playerInteractScriptRef;
+    public SCR_PlayerManager playerPlayerManagerScriptRef;
     public bool stopHighlight = false;
     public bool canHighlight = true;
     public bool bypassHighlight = false;
@@ -13,35 +13,35 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void Start()
     {
-        playerInteractScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerPlayerManagerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
     }
 
     private void OnMouseOver()
     {
-        if (playerInteractScriptRef.shopMenuOpen) return;
+        if (playerPlayerManagerScriptRef.shopMenuOpen) return;
         
         SCR_FruitBloom fruit = GetComponent<SCR_FruitBloom>();
         if (fruit != null && !fruit.readyToHarvest) 
         {
-            playerInteractScriptRef.SetCursorHighlight(false);
+            playerPlayerManagerScriptRef.SetCursorHighlight(false);
             return;
         }
 
         if (gameObject.CompareTag("Tree"))
         {
-            if (playerInteractScriptRef.composting)
+            if (playerPlayerManagerScriptRef.composting)
             {
-                playerInteractScriptRef.hoveredInteractable = this.gameObject;
-                playerInteractScriptRef.SetShovelHighlight(true);
+                playerPlayerManagerScriptRef.hoveredInteractable = this.gameObject;
+                playerPlayerManagerScriptRef.SetShovelHighlight(true);
             }
             return;
         }
 
-        if (playerInteractScriptRef.composting && !gameObject.CompareTag("Composter")) return;
+        if (playerPlayerManagerScriptRef.composting && !gameObject.CompareTag("Composter")) return;
 
         if (bypassHighlight)
         {
-            playerInteractScriptRef.hoveredInteractable = this.gameObject;
+            playerPlayerManagerScriptRef.hoveredInteractable = this.gameObject;
             return;
         }
 
@@ -56,22 +56,22 @@ public class SCR_Highlightable : MonoBehaviour
             highlightEffect.SetActive(true);
         }
 
-        playerInteractScriptRef.SetCursorHighlight(true);
-        playerInteractScriptRef.hoveredInteractable = this.gameObject;
+        playerPlayerManagerScriptRef.SetCursorHighlight(true);
+        playerPlayerManagerScriptRef.hoveredInteractable = this.gameObject;
     }
 
     private void OnMouseExit()
     {
-        if (gameObject.CompareTag("Tree") && playerInteractScriptRef.composting)
+        if (gameObject.CompareTag("Tree") && playerPlayerManagerScriptRef.composting)
         {
-            playerInteractScriptRef.SetShovelHighlight(false);
-            playerInteractScriptRef.hoveredInteractable = null;
+            playerPlayerManagerScriptRef.SetShovelHighlight(false);
+            playerPlayerManagerScriptRef.hoveredInteractable = null;
             return;
         }
         
         if (bypassHighlight)
         {
-            playerInteractScriptRef.hoveredInteractable = null;
+            playerPlayerManagerScriptRef.hoveredInteractable = null;
             return;
         }
         
@@ -80,15 +80,15 @@ public class SCR_Highlightable : MonoBehaviour
             highlightEffect.SetActive(false);
         }
 
-        if (!playerInteractScriptRef.composting)
+        if (!playerPlayerManagerScriptRef.composting)
         {
-            playerInteractScriptRef.SetCursorHighlight(false);
+            playerPlayerManagerScriptRef.SetCursorHighlight(false);
         }
         else
         {
-            playerInteractScriptRef.SetShovelHighlight(false);
+            playerPlayerManagerScriptRef.SetShovelHighlight(false);
         }
         
-        playerInteractScriptRef.hoveredInteractable = null;
+        playerPlayerManagerScriptRef.hoveredInteractable = null;
     }
 }

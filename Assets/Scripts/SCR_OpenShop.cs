@@ -22,14 +22,14 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
         {
             shopAudioSource.Play();
             Debug.Log("Opening shop menu");
-            player.GetComponent<SCR_Interact>().shopMenuOpen = true;
+            player.GetComponent<SCR_PlayerManager>().shopMenuOpen = true;
             shopOpen = true;
             shopMenu.SetActive(true);
         }
         else
         {
             Debug.Log("Closing shop menu");
-            player.GetComponent<SCR_Interact>().shopMenuOpen = false;
+            player.GetComponent<SCR_PlayerManager>().shopMenuOpen = false;
             shopOpen = false;
             shopMenu.SetActive(false);
         }
@@ -38,7 +38,7 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
     public void CloseMenu()
     {
         Debug.Log("Closing shop menu");
-        player.GetComponent<SCR_Interact>().shopMenuOpen = false;
+        player.GetComponent<SCR_PlayerManager>().shopMenuOpen = false;
         shopOpen = false;
         shopMenu.SetActive(false);
     }

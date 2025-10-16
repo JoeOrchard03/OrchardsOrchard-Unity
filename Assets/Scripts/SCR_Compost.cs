@@ -5,7 +5,7 @@ using UnityEngine;
 public class SCR_Compost : MonoBehaviour, INT_Interactable
 {
     private bool composting = false;
-    private SCR_Interact playerScriptRef;
+    private SCR_PlayerManager playerScriptRef;
     
     public Texture2D shovelTexture;
     public Texture2D cursorTexture;
@@ -15,7 +15,7 @@ public class SCR_Compost : MonoBehaviour, INT_Interactable
 
     private void Start()
     {
-        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_Interact>();
+        playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
     }
     
     public void Interact(GameObject interactor)

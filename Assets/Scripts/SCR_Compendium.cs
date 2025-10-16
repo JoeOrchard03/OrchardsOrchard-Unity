@@ -129,14 +129,18 @@ public class SCR_Compendium : MonoBehaviour
         Debug.Log("Previous Page");
     }
     
-    public void MarkFruit(FruitType fruitType, bool isGold, bool isIridescent)
+    public void MarkFruit(FruitType fruitType, bool isGold, bool isIridescent, bool standardCollected = false)
     {
         if (entries.TryGetValue(fruitType, out SCR_FruitEntry entry))
         {
             Debug.Log("Trying to mark fruit");
+            if(standardCollected) entry.MarkStandardFruit();
             if(isIridescent) entry.MarkIridescentFruit();
-            else if(isGold) entry.MarkGoldFruit();
-            else entry.MarkStandardFruit();
+            if(isGold) entry.MarkGoldFruit();
         }
+
+        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        data.compendiumEntries = SCR_SaveSystem.GetCompendiumData();
+        SCR_SaveSystem.SaveGame(data);
     }
 }
