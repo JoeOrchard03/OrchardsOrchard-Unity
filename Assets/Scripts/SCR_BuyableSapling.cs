@@ -79,10 +79,11 @@ public class SCR_BuyableSapling : MonoBehaviour
         Debug.Log("Adding " + fruitType.ToString() + " sapling to inventory");
 
         SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        data.money = shopMenuScriptRef.moneyTotal;
         data.saplings = SCR_SaveSystem.GetSaplingData(saplingInventory);
         SCR_SaveSystem.SaveGame(data);
         
-        playerManagerScriptRef.currentSaplingCount++;
+        playerManagerScriptRef.UpdateCounts();
         DisableSlot();
     }
 }

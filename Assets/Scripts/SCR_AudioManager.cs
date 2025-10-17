@@ -38,8 +38,14 @@ public class SCR_AudioManager : MonoBehaviour
         currentMasterVolume = (saveData.masterVolume > 0f) ? saveData.masterVolume : masterDefaultVol;
         currentMusicVolume = (saveData.musicVolume > 0f) ? saveData.musicVolume : musicDefaultVol;
         
-        SetMasterVolume(currentMasterVolume);
-        SetMusicVolume(currentMusicVolume);
+        currentMasterVolume = Mathf.Clamp01(currentMasterVolume);
+        float masterdB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(currentMasterVolume));
+        masterAudioMixer.SetFloat(masterVolParameter, masterdB);
+        
+        float musicdB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(currentMusicVolume));
+        musicAudioMixer.SetFloat(musicVolParameter, musicdB);
+        
+        SaveVolumes();
     }
     
     public void SetMasterVolume(float value)

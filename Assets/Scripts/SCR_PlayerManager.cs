@@ -190,4 +190,20 @@ public class SCR_PlayerManager : MonoBehaviour
             highlightAudio.PlayOneShot(highlightSound);
         }
     }
+
+    public void UpdateCounts()
+    {
+        currentTreeCount = GameObject.FindGameObjectsWithTag("Tree").Length;
+
+        if (saplingContainer != null)
+        {
+            currentSaplingCount = saplingContainer.transform.childCount;
+        }
+        else
+        {
+            currentSaplingCount = 0;
+        }
+        
+        Debug.Log($"[PlayerManager] Trees: {currentTreeCount}, Saplings: {currentSaplingCount}");
+    }
 }

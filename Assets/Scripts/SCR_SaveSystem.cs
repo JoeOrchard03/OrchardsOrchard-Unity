@@ -34,18 +34,34 @@ public class SCR_SaveSystem : MonoBehaviour
             LoadCompendiumData(saveData.compendiumEntries);
         }
 
-        if (saveData.saplings != null)
+        if (saveData.saplings == null || saveData.saplings.Count == 0)
+        {
+            Debug.Log("No saplings found in save, saving starting saplings...");
+            saveData.saplings = GetSaplingData(saplingInventory);
+            SaveGame(saveData);
+        }
+        else
         {
             LoadSaplingData(saveData.saplings);
         }
+
+        EnsureStartingSapling(saveData);
+        UpdateTreeAndSaplingCounts();
     }
 
+    private void UpdateTreeAndSaplingCounts()
+    {
+        FindFirstObjectByType<SCR_PlayerManager>().UpdateCounts();
+    }
+    
     public static void SaveGame(SCR_SaveData saveData)
     {
         string json = JsonUtility.ToJson(saveData);
         PlayerPrefs.SetString(saveKey, json);
         PlayerPrefs.Save();
         Debug.Log("Game saved, stored at: " + json);
+
+        FindFirstObjectByType<SCR_PlayerManager>().UpdateCounts();
     }
 
     public static SCR_SaveData LoadGame()
@@ -179,6 +195,49 @@ public class SCR_SaveSystem : MonoBehaviour
             sapling.GetComponent<SCR_MenuBox>().fruitType = entry.dataFruitType;
         
             Debug.Log("Adding " + entry.dataFruitType + " sapling to inventory");
+        }
+    }
+    
+    public void SaveSapling(GameObject saplingOBJ)
+    {
+        Debug.Log("Trying to save saplings");
+        StartCoroutine(SaveSaplings(saplingOBJ));
+    }
+
+    private IEnumerator SaveSaplings(GameObject saplingOBJ)
+    {
+        Debug.Log("Saving Saplings");
+        Destroy(saplingOBJ);
+        
+        yield return new WaitForEndOfFrame();
+        
+        SCR_SaveData data = LoadGame();
+        data.saplings = GetSaplingData(gameObject.transform);
+        SaveGame(data);
+        UpdateTreeAndSaplingCounts();
+    }
+
+    private void EnsureStartingSapling(SCR_SaveData data)
+    {
+        bool hasNoSaplings = (data.saplings == null || data.saplings.Count == 0);
+        bool hasNoTrees = (data.trees == null || data.trees.Count == 0);
+
+        if (hasNoSaplings && hasNoTrees)
+        {
+            Debug.Log("Player has no saplings or trees, providing apple sapling");
+
+            SaplingData starterSapling = new SaplingData
+            {
+                dataFruitType = FruitType.Apple
+            };
+            
+            data.saplings = new List<SaplingData>() { starterSapling };
+            SaveGame(data);
+            
+            GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
+            sapling.GetComponent<SCR_MenuBox>().fruitType = starterSapling.dataFruitType;
+            
+            Debug.Log("Apple sapling provided");
         }
     }
 }

@@ -13,11 +13,13 @@ public class SCR_MenuBox : MonoBehaviour
     public Image saplingImage;
     private GameObject selectedPlot;
     private GameObject saplingInventory;
+    public SCR_SaveSystem saveSystem;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         saplingInventory = transform.parent.gameObject;
+        saveSystem = GameObject.Find("SaveManager").GetComponent<SCR_SaveSystem>();
         LoadImage();
     }
 
@@ -33,17 +35,7 @@ public class SCR_MenuBox : MonoBehaviour
         selectedPlot = player.GetComponent<SCR_PlayerManager>().selectedPlot;
         selectedPlot.GetComponent<SCR_Plot>().SaplingToPlant(fruitType.ToString());
         player.GetComponent<SCR_PlayerManager>().hoveredInteractable = null;
-
-        Destroy(gameObject);
         
-        if (saplingInventory == null)
-        {
-            saplingInventory = transform.parent.gameObject;
-        }
-        
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
-        data.saplings = SCR_SaveSystem.GetSaplingData(saplingInventory.transform);
-        SCR_SaveSystem.SaveGame(data);
-        
+        saveSystem.SaveSapling(this.gameObject);
     }
 }
