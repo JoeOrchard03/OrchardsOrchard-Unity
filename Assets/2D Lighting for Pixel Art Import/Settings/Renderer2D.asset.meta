@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d661e37ac44da247939ec9e05bda5bb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330976
+  packageName: 2D Lighting for Pixel Art| Project files
+  packageVersion: 1.0
+  assetPath: Assets/2D_Pixel_Light/Settings/Renderer2D.asset
+  uploadId: 787818

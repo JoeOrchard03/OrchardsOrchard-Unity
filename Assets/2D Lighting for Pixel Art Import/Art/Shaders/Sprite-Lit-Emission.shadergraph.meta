@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6edcec1c26156b142812259e5ede0eed
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330976
+  packageName: 2D Lighting for Pixel Art| Project files
+  packageVersion: 1.0
+  assetPath: Assets/2D_Pixel_Light/Art/Shaders/Sprite-Lit-Emission.shadergraph
+  uploadId: 787818

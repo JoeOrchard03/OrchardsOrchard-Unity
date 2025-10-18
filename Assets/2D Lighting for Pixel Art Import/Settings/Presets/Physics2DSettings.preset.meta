@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aade81ba24c9e1f479376549c67eeca2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330976
+  packageName: 2D Lighting for Pixel Art| Project files
+  packageVersion: 1.0
+  assetPath: Assets/2D_Pixel_Light/Settings/Presets/Physics2DSettings.preset
+  uploadId: 787818
