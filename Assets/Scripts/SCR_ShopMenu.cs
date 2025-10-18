@@ -96,7 +96,10 @@ public class SCR_ShopMenu : MonoBehaviour
             {
                 uiSlot.fruitType = stockSlot.fruitType;
                 uiSlot.fruitDatabase = stockSlot.fruitDatabase;
-                uiSlot.ApplyFruitInfo();
+                // if (!uiSlot.outOfStockObj.activeSelf)
+                // {
+                //     uiSlot.ApplyFruitInfo();
+                // }
             }
         }
 

@@ -24,6 +24,8 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     public int currentStage = 0;
     public GameObject motherPlot;
     private SCR_PlayerManager playerScriptRef;
+    private Coroutine bloomCycleCoroutine;
+    private bool bloomCycleRunning;
     
     [Header("Bloom variables")]
     public List<GameObject> inactiveFruitBloomObjects;
@@ -36,6 +38,13 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     void Start()
     {
         LoadFruits();
+
+        if (bloomCycleCoroutine != null)
+        {
+            StopCoroutine(bloomCycleCoroutine);
+            bloomCycleCoroutine = null;
+        }
+        bloomCycleRunning = false;
         
         playerScriptRef.currentTreeCount++;
         playerScriptRef.currentSaplingCount--;
@@ -55,7 +64,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         }
         else if(IsTreeFullyGrown() && activeBloomObjects.Count == 0)
         {
-            StartCoroutine(RestartBloomCycle());
+            bloomCycleCoroutine = StartCoroutine(RestartBloomCycle());
         }
         
         if (motherPlot != null && currentStage >= 1)
@@ -126,6 +135,14 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     public void StartBloomCycle()
     {
+        if (bloomCycleRunning)
+        {
+            Debug.LogWarning("Bloom cycle already running, skipping duplicate bloom cycle");
+            return;
+        }
+        
+        bloomCycleRunning = true;
+        
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
         
@@ -169,6 +186,8 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             if (currentBatch > 1000) currentBatch = 0;
             SCR_SaveSystem.SaveGame(saveData);
         }
+
+        bloomCycleRunning = false;
     }
 
     public void OnFruitHarvested(GameObject fruit)
@@ -200,15 +219,26 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
         if (activeBloomObjects.Count == 0)
         {
-            StartCoroutine(RestartBloomCycle());
+            if (bloomCycleCoroutine != null)
+            {
+                StopCoroutine(bloomCycleCoroutine);
+            }
+            bloomCycleCoroutine = StartCoroutine(RestartBloomCycle());
         }
     }
 
     private IEnumerator RestartBloomCycle()
     {
+        if (bloomCycleCoroutine != null)
+        {
+            StopCoroutine(bloomCycleCoroutine);
+            bloomCycleCoroutine = null;
+        }
         if (!IsTreeFullyGrown()) yield break;
         yield return new WaitForSeconds(timeToFirstBloom);
         StartBloomCycle();
+        bloomCycleCoroutine = null;
+        bloomCycleRunning = false;
     }
 
     private void UpdateSavedGrowthStage()
@@ -303,10 +333,10 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         {
             inactiveFruitBloomObjects.Add(gameObject.transform.GetChild(i).gameObject);
         }
-        
-        if (activeBloomObjects.Count == 0 && IsTreeFullyGrown())
+
+        if (activeBloomObjects.Count == 0 && IsTreeFullyGrown() && !bloomCycleRunning)
         {
-            StartCoroutine(RestartBloomCycle());
+            bloomCycleCoroutine = StartCoroutine(RestartBloomCycle());
         }
     }
 

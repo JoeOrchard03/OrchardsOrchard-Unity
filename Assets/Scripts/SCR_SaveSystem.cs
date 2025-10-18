@@ -59,9 +59,7 @@ public class SCR_SaveSystem : MonoBehaviour
         string json = JsonUtility.ToJson(saveData);
         PlayerPrefs.SetString(saveKey, json);
         PlayerPrefs.Save();
-        Debug.Log("Game saved, stored at: " + json);
-
-        FindFirstObjectByType<SCR_PlayerManager>().UpdateCounts();
+        //Debug.Log("Game saved, stored at: " + json);
     }
 
     public static SCR_SaveData LoadGame()
@@ -70,11 +68,11 @@ public class SCR_SaveSystem : MonoBehaviour
         {
             string json = PlayerPrefs.GetString(saveKey);
             SCR_SaveData data = JsonUtility.FromJson<SCR_SaveData>(json);
-            Debug.Log("Game loaded from: " + json);
+            //Debug.Log("Game loaded from: " + json);
             return data;
         }
 
-        Debug.Log("No save data found, creating new save file...");
+        //Debug.Log("No save data found, creating new save file...");
         return new SCR_SaveData();
     }
 

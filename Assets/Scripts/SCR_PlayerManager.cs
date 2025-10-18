@@ -204,6 +204,6 @@ public class SCR_PlayerManager : MonoBehaviour
             currentSaplingCount = 0;
         }
         
-        Debug.Log($"[PlayerManager] Trees: {currentTreeCount}, Saplings: {currentSaplingCount}");
+        //Debug.Log($"[PlayerManager] Trees: {currentTreeCount}, Saplings: {currentSaplingCount}");
     }
 }

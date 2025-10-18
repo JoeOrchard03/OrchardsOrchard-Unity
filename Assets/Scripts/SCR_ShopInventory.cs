@@ -25,7 +25,7 @@ public class SCR_ShopInventory : MonoBehaviour
     {
         SCR_SaveSystem.LoadShopInventory(fruitDatabase, shopSlots, ref shopTimer);
 
-        if (shopSlots.Count == 0)
+        if (shopSlots.Count == 0 || shopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
             shopTimer = shopRefreshTime;
             RefreshShopInventory();

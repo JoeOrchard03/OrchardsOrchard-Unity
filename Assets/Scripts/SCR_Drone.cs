@@ -61,7 +61,7 @@ public class SCR_Drone : MonoBehaviour
     {
         //Sanity check
         if (fruitTransform == null) return;
-
+        
         //Add the target fruit to the que
         fruitQueue.Enqueue(fruitTransform);
 
@@ -157,6 +157,8 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
+        Debug.Log($"[HARVEST] Attempting to harvest {currentFruit.name}, harvested = {currentFruit.harvested}");
+
         ControlDroneArmSound(false);
         armAudio.PlayOneShot(pickFruit, 0.1f);
         //Sanity check

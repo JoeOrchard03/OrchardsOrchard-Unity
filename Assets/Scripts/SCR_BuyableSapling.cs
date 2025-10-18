@@ -29,7 +29,6 @@ public class SCR_BuyableSapling : MonoBehaviour
     {
         playerManagerScriptRef = GameObject.Find("PlayerOBJ").GetComponent<SCR_PlayerManager>();
         shopMenuScriptRef = GameObject.FindGameObjectWithTag("ShopMenu").GetComponent<SCR_ShopMenu>();
-        ApplyFruitInfo();
     }
     
     public void ApplyFruitInfo()
@@ -37,6 +36,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         var fruit = fruitDatabase.GetFruit(fruitType);
         if (fruit != null)
         {
+            Debug.Log("Resetting sapling: " + gameObject.name.ToString());
             outOfStockObj.SetActive(false);
             buttonObj.SetActive(true);
             BuyTextObj.SetActive(true);
@@ -76,6 +76,8 @@ public class SCR_BuyableSapling : MonoBehaviour
         GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
         sapling.GetComponent<SCR_MenuBox>().fruitType = fruitType;
         
+        DisableSlot();
+        
         Debug.Log("Adding " + fruitType.ToString() + " sapling to inventory");
 
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
@@ -90,6 +92,5 @@ public class SCR_BuyableSapling : MonoBehaviour
         SCR_SaveSystem.SaveGame(data);
         
         playerManagerScriptRef.UpdateCounts();
-        DisableSlot();
     }
 }
