@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Menu
   - Drone
@@ -49,9 +49,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Menu
-    uniqueID: 2693511561
+  - name: Background
+    uniqueID: 4293432137
+    locked: 0
+  - name: Behind trees
+    uniqueID: 2184892817
     locked: 0
   - name: Environment
     uniqueID: 3185093661
     locked: 0
+  - name: Menu
+    uniqueID: 2693511561
+    locked: 0
+  m_RenderingLayers:
+  - Default
