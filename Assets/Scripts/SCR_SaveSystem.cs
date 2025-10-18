@@ -240,4 +240,57 @@ public class SCR_SaveSystem : MonoBehaviour
             Debug.Log("Apple sapling provided");
         }
     }
+
+    public static void SaveShopInventory(List<SCR_BuyableSapling> shopSlots, float shopTimer)
+    {
+        SCR_SaveData data = LoadGame();
+        data.shopSlots = new List<ShopSlotData>();
+
+        foreach (var slot in shopSlots)
+        {
+            if (slot == null) continue;
+
+            ShopSlotData slotData = new ShopSlotData
+            {
+                fruitType = slot.fruitType,
+                isSold = slot.outOfStockObj.activeSelf
+            };
+            
+            data.shopSlots.Add(slotData);
+        }
+        
+        data.shopTimer = shopTimer;
+        SaveGame(data);
+        Debug.Log("Shop inventory saved.");
+    }
+
+    public static void LoadShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float shopTimer)
+    {
+        SCR_SaveData data = LoadGame();
+
+        if (data.shopSlots == null || data.shopSlots.Count == 0)
+        {
+            Debug.Log("No saved shop inventory found, generating new stock");
+            return;
+        }
+
+        shopTimer = data.shopTimer;
+
+        for (int i = 0; i < shopSlots.Count && i < data.shopSlots.Count; i++)
+        {
+            var slot = shopSlots[i];
+            var savedSlot = data.shopSlots[i];
+            
+            slot.fruitType = savedSlot.fruitType;
+            slot.fruitDatabase = fruitDatabase;
+            slot.ApplyFruitInfo();
+
+            if (savedSlot.isSold)
+            {
+                slot.DisableSlot();
+            }
+        }
+        
+        Debug.Log("Shop inventory loaded.");
+    }
 }

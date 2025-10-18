@@ -25,7 +25,8 @@ public enum FruitType
     Pear,
     Coconut,
     Pomelo,
-    Grapefruit
+    Grapefruit,
+    Null
 }
 
 public enum Rarity

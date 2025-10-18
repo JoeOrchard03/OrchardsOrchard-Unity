@@ -78,6 +78,12 @@ public class SCR_BuyableSapling : MonoBehaviour
         
         Debug.Log("Adding " + fruitType.ToString() + " sapling to inventory");
 
+        SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
+        
+        SCR_SaveSystem.SaveShopInventory(
+            shopInventoryScriptRef.shopSlots,
+            shopInventoryScriptRef.shopRefreshTime);
+        
         SCR_SaveData data = SCR_SaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;
         data.saplings = SCR_SaveSystem.GetSaplingData(saplingInventory);

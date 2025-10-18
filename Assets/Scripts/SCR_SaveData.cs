@@ -8,10 +8,21 @@ public class SCR_SaveData
     public float money;
     public float masterVolume;
     public float musicVolume;
+
+    public float shopTimer;
+    
     public List<TreeData> trees = new List<TreeData>();
     public List<SaplingData> saplings = new List<SaplingData>();
     public InventoryFruits playerInventory =  new InventoryFruits();
+    public List<ShopSlotData> shopSlots = new List<ShopSlotData>();
     public List<CompendiumEntryData> compendiumEntries = new List<CompendiumEntryData>();
+}
+
+[System.Serializable]
+public class ShopSlotData
+{
+    public FruitType fruitType;
+    public bool isSold;
 }
 
 [System.Serializable]

@@ -28,10 +28,7 @@ public class SCR_OpenShop : MonoBehaviour, INT_Interactable
         }
         else
         {
-            Debug.Log("Closing shop menu");
-            player.GetComponent<SCR_PlayerManager>().shopMenuOpen = false;
-            shopOpen = false;
-            shopMenu.SetActive(false);
+            CloseMenu();
         }
     }
 
