@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: 2b8ecb9b6970e36478fcd8ac6446786f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6894134593027427367
+    second: Lighting normal map_0
+  - first:
+      213: 4968181526718649043
+    second: Lighting normal map_1
+  - first:
+      213: 7474300914648198414
+    second: Lighting normal map_2
+  - first:
+      213: 1788021176973803288
+    second: Lighting normal map_3
+  - first:
+      213: -6534712229953947568
+    second: Lighting normal map_4
+  - first:
+      213: -8990426037389192903
+    second: Lighting normal map_5
+  - first:
+      213: 6103133602047847561
+    second: Lighting normal map_6
+  - first:
+      213: -2753598130406452841
+    second: Lighting normal map_7
+  - first:
+      213: 8683565082920955499
+    second: Lighting normal map_8
+  - first:
+      213: 386169948735264453
+    second: Lighting normal map_9
+  - first:
+      213: 5750604328803885751
+    second: Lighting normal map_10
+  - first:
+      213: -3490720415718836379
+    second: Lighting normal map_11
+  - first:
+      213: 2937335053644086801
+    second: Lighting normal map_12
+  - first:
+      213: 8675300913164587727
+    second: Lighting normal map_13
+  - first:
+      213: 8457153655705659226
+    second: Lighting normal map_14
+  - first:
+      213: 7497167099283568453
+    second: Lighting normal map_15
+  - first:
+      213: 8427651653302590741
+    second: Lighting normal map_16
+  - first:
+      213: 3191747802386731639
+    second: Lighting normal map_17
+  - first:
+      213: -2193693097797166535
+    second: Lighting normal map_18
+  - first:
+      213: 4086488021837461041
+    second: Lighting normal map_19
+  - first:
+      213: 5701794653674343132
+    second: Lighting normal map_20
+  - first:
+      213: 7761706160903506036
+    second: Lighting normal map_21
+  - first:
+      213: -3747818732523908800
+    second: Lighting normal map_22
+  - first:
+      213: -6096103023868749634
+    second: Lighting normal map_23
+  - first:
+      213: -4441020024372450973
+    second: Lighting normal map_24
+  - first:
+      213: 6382527298799298622
+    second: Lighting normal map_25
+  - first:
+      213: -6779297041301321484
+    second: Lighting normal map_26
+  - first:
+      213: 1303260650898298143
+    second: Lighting normal map_27
+  - first:
+      213: 8048508580554390919
+    second: Lighting normal map_28
+  - first:
+      213: -2278800977893346823
+    second: Lighting normal map_29
+  - first:
+      213: -7589385554620575233
+    second: Lighting normal map_30
+  - first:
+      213: -8762488539002422363
+    second: Lighting normal map_31
+  - first:
+      213: -5009423651531860315
+    second: Lighting normal map_32
+  - first:
+      213: -2970549163834817326
+    second: Lighting normal map_33
+  - first:
+      213: -1919425023483121656
+    second: Lighting normal map_34
+  - first:
+      213: 6234152333105669928
+    second: Lighting normal map_35
+  - first:
+      213: 7995802586360429342
+    second: Lighting normal map_36
+  - first:
+      213: 7710151880538505519
+    second: Lighting normal map_37
+  - first:
+      213: -4180577395521794199
+    second: Lighting normal map_38
+  - first:
+      213: 3139474320196386793
+    second: Lighting normal map_39
+  - first:
+      213: 1430972346264134093
+    second: Lighting normal map_40
+  - first:
+      213: 7676793189376899619
+    second: Lighting normal map_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lighting normal map_0
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1495
+        width: 272
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cc12bb2e2ecaf50800000000000000
+      internalID: 6894134593027427367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_1
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1480
+        width: 47
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d219b7a6c682f440800000000000000
+      internalID: 4968181526718649043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_2
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1480
+        width: 377
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dabf1d41d0ab760800000000000000
+      internalID: 7474300914648198414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_3
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1480
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f366089c350d810800000000000000
+      internalID: 1788021176973803288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_4
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1270
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058b13869d90055a0800000000000000
+      internalID: -6534712229953947568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_5
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1270
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9319efdf6279b3380800000000000000
+      internalID: -8990426037389192903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_6
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1225
+        width: 227
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cefcedcafa2b450800000000000000
+      internalID: 6103133602047847561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_7
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 1240
+        width: 152
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79191fee61149c9d0800000000000000
+      internalID: -2753598130406452841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_8
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1375
+        width: 77
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e2d777f68328870800000000000000
+      internalID: 8683565082920955499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_9
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1330
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6db49b583fb5500800000000000000
+      internalID: 386169948735264453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_10
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 1330
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2ed264b204ecf40800000000000000
+      internalID: 5750604328803885751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_11
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1270
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567ffdac6487e8fc0800000000000000
+      internalID: -3490720415718836379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_12
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1300
+        width: 77
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e32ca2ba283c820800000000000000
+      internalID: 2937335053644086801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 235
+        width: 1532
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc21cc0873cd46870800000000000000
+      internalID: 8675300913164587727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_14
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 925
+        width: 197
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576b332178dd5570800000000000000
+      internalID: 8457153655705659226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_15
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 925
+        width: 47
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547fa8e41c94b0860800000000000000
+      internalID: 7497167099283568453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_16
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 955
+        width: 107
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d95dde68805f470800000000000000
+      internalID: 8427651653302590741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_17
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 865
+        width: 302
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77215e537bd5b4c20800000000000000
+      internalID: 3191747802386731639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_18
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1105
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ad29f00cf6e81e0800000000000000
+      internalID: -2193693097797166535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_19
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 895
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136b288643f16b830800000000000000
+      internalID: 4086488021837461041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_20
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 745
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda0b723708d02f40800000000000000
+      internalID: 5701794653674343132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_21
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 745
+        width: 182
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4784d9b41ae17bb60800000000000000
+      internalID: 7761706160903506036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_22
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 550
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0419b5538b21dfbc0800000000000000
+      internalID: -3747818732523908800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_23
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 745
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb85e1c299a466ba0800000000000000
+      internalID: -6096103023868749634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_24
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 565
+        width: 152
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36922ee31d35e52c0800000000000000
+      internalID: -4441020024372450973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_25
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 550
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e386a2e13ca439850800000000000000
+      internalID: 6382527298799298622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_26
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 550
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8c06a52491be1a0800000000000000
+      internalID: -6779297041301321484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_27
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 610
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15998238ac161210800000000000000
+      internalID: 1303260650898298143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_28
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 385
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78db0a349eb02bf60800000000000000
+      internalID: 8048508580554390919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_29
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 295
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1bade85921060e0800000000000000
+      internalID: -2278800977893346823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_30
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 295
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff11c516c061da690800000000000000
+      internalID: -7589385554620575233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_31
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 475
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab34547913656680800000000000000
+      internalID: -8762488539002422363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_32
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 295
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6d001eab3fa7ab0800000000000000
+      internalID: -5009423651531860315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_33
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 355
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4cacd264d76c6d0800000000000000
+      internalID: -2970549163834817326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_34
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 205
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800fa465c15dc55e0800000000000000
+      internalID: -1919425023483121656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_35
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 25
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827af6a5488248650800000000000000
+      internalID: 6234152333105669928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_36
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 220
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bb926b61cc6fe60800000000000000
+      internalID: 7995802586360429342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 25
+        width: 1412
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21cec30946fffa60800000000000000
+      internalID: 7710151880538505519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_38
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 25
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f45e7220b9bf5c0800000000000000
+      internalID: -4180577395521794199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_39
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 25
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef34c4b247a19b20800000000000000
+      internalID: 3139474320196386793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_40
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 25
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc12b7e64c5dbd310800000000000000
+      internalID: 1430972346264134093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting normal map_41
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 70
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ab2fa7bb2798a60800000000000000
+      internalID: 7676793189376899619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lighting normal map_0: 6894134593027427367
+      Lighting normal map_1: 4968181526718649043
+      Lighting normal map_10: 5750604328803885751
+      Lighting normal map_11: -3490720415718836379
+      Lighting normal map_12: 2937335053644086801
+      Lighting normal map_13: 8675300913164587727
+      Lighting normal map_14: 8457153655705659226
+      Lighting normal map_15: 7497167099283568453
+      Lighting normal map_16: 8427651653302590741
+      Lighting normal map_17: 3191747802386731639
+      Lighting normal map_18: -2193693097797166535
+      Lighting normal map_19: 4086488021837461041
+      Lighting normal map_2: 7474300914648198414
+      Lighting normal map_20: 5701794653674343132
+      Lighting normal map_21: 7761706160903506036
+      Lighting normal map_22: -3747818732523908800
+      Lighting normal map_23: -6096103023868749634
+      Lighting normal map_24: -4441020024372450973
+      Lighting normal map_25: 6382527298799298622
+      Lighting normal map_26: -6779297041301321484
+      Lighting normal map_27: 1303260650898298143
+      Lighting normal map_28: 8048508580554390919
+      Lighting normal map_29: -2278800977893346823
+      Lighting normal map_3: 1788021176973803288
+      Lighting normal map_30: -7589385554620575233
+      Lighting normal map_31: -8762488539002422363
+      Lighting normal map_32: -5009423651531860315
+      Lighting normal map_33: -2970549163834817326
+      Lighting normal map_34: -1919425023483121656
+      Lighting normal map_35: 6234152333105669928
+      Lighting normal map_36: 7995802586360429342
+      Lighting normal map_37: 7710151880538505519
+      Lighting normal map_38: -4180577395521794199
+      Lighting normal map_39: 3139474320196386793
+      Lighting normal map_4: -6534712229953947568
+      Lighting normal map_40: 1430972346264134093
+      Lighting normal map_41: 7676793189376899619
+      Lighting normal map_5: -8990426037389192903
+      Lighting normal map_6: 6103133602047847561
+      Lighting normal map_7: -2753598130406452841
+      Lighting normal map_8: 8683565082920955499
+      Lighting normal map_9: 386169948735264453
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
