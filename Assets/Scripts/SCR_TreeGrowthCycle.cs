@@ -152,6 +152,29 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             return;
         }
 
+        int prefabFruitCount = transform.childCount;
+        if (tree.fruits.Count > prefabFruitCount)
+        {
+            Debug.LogWarning("Prefab fruits count was " + tree.fruits.Count + ", greater than " + prefabFruitCount + " trimming...");
+            tree.fruits.RemoveRange(prefabFruitCount, tree.fruits.Count - prefabFruitCount);
+        }
+
+        bool allHarvested = tree.fruits.Count > 0 && tree.fruits.TrueForAll(f => f.beenHarvested);
+        if (allHarvested)
+        {
+            Debug.Log("All previous fruits have been harvested, resetting fruit list for new bloom cycle...");
+            tree.fruits.Clear();
+            currentStage = 0;
+
+            inactiveFruitBloomObjects.Clear();
+            activeBloomObjects.Clear();
+
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                inactiveFruitBloomObjects.Add(transform.GetChild(i).gameObject);
+            }
+        }
+        
         bool batchActive = tree.fruits.Exists(f => f.batchID == currentBatch && !f.beenHarvested);
         if (batchActive) return;
         
@@ -166,9 +189,17 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             GameObject fruitOBJ = inactiveFruitBloomObjects[randomIndex];
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
 
-            FruitData newFruit = new FruitData { batchID = currentBatch, fruitPos = fruitOBJ.transform.localPosition};
-            tree.fruits.Add(newFruit);
-            fruit.fruitIndex = tree.fruits.Count - 1;
+            if (tree.fruits.Count >= prefabFruitCount)
+            {
+                Debug.LogWarning("Max fruit data entries reached, reusing existing slot");
+                fruit.fruitIndex = tree.fruits.Count - 1;
+            }
+            else
+            {
+                FruitData newFruit = new FruitData { batchID = currentBatch};
+                tree.fruits.Add(newFruit);
+                fruit.fruitIndex = tree.fruits.Count - 1;
+            }
             
             fruitOBJ.SetActive(true);
             fruit.currentStage = 0;
@@ -219,6 +250,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
         if (activeBloomObjects.Count == 0)
         {
+            Debug.Log("active blooms.count is 0");
             if (bloomCycleCoroutine != null)
             {
                 StopCoroutine(bloomCycleCoroutine);
@@ -229,12 +261,18 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private IEnumerator RestartBloomCycle()
     {
+        Debug.Log("Restarting bloom cycle, coroutine running...");
         if (bloomCycleCoroutine != null)
         {
+            Debug.Log("Stopping restart bloom cycle");
             StopCoroutine(bloomCycleCoroutine);
             bloomCycleCoroutine = null;
         }
-        if (!IsTreeFullyGrown()) yield break;
+        if (!IsTreeFullyGrown())
+        {
+            Debug.Log("Tree not fully grown");
+            yield break;
+        }
         yield return new WaitForSeconds(timeToFirstBloom);
         StartBloomCycle();
         bloomCycleCoroutine = null;
@@ -259,31 +297,42 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private void LoadFruits()
     {
+        Debug.Log("Trying to load fruits");
         playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
 
-        if (tree == null) return;
+        if (tree == null)
+        {
+            Debug.Log(gameObject.name + " is null");
+            return;
+        }
 
         inactiveFruitBloomObjects.Clear();
         activeBloomObjects.Clear();
         
         for (int i = 0; i < tree.fruits.Count; i++)
         {
-            if (i >= gameObject.transform.childCount) break;
+            if (i >= gameObject.transform.childCount)
+            {
+                Debug.Log("Breaking");
+                break;
+            }
+            
+            Debug.Log("Making it past break");
             
             GameObject fruitOBJ = gameObject.transform.GetChild(i).gameObject;
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
 
             fruit.fruitIndex = i;
             FruitData savedFruit = tree.fruits[i];
-            fruitOBJ.transform.localPosition = savedFruit.fruitPos;
             fruit.currentStage = savedFruit.growthStage;
             fruit.isGold = savedFruit.isGold;
             fruit.isIridescent = savedFruit.isIridescent;
 
             if (!savedFruit.beenHarvested)
             {
+                Debug.Log(tree.fruits[i] + " not been harvested");
                 fruitOBJ.SetActive(true);
 
                 if (fruit.isGold || fruit.isIridescent)
@@ -319,6 +368,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             }
             else
             {
+                Debug.Log(tree.fruits[i] + " has been harvested");
                 fruitOBJ.SetActive(false);
                 inactiveFruitBloomObjects.Add(fruitOBJ);
             }
@@ -342,6 +392,15 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private bool IsTreeFullyGrown()
     {
+        Sprite currentSprite = spriteRenderer.sprite;
+        int matchedIndex = spriteGrowthStages.IndexOf(currentSprite);
+
+        if (matchedIndex != -1)
+        {
+            currentStage = matchedIndex;
+        }
+        
+        Debug.Log($"Tree growth check: currentStage={currentStage}, maxStage={spriteGrowthStages.Count - 1}, sprite={spriteRenderer.sprite.name}");
         return currentStage >= spriteGrowthStages.Count - 1;
     }
 }

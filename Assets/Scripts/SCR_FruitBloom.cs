@@ -256,7 +256,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             tree.fruits[fruitIndex].growthStage = currentStage;
             tree.fruits[fruitIndex].isGold = isGold;
             tree.fruits[fruitIndex].isIridescent = isIridescent;
-            tree.fruits[fruitIndex].fruitPos = transform.localPosition;
             SCR_SaveSystem.SaveGame(saveData);
         }
     }

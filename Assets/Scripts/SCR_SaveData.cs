@@ -47,7 +47,6 @@ public class FruitData
     public bool beenHarvested;
     public bool isGold;
     public bool isIridescent;
-    public Vector3 fruitPos;
     public FruitType fruitType;
     public int batchID = 0;
 }
