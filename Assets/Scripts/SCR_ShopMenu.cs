@@ -32,6 +32,9 @@ public class SCR_ShopMenu : MonoBehaviour
     [Header("Canvases")]
     public GameObject saplingCanvas;
     public GameObject sellCanvas;
+    public SpriteRenderer menuSpriteRenderer;
+    public Sprite SellMenuSprite;
+    public Sprite SaplingMenuSprite;
 
     [Header("Sell UI variables")] 
     public GameObject contentHolder;
@@ -60,6 +63,7 @@ public class SCR_ShopMenu : MonoBehaviour
         shopMenuAudioSource = GetComponent<AudioSource>();
         moneyTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
+        menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         UpdateShopUI();
     }
@@ -114,6 +118,7 @@ public class SCR_ShopMenu : MonoBehaviour
         }
         
         saplingCanvas.SetActive(true);
+        menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
     }
 
@@ -125,6 +130,7 @@ public class SCR_ShopMenu : MonoBehaviour
         }
 
         saplingCanvas.SetActive(false);
+        menuSpriteRenderer.sprite = SellMenuSprite;
         sellCanvas.SetActive(true);
     }
     

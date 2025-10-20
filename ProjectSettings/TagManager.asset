@@ -49,16 +49,25 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 4293432137
+  - name: 7 - Background
+    uniqueID: 3839365523
     locked: 0
-  - name: Behind trees
-    uniqueID: 2184892817
+  - name: 6 - Particles
+    uniqueID: 2197622967
     locked: 0
-  - name: Environment
+  - name: 5 - Fence, Non-Priority decos
+    uniqueID: 3556622035
+    locked: 0
+  - name: 4 - Trees, Plots, House
     uniqueID: 3185093661
     locked: 0
-  - name: Menu
+  - name: 3 - Drone, Priority decos
+    uniqueID: 2184892817
+    locked: 0
+  - name: 2 - Ground
+    uniqueID: 4293432137
+    locked: 0
+  - name: 1 - Menus
     uniqueID: 2693511561
     locked: 0
   m_RenderingLayers:

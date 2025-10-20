@@ -51,6 +51,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -72,8 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 2628
   m_Sprite: {fileID: 1193149996915696525, guid: 4faae42eaa5a53a4d95f4c0ee39b433b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -149,6 +153,8 @@ MonoBehaviour:
   outOfStockObj: {fileID: 4460152332843870394}
   buttonObj: {fileID: 3798889848463979309}
   moneyIcon: {fileID: 161456641738660816}
+  buttonAudioSource: {fileID: 0}
+  playerManagerScriptRef: {fileID: 0}
 --- !u!1 &772602671691088700
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +343,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -358,9 +367,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 1
-  m_SortingOrder: 10
+  m_SortingLayer: 7
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2604440402899750777, guid: 2c26cf8750dea3e45bf87105ad7dbabc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -517,6 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45743f33e40e2724fb6db8bec5e10796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonAudioSource: {fileID: 0}
 --- !u!1 &4460152332843870394
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +583,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -593,8 +607,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_Sprite: {fileID: 2681500073513639984, guid: 03baac03675b92d4d88889dbab7cd9d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

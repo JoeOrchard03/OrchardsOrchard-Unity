@@ -51,6 +51,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -72,9 +75,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -1109873635
+  m_SortingLayer: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
   m_Color: {r: 0.83396226, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -162,6 +166,8 @@ MonoBehaviour:
   readyToHarvest: 0
   harvested: 0
   currentStage: 0
+  activeParticles: {fileID: 0}
+  isTargeted: 0
   fruitIndex: -1
 --- !u!114 &8428701817006282944
 MonoBehaviour:
@@ -176,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightEffect: {fileID: 5560398658557167744}
-  playerInteractScriptRef: {fileID: 0}
+  playerPlayerManagerScriptRef: {fileID: 0}
   stopHighlight: 0
   canHighlight: 0
   bypassHighlight: 0
@@ -228,7 +234,7 @@ BoxCollider2D:
   m_EdgeRadius: 0.1
 --- !u!50 &3309988535199932430
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -239,8 +245,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -272,6 +278,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -293,9 +302,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -1109873635
+  m_SortingLayer: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9009158248438509561, guid: 66303e6635b14834591aadae3faeb121, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
