@@ -36,7 +36,6 @@ public class SCR_SaveSystem : MonoBehaviour
 
         if (saveData.saplings == null || saveData.saplings.Count == 0)
         {
-            Debug.Log("No saplings found in save, saving starting saplings...");
             saveData.saplings = GetSaplingData(saplingInventory);
             SaveGame(saveData);
         }
@@ -122,7 +121,7 @@ public class SCR_SaveSystem : MonoBehaviour
     {
         PlayerPrefs.DeleteKey(saveKey);
         PlayerPrefs.Save();
-        Debug.Log("Clearing save data...");
+        Debug.Log("Save data cleared");
     }
 
     public static List<CompendiumEntryData> GetCompendiumData()
@@ -167,7 +166,6 @@ public class SCR_SaveSystem : MonoBehaviour
 
     public static List<SaplingData> GetSaplingData(Transform saplingInventory)
     {
-        Debug.Log("Getting sapling data...");
         List<SaplingData> data = new List<SaplingData>();
 
         foreach (var sapling in saplingInventory.GetComponentsInChildren<SCR_MenuBox>())
@@ -178,10 +176,8 @@ public class SCR_SaveSystem : MonoBehaviour
             };
             
             data.Add(newSapling);
-            Debug.Log("Got sapling data of type: " +  sapling.fruitType);
         }
-
-        Debug.Log("Successfully returned sapling data");
+        
         return data;
     }
 
@@ -191,20 +187,16 @@ public class SCR_SaveSystem : MonoBehaviour
         {
             GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
             sapling.GetComponent<SCR_MenuBox>().fruitType = entry.dataFruitType;
-        
-            Debug.Log("Adding " + entry.dataFruitType + " sapling to inventory");
         }
     }
     
     public void SaveSapling(GameObject saplingOBJ)
     {
-        Debug.Log("Trying to save saplings");
         StartCoroutine(SaveSaplings(saplingOBJ));
     }
 
     private IEnumerator SaveSaplings(GameObject saplingOBJ)
     {
-        Debug.Log("Saving Saplings");
         Destroy(saplingOBJ);
         
         yield return new WaitForEndOfFrame();
@@ -222,8 +214,6 @@ public class SCR_SaveSystem : MonoBehaviour
 
         if (hasNoSaplings && hasNoTrees)
         {
-            Debug.Log("Player has no saplings or trees, providing apple sapling");
-
             SaplingData starterSapling = new SaplingData
             {
                 dataFruitType = FruitType.Apple
@@ -234,8 +224,6 @@ public class SCR_SaveSystem : MonoBehaviour
             
             GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
             sapling.GetComponent<SCR_MenuBox>().fruitType = starterSapling.dataFruitType;
-            
-            Debug.Log("Apple sapling provided");
         }
     }
 
@@ -259,7 +247,6 @@ public class SCR_SaveSystem : MonoBehaviour
         
         data.shopTimer = shopTimer;
         SaveGame(data);
-        Debug.Log("Shop inventory saved.");
     }
 
     public static void LoadShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float shopTimer)
@@ -268,7 +255,6 @@ public class SCR_SaveSystem : MonoBehaviour
 
         if (data.shopSlots == null || data.shopSlots.Count == 0)
         {
-            Debug.Log("No saved shop inventory found, generating new stock");
             return;
         }
 
@@ -288,7 +274,5 @@ public class SCR_SaveSystem : MonoBehaviour
                 slot.DisableSlot();
             }
         }
-        
-        Debug.Log("Shop inventory loaded.");
     }
 }

@@ -261,7 +261,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private IEnumerator RestartBloomCycle()
     {
-        Debug.Log("Restarting bloom cycle, coroutine running...");
         if (bloomCycleCoroutine != null)
         {
             Debug.Log("Stopping restart bloom cycle");
@@ -289,22 +288,16 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             tree.dataGrowthStage = currentStage;
             SCR_SaveSystem.SaveGame(saveData);
         }
-        else
-        {
-            Debug.LogWarning("TreeData not found for plot " + motherPlot.GetComponent<SCR_Plot>().plotNumber);
-        }
     }
 
     private void LoadFruits()
     {
-        Debug.Log("Trying to load fruits");
         playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
 
         if (tree == null)
         {
-            Debug.Log(gameObject.name + " is null");
             return;
         }
 
@@ -315,11 +308,8 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         {
             if (i >= gameObject.transform.childCount)
             {
-                Debug.Log("Breaking");
                 break;
             }
-            
-            Debug.Log("Making it past break");
             
             GameObject fruitOBJ = gameObject.transform.GetChild(i).gameObject;
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
@@ -332,7 +322,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
             if (!savedFruit.beenHarvested)
             {
-                Debug.Log(tree.fruits[i] + " not been harvested");
                 fruitOBJ.SetActive(true);
 
                 if (fruit.isGold || fruit.isIridescent)
@@ -355,7 +344,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
                     
                     if (fruit.isGold || fruit.isIridescent)
                     {
-                        Debug.Log("Fruit detected as either gold or iri, running coroutine");
                         fruit.GoldOrIriVisuals(false);
                     }
                     else
@@ -368,7 +356,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             }
             else
             {
-                Debug.Log(tree.fruits[i] + " has been harvested");
                 fruitOBJ.SetActive(false);
                 inactiveFruitBloomObjects.Add(fruitOBJ);
             }
@@ -400,7 +387,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             currentStage = matchedIndex;
         }
         
-        Debug.Log($"Tree growth check: currentStage={currentStage}, maxStage={spriteGrowthStages.Count - 1}, sprite={spriteRenderer.sprite.name}");
         return currentStage >= spriteGrowthStages.Count - 1;
     }
 }

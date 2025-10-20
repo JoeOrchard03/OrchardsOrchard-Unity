@@ -164,7 +164,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             
             yield return new WaitForSeconds(waitTime);
             currentStage++;
-            //UpdateSavedFruitStage();
             spriteRenderer.sprite = spriteGrowthStages[currentStage];
         }
 
@@ -196,7 +195,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     public void GoldOrIriVisuals(bool playAudio = false)
     {
-        Debug.Log("Running for fruit: " + gameObject.name);
         if (activeParticles != null)
         {
             Destroy(activeParticles);
@@ -205,7 +203,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         
         if (isIridescent)
         {
-            Debug.Log(gameObject.name + " detected as iridescent");
             if (playAudio)
             {
                 rareFruitAudioSource.PlayOneShot(iridescentAppear);
@@ -217,7 +214,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         }
         else if (isGold)
         {
-            Debug.Log(gameObject.name + " detected as gold");
             if (playAudio)
             {
                 rareFruitAudioSource.PlayOneShot(goldAppear);
@@ -231,8 +227,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     
     public void Interact(GameObject interactor)
     {
-        if (!readyToHarvest) { Debug.Log("Fruit not ready to harvest"); return;}
-        if (harvested || isTargeted) { Debug.Log("Fruit already being harvested"); return;}
+        if (!readyToHarvest) { return;}
+        if (harvested || isTargeted) { return;}
 
         isTargeted = true;
         drone.GetComponent<SCR_Drone>().SetTarget(gameObject.GetComponent<SCR_FruitBloom>());
@@ -257,18 +253,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             tree.fruits[fruitIndex].isGold = isGold;
             tree.fruits[fruitIndex].isIridescent = isIridescent;
             SCR_SaveSystem.SaveGame(saveData);
-        }
-    }
-    
-    public IEnumerator ApplyGoldIriOnLoad()
-    {
-        yield return null;
-        
-        if (isGold || isIridescent)
-        {
-            GoldOrIriVisuals(false);
-            readyToHarvest = true;
-            gameObject.GetComponent<SCR_Highlightable>().canHighlight = true;
         }
     }
 }
