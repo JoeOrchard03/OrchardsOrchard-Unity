@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 236d46b651d56c8408fe1c44763d9a30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3180378441933352278
+    second: Sheet 2 Eissive_0
+  - first:
+      213: -2890059732150740802
+    second: Sheet 2 Eissive_1
+  - first:
+      213: 8619174719064959792
+    second: Sheet 2 Eissive_2
+  - first:
+      213: -1537824348673236389
+    second: Sheet 2 Eissive_3
+  - first:
+      213: 2711007325182942678
+    second: Sheet 2 Eissive_4
+  - first:
+      213: -6625695389379727589
+    second: Sheet 2 Eissive_5
+  - first:
+      213: 8718212051389010202
+    second: Sheet 2 Eissive_6
+  - first:
+      213: 6915925189443583813
+    second: Sheet 2 Eissive_7
+  - first:
+      213: -5642197897999647103
+    second: Sheet 2 Eissive_8
+  - first:
+      213: -5790078032255704295
+    second: Sheet 2 Eissive_9
+  - first:
+      213: -6731544510540382588
+    second: Sheet 2 Eissive_10
+  - first:
+      213: 8075809460302524819
+    second: Sheet 2 Eissive_11
+  - first:
+      213: -2942414651530910053
+    second: Sheet 2 Eissive_12
+  - first:
+      213: 7109450847282399773
+    second: Sheet 2 Eissive_13
+  - first:
+      213: 8506514333631219395
+    second: Sheet 2 Eissive_14
+  - first:
+      213: -3866078315647252435
+    second: Sheet 2 Eissive_15
+  - first:
+      213: -2439101136460391910
+    second: Sheet 2 Eissive_16
+  - first:
+      213: 9135928928631538189
+    second: Sheet 2 Eissive_17
+  - first:
+      213: 5023369034043584198
+    second: Sheet 2 Eissive_18
+  - first:
+      213: -1669471861288257483
+    second: Sheet 2 Eissive_19
+  - first:
+      213: 7759713370752723077
+    second: Sheet 2 Eissive_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_0
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 1318
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d6fb2b759f22c20800000000000000
+      internalID: 3180378441933352278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_1
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 1333
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb89e7d5cf174e7d0800000000000000
+      internalID: -2890059732150740802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_2
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1183
+        width: 107
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03be4ea9db57d9770800000000000000
+      internalID: 8619174719064959792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_3
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 1183
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52a26217ec88aae0800000000000000
+      internalID: -1537824348673236389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_4
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1183
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddd2097cce6f9520800000000000000
+      internalID: 2711007325182942678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_5
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1168
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fe316d52dcc04a0800000000000000
+      internalID: -6625695389379727589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_6
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 1183
+        width: 107
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11529f6baf4df870800000000000000
+      internalID: 8718212051389010202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_7
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 1168
+        width: 77
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ff5f1515d4aff50800000000000000
+      internalID: 6915925189443583813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_8
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 1048
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e7649c7e2e2b1b0800000000000000
+      internalID: -5642197897999647103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_9
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 1063
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9132b91f4b285afa0800000000000000
+      internalID: -5790078032255704295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_10
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1048
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e7283deefb492a0800000000000000
+      internalID: -6731544510540382588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_11
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1018
+        width: 92
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391321baae9031070800000000000000
+      internalID: 8075809460302524819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_12
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 1003
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b966899c6717a27d0800000000000000
+      internalID: -2942414651530910053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_13
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1018
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a0e5cc0e7d9a260800000000000000
+      internalID: 7109450847282399773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_14
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 898
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c68bdc87b53d0670800000000000000
+      internalID: 8506514333631219395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_15
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 883
+        width: 92
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28410a514ee85ac0800000000000000
+      internalID: -3866078315647252435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_16
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 853
+        width: 107
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ad6067072962ed0800000000000000
+      internalID: -2439101136460391910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_17
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 853
+        width: 77
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d024c44d4f659ce70800000000000000
+      internalID: 9135928928631538189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_18
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 883
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce6dd1858796b540800000000000000
+      internalID: 5023369034043584198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_19
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 838
+        width: 122
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5383769ff28d4d8e0800000000000000
+      internalID: -1669471861288257483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 2 Eissive_20
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 763
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588a09ea23a00bb60800000000000000
+      internalID: 7759713370752723077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet 2 Eissive_0: 3180378441933352278
+      Sheet 2 Eissive_1: -2890059732150740802
+      Sheet 2 Eissive_10: -6731544510540382588
+      Sheet 2 Eissive_11: 8075809460302524819
+      Sheet 2 Eissive_12: -2942414651530910053
+      Sheet 2 Eissive_13: 7109450847282399773
+      Sheet 2 Eissive_14: 8506514333631219395
+      Sheet 2 Eissive_15: -3866078315647252435
+      Sheet 2 Eissive_16: -2439101136460391910
+      Sheet 2 Eissive_17: 9135928928631538189
+      Sheet 2 Eissive_18: 5023369034043584198
+      Sheet 2 Eissive_19: -1669471861288257483
+      Sheet 2 Eissive_2: 8619174719064959792
+      Sheet 2 Eissive_20: 7759713370752723077
+      Sheet 2 Eissive_3: -1537824348673236389
+      Sheet 2 Eissive_4: 2711007325182942678
+      Sheet 2 Eissive_5: -6625695389379727589
+      Sheet 2 Eissive_6: 8718212051389010202
+      Sheet 2 Eissive_7: 6915925189443583813
+      Sheet 2 Eissive_8: -5642197897999647103
+      Sheet 2 Eissive_9: -5790078032255704295
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
