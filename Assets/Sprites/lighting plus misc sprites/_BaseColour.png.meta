@@ -1,0 +1,1473 @@
+fileFormatVersion: 2
+guid: a1d907e5ebe509f42bd2fafe98e5af3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8564478671596918127
+    second: Lighting base colour map_0
+  - first:
+      213: 663965417304027420
+    second: Lighting base colour map_1
+  - first:
+      213: 2998498722884443165
+    second: Lighting base colour map_2
+  - first:
+      213: -8171462829513660138
+    second: Lighting base colour map_3
+  - first:
+      213: 8749002126596724413
+    second: Lighting base colour map_4
+  - first:
+      213: 7215781705866785178
+    second: Lighting base colour map_5
+  - first:
+      213: 6767554114615280906
+    second: Lighting base colour map_6
+  - first:
+      213: 7553774692609700744
+    second: Lighting base colour map_7
+  - first:
+      213: 7678022983043231983
+    second: Lighting base colour map_8
+  - first:
+      213: -1981386495765514961
+    second: Lighting base colour map_9
+  - first:
+      213: 8833652186296498135
+    second: Lighting base colour map_10
+  - first:
+      213: 8457873266878302768
+    second: Lighting base colour map_11
+  - first:
+      213: 7397955976549726045
+    second: Lighting base colour map_12
+  - first:
+      213: 7876573882153016745
+    second: Lighting base colour map_13
+  - first:
+      213: 7808396844237928513
+    second: Lighting base colour map_14
+  - first:
+      213: -4707562790947695433
+    second: Lighting base colour map_15
+  - first:
+      213: -2563877407285229874
+    second: Lighting base colour map_16
+  - first:
+      213: -6316591174206743000
+    second: Lighting base colour map_17
+  - first:
+      213: -4452896014466195882
+    second: Lighting base colour map_18
+  - first:
+      213: 654977650048315823
+    second: Lighting base colour map_19
+  - first:
+      213: 8304344977987099529
+    second: Lighting base colour map_20
+  - first:
+      213: -6085851795350617271
+    second: Lighting base colour map_21
+  - first:
+      213: 4195626216447792322
+    second: Lighting base colour map_22
+  - first:
+      213: -4364944340893452702
+    second: Lighting base colour map_23
+  - first:
+      213: -619929932321925889
+    second: Lighting base colour map_24
+  - first:
+      213: -7346025313698448718
+    second: Lighting base colour map_25
+  - first:
+      213: -5567201552889449053
+    second: Lighting base colour map_26
+  - first:
+      213: -1167953343942571891
+    second: Lighting base colour map_27
+  - first:
+      213: -3645204477157504894
+    second: Lighting base colour map_28
+  - first:
+      213: 191595726802527039
+    second: Lighting base colour map_29
+  - first:
+      213: 4220850485068980184
+    second: Lighting base colour map_30
+  - first:
+      213: 3681351666259502427
+    second: Lighting base colour map_31
+  - first:
+      213: 7535218549347347448
+    second: Lighting base colour map_32
+  - first:
+      213: -4545138590844080768
+    second: Lighting base colour map_33
+  - first:
+      213: -1545415939204587542
+    second: Lighting base colour map_34
+  - first:
+      213: -62625163806737439
+    second: Lighting base colour map_35
+  - first:
+      213: -2876003954393830898
+    second: Lighting base colour map_36
+  - first:
+      213: -3306223449283150314
+    second: Lighting base colour map_37
+  - first:
+      213: 4393528481081574734
+    second: Lighting base colour map_38
+  - first:
+      213: 5624732693621267294
+    second: Lighting base colour map_39
+  - first:
+      213: -14987626681049759
+    second: Lighting base colour map_40
+  - first:
+      213: -5919003788883702561
+    second: Lighting base colour map_41
+  - first:
+      213: 2622415717619949835
+    second: Lighting base colour map_42
+  - first:
+      213: 774542847032952098
+    second: Lighting base colour map_43
+  - first:
+      213: 5044030580424062713
+    second: Lighting base colour map_44
+  - first:
+      213: 818473952794276268
+    second: Lighting base colour map_45
+  - first:
+      213: 5902455131942712440
+    second: Lighting base colour map_46
+  - first:
+      213: -7925953337063922851
+    second: Lighting base colour map_47
+  - first:
+      213: -2226231869737178623
+    second: Lighting base colour map_48
+  - first:
+      213: -4540161451015729563
+    second: Lighting base colour map_49
+  - first:
+      213: -2121756685104678758
+    second: Lighting base colour map_50
+  - first:
+      213: -8148182967911693242
+    second: Lighting base colour map_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lighting base colour map_0
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 2035
+        width: 257
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6591faa9f32bd670800000000000000
+      internalID: 8564478671596918127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_1
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1900
+        width: 227
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11fc897701e63900800000000000000
+      internalID: 663965417304027420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_2
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 1675
+        width: 212
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c5df4a3becc9920800000000000000
+      internalID: 2998498722884443165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_3
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1675
+        width: 212
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619a78fc9d1299e80800000000000000
+      internalID: -8171462829513660138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_4
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1675
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db65fe67413ba6970800000000000000
+      internalID: 8749002126596724413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_5
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 1675
+        width: 317
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91b3fa0b3b932460800000000000000
+      internalID: 7215781705866785178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_6
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1495
+        width: 272
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0580e77c9e2bed50800000000000000
+      internalID: 6767554114615280906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_7
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1480
+        width: 47
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8833652bf0664d860800000000000000
+      internalID: 7553774692609700744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_8
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1480
+        width: 377
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0b3912931dd8a60800000000000000
+      internalID: 7678022983043231983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_9
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1480
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25f32dda73b084e0800000000000000
+      internalID: -1981386495765514961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_10
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1270
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d73e895cdf679a70800000000000000
+      internalID: 8833652186296498135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_11
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1270
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03acd8bace6606570800000000000000
+      internalID: 8457873266878302768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_12
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1225
+        width: 227
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57793eb3c1daa660800000000000000
+      internalID: 7397955976549726045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_13
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 1240
+        width: 152
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad99d4c6363f4d60800000000000000
+      internalID: 7876573882153016745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_14
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1375
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14835162f8ffc5c60800000000000000
+      internalID: 7808396844237928513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_15
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1330
+        width: 92
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b457b755906baeb0800000000000000
+      internalID: -4707562790947695433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_16
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 1330
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec64d1305174b6cd0800000000000000
+      internalID: -2563877407285229874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_17
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1270
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e1a063bc5f658a0800000000000000
+      internalID: -6316591174206743000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_18
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1300
+        width: 77
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e5df3daa22432c0800000000000000
+      internalID: -4452896014466195882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 235
+        width: 1547
+        height: 992
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa133f6d3b2f61900800000000000000
+      internalID: 654977650048315823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_20
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 925
+        width: 197
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b583952c5fe3370800000000000000
+      internalID: 8304344977987099529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_21
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 925
+        width: 47
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943047e4906ba8ba0800000000000000
+      internalID: -6085851795350617271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_22
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 955
+        width: 107
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4dfa180dbd93a30800000000000000
+      internalID: 4195626216447792322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_23
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1150
+        width: 77
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266b1b89f3a9c63c0800000000000000
+      internalID: -4364944340893452702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_24
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 865
+        width: 302
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4d156d2019567f0800000000000000
+      internalID: -619929932321925889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_25
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1105
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baf9f9e5ecad0a90800000000000000
+      internalID: -7346025313698448718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_26
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 895
+        width: 287
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a575071fa35db2b0800000000000000
+      internalID: -5567201552889449053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_27
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 745
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c21c2f989acfe0800000000000000
+      internalID: -1167953343942571891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_28
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 745
+        width: 182
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2880d5557d1a96dc0800000000000000
+      internalID: -3645204477157504894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_29
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 550
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f332c846c4fa8a200800000000000000
+      internalID: 191595726802527039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_30
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 745
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df52943729739a30800000000000000
+      internalID: 4220850485068980184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_31
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 565
+        width: 152
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55a0b8f5d9c61330800000000000000
+      internalID: 3681351666259502427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_32
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 550
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb68cae859729860800000000000000
+      internalID: 7535218549347347448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_33
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 550
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08da1d5688c6ce0c0800000000000000
+      internalID: -4545138590844080768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_34
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 610
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefdb7924649d8ae0800000000000000
+      internalID: -1545415939204587542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_35
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 550
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb7c4dceb2812ff0800000000000000
+      internalID: -62625163806737439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_36
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 475
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0aacb524a16618d0800000000000000
+      internalID: -2876003954393830898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_37
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 550
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e396d3a4fed12d0800000000000000
+      internalID: -3306223449283150314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_38
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 385
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45cd6920e2f8fc30800000000000000
+      internalID: 4393528481081574734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_39
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 295
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b52df65901f0e40800000000000000
+      internalID: 5624732693621267294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_40
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 295
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d56ab35d0cacff0800000000000000
+      internalID: -14987626681049759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_41
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 295
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc456b0a697bdda0800000000000000
+      internalID: -5919003788883702561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_42
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 340
+        width: 287
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0163267331b46420800000000000000
+      internalID: 2622415717619949835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_43
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 205
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22508bc9d9abfba00800000000000000
+      internalID: 774542847032952098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_44
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 25
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f63266a61ffff540800000000000000
+      internalID: 5044030580424062713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_45
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 220
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1763e39bdcb5b00800000000000000
+      internalID: 818473952794276268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_46
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 25
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87470228babb9e150800000000000000
+      internalID: 5902455131942712440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_47
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 190
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53abf5fe6b510290800000000000000
+      internalID: -7925953337063922851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_48
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 25
+        width: 1412
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a69a8d8e5da11e0800000000000000
+      internalID: -2226231869737178623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_49
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 25
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e0941173b1ef0c0800000000000000
+      internalID: -4540161451015729563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_50
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 25
+        width: 167
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98768459810e82e0800000000000000
+      internalID: -2121756685104678758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lighting base colour map_51
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 70
+        width: 287
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6444cb8f2c6dbee80800000000000000
+      internalID: -8148182967911693242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aff24963ddd5554408ebafd7e9f6be22
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 8a2a5c7f85bea8d4c8d1ba1b90525757, type: 3}
+      name: _EmissionMap
+    - texture: {fileID: 2800000, guid: 2b8ecb9b6970e36478fcd8ac6446786f, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lighting base colour map_0: 8564478671596918127
+      Lighting base colour map_1: 663965417304027420
+      Lighting base colour map_10: 8833652186296498135
+      Lighting base colour map_11: 8457873266878302768
+      Lighting base colour map_12: 7397955976549726045
+      Lighting base colour map_13: 7876573882153016745
+      Lighting base colour map_14: 7808396844237928513
+      Lighting base colour map_15: -4707562790947695433
+      Lighting base colour map_16: -2563877407285229874
+      Lighting base colour map_17: -6316591174206743000
+      Lighting base colour map_18: -4452896014466195882
+      Lighting base colour map_19: 654977650048315823
+      Lighting base colour map_2: 2998498722884443165
+      Lighting base colour map_20: 8304344977987099529
+      Lighting base colour map_21: -6085851795350617271
+      Lighting base colour map_22: 4195626216447792322
+      Lighting base colour map_23: -4364944340893452702
+      Lighting base colour map_24: -619929932321925889
+      Lighting base colour map_25: -7346025313698448718
+      Lighting base colour map_26: -5567201552889449053
+      Lighting base colour map_27: -1167953343942571891
+      Lighting base colour map_28: -3645204477157504894
+      Lighting base colour map_29: 191595726802527039
+      Lighting base colour map_3: -8171462829513660138
+      Lighting base colour map_30: 4220850485068980184
+      Lighting base colour map_31: 3681351666259502427
+      Lighting base colour map_32: 7535218549347347448
+      Lighting base colour map_33: -4545138590844080768
+      Lighting base colour map_34: -1545415939204587542
+      Lighting base colour map_35: -62625163806737439
+      Lighting base colour map_36: -2876003954393830898
+      Lighting base colour map_37: -3306223449283150314
+      Lighting base colour map_38: 4393528481081574734
+      Lighting base colour map_39: 5624732693621267294
+      Lighting base colour map_4: 8749002126596724413
+      Lighting base colour map_40: -14987626681049759
+      Lighting base colour map_41: -5919003788883702561
+      Lighting base colour map_42: 2622415717619949835
+      Lighting base colour map_43: 774542847032952098
+      Lighting base colour map_44: 5044030580424062713
+      Lighting base colour map_45: 818473952794276268
+      Lighting base colour map_46: 5902455131942712440
+      Lighting base colour map_47: -7925953337063922851
+      Lighting base colour map_48: -2226231869737178623
+      Lighting base colour map_49: -4540161451015729563
+      Lighting base colour map_5: 7215781705866785178
+      Lighting base colour map_50: -2121756685104678758
+      Lighting base colour map_51: -8148182967911693242
+      Lighting base colour map_6: 6767554114615280906
+      Lighting base colour map_7: 7553774692609700744
+      Lighting base colour map_8: 7678022983043231983
+      Lighting base colour map_9: -1981386495765514961
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
