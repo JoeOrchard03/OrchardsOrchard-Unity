@@ -39,6 +39,11 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     {
         LoadFruits();
 
+        if (currentStage == 0)
+        {
+            spriteRenderer.sprite = spriteGrowthStages[0];
+        }
+
         if (bloomCycleCoroutine != null)
         {
             StopCoroutine(bloomCycleCoroutine);
@@ -382,7 +387,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         Sprite currentSprite = spriteRenderer.sprite;
         int matchedIndex = spriteGrowthStages.IndexOf(currentSprite);
 
-        if (matchedIndex != -1)
+        if (matchedIndex != -1 && currentStage != 0)
         {
             currentStage = matchedIndex;
         }
