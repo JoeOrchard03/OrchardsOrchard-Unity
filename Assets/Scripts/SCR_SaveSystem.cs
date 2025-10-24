@@ -13,6 +13,8 @@ public class SCR_SaveSystem : MonoBehaviour
     public GameObject inventoryDecoPrefab;
     public Transform decoInventory;
 
+    public SCR_Clock clockScriptRef;
+
     private void Awake()
     {
         plots = new List<SCR_Plot>(FindObjectsByType<SCR_Plot>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
@@ -47,6 +49,7 @@ public class SCR_SaveSystem : MonoBehaviour
             LoadSaplingData(saveData.saplings);
         }
 
+        SetDay(saveData.isDay);
         EnsureStartingSapling(saveData);
         UpdateTreeAndSaplingCounts();
     }
@@ -368,5 +371,17 @@ public class SCR_SaveSystem : MonoBehaviour
         SCR_SaveData data = LoadGame();
         data.decos = GetDecoData(gameObject.transform);
         SaveGame(data);
+    }
+
+    private void SetDay(bool setDay)
+    {
+        if (setDay)
+        {
+            clockScriptRef.SetDay(false);
+        }
+        else
+        {
+            clockScriptRef.SetNight(false);
+        }
     }
 }

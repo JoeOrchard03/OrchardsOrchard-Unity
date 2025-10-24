@@ -6,9 +6,13 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
     public bool isDay;
     
     public SpriteRenderer BackgroundSpriteRenderer;
+    public SpriteRenderer ClockSpriteRenderer;
     public Light2D LightRef;
     public Sprite dayBackgroundSprite;
     public Sprite nightBackgroundSprite;
+
+    public Sprite dayClockSprite;
+    public Sprite nightClockSprite;
     
     public Color dayLightColor;
     public Color nightLightColor;
@@ -43,6 +47,8 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
         LightRef.color = dayLightColor;
         LightRef.intensity = 1.0f;
         BackgroundSpriteRenderer.sprite = dayBackgroundSprite;
+        ClockSpriteRenderer.sprite = dayClockSprite;
+        SaveTime();
     }
 
     public void SetNight(bool playAudio = true)
@@ -55,5 +61,14 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
         LightRef.color = nightLightColor;
         LightRef.intensity = nightLightIntensity;
         BackgroundSpriteRenderer.sprite = nightBackgroundSprite;
+        ClockSpriteRenderer.sprite = nightClockSprite;
+        SaveTime();
+    }
+
+    private void SaveTime()
+    {
+        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        data.isDay = isDay;
+        SCR_SaveSystem.SaveGame(data);
     }
 }

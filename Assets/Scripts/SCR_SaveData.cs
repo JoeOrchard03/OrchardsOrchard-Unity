@@ -9,6 +9,8 @@ public class SCR_SaveData
     public float masterVolume;
     public float musicVolume;
 
+    public bool isDay = true;
+
     public float shopTimer;
     
     public List<TreeData> trees = new List<TreeData>();
