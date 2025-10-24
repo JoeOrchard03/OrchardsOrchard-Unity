@@ -71,7 +71,7 @@ public class SCR_BuyableDeco : MonoBehaviour
 
         buttonAudioSource.Play();
         shopMenuScriptRef.moneyTotal -= decoPrice;
-        shopMenuScriptRef.moneyTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject deco = Instantiate(inventoryDecoPrefab, decoInventory);
         deco.GetComponent<SCR_DecoMenuBox>().decoType = decoType;
@@ -83,7 +83,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
         
         SCR_SaveSystem.SaveSaplingShopInventory(
-            shopInventoryScriptRef.shopSlots,
+            shopInventoryScriptRef.saplingShopSlots,
             shopInventoryScriptRef.shopRefreshTime);
         
         SCR_SaveData data = SCR_SaveSystem.LoadGame();

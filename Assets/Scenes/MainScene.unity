@@ -492,14 +492,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitDatabase: {fileID: 11400000, guid: dac69b27ba38ef24e9987cbd135086db, type: 2}
+  decoDatabase: {fileID: 11400000, guid: 9ade48253806c9e42a352af1fc739366, type: 2}
   shopRefreshTime: 300
-  shopSlots:
-  - {fileID: 1584879976}
-  - {fileID: 1561082239}
-  - {fileID: 1180361011}
-  - {fileID: 1577576536}
-  - {fileID: 1687301608}
-  - {fileID: 582351892}
+  saplingShopSlots: []
+  decoShopSlots: []
   shopRefreshNotif: {fileID: 1538667721}
 --- !u!1 &75607662 stripped
 GameObject:
@@ -9968,8 +9964,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897159183}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7795458, y: -6.319807, z: -2.0840979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10015,7 +10011,7 @@ Transform:
   - {fileID: 1214929926}
   - {fileID: 1125915626}
   - {fileID: 438829543}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1055154805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905610166
 GameObject:
@@ -12127,7 +12123,8 @@ Transform:
   m_LocalPosition: {x: -3.7795458, y: 6.319807, z: 2.0840979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 897159184}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055154806
@@ -12153,8 +12150,8 @@ MonoBehaviour:
   - {fileID: 1615782330}
   inventorySaplingPrefab: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
   saplingInventory: {fileID: 1814688288}
-  inventoryDecoPrefab: {fileID: 0}
-  decoInventory: {fileID: 0}
+  inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
+  decoInventory: {fileID: 8614207247352118513}
   clockScriptRef: {fileID: 1962681870}
 --- !u!1 &1079052291
 GameObject:
@@ -12843,14 +12840,14 @@ PrefabInstance:
     - target: {fileID: 7379566905493320491, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1587891968}
+      objectReference: {fileID: 1324975423}
     - target: {fileID: 7379566905493320491, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseDecoMenu
+      value: CloseMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7379566905493320491, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SCR_PlayerManager, Assembly-CSharp
+      value: SCR_OpenDecoMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20173,8 +20170,10 @@ MonoBehaviour:
   shopInventory: {fileID: 69390605}
   goldMultiplier: 2
   iridescentMultiplier: 4
-  shopTimerText: {fileID: 1711725406}
-  moneyTotalText: {fileID: 852463884}
+  saplingTabTimerText: {fileID: 1711725406}
+  saplingTabTotalText: {fileID: 852463884}
+  decorTabTimerText: {fileID: 561287050}
+  decorTabTotalText: {fileID: 1824317408}
   SellTotalText: {fileID: 1542202953}
   shopRefreshNotif: {fileID: 1538667721}
   shopSaplingPrefab: {fileID: 622391719796425974, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
@@ -27099,4 +27098,3 @@ SceneRoots:
   - {fileID: 1333318406}
   - {fileID: 905610168}
   - {fileID: 1055154805}
-  - {fileID: 897159184}

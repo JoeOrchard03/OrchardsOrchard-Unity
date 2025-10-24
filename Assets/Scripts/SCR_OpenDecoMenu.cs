@@ -19,10 +19,7 @@ public class SCR_OpenDecoMenu : MonoBehaviour, INT_Interactable
         if (!decoMenuOpen)
         {
             //audioSource.Play();
-            Debug.Log("Opening deco menu");
-            player.GetComponent<SCR_PlayerManager>().decoMenuOpen = true;
-            decoMenuOpen = true;
-            decoMenu.SetActive(true);
+            OpenMenu();
         }
         else
         {
@@ -30,6 +27,14 @@ public class SCR_OpenDecoMenu : MonoBehaviour, INT_Interactable
         }
     }
 
+    public void OpenMenu()
+    {
+        Debug.Log("Opening deco menu");
+        player.GetComponent<SCR_PlayerManager>().decoMenuOpen = true;
+        decoMenuOpen = true;
+        decoMenu.SetActive(true);
+    }
+    
     public void CloseMenu()
     {
         Debug.Log("Closing deco menu");

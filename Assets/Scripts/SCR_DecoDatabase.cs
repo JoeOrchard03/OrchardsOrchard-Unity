@@ -31,7 +31,8 @@ public enum DecoType
     StringLightBlue,
     StringLightPurple,
     StringLightPink,
-    StringLightYellow
+    StringLightYellow,
+    Null
 }
 
 [CreateAssetMenu(menuName = "Deco Database")]

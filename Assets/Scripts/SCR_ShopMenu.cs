@@ -17,8 +17,10 @@ public class SCR_ShopMenu : MonoBehaviour
     public int iridescentMultiplier;
     
     [Header("UI")]
-    public TextMeshProUGUI shopTimerText;
-    public TextMeshProUGUI moneyTotalText;
+    public TextMeshProUGUI saplingTabTimerText;
+    public TextMeshProUGUI saplingTabTotalText;
+    public TextMeshProUGUI decorTabTimerText;
+    public TextMeshProUGUI decorTabTotalText;
     public TextMeshProUGUI SellTotalText;
     public GameObject shopRefreshNotif;
     
@@ -62,7 +64,8 @@ public class SCR_ShopMenu : MonoBehaviour
         }
         
         shopMenuAudioSource = GetComponent<AudioSource>();
-        moneyTotalText.text = moneyTotal.ToString();
+        saplingTabTotalText.text = moneyTotal.ToString();
+        decorTabTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
         menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
@@ -79,23 +82,21 @@ public class SCR_ShopMenu : MonoBehaviour
     }
 
     private void UpdateTimerText(float timeRemaining)
-    {
-        if (shopTimerText != null)
-        {
-            shopTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
-        }
+    { 
+        saplingTabTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
+        decorTabTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
     }
     
     public void UpdateShopUI()
     {
-        if (shopInventory == null || shopInventory.shopSlots == null) return;
+        if (shopInventory == null || shopInventory.saplingShopSlots == null) return;
 
         for (int i = 0; i < shopSlots.Count; i++)
         {
-            if (i >= shopInventory.shopSlots.Count) break;
+            if (i >= shopInventory.saplingShopSlots.Count) break;
 
             var uiSlot = shopSlots[i];
-            var stockSlot = shopInventory.shopSlots[i];
+            var stockSlot = shopInventory.saplingShopSlots[i];
 
             if (uiSlot != null && stockSlot != null)
             {
@@ -219,7 +220,8 @@ public class SCR_ShopMenu : MonoBehaviour
         moneyTotal += sellTotal;
         sellTotal = 0;
         SellTotalText.text = "0";
-        moneyTotalText.text = moneyTotal.ToString();
+        saplingTabTotalText.text = moneyTotal.ToString();
+        decorTabTotalText.text = moneyTotal.ToString();
         Debug.Log("Selling items");
         var saveData =  SCR_SaveSystem.LoadGame();
         saveData.money = moneyTotal;
