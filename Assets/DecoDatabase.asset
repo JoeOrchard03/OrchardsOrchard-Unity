@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd31bacfd692fa499b040f1e504d3f0, type: 3}
+  m_Name: DecoDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::SCR_DecoDatabase
+  decos:
+  - type: 0
+    decoSprite: {fileID: -2121756685104678758, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 1
+    decoSprite: {fileID: 5902455131942712440, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 2
+    decoSprite: {fileID: 5044030580424062713, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 3
+    decoSprite: {fileID: 7535218549347347448, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 4
+    decoSprite: {fileID: -4545138590844080768, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 5
+    decoSprite: {fileID: 191595726802527039, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 6
+    decoSprite: {fileID: 6767554114615280906, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 7
+    decoSprite: {fileID: 7553774692609700744, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 8
+    decoSprite: {fileID: 7678022983043231983, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 9
+    decoSprite: {fileID: -7346025313698448718, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 10
+    decoSprite: {fileID: -5567201552889449053, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 11
+    decoSprite: {fileID: -1981386495765514961, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 12
+    decoSprite: {fileID: -619929932321925889, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 13
+    decoSprite: {fileID: 8833652186296498135, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 14
+    decoSprite: {fileID: -6316591174206743000, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 15
+    decoSprite: {fileID: 8457873266878302768, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 16
+    decoSprite: {fileID: 7397955976549726045, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 17
+    decoSprite: {fileID: 7876573882153016745, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 18
+    decoSprite: {fileID: -2563877407285229874, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 19
+    decoSprite: {fileID: -4707562790947695433, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 20
+    decoSprite: {fileID: -4452896014466195882, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 21
+    decoSprite: {fileID: 7808396844237928513, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 22
+    decoSprite: {fileID: 4195626216447792322, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 23
+    decoSprite: {fileID: -3645204477157504894, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 24
+    decoSprite: {fileID: 4220850485068980184, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 25
+    decoSprite: {fileID: -1545415939204587542, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 26
+    decoSprite: {fileID: 2622415717619949835, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 27
+    decoSprite: {fileID: -2876003954393830898, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5

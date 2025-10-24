@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SCR_MenuBox : MonoBehaviour
+public class SCR_SaplingMenuBox : MonoBehaviour
 {
     public SCR_FruitDatabase fruitDatabase;
     public FruitType fruitType;

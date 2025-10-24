@@ -74,7 +74,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         shopMenuScriptRef.moneyTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
-        sapling.GetComponent<SCR_MenuBox>().fruitType = fruitType;
+        sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = fruitType;
         
         DisableSlot();
         
@@ -82,7 +82,7 @@ public class SCR_BuyableSapling : MonoBehaviour
 
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
         
-        SCR_SaveSystem.SaveShopInventory(
+        SCR_SaveSystem.SaveSaplingShopInventory(
             shopInventoryScriptRef.shopSlots,
             shopInventoryScriptRef.shopRefreshTime);
         

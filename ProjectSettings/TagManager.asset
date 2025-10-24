@@ -12,6 +12,7 @@ TagManager:
   - MainMenu
   - FruitAudioSource
   - SaplingInventory
+  - DecoMenu
   layers:
   - Default
   - TransparentFX

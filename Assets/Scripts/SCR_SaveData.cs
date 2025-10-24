@@ -13,17 +13,27 @@ public class SCR_SaveData
     
     public List<TreeData> trees = new List<TreeData>();
     public List<SaplingData> saplings = new List<SaplingData>();
+    public List<DecoData> decos = new List<DecoData>();
     public InventoryFruits playerInventory =  new InventoryFruits();
-    public List<ShopSlotData> shopSlots = new List<ShopSlotData>();
+    public List<SaplingShopSlotData> saplingShopSlots = new List<SaplingShopSlotData>();
+    public List<DecoShopSlotData> decoShopSlots = new List<DecoShopSlotData>();
     public List<CompendiumEntryData> compendiumEntries = new List<CompendiumEntryData>();
 }
 
 [System.Serializable]
-public class ShopSlotData
+public class SaplingShopSlotData
 {
     public FruitType fruitType;
     public bool isSold;
 }
+
+[System.Serializable]
+public class DecoShopSlotData
+{
+    public DecoType decoType;
+    public bool isSold;
+}
+
 
 [System.Serializable]
 public class TreeData
@@ -38,6 +48,11 @@ public class TreeData
 public class SaplingData
 {
     public FruitType dataFruitType;
+}
+
+public class DecoData
+{
+    public DecoType dataDecoType;
 }
 
 [System.Serializable]
@@ -55,6 +70,12 @@ public class FruitData
 public class InventoryFruits
 {
     public List<FruitData> fruits = new List<FruitData>();
+}
+
+[System.Serializable]
+public class InventoryDecos
+{
+    public List<DecoData> decos = new List<DecoData>();
 }
 
 [System.Serializable]

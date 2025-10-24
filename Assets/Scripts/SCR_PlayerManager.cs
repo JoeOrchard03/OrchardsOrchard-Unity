@@ -23,6 +23,7 @@ public class SCR_PlayerManager : MonoBehaviour
     
     [Header("UI variables")]
     public bool shopMenuOpen = false;
+    public bool decoMenuOpen = false;
     public bool menuOpen = false;
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
@@ -125,6 +126,12 @@ public class SCR_PlayerManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Menu").SetActive(false);
         selectedPlot = null;
         menuOpen = false;
+    }
+
+    public void CloseDecoMenu()
+    {
+        GameObject.FindGameObjectWithTag("DecoMenu").SetActive(false);
+        decoMenuOpen = false;
     }
     
     public void CloseShop()

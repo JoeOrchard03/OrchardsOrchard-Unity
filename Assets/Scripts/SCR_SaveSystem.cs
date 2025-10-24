@@ -9,6 +9,9 @@ public class SCR_SaveSystem : MonoBehaviour
     
     public GameObject inventorySaplingPrefab;
     public Transform saplingInventory;
+    
+    public GameObject inventoryDecoPrefab;
+    public Transform decoInventory;
 
     private void Awake()
     {
@@ -168,7 +171,7 @@ public class SCR_SaveSystem : MonoBehaviour
     {
         List<SaplingData> data = new List<SaplingData>();
 
-        foreach (var sapling in saplingInventory.GetComponentsInChildren<SCR_MenuBox>())
+        foreach (var sapling in saplingInventory.GetComponentsInChildren<SCR_SaplingMenuBox>())
         {
             SaplingData newSapling = new SaplingData
             {
@@ -186,7 +189,7 @@ public class SCR_SaveSystem : MonoBehaviour
         foreach (var entry in data)
         {
             GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
-            sapling.GetComponent<SCR_MenuBox>().fruitType = entry.dataFruitType;
+            sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = entry.dataFruitType;
         }
     }
     
@@ -223,47 +226,69 @@ public class SCR_SaveSystem : MonoBehaviour
             SaveGame(data);
             
             GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
-            sapling.GetComponent<SCR_MenuBox>().fruitType = starterSapling.dataFruitType;
+            sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = starterSapling.dataFruitType;
         }
     }
 
-    public static void SaveShopInventory(List<SCR_BuyableSapling> shopSlots, float shopTimer)
+    public static void SaveSaplingShopInventory(List<SCR_BuyableSapling> shopSlots, float shopTimer)
     {
         SCR_SaveData data = LoadGame();
-        data.shopSlots = new List<ShopSlotData>();
+        data.saplingShopSlots = new List<SaplingShopSlotData>();
 
         foreach (var slot in shopSlots)
         {
             if (slot == null) continue;
 
-            ShopSlotData slotData = new ShopSlotData
+            SaplingShopSlotData slotData = new SaplingShopSlotData
             {
                 fruitType = slot.fruitType,
                 isSold = slot.outOfStockObj.activeSelf
             };
             
-            data.shopSlots.Add(slotData);
+            data.saplingShopSlots.Add(slotData);
+        }
+        
+        data.shopTimer = shopTimer;
+        SaveGame(data);
+    }
+    
+    public static void SaveDecoShopInventory(List<SCR_BuyableDeco> shopSlots, float shopTimer)
+    {
+        SCR_SaveData data = LoadGame();
+        data.decoShopSlots = new List<DecoShopSlotData>();
+
+        foreach (var slot in shopSlots)
+        {
+            if (slot == null) continue;
+
+            DecoShopSlotData slotData = new DecoShopSlotData
+            {
+                decoType = slot.decoType,
+                isSold = slot.outOfStockObj.activeSelf
+            };
+            
+            data.decoShopSlots.Add(slotData);
         }
         
         data.shopTimer = shopTimer;
         SaveGame(data);
     }
 
-    public static void LoadShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float shopTimer)
+    public static void LoadSaplingShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float shopTimer)
     {
         SCR_SaveData data = LoadGame();
 
-        if (data.shopSlots == null || data.shopSlots.Count == 0)
+        if (data.saplingShopSlots == null || data.saplingShopSlots.Count == 0)
         {
             return;
         }
 
         shopTimer = data.shopTimer;
 
-        for (int i = 0; i < shopSlots.Count && i < data.shopSlots.Count; i++)
+        for (int i = 0; i < shopSlots.Count && i < data.saplingShopSlots.Count; i++)
         {
             var slot = shopSlots[i];
-            var savedSlot = data.shopSlots[i];
+            var savedSlot = data.saplingShopSlots[i];
             
             slot.fruitType = savedSlot.fruitType;
             slot.fruitDatabase = fruitDatabase;
@@ -274,5 +299,74 @@ public class SCR_SaveSystem : MonoBehaviour
                 slot.DisableSlot();
             }
         }
+    }
+    
+    public static void LoadDecoShopInventory(SCR_DecoDatabase decoDatabase, List<SCR_BuyableDeco> shopSlots, ref float shopTimer)
+    {
+        SCR_SaveData data = LoadGame();
+
+        if (data.decoShopSlots == null || data.decoShopSlots.Count == 0)
+        {
+            return;
+        }
+
+        shopTimer = data.shopTimer;
+
+        for (int i = 0; i < shopSlots.Count && i < data.saplingShopSlots.Count; i++)
+        {
+            var slot = shopSlots[i];
+            var savedSlot = data.decoShopSlots[i];
+            
+            slot.decoType = savedSlot.decoType;
+            slot.decoDatabase = decoDatabase;
+            slot.ApplyDecoInfo();
+
+            if (savedSlot.isSold)
+            {
+                slot.DisableSlot();
+            }
+        }
+    }
+    
+    public static List<DecoData> GetDecoData(Transform decoInventory)
+    {
+        List<DecoData> data = new List<DecoData>();
+
+        foreach (var deco in decoInventory.GetComponentsInChildren<SCR_DecoMenuBox>())
+        {
+            DecoData newDeco = new DecoData
+            {
+                dataDecoType = deco.decoType
+            };
+            
+            data.Add(newDeco);
+        }
+        
+        return data;
+    }
+
+    private void LoadDecoData(List<DecoData> data)
+    {
+        foreach (var entry in data)
+        {
+            GameObject deco = Instantiate(inventoryDecoPrefab, decoInventory);
+            deco.GetComponent<SCR_DecoMenuBox>().decoType = entry.dataDecoType;
+        }
+    }
+    
+    public void SaveDeco(GameObject decoOBJ)
+    {
+        StartCoroutine(SaveDecos(decoOBJ));
+    }
+
+    private IEnumerator SaveDecos(GameObject decoOBJ)
+    {
+        Destroy(decoOBJ);
+        
+        yield return new WaitForEndOfFrame();
+        
+        SCR_SaveData data = LoadGame();
+        data.decos = GetDecoData(gameObject.transform);
+        SaveGame(data);
     }
 }

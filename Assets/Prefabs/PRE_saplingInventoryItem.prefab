@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4744388593745569176}
   - component: {fileID: 3929796533571446178}
   m_Layer: 5
-  m_Name: PRE_saplingInventoryItem
+  m_Name: PRE_SaplingInventoryItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

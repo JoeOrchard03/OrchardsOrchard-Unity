@@ -32,6 +32,7 @@ public class SCR_ShopMenu : MonoBehaviour
     [Header("Canvases")]
     public GameObject saplingCanvas;
     public GameObject sellCanvas;
+    public GameObject decoCanvas;
     public SpriteRenderer menuSpriteRenderer;
     public Sprite SellMenuSprite;
     public Sprite SaplingMenuSprite;
@@ -100,10 +101,6 @@ public class SCR_ShopMenu : MonoBehaviour
             {
                 uiSlot.fruitType = stockSlot.fruitType;
                 uiSlot.fruitDatabase = stockSlot.fruitDatabase;
-                // if (!uiSlot.outOfStockObj.activeSelf)
-                // {
-                //     uiSlot.ApplyFruitInfo();
-                // }
             }
         }
 
@@ -120,8 +117,22 @@ public class SCR_ShopMenu : MonoBehaviour
         saplingCanvas.SetActive(true);
         menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
+        decoCanvas.SetActive(false);
     }
 
+    public void OpenDecoTab()
+    {
+        if (decoCanvas.activeSelf == true)
+        {
+            return;
+        }
+
+        decoCanvas.SetActive(true);
+        menuSpriteRenderer.sprite = SaplingMenuSprite;
+        sellCanvas.SetActive(false);
+        saplingCanvas.SetActive(false);
+    }
+    
     public void OpenSellTab()
     {
         if (sellCanvas.activeSelf== true)
@@ -129,9 +140,10 @@ public class SCR_ShopMenu : MonoBehaviour
             return;
         }
 
-        saplingCanvas.SetActive(false);
-        menuSpriteRenderer.sprite = SellMenuSprite;
         sellCanvas.SetActive(true);
+        menuSpriteRenderer.sprite = SellMenuSprite;
+        saplingCanvas.SetActive(false);
+        decoCanvas.SetActive(false);
     }
     
     public void UpdateTotal()

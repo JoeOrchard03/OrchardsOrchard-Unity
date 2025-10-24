@@ -12,6 +12,7 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
     
     public Color dayLightColor;
     public Color nightLightColor;
+    public float nightLightIntensity;
 
     private AudioSource audioSource;
     
@@ -40,6 +41,7 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
         }
         isDay = true;
         LightRef.color = dayLightColor;
+        LightRef.intensity = 1.0f;
         BackgroundSpriteRenderer.sprite = dayBackgroundSprite;
     }
 
@@ -51,6 +53,7 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
         }
         isDay = false;
         LightRef.color = nightLightColor;
+        LightRef.intensity = nightLightIntensity;
         BackgroundSpriteRenderer.sprite = nightBackgroundSprite;
     }
 }

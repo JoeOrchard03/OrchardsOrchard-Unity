@@ -23,7 +23,7 @@ public class SCR_ShopInventory : MonoBehaviour
     
     private void Start()
     {
-        SCR_SaveSystem.LoadShopInventory(fruitDatabase, shopSlots, ref shopTimer);
+        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, shopSlots, ref shopTimer);
 
         if (shopSlots.Count == 0 || shopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
@@ -43,7 +43,7 @@ public class SCR_ShopInventory : MonoBehaviour
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
-            SCR_SaveSystem.SaveShopInventory(shopSlots, shopTimer);
+            SCR_SaveSystem.SaveSaplingShopInventory(shopSlots, shopTimer);
         }
     }
 
