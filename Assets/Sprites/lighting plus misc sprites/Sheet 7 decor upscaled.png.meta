@@ -1,0 +1,1187 @@
+fileFormatVersion: 2
+guid: 6c0841563b386164fb6e996ccb4da088
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1766861417523568187
+    second: Sheet 7 decor upscaled_0
+  - first:
+      213: 4170851994487500789
+    second: Sheet 7 decor upscaled_1
+  - first:
+      213: -3414259988329897098
+    second: Sheet 7 decor upscaled_2
+  - first:
+      213: -4581545352532265857
+    second: Sheet 7 decor upscaled_3
+  - first:
+      213: -5902520694935610195
+    second: Sheet 7 decor upscaled_4
+  - first:
+      213: -6421581422827145520
+    second: Sheet 7 decor upscaled_5
+  - first:
+      213: 1460189282351436376
+    second: Sheet 7 decor upscaled_6
+  - first:
+      213: 4175517809226048255
+    second: Sheet 7 decor upscaled_7
+  - first:
+      213: 6782533241113205028
+    second: Sheet 7 decor upscaled_8
+  - first:
+      213: 4472164751371853045
+    second: Sheet 7 decor upscaled_9
+  - first:
+      213: 4061673751632538157
+    second: Sheet 7 decor upscaled_10
+  - first:
+      213: 7452426111412232267
+    second: Sheet 7 decor upscaled_11
+  - first:
+      213: -626166695674481753
+    second: Sheet 7 decor upscaled_12
+  - first:
+      213: 196401949602446718
+    second: Sheet 7 decor upscaled_13
+  - first:
+      213: 8211380170257913854
+    second: Sheet 7 decor upscaled_14
+  - first:
+      213: -4940254511649676752
+    second: Sheet 7 decor upscaled_15
+  - first:
+      213: -5874189547553935634
+    second: Sheet 7 decor upscaled_16
+  - first:
+      213: 3413648070493856230
+    second: Sheet 7 decor upscaled_17
+  - first:
+      213: 3827399719428147548
+    second: Sheet 7 decor upscaled_18
+  - first:
+      213: -6960039672902202362
+    second: Sheet 7 decor upscaled_19
+  - first:
+      213: 6694296607117406068
+    second: Sheet 7 decor upscaled_20
+  - first:
+      213: 4248282000693168657
+    second: Sheet 7 decor upscaled_21
+  - first:
+      213: 2849657951396130103
+    second: Sheet 7 decor upscaled_22
+  - first:
+      213: -5193324595061984166
+    second: Sheet 7 decor upscaled_23
+  - first:
+      213: -1108399525116863837
+    second: Sheet 7 decor upscaled_24
+  - first:
+      213: -3268411461695385231
+    second: Sheet 7 decor upscaled_25
+  - first:
+      213: -4567003426243053499
+    second: Sheet 7 decor upscaled_26
+  - first:
+      213: 7039495027486058888
+    second: Sheet 7 decor upscaled_27
+  - first:
+      213: -5582373178747697528
+    second: Sheet 7 decor upscaled_28
+  - first:
+      213: -4014034674313496280
+    second: Sheet 7 decor upscaled_29
+  - first:
+      213: -494898069695084089
+    second: Sheet 7 decor upscaled_30
+  - first:
+      213: -1107325154622530749
+    second: Sheet 7 decor upscaled_31
+  - first:
+      213: 5979779480952661427
+    second: Sheet 7 decor upscaled_32
+  - first:
+      213: 2085378552266070522
+    second: Sheet 7 decor upscaled_33
+  - first:
+      213: 7647094583997643333
+    second: Sheet 7 decor upscaled_34
+  - first:
+      213: -8444901242100924556
+    second: Sheet 7 decor upscaled_35
+  - first:
+      213: 1649940883033148936
+    second: Sheet 7 decor upscaled_36
+  - first:
+      213: 4931100267641228937
+    second: Sheet 7 decor upscaled_37
+  - first:
+      213: -3151559016335089124
+    second: Sheet 7 decor upscaled_38
+  - first:
+      213: 2416669932948174618
+    second: Sheet 7 decor upscaled_39
+  - first:
+      213: 5458394682099448651
+    second: Sheet 7 decor upscaled_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_0
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2323
+        width: 212
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c12a29e6e8da77e0800000000000000
+      internalID: -1766861417523568187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_1
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2143
+        width: 227
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff28267ac7d1e930800000000000000
+      internalID: 4170851994487500789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_2
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1828
+        width: 107
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67364c051ac1e90d0800000000000000
+      internalID: -3414259988329897098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_3
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1993
+        width: 212
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74f8f3a6c41b60c0800000000000000
+      internalID: -4581545352532265857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_4
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1843
+        width: 212
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac98fa63b8061ea0800000000000000
+      internalID: -5902520694935610195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_5
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1303
+        width: 197
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6f32c08b5f1e6a0800000000000000
+      internalID: -6421581422827145520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_6
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1528
+        width: 302
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852d3677a62a34410800000000000000
+      internalID: 1460189282351436376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_7
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 1453
+        width: 437
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff26c3c135b62f930800000000000000
+      internalID: 4175517809226048255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 508
+        width: 1307
+        height: 992
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429d4d12c06602e50800000000000000
+      internalID: 6782533241113205028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_9
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 1318
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcda869522501e30800000000000000
+      internalID: 4472164751371853045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_10
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 1333
+        width: 137
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ae597e1c6fd5830800000000000000
+      internalID: 4061673751632538157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_11
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 1333
+        width: 182
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40629d40165c6760800000000000000
+      internalID: 7452426111412232267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_12
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1303
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3742635b86f47f0800000000000000
+      internalID: -626166695674481753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_13
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1303
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d7f375882c9b200800000000000000
+      internalID: 196401949602446718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_14
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1018
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7d8e352cea4f170800000000000000
+      internalID: 8211380170257913854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_15
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 928
+        width: 212
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032a91d32b0b07bb0800000000000000
+      internalID: -4940254511649676752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_16
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1138
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee2cb2babfaa7ea0800000000000000
+      internalID: -5874189547553935634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_17
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1138
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1ebf575d6bf5f20800000000000000
+      internalID: 3413648070493856230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_18
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 943
+        width: 77
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59c1f134c7ad1530800000000000000
+      internalID: 3827399719428147548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_19
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1183
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cc90a1bc8f86f90800000000000000
+      internalID: -6960039672902202362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_20
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1183
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fe558db4be6ec50800000000000000
+      internalID: 6694296607117406068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_21
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1078
+        width: 77
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a8005a8fde4fa30800000000000000
+      internalID: 4248282000693168657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_22
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 928
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d65540fc40c8720800000000000000
+      internalID: 2849657951396130103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_23
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 928
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54f704dbca9de7b0800000000000000
+      internalID: -5193324595061984166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_24
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1063
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa9234218c2e90f0800000000000000
+      internalID: -1108399525116863837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_25
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1063
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171d4d5a71544a2d0800000000000000
+      internalID: -3268411461695385231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_26
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 808
+        width: 92
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5487ac2b49ebe90c0800000000000000
+      internalID: -4567003426243053499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_27
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 703
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8896f6f3e6f41b160800000000000000
+      internalID: 7039495027486058888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_28
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 523
+        width: 167
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886431dab2d6782b0800000000000000
+      internalID: -5582373178747697528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_29
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 808
+        width: 137
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82971712bb84b48c0800000000000000
+      internalID: -4014034674313496280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_30
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 763
+        width: 197
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c94cc3e3d4c129f0800000000000000
+      internalID: -494898069695084089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_31
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 553
+        width: 77
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b9ed383adf1a0f0800000000000000
+      internalID: -1107325154622530749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_32
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 523
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b56a5571c17cf250800000000000000
+      internalID: 5979779480952661427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_33
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 523
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af999069eb0c0fc10800000000000000
+      internalID: 2085378552266070522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_34
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 553
+        width: 167
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a3ef21200ff1a60800000000000000
+      internalID: 7647094583997643333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_35
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 538
+        width: 47
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fb155301fadca80800000000000000
+      internalID: -8444901242100924556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_36
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 538
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ec599cd74c5e610800000000000000
+      internalID: 1649940883033148936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_37
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 553
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ec69c3199ce6440800000000000000
+      internalID: 4931100267641228937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_38
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 568
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12eaa6b5c96344d0800000000000000
+      internalID: -3151559016335089124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_39
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 568
+        width: 62
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a173ebcff7cb98120800000000000000
+      internalID: 2416669932948174618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled_40
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 568
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b3b662b0d10cb40800000000000000
+      internalID: 5458394682099448651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 909d437510427c24cb4b26111a913f7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: e926e47844aaa2c41972a9e64f9e62f2, type: 3}
+      name: _Emission
+    - texture: {fileID: 2800000, guid: 2804d3af740d2c845a5d490b9fa82595, type: 3}
+      name: _Normal
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet 7 decor upscaled_0: -1766861417523568187
+      Sheet 7 decor upscaled_1: 4170851994487500789
+      Sheet 7 decor upscaled_10: 4061673751632538157
+      Sheet 7 decor upscaled_11: 7452426111412232267
+      Sheet 7 decor upscaled_12: -626166695674481753
+      Sheet 7 decor upscaled_13: 196401949602446718
+      Sheet 7 decor upscaled_14: 8211380170257913854
+      Sheet 7 decor upscaled_15: -4940254511649676752
+      Sheet 7 decor upscaled_16: -5874189547553935634
+      Sheet 7 decor upscaled_17: 3413648070493856230
+      Sheet 7 decor upscaled_18: 3827399719428147548
+      Sheet 7 decor upscaled_19: -6960039672902202362
+      Sheet 7 decor upscaled_2: -3414259988329897098
+      Sheet 7 decor upscaled_20: 6694296607117406068
+      Sheet 7 decor upscaled_21: 4248282000693168657
+      Sheet 7 decor upscaled_22: 2849657951396130103
+      Sheet 7 decor upscaled_23: -5193324595061984166
+      Sheet 7 decor upscaled_24: -1108399525116863837
+      Sheet 7 decor upscaled_25: -3268411461695385231
+      Sheet 7 decor upscaled_26: -4567003426243053499
+      Sheet 7 decor upscaled_27: 7039495027486058888
+      Sheet 7 decor upscaled_28: -5582373178747697528
+      Sheet 7 decor upscaled_29: -4014034674313496280
+      Sheet 7 decor upscaled_3: -4581545352532265857
+      Sheet 7 decor upscaled_30: -494898069695084089
+      Sheet 7 decor upscaled_31: -1107325154622530749
+      Sheet 7 decor upscaled_32: 5979779480952661427
+      Sheet 7 decor upscaled_33: 2085378552266070522
+      Sheet 7 decor upscaled_34: 7647094583997643333
+      Sheet 7 decor upscaled_35: -8444901242100924556
+      Sheet 7 decor upscaled_36: 1649940883033148936
+      Sheet 7 decor upscaled_37: 4931100267641228937
+      Sheet 7 decor upscaled_38: -3151559016335089124
+      Sheet 7 decor upscaled_39: 2416669932948174618
+      Sheet 7 decor upscaled_4: -5902520694935610195
+      Sheet 7 decor upscaled_40: 5458394682099448651
+      Sheet 7 decor upscaled_5: -6421581422827145520
+      Sheet 7 decor upscaled_6: 1460189282351436376
+      Sheet 7 decor upscaled_7: 4175517809226048255
+      Sheet 7 decor upscaled_8: 6782533241113205028
+      Sheet 7 decor upscaled_9: 4472164751371853045
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

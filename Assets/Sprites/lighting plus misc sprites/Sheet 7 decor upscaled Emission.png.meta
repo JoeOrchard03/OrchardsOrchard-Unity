@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: e926e47844aaa2c41972a9e64f9e62f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2237634400467638927
+    second: Sheet 7 decor upscaled Emission_0
+  - first:
+      213: -359570876210980381
+    second: Sheet 7 decor upscaled Emission_1
+  - first:
+      213: -7908264836849528570
+    second: Sheet 7 decor upscaled Emission_2
+  - first:
+      213: 8155271024955404203
+    second: Sheet 7 decor upscaled Emission_3
+  - first:
+      213: -5835128114051654072
+    second: Sheet 7 decor upscaled Emission_4
+  - first:
+      213: -6601611198940737490
+    second: Sheet 7 decor upscaled Emission_5
+  - first:
+      213: 1523441117379030130
+    second: Sheet 7 decor upscaled Emission_6
+  - first:
+      213: -8419483161926022468
+    second: Sheet 7 decor upscaled Emission_7
+  - first:
+      213: -3624770899793439047
+    second: Sheet 7 decor upscaled Emission_8
+  - first:
+      213: -2434523808599400372
+    second: Sheet 7 decor upscaled Emission_9
+  - first:
+      213: 7986984928855474276
+    second: Sheet 7 decor upscaled Emission_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_0
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1528
+        width: 302
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175aee64e5352f0e0800000000000000
+      internalID: -2237634400467638927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 508
+        width: 1307
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e95ed3713c820bf0800000000000000
+      internalID: -359570876210980381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_2
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1018
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6011fd9d703304290800000000000000
+      internalID: -7908264836849528570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_3
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 928
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafa089e9c75d2170800000000000000
+      internalID: 8155271024955404203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_4
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 928
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e5e0765e5750fa0800000000000000
+      internalID: -5835128114051654072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_5
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 703
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2095e5679d5264a0800000000000000
+      internalID: -6601611198940737490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_6
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 808
+        width: 137
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ce99def99542510800000000000000
+      internalID: 1523441117379030130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_7
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 553
+        width: 77
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba440d2cacf72b80800000000000000
+      internalID: -8419483161926022468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_8
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 523
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b693ad421a32bdc0800000000000000
+      internalID: -3624770899793439047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_9
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 523
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40a337ae75d63ed0800000000000000
+      internalID: -2434523808599400372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheet 7 decor upscaled Emission_10
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 553
+        width: 167
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46044d6d97877de60800000000000000
+      internalID: 7986984928855474276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sheet 7 decor upscaled Emission_0: -2237634400467638927
+      Sheet 7 decor upscaled Emission_1: -359570876210980381
+      Sheet 7 decor upscaled Emission_10: 7986984928855474276
+      Sheet 7 decor upscaled Emission_2: -7908264836849528570
+      Sheet 7 decor upscaled Emission_3: 8155271024955404203
+      Sheet 7 decor upscaled Emission_4: -5835128114051654072
+      Sheet 7 decor upscaled Emission_5: -6601611198940737490
+      Sheet 7 decor upscaled Emission_6: 1523441117379030130
+      Sheet 7 decor upscaled Emission_7: -8419483161926022468
+      Sheet 7 decor upscaled Emission_8: -3624770899793439047
+      Sheet 7 decor upscaled Emission_9: -2434523808599400372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
