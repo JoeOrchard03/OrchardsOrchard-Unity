@@ -43,7 +43,7 @@ public class SCR_BuyableDeco : MonoBehaviour
             moneyIcon.SetActive(true);
             decoPrice = deco.decoPrice;
             decoSprite.sprite = deco.decoSprite;
-            priceText.text = decoPrice.ToString();
+            priceText.text = deco.decoPrice.ToString();
         }
         else
         {
@@ -72,25 +72,24 @@ public class SCR_BuyableDeco : MonoBehaviour
         buttonAudioSource.Play();
         shopMenuScriptRef.moneyTotal -= decoPrice;
         shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject deco = Instantiate(inventoryDecoPrefab, decoInventory);
         deco.GetComponent<SCR_DecoMenuBox>().decoType = decoType;
         
         DisableSlot();
         
-        Debug.Log("Adding " + decoType.ToString() + " deco to inventory");
+        //Debug.Log("Adding " + decoType.ToString() + " deco to inventory");
 
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
         
-        SCR_SaveSystem.SaveSaplingShopInventory(
-            shopInventoryScriptRef.saplingShopSlots,
+        SCR_SaveSystem.SaveDecoShopInventory(
+            shopInventoryScriptRef.decoShopSlots,
             shopInventoryScriptRef.shopRefreshTime);
         
         SCR_SaveData data = SCR_SaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;
         data.decos = SCR_SaveSystem.GetDecoData(decoInventory);
         SCR_SaveSystem.SaveGame(data);
-        
-        playerManagerScriptRef.UpdateCounts();
     }
 }

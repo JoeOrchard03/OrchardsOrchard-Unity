@@ -494,8 +494,20 @@ MonoBehaviour:
   fruitDatabase: {fileID: 11400000, guid: dac69b27ba38ef24e9987cbd135086db, type: 2}
   decoDatabase: {fileID: 11400000, guid: 9ade48253806c9e42a352af1fc739366, type: 2}
   shopRefreshTime: 300
-  saplingShopSlots: []
-  decoShopSlots: []
+  saplingShopSlots:
+  - {fileID: 1584879976}
+  - {fileID: 1561082239}
+  - {fileID: 1180361011}
+  - {fileID: 1577576536}
+  - {fileID: 1687301608}
+  - {fileID: 582351892}
+  decoShopSlots:
+  - {fileID: 1321250175}
+  - {fileID: 1218229554}
+  - {fileID: 1884172624}
+  - {fileID: 1911941059}
+  - {fileID: 634181786}
+  - {fileID: 1563460516}
   shopRefreshNotif: {fileID: 1538667721}
 --- !u!1 &75607662 stripped
 GameObject:
@@ -1793,6 +1805,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4659,6 +4679,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5712,7 +5740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -6406,6 +6434,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &634181786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 488327814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &634732881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9965,7 +10004,7 @@ Transform:
   m_GameObject: {fileID: 897159183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7795458, y: -6.319807, z: -2.0840979}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10011,7 +10050,7 @@ Transform:
   - {fileID: 1214929926}
   - {fileID: 1125915626}
   - {fileID: 438829543}
-  m_Father: {fileID: 1055154805}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905610166
 GameObject:
@@ -11771,7 +11810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -12123,8 +12162,7 @@ Transform:
   m_LocalPosition: {x: -3.7795458, y: 6.319807, z: 2.0840979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 897159184}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055154806
@@ -13049,7 +13087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -13530,7 +13568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -13894,6 +13932,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 299163935615746552, guid: 7cdc7d3c66db31f4092382cff6f7cb3e, type: 3}
   m_PrefabInstance: {fileID: 146852006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1218229554 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 155752873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1229107488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14237,7 +14286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -15201,6 +15250,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15291,6 +15348,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
   m_PrefabInstance: {fileID: 1321250172}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321250175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1321250172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1324975416
 GameObject:
   m_ObjectHideFlags: 0
@@ -15739,6 +15807,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18650,6 +18726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18740,6 +18824,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
   m_PrefabInstance: {fileID: 1563460513}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1563460516 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1563460513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1576585019
 GameObject:
   m_ObjectHideFlags: 0
@@ -19838,7 +19933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: fruitType
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733533894051264798, guid: 71fb529931322544bbed7193ecb4790c, type: 3}
       propertyPath: saplingInventory
@@ -21969,6 +22064,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cdc7d3c66db31f4092382cff6f7cb3e, type: 3}
+--- !u!114 &1884172624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1354507668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!4 &1891983542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1598635067255390112, guid: 5691b66c81608a34caa6f5800a0e10e1, type: 3}
@@ -22135,6 +22241,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PRE_ShopDecoBox (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: decoInventory
+      value: 
+      objectReference: {fileID: 8614207247352118513}
+    - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+      propertyPath: buttonAudioSource
+      value: 
+      objectReference: {fileID: 1858254260}
     - target: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -22225,6 +22339,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
   m_PrefabInstance: {fileID: 1911941056}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911941059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1911941056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1912797595
 GameObject:
   m_ObjectHideFlags: 0
@@ -27097,4 +27222,5 @@ SceneRoots:
   - {fileID: 1858254261}
   - {fileID: 1333318406}
   - {fileID: 905610168}
+  - {fileID: 897159184}
   - {fileID: 1055154805}

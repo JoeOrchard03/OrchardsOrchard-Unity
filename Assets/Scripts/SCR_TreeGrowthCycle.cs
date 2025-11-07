@@ -169,7 +169,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         {
             Debug.Log("All previous fruits have been harvested, resetting fruit list for new bloom cycle...");
             tree.fruits.Clear();
-            currentStage = 0;
 
             inactiveFruitBloomObjects.Clear();
             activeBloomObjects.Clear();
@@ -181,7 +180,12 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         }
         
         bool batchActive = tree.fruits.Exists(f => f.batchID == currentBatch && !f.beenHarvested);
-        if (batchActive) return;
+        if (batchActive)
+        {
+            Debug.Log("Batch still active, skipping new bloom");
+            bloomCycleRunning = false;
+            return;
+        }
         
         int numberOfBloomsToActivate =  Random.Range(minNumberOfBloomsToActivate, maxNumberOfBloomsToActivate);
         Debug.Log("Activating " + numberOfBloomsToActivate + " blooms");
@@ -266,12 +270,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private IEnumerator RestartBloomCycle()
     {
-        if (bloomCycleCoroutine != null)
-        {
-            Debug.Log("Stopping restart bloom cycle");
-            StopCoroutine(bloomCycleCoroutine);
-            bloomCycleCoroutine = null;
-        }
         if (!IsTreeFullyGrown())
         {
             Debug.Log("Tree not fully grown");
@@ -384,14 +382,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private bool IsTreeFullyGrown()
     {
-        Sprite currentSprite = spriteRenderer.sprite;
-        int matchedIndex = spriteGrowthStages.IndexOf(currentSprite);
-
-        if (matchedIndex != -1 && currentStage != 0)
-        {
-            currentStage = matchedIndex;
-        }
-        
         return currentStage >= spriteGrowthStages.Count - 1;
     }
 }

@@ -49,6 +49,17 @@ public class SCR_SaveSystem : MonoBehaviour
             LoadSaplingData(saveData.saplings);
         }
 
+        if (saveData.decos == null || saveData.decos.Count == 0)
+        {
+            Debug.Log("No decos found");
+            saveData.decos = GetDecoData(decoInventory);
+            SaveGame(saveData);
+        }
+        else
+        {
+            LoadDecoData(saveData.decos);
+        }
+
         SetDay(saveData.isDay);
         EnsureStartingSapling(saveData);
         UpdateTreeAndSaplingCounts();
@@ -259,11 +270,11 @@ public class SCR_SaveSystem : MonoBehaviour
     {
         SCR_SaveData data = LoadGame();
         data.decoShopSlots = new List<DecoShopSlotData>();
-
+    
         foreach (var slot in shopSlots)
         {
             if (slot == null) continue;
-
+    
             DecoShopSlotData slotData = new DecoShopSlotData
             {
                 decoType = slot.decoType,
@@ -279,15 +290,18 @@ public class SCR_SaveSystem : MonoBehaviour
 
     public static void LoadSaplingShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float shopTimer)
     {
+        Debug.Log("Loading Sapling Shop Inventory");
         SCR_SaveData data = LoadGame();
 
         if (data.saplingShopSlots == null || data.saplingShopSlots.Count == 0)
         {
+            Debug.Log("No Sapling Shop Slots in save system load");
             return;
         }
 
         shopTimer = data.shopTimer;
 
+        Debug.Log($"Shop slots count: {shopSlots.Count}, Saved slots count: {data.saplingShopSlots.Count}");
         for (int i = 0; i < shopSlots.Count && i < data.saplingShopSlots.Count; i++)
         {
             var slot = shopSlots[i];
@@ -308,15 +322,15 @@ public class SCR_SaveSystem : MonoBehaviour
     public static void LoadDecoShopInventory(SCR_DecoDatabase decoDatabase, List<SCR_BuyableDeco> shopSlots, ref float shopTimer)
     {
         SCR_SaveData data = LoadGame();
-
+    
         if (data.decoShopSlots == null || data.decoShopSlots.Count == 0)
         {
             return;
         }
-
+    
         shopTimer = data.shopTimer;
-
-        for (int i = 0; i < shopSlots.Count && i < data.saplingShopSlots.Count; i++)
+    
+        for (int i = 0; i < shopSlots.Count && i < data.decoShopSlots.Count; i++)
         {
             var slot = shopSlots[i];
             var savedSlot = data.decoShopSlots[i];
@@ -324,7 +338,7 @@ public class SCR_SaveSystem : MonoBehaviour
             slot.decoType = savedSlot.decoType;
             slot.decoDatabase = decoDatabase;
             slot.ApplyDecoInfo();
-
+    
             if (savedSlot.isSold)
             {
                 slot.DisableSlot();
@@ -370,7 +384,7 @@ public class SCR_SaveSystem : MonoBehaviour
         yield return new WaitForEndOfFrame();
         
         SCR_SaveData data = LoadGame();
-        data.decos = GetDecoData(gameObject.transform);
+        data.decos = GetDecoData(decoInventory);
         SaveGame(data);
     }
 

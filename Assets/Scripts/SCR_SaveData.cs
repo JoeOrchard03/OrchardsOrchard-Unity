@@ -75,12 +75,6 @@ public class InventoryFruits
 }
 
 [System.Serializable]
-public class InventoryDecos
-{
-    public List<DecoData> decos = new List<DecoData>();
-}
-
-[System.Serializable]
 public class CompendiumEntryData
 {
     public FruitType fruitType;

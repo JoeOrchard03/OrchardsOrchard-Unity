@@ -133,7 +133,7 @@ public class SCR_Compendium : MonoBehaviour
     {
         if (entries.TryGetValue(fruitType, out SCR_FruitEntry entry))
         {
-            Debug.Log("Trying to mark fruit");
+            //Debug.Log("Trying to mark fruit");
             if(standardCollected) entry.MarkStandardFruit();
             if(isIridescent) entry.MarkIridescentFruit();
             if(isGold) entry.MarkGoldFruit();

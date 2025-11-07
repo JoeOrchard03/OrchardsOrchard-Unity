@@ -8,13 +8,15 @@ public class SCR_ShopInventory : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private SCR_FruitDatabase fruitDatabase;
+    [SerializeField] private SCR_DecoDatabase decoDatabase;
 
     [Header("Shop settings")]
     public float shopRefreshTime = 30f;
     private float shopTimer;
 
     [Header("Shop slots")]
-    public List<SCR_BuyableSapling> shopSlots = new List<SCR_BuyableSapling>();
+    public List<SCR_BuyableSapling> saplingShopSlots = new List<SCR_BuyableSapling>();
+    public List<SCR_BuyableDeco> decoShopSlots = new List<SCR_BuyableDeco>();
 
     public GameObject shopRefreshNotif;
     
@@ -23,9 +25,10 @@ public class SCR_ShopInventory : MonoBehaviour
     
     private void Start()
     {
-        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, shopSlots, ref shopTimer);
+        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, saplingShopSlots, ref shopTimer);
+        SCR_SaveSystem.LoadDecoShopInventory(decoDatabase, decoShopSlots, ref shopTimer);
 
-        if (shopSlots.Count == 0 || shopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
+        if (saplingShopSlots.Count == 0 || saplingShopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
             shopTimer = shopRefreshTime;
             RefreshShopInventory();
@@ -43,15 +46,21 @@ public class SCR_ShopInventory : MonoBehaviour
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
-            SCR_SaveSystem.SaveSaplingShopInventory(shopSlots, shopTimer);
+            SCR_SaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
+            SCR_SaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
         }
     }
 
     public void RefreshShopInventory()
     {
-        if (shopSlots == null || shopSlots.Count == 0) return;
+        Debug.Log("Calling RefreshShopInventory");
+        if (saplingShopSlots == null || saplingShopSlots.Count == 0)
+        {
+            Debug.Log("No sapling shop slots");
+            return;
+        }
 
-        foreach (SCR_BuyableSapling slot in shopSlots)
+        foreach (SCR_BuyableSapling slot in saplingShopSlots)
         {
             if (slot == null) continue;
 
@@ -60,6 +69,27 @@ public class SCR_ShopInventory : MonoBehaviour
             slot.fruitDatabase = fruitDatabase;
             slot.ApplyFruitInfo();
         }
+        
+        if (decoShopSlots == null || decoShopSlots.Count == 0)
+        {
+            Debug.Log("No deco shop slots");
+            return;
+        }
+        
+        foreach (SCR_BuyableDeco slot in decoShopSlots)
+        {
+            if (slot == null) continue;
+
+            var deco = GetRandomDecoBySpawnChance();
+            slot.decoType = deco.type;
+            slot.decoDatabase = decoDatabase;
+            slot.ApplyDecoInfo();
+        }
+        
+        SCR_SaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
+        SCR_SaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
+        Debug.Log($"Saved {saplingShopSlots.Count} shop slots to save data");
+        Debug.Log($"Saved {decoShopSlots.Count} shop slots to save data");
     }
 
     private SCR_FruitDatabase.Fruit GetRandomFruitBySpawnChance()
@@ -82,5 +112,27 @@ public class SCR_ShopInventory : MonoBehaviour
         }
 
         return fruits[Random.Range(0, fruits.Length)];
+    }
+    
+    private SCR_DecoDatabase.Deco GetRandomDecoBySpawnChance()
+    {
+        var decos = decoDatabase.decos;
+        if (decos == null || decos.Length == 0) return null;
+
+        float totalWeight = 0f;
+        foreach (var deco in decos)
+            totalWeight += Mathf.Max(deco.shopSpawnChance, 0.0001f);
+
+        float randomValue = Random.Range(0f, totalWeight);
+        float cumulative = 0f;
+
+        foreach (var deco in decos)
+        {
+            cumulative += Mathf.Max(deco.shopSpawnChance, 0.0001f);
+            if (randomValue <= cumulative)
+                return deco;
+        }
+
+        return decos[Random.Range(0, decos.Length)];
     }
 }

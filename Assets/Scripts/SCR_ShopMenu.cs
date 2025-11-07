@@ -67,6 +67,7 @@ public class SCR_ShopMenu : MonoBehaviour
         saplingTabTotalText.text = moneyTotal.ToString();
         decorTabTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
+        decoCanvas.SetActive(false);
         menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         UpdateShopUI();

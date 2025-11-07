@@ -33,7 +33,6 @@ public class SCR_BuyableSapling : MonoBehaviour
     
     public void ApplyFruitInfo()
     {
-        Debug.Log("Reaching apply fruit info");
         var fruit = fruitDatabase.GetFruit(fruitType);
         if (fruit != null)
         {
@@ -72,7 +71,6 @@ public class SCR_BuyableSapling : MonoBehaviour
 
         buttonAudioSource.Play();
         shopMenuScriptRef.moneyTotal -= saplingPrice;
-        shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
         sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = fruitType;
