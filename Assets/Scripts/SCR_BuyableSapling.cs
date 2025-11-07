@@ -33,6 +33,7 @@ public class SCR_BuyableSapling : MonoBehaviour
     
     public void ApplyFruitInfo()
     {
+        Debug.Log("Reaching apply fruit info");
         var fruit = fruitDatabase.GetFruit(fruitType);
         if (fruit != null)
         {

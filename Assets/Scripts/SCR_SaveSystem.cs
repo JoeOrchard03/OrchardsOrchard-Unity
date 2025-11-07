@@ -295,6 +295,7 @@ public class SCR_SaveSystem : MonoBehaviour
             
             slot.fruitType = savedSlot.fruitType;
             slot.fruitDatabase = fruitDatabase;
+            Debug.Log("Calling apply fruit info");
             slot.ApplyFruitInfo();
 
             if (savedSlot.isSold)

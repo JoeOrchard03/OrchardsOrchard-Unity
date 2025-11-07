@@ -8,15 +8,13 @@ public class SCR_ShopInventory : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private SCR_FruitDatabase fruitDatabase;
-    [SerializeField] private SCR_DecoDatabase decoDatabase;
 
     [Header("Shop settings")]
     public float shopRefreshTime = 30f;
     private float shopTimer;
 
     [Header("Shop slots")]
-    public List<SCR_BuyableSapling> saplingShopSlots = new List<SCR_BuyableSapling>();
-    public List<SCR_BuyableDeco> decoShopSlots = new List<SCR_BuyableDeco>();
+    public List<SCR_BuyableSapling> shopSlots = new List<SCR_BuyableSapling>();
 
     public GameObject shopRefreshNotif;
     
@@ -25,10 +23,9 @@ public class SCR_ShopInventory : MonoBehaviour
     
     private void Start()
     {
-        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, saplingShopSlots, ref shopTimer);
-        SCR_SaveSystem.LoadDecoShopInventory(decoDatabase, decoShopSlots, ref shopTimer);
+        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, shopSlots, ref shopTimer);
 
-        if (saplingShopSlots.Count == 0 || saplingShopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
+        if (shopSlots.Count == 0 || shopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
             shopTimer = shopRefreshTime;
             RefreshShopInventory();
@@ -46,16 +43,15 @@ public class SCR_ShopInventory : MonoBehaviour
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
-            SCR_SaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
-            SCR_SaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
+            SCR_SaveSystem.SaveSaplingShopInventory(shopSlots, shopTimer);
         }
     }
 
     public void RefreshShopInventory()
     {
-        if (saplingShopSlots == null || saplingShopSlots.Count == 0 || decoShopSlots == null || decoShopSlots.Count == 0) return;
+        if (shopSlots == null || shopSlots.Count == 0) return;
 
-        foreach (SCR_BuyableSapling slot in saplingShopSlots)
+        foreach (SCR_BuyableSapling slot in shopSlots)
         {
             if (slot == null) continue;
 
@@ -63,16 +59,6 @@ public class SCR_ShopInventory : MonoBehaviour
             slot.fruitType = fruit.type;
             slot.fruitDatabase = fruitDatabase;
             slot.ApplyFruitInfo();
-        }
-
-        foreach (SCR_BuyableDeco decoSlot in decoShopSlots)
-        {
-            if (decoSlot == null) continue;
-
-            var deco = GetRandomDecoBySpawnChance();
-            decoSlot.decoType = deco.type;
-            decoSlot.decoDatabase = decoDatabase;
-            decoSlot.ApplyDecoInfo();
         }
     }
 
@@ -96,27 +82,5 @@ public class SCR_ShopInventory : MonoBehaviour
         }
 
         return fruits[Random.Range(0, fruits.Length)];
-    }
-    
-    private SCR_DecoDatabase.Deco GetRandomDecoBySpawnChance()
-    {
-        var decos = decoDatabase.decos;
-        if (decos == null || decos.Length == 0) return null;
-
-        float totalWeight = 0f;
-        foreach (var deco in decos)
-            totalWeight += Mathf.Max(deco.shopSpawnChance, 0.0001f);
-
-        float randomValue = Random.Range(0f, totalWeight);
-        float cumulative = 0f;
-
-        foreach (var deco in decos)
-        {
-            cumulative += Mathf.Max(deco.shopSpawnChance, 0.0001f);
-            if (randomValue <= cumulative)
-                return deco;
-        }
-
-        return decos[Random.Range(0, decos.Length)];
     }
 }
