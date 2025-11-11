@@ -67,8 +67,8 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
 
     private void SaveTime()
     {
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.isDay = isDay;
-        SCR_SaveSystem.SaveGame(data);
+        SCR_ReworkedSaveSystem.SaveGame(data);
     }
 }

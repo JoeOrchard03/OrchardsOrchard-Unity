@@ -25,8 +25,8 @@ public class SCR_ShopInventory : MonoBehaviour
     
     private void Start()
     {
-        SCR_SaveSystem.LoadSaplingShopInventory(fruitDatabase, saplingShopSlots, ref shopTimer);
-        SCR_SaveSystem.LoadDecoShopInventory(decoDatabase, decoShopSlots, ref shopTimer);
+        SCR_ReworkedSaveSystem.LoadSaplingShopInventory(fruitDatabase, saplingShopSlots, ref shopTimer);
+        SCR_ReworkedSaveSystem.LoadDecoShopInventory(decoDatabase, decoShopSlots, ref shopTimer);
 
         if (saplingShopSlots.Count == 0 || saplingShopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
@@ -46,8 +46,8 @@ public class SCR_ShopInventory : MonoBehaviour
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
-            SCR_SaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
-            SCR_SaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
+            SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
+            SCR_ReworkedSaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
         }
     }
 
@@ -86,8 +86,8 @@ public class SCR_ShopInventory : MonoBehaviour
             slot.ApplyDecoInfo();
         }
         
-        SCR_SaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
-        SCR_SaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
+        SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
+        SCR_ReworkedSaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
         Debug.Log($"Saved {saplingShopSlots.Count} shop slots to save data");
         Debug.Log($"Saved {decoShopSlots.Count} shop slots to save data");
     }

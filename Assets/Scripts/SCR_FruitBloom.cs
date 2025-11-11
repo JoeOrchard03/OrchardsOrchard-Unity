@@ -238,7 +238,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     {
         if (fruitIndex == -1) return;
         
-        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         int plotNumber = transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
 
@@ -252,7 +252,7 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
             tree.fruits[fruitIndex].growthStage = currentStage;
             tree.fruits[fruitIndex].isGold = isGold;
             tree.fruits[fruitIndex].isIridescent = isIridescent;
-            SCR_SaveSystem.SaveGame(saveData);
+            SCR_ReworkedSaveSystem.SaveGame(saveData);
         }
     }
 }

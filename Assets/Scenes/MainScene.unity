@@ -12174,9 +12174,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055154804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed7976a7bcd77e4a875b9a351e6b917, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb68c5d2f4afb043bfca332576433eb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::SCR_ReworkedSaveSystem
+  inventorySaplingPrefab: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
+  saplingInventory: {fileID: 1814688288}
+  inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
+  decoInventory: {fileID: 8614207247352118513}
   plots:
   - {fileID: 1721534901}
   - {fileID: 555408033}
@@ -12186,10 +12190,6 @@ MonoBehaviour:
   - {fileID: 1508325181}
   - {fileID: 1436964347}
   - {fileID: 1615782330}
-  inventorySaplingPrefab: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
-  saplingInventory: {fileID: 1814688288}
-  inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
-  decoInventory: {fileID: 8614207247352118513}
   clockScriptRef: {fileID: 1962681870}
 --- !u!1 &1079052291
 GameObject:

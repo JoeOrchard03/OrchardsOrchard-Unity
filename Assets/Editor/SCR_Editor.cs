@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(SCR_SaveSystem))]
+[CustomEditor(typeof(SCR_ReworkedSaveSystem))]
 public class SCR_Editor : Editor
 {
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
         
-        SCR_SaveSystem saveSystem = (SCR_SaveSystem)target;
+        SCR_ReworkedSaveSystem saveSystem = (SCR_ReworkedSaveSystem)target;
         
         GUILayout.Space(10);
         GUILayout.Label("Testing", EditorStyles.boldLabel);

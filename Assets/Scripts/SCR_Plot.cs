@@ -28,15 +28,27 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     public GameObject PomeloTreePrefab;
     public GameObject GrapefruitTreePrefab;
 
+    [Header("References")]
     [SerializeField] private GameObject SaplingMenu;
-    public GameObject SaplingSpawnLocation;
     private SCR_PlayerManager playerPlayerManagerScriptRef;
-    public bool plotOccupied = false;
+    
+    [Header("Audio")]
     private AudioSource plotAudioSource;
     public AudioClip plotInteract;
     public AudioClip treeDestroyAudio;
-
+    
+    [Header("Plot information")]
+    public bool plotOccupied = false;
     public int plotNumber;
+    private SCR_TreeGrowthCycle plantedTree;
+    
+    [Header("Save system variables")]
+    public bool HasTreePlanted => plantedTree != null;
+    public FruitType currentFruitType => plantedTree != null ? plantedTree.fruitType : FruitType.Null;
+    public int currentGrowthStage => plantedTree != null ? plantedTree.currentStage : 0;
+        
+    
+    public GameObject SaplingSpawnLocation;
     
     private void Start()
     {
@@ -76,7 +88,9 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     private void Plant(GameObject Sapling, FruitType fruitType)
     {
         GameObject instantiatedSapling = Instantiate(Sapling, SaplingSpawnLocation.transform.position, transform.rotation);
-        instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>().motherPlot = this.gameObject;
+        plantedTree = instantiatedSapling.GetComponent<SCR_TreeGrowthCycle>();
+        plantedTree.motherPlot = this.gameObject;
+        
         playerPlayerManagerScriptRef.selectedPlot = null;
         SaplingMenu.SetActive(false);
         playerPlayerManagerScriptRef.SetCursorHighlight(false);
@@ -91,9 +105,9 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
             dataPlotNumber = plotNumber,
         };
 
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.trees.Add(newTreeData);
-        SCR_SaveSystem.SaveGame(data);
+        SCR_ReworkedSaveSystem.SaveGame(data);
     }
 
     public void LoadPlantedTree(FruitType fruitType, int growthStage)
@@ -106,16 +120,22 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         }
         
         GameObject instantiatedPrefab = Instantiate(prefab, SaplingSpawnLocation.transform.position, transform.rotation);
-        SCR_TreeGrowthCycle growthCycleScriptRef = instantiatedPrefab.GetComponent<SCR_TreeGrowthCycle>();
-        growthCycleScriptRef.motherPlot = this.gameObject;
-        growthCycleScriptRef.currentStage = growthStage;
+        plantedTree = instantiatedPrefab.GetComponent<SCR_TreeGrowthCycle>();
+        plantedTree.motherPlot = this.gameObject;
+        plantedTree.currentStage = growthStage;
+        
         plotOccupied = true;
         GetComponent<SCR_Highlightable>().stopHighlight = true;
     }
     
     public void PlayTreeDestroyAudio()
     {
-        SCR_SaveSystem.RemoveTreeFromSave(plotNumber);
+        if (plantedTree != null)
+        {
+            plantedTree = null;
+            plotOccupied = false;
+        }
+        SCR_ReworkedSaveSystem.RemoveTreeFromSave(plotNumber);
         plotAudioSource.PlayOneShot(treeDestroyAudio);
     }
 

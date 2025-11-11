@@ -54,7 +54,7 @@ public class SCR_ShopMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        var saveData = SCR_SaveSystem.LoadGame();
+        var saveData = SCR_ReworkedSaveSystem.LoadGame();
         moneyTotal = saveData.money;
         
         if (shopInventory != null)
@@ -211,7 +211,7 @@ public class SCR_ShopMenu : MonoBehaviour
             slot.fruitInBox = null;
         }
 
-        SCR_SaveSystem.SaveFruitInventory(playerManager.inventoryFruits);
+        SCR_ReworkedSaveSystem.SaveFruitInventory(playerManager.inventoryFruits);
         
         if (sellTotal >= 1)
         {
@@ -224,9 +224,9 @@ public class SCR_ShopMenu : MonoBehaviour
         saplingTabTotalText.text = moneyTotal.ToString();
         decorTabTotalText.text = moneyTotal.ToString();
         Debug.Log("Selling items");
-        var saveData =  SCR_SaveSystem.LoadGame();
+        var saveData =  SCR_ReworkedSaveSystem.LoadGame();
         saveData.money = moneyTotal;
-        SCR_SaveSystem.SaveGame(saveData);
+        SCR_ReworkedSaveSystem.SaveGame(saveData);
     }
 
     public void QuickMove()

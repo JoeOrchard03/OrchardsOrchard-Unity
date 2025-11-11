@@ -139,8 +139,8 @@ public class SCR_Compendium : MonoBehaviour
             if(isGold) entry.MarkGoldFruit();
         }
 
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
-        data.compendiumEntries = SCR_SaveSystem.GetCompendiumData();
-        SCR_SaveSystem.SaveGame(data);
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
+        data.compendiumEntries = SCR_ReworkedSaveSystem.GetCompendiumData();
+        SCR_ReworkedSaveSystem.SaveGame(data);
     }
 }

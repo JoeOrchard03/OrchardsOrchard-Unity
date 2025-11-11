@@ -71,6 +71,8 @@ public class SCR_BuyableSapling : MonoBehaviour
 
         buttonAudioSource.Play();
         shopMenuScriptRef.moneyTotal -= saplingPrice;
+        shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
         sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = fruitType;
@@ -81,14 +83,14 @@ public class SCR_BuyableSapling : MonoBehaviour
 
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
         
-        SCR_SaveSystem.SaveSaplingShopInventory(
+        SCR_ReworkedSaveSystem.SaveSaplingShopInventory(
             shopInventoryScriptRef.saplingShopSlots,
             shopInventoryScriptRef.shopRefreshTime);
         
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;
-        data.saplings = SCR_SaveSystem.GetSaplingData(saplingInventory);
-        SCR_SaveSystem.SaveGame(data);
+        data.saplings = SCR_ReworkedSaveSystem.GetSaplingData(saplingInventory);
+        SCR_ReworkedSaveSystem.SaveGame(data);
         
         playerManagerScriptRef.UpdateCounts();
     }

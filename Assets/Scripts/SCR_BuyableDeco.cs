@@ -79,17 +79,17 @@ public class SCR_BuyableDeco : MonoBehaviour
         
         DisableSlot();
         
-        //Debug.Log("Adding " + decoType.ToString() + " deco to inventory");
+        Debug.Log("Children in decoInventory: " + decoInventory.childCount);
 
         SCR_ShopInventory shopInventoryScriptRef = GameObject.FindFirstObjectByType<SCR_ShopInventory>().GetComponent<SCR_ShopInventory>();
         
-        SCR_SaveSystem.SaveDecoShopInventory(
+        SCR_ReworkedSaveSystem.SaveDecoShopInventory(
             shopInventoryScriptRef.decoShopSlots,
             shopInventoryScriptRef.shopRefreshTime);
         
-        SCR_SaveData data = SCR_SaveSystem.LoadGame();
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;
-        data.decos = SCR_SaveSystem.GetDecoData(decoInventory);
-        SCR_SaveSystem.SaveGame(data);
+        data.decos = SCR_ReworkedSaveSystem.GetDecoData(decoInventory);
+        SCR_ReworkedSaveSystem.SaveGame(data);
     }
 }

@@ -105,7 +105,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1109873635
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -9000854809742389725, guid: bf98120c07c486a4ca45106a1c7b8d91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -391,33 +391,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -489,33 +465,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -587,33 +539,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -685,33 +613,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -783,33 +687,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -881,33 +761,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -979,33 +835,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1077,33 +909,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1171,21 +979,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3105045830281236175, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1257,33 +1057,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1355,33 +1131,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1453,33 +1205,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1551,33 +1279,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1649,33 +1353,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1747,33 +1427,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1845,33 +1501,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -1943,33 +1575,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -2041,33 +1649,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -2139,33 +1723,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -2237,33 +1797,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -2335,33 +1871,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite
@@ -2433,33 +1945,9 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6357064239543472656, guid: 1670df6ccf2003d40acf8a7795ddaf0e, type: 3}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4829322382485257270, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560398658557167744, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: m_Name
       value: PRE_FruitBloom (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010290930569528657, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7601064504352435785, guid: 51ea4d569240dbd449309650cb62c668, type: 3}
       propertyPath: goldSprite

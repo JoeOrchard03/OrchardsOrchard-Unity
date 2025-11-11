@@ -62,7 +62,7 @@ public class SCR_PlayerManager : MonoBehaviour
         
         Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
 
-        inventoryFruits = SCR_SaveSystem.LoadFruitInventory();
+        inventoryFruits = SCR_ReworkedSaveSystem.LoadFruitInventory();
         LoadInventoryUI();
     }
 
@@ -169,7 +169,7 @@ public class SCR_PlayerManager : MonoBehaviour
             Debug.Log($"{fruit.fruitType} added (Gold: {fruit.isGold}, Iridescent: {fruit.isIridescent})");
         }
         
-        SCR_SaveSystem.SaveFruitInventory(inventoryFruits);
+        SCR_ReworkedSaveSystem.SaveFruitInventory(inventoryFruits);
     }
 
     private void LoadInventoryUI()

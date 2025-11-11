@@ -148,7 +148,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         
         bloomCycleRunning = true;
         
-        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
         
         if (tree == null)
@@ -224,7 +224,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         {
             currentBatch++;
             if (currentBatch > 1000) currentBatch = 0;
-            SCR_SaveSystem.SaveGame(saveData);
+            SCR_ReworkedSaveSystem.SaveGame(saveData);
         }
 
         bloomCycleRunning = false;
@@ -240,12 +240,12 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             return;
         }
         
-        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
         if (tree != null && fruitScriptRef.fruitIndex < tree.fruits.Count)
         {
             tree.fruits[fruitScriptRef.fruitIndex].beenHarvested = true;
-            SCR_SaveSystem.SaveGame(saveData);
+            SCR_ReworkedSaveSystem.SaveGame(saveData);
         }
 
         fruitScriptRef.fruitIndex = -1;
@@ -283,20 +283,20 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private void UpdateSavedGrowthStage()
     {
-        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
         if (tree != null)
         {
             tree.dataGrowthStage = currentStage;
-            SCR_SaveSystem.SaveGame(saveData);
+            SCR_ReworkedSaveSystem.SaveGame(saveData);
         }
     }
 
     private void LoadFruits()
     {
         playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
-        SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
 
         if (tree == null)

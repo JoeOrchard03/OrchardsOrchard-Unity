@@ -293,7 +293,7 @@ public class SCR_Drone : MonoBehaviour
 
             if (currentFruit.fruitIndex != -1)
             {
-                SCR_SaveData saveData = SCR_SaveSystem.LoadGame();
+                SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
                 int plotNumber = currentFruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>().motherPlot.GetComponent<SCR_Plot>().plotNumber;
                 TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plotNumber);
 
@@ -302,7 +302,7 @@ public class SCR_Drone : MonoBehaviour
                     tree.fruits[currentFruit.fruitIndex].beenHarvested = true;
                     tree.fruits[currentFruit.fruitIndex].isGold = currentFruit.isGold;
                     tree.fruits[currentFruit.fruitIndex].isIridescent = currentFruit.isIridescent;
-                    SCR_SaveSystem.SaveGame(saveData);
+                    SCR_ReworkedSaveSystem.SaveGame(saveData);
                 }
             }
         }

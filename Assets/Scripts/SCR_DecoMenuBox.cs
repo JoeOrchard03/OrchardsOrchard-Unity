@@ -9,13 +9,13 @@ public class SCR_DecoMenuBox : MonoBehaviour
     private GameObject player;
     public Image decoImage;
     private GameObject decoInventory;
-    public SCR_SaveSystem saveSystem;
+    public SCR_ReworkedSaveSystem saveSystem;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         decoInventory = transform.parent.gameObject;
-        saveSystem = GameObject.Find("SaveManager").GetComponent<SCR_SaveSystem>();
+        saveSystem = GameObject.Find("SaveManager").GetComponent<SCR_ReworkedSaveSystem>();
         LoadImage();
     }
 
@@ -28,6 +28,5 @@ public class SCR_DecoMenuBox : MonoBehaviour
     {
         player.GetComponent<SCR_PlayerManager>().hoveredInteractable = null;
         Debug.Log("Entering placement mode");
-        saveSystem.SaveDeco(this.gameObject);
     }
 }

@@ -34,7 +34,7 @@ public class SCR_AudioManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        var saveData = SCR_SaveSystem.LoadGame();
+        var saveData = SCR_ReworkedSaveSystem.LoadGame();
         currentMasterVolume = (saveData.masterVolume > 0f) ? saveData.masterVolume : masterDefaultVol;
         currentMusicVolume = (saveData.musicVolume > 0f) ? saveData.musicVolume : musicDefaultVol;
         
@@ -71,9 +71,9 @@ public class SCR_AudioManager : MonoBehaviour
 
     private void SaveVolumes()
     {
-        var saveData = SCR_SaveSystem.LoadGame();
+        var saveData = SCR_ReworkedSaveSystem.LoadGame();
         saveData.masterVolume = currentMasterVolume;
         saveData.musicVolume = currentMusicVolume;
-        SCR_SaveSystem.SaveGame(saveData);
+        SCR_ReworkedSaveSystem.SaveGame(saveData);
     }
 }
