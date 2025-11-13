@@ -45,8 +45,6 @@ public class SCR_InventoryFruit : MonoBehaviour, IBeginDragHandler, IDragHandler
         Vector2 pivot = rectTransform.pivot;
         cursorOffset = new Vector2(size.x / 2f, size.y / 2f);
     }
-
-
     
     public void OnDrag(PointerEventData eventData)
     {

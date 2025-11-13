@@ -22950,11 +22950,12 @@ MonoBehaviour:
   isDay: 1
   BackgroundSpriteRenderer: {fileID: 421774660}
   ClockSpriteRenderer: {fileID: 1962681871}
-  LightRef: {fileID: 619394801}
   dayBackgroundSprite: {fileID: 570446512679616808, guid: c9f69d7ba7d27444db448531b38f0915, type: 3}
   nightBackgroundSprite: {fileID: 6736505396162712893, guid: f79dc83e4fd950a4a98f44efc1cafab4, type: 3}
   dayClockSprite: {fileID: -5364015043128579164, guid: 0746097f02324e942a4d63f9dad19d9a, type: 3}
   nightClockSprite: {fileID: 1845907361782899313, guid: 0746097f02324e942a4d63f9dad19d9a, type: 3}
+  LightRef: {fileID: 619394801}
+  shopScreenLight: {fileID: 2072779754}
   dayLightColor: {r: 1, g: 1, b: 1, a: 0}
   nightLightColor: {r: 0.2924527, g: 0.5754715, b: 1, a: 0}
   nightLightIntensity: 0.1
@@ -24775,6 +24776,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0880a1599e05070468705a3e3aa51b65, type: 3}
+--- !u!1 &2072779754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6462724659485130873, guid: 0880a1599e05070468705a3e3aa51b65, type: 3}
+  m_PrefabInstance: {fileID: 2072779753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2077723837
 GameObject:
   m_ObjectHideFlags: 0
