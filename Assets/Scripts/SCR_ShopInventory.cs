@@ -30,7 +30,7 @@ public class SCR_ShopInventory : MonoBehaviour
 
         if (saplingShopSlots.Count == 0 || saplingShopSlots.TrueForAll(s => s.fruitType == FruitType.Null))
         {
-            shopTimer = shopRefreshTime;
+            shopTimer = SCR_ReworkedSaveSystem.LoadShopTimer();
             RefreshShopInventory();
         }
     }
@@ -46,11 +46,22 @@ public class SCR_ShopInventory : MonoBehaviour
             RefreshShopInventory();
             OnShopRefreshed?.Invoke();
             shopTimer = shopRefreshTime;
+            SCR_ReworkedSaveSystem.SaveShopTimer(shopTimer);
             SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, shopTimer);
             SCR_ReworkedSaveSystem.SaveDecoShopInventory(decoShopSlots, shopTimer);
         }
     }
 
+    private void OnApplicationQuit()
+    {
+        SaveShopTimerCall();
+    }
+
+    public void SaveShopTimerCall()
+    {
+        SCR_ReworkedSaveSystem.SaveShopTimer(shopTimer);
+    }
+    
     public void RefreshShopInventory()
     {
         Debug.Log("Calling RefreshShopInventory");

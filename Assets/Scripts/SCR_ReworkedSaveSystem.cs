@@ -464,6 +464,23 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     
     #endregion
     
+    #region Shop : Timer
+
+    public static void SaveShopTimer(float shopTimer)
+    {
+        SCR_SaveData data = LoadGame();
+        data.shopTimer = shopTimer;
+        SaveGame(data);
+    }
+
+    public static float LoadShopTimer()
+    {
+        SCR_SaveData data = LoadGame();
+        return data.shopTimer;
+    }
+    
+    #endregion
+    
     #region Misc Functions
 
     private void ClearInventory(Transform parent)

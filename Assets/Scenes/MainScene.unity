@@ -16675,6 +16675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3284060f946fd4a92cc03d566ab1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopInventoryRef: {fileID: 69390605}
 --- !u!1 &1411463035
 GameObject:
   m_ObjectHideFlags: 0
