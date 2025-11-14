@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047279680190517946}
   - component: {fileID: 4936288306057796612}
+  - component: {fileID: -805007003930811710}
   m_Layer: 0
   m_Name: PumpkinStack1
   m_TagString: Untagged
@@ -90,3 +91,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-805007003930811710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592209782733626304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

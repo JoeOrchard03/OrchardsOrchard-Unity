@@ -12190,7 +12190,11 @@ MonoBehaviour:
   - {fileID: 1508325181}
   - {fileID: 1436964347}
   - {fileID: 1615782330}
+  placedDecos: []
   clockScriptRef: {fileID: 1962681870}
+  placedDecoPrefab: {fileID: 8801549546733607639, guid: 264bdffc9b228c44693c4a274f0b65e2, type: 3}
+  placedDecoHolder: {fileID: 1723734613}
+  decoDatabase: {fileID: 11400000, guid: 9ade48253806c9e42a352af1fc739366, type: 2}
 --- !u!1 &1079052291
 GameObject:
   m_ObjectHideFlags: 0
@@ -20910,6 +20914,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1723734612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723734613}
+  m_Layer: 0
+  m_Name: PlacedDecoHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723734613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723734612}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.30817, y: 4.39252, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1774061831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27202,3 +27237,4 @@ SceneRoots:
   - {fileID: 905610168}
   - {fileID: 897159184}
   - {fileID: 1055154805}
+  - {fileID: 1723734613}

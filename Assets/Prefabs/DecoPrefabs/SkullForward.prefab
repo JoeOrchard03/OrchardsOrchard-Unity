@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6123325606918405976}
   - component: {fileID: 9087421508074326014}
+  - component: {fileID: -8837375727130339137}
   m_Layer: 0
   m_Name: SkullForward
   m_TagString: Untagged
@@ -90,3 +91,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8837375727130339137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081191470793703507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

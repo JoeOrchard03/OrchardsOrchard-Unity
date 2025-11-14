@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4719818836063687266}
   - component: {fileID: 5059170516829758180}
+  - component: {fileID: 1682164221313340214}
   m_Layer: 0
   m_Name: CatSit
   m_TagString: Untagged
@@ -90,3 +91,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1682164221313340214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203053772654187577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

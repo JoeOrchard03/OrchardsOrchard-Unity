@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624735450785148592}
   - component: {fileID: 2253374397927619758}
+  - component: {fileID: -5851751467019063019}
   m_Layer: 0
   m_Name: FairyLightsBlue
   m_TagString: Untagged
@@ -175,3 +176,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5851751467019063019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6395175899269971041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

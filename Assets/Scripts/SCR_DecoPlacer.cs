@@ -11,6 +11,7 @@ public class SCR_DecoPlacer : MonoBehaviour
     [Header("References")]
     private Transform decoInventory;
     public SpriteRenderer spriteRenderer;
+    public GameObject placedDecoHolder;
 
     [Header("Misc")] 
     private GameObject decoInventoryBox;
@@ -24,6 +25,12 @@ public class SCR_DecoPlacer : MonoBehaviour
         {
             decoInventory = decoInventoryBoxRef.transform.parent;
         }
+
+        if (placedDecoHolder == null)
+        {
+            placedDecoHolder = GameObject.Find("PlacedDecoHolder");
+        }
+        
         decorationType = decoType;
         decorationSprite = decoSprite;
         decoInventoryBox = decoInventoryBoxRef;
@@ -43,8 +50,15 @@ public class SCR_DecoPlacer : MonoBehaviour
     public void PlaceDeco()
     {
         GameObject decoObj = decoDatabase.GetDeco(decorationType).decoPrefab;
-        Instantiate(decoObj, transform.position, transform.rotation);
-        Debug.Log("Placing deco: " + decoObj.name + " at: " + transform.position);
+        GameObject instantiatedDecoObj = Instantiate(decoObj, transform.position, transform.rotation);
+        instantiatedDecoObj.transform.parent = placedDecoHolder.transform;
+        instantiatedDecoObj.GetComponent<SCR_PlacedDeco>().decoType = decorationType;
+        Debug.Log("Placing deco: " + instantiatedDecoObj.name + " at: " + transform.position);
+        
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
+        data.placedDecoData = SCR_ReworkedSaveSystem.GetPlacedDecoData(placedDecoHolder.transform);
+        SCR_ReworkedSaveSystem.SaveGame(data);
+        
         RemoveDecoFromInventory();
         Destroy(this.gameObject);
     }
@@ -52,10 +66,10 @@ public class SCR_DecoPlacer : MonoBehaviour
     public void RemoveDecoFromInventory()
     {
         Debug.Log("Removing " + decoInventoryBox.name + " from inventory");
-        Destroy(decoInventoryBox);
+        DestroyImmediate(decoInventoryBox);
         
         SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
-        data.decos = SCR_ReworkedSaveSystem.GetDecoData(decoInventory);
+        data.decos = SCR_ReworkedSaveSystem.GetInventoryDecoData(decoInventory);
         SCR_ReworkedSaveSystem.SaveGame(data);
     }
 

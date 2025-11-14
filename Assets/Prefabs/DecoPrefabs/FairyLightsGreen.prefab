@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3004364778690697277}
   - component: {fileID: 6467519913124105511}
+  - component: {fileID: -4875037747580336935}
   m_Layer: 0
   m_Name: FairyLightsGreen
   m_TagString: Untagged
@@ -175,3 +176,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4875037747580336935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2219937417524457862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

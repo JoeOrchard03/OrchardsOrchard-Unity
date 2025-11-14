@@ -28,6 +28,9 @@ public class SCR_SaveData
     
     //Compendium
     public List<CompendiumEntryData> compendiumEntries = new List<CompendiumEntryData>();
+    
+    //Placed deco data
+    public List<PlacedDecoData> placedDecoData = new List<PlacedDecoData>();
 }
 
 //Tree in scene's data
@@ -52,6 +55,14 @@ public class SaplingData
 public class DecoData
 {
     public DecoType dataDecoType;
+}
+
+//Placed decoration data
+[System.Serializable]
+public class PlacedDecoData
+{
+    public DecoType decoType;
+    public Vector2 decoPosition;
 }
 
 //Fruit data used for trees and inventory

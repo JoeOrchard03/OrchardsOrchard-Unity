@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2506952370582836709}
   - component: {fileID: 4197536741538878602}
+  - component: {fileID: 8492116504351947442}
   m_Layer: 0
   m_Name: LitPumpkinStack1
   m_TagString: Untagged
@@ -176,6 +177,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8492116504351947442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630112177610104043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f123f712a3db745a46c6270b702a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &4212839573361934099
 GameObject:
   m_ObjectHideFlags: 0

@@ -89,7 +89,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         
         SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;
-        data.decos = SCR_ReworkedSaveSystem.GetDecoData(decoInventory);
+        data.decos = SCR_ReworkedSaveSystem.GetInventoryDecoData(decoInventory);
         SCR_ReworkedSaveSystem.SaveGame(data);
     }
 }

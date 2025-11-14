@@ -18,6 +18,8 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     [Header("References")]
     public List<SCR_Plot> plots;
     public SCR_Clock clockScriptRef;
+    public Transform placedDecoHolder;
+    public SCR_DecoDatabase decoDatabase;
 
     private void Awake()
     {
@@ -40,7 +42,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         {
             trees = GetTreeData(),
             saplings = GetSaplingData(saplingInventory),
-            decos = GetDecoData(decoInventory),
+            decos = GetInventoryDecoData(decoInventory),
             compendiumEntries = GetCompendiumData(),
             isDay = clockScriptRef.isDay,
         };
@@ -87,7 +89,12 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         ClearInventory(decoInventory);
         if (data.decos != null && data.decos.Count > 0)
         {
-            LoadDecoData(data.decos);
+            LoadInventoryDecoData(data.decos);
+        }
+
+        if (data.placedDecoData != null && data.placedDecoData.Count > 0)
+        {
+            LoadPlacedDecoData(data.placedDecoData);
         }
         
         //Compendium
@@ -127,8 +134,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
 
         return new SCR_SaveData();
     }
-
-    //Wipe save data
+    
     public void ClearSaveData()
     {
         PlayerPrefs.DeleteKey(SaveKey);
@@ -213,7 +219,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     
     #region Decorations
 
-    public static List<DecoData> GetDecoData(Transform parent)
+    public static List<DecoData> GetInventoryDecoData(Transform parent)
     {
         var data = new List<DecoData>();
         //Get decos from all children of the deco inventory parent
@@ -225,7 +231,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         return data;
     }
 
-    private void LoadDecoData(List<DecoData> data)
+    private void LoadInventoryDecoData(List<DecoData> data)
     {
         //For each saved deco
         foreach (var entry in data)
@@ -234,6 +240,27 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
             GameObject deco = Instantiate(inventoryDecoPrefab, decoInventory);
             //Assign its saved type
             deco.GetComponent<SCR_DecoMenuBox>().decoType = entry.dataDecoType;
+        }
+    }
+
+    public static List <PlacedDecoData> GetPlacedDecoData(Transform parent)
+    {
+        var data = new List<PlacedDecoData>();
+        foreach (Transform deco in parent)
+        {
+            data.Add(new PlacedDecoData {decoPosition = deco.position, decoType = deco.gameObject.GetComponent<SCR_PlacedDeco>().decoType});
+        }
+
+        return data;
+    }
+
+    private void LoadPlacedDecoData(List<PlacedDecoData> data)
+    {
+        foreach (var entry in data)
+        {
+            GameObject decoObj = decoDatabase.GetDeco(entry.decoType).decoPrefab;
+            GameObject instantiatedDecoObj = Instantiate(decoObj, entry.decoPosition, transform.rotation, placedDecoHolder.transform);
+            instantiatedDecoObj.GetComponent<SCR_PlacedDeco>().decoType = entry.decoType;
         }
     }
     
