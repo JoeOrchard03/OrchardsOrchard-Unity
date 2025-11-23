@@ -21,10 +21,14 @@ public class SCR_PlayerManager : MonoBehaviour
     public int currentTreeCount;
     public int currentSaplingCount;
     
+    [Header("References")]
+    public SCR_OpenEditMode openEditModeScriptRef;
+    
     [Header("UI variables")]
     public bool shopMenuOpen = false;
     public bool decoMenuOpen = false;
     public bool menuOpen = false;
+    public bool editModeEnabled = false;
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
     [Header("Mouse variables")]
@@ -109,6 +113,11 @@ public class SCR_PlayerManager : MonoBehaviour
             {
                 CloseShop();
             }
+
+            if (editModeEnabled)
+            {
+                DisableEditMode();
+            }
         }
 
         if (shopMenuOpen) return;
@@ -139,6 +148,14 @@ public class SCR_PlayerManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("ShopMenu").SetActive(false);
         openShopObj.GetComponent<SCR_OpenShop>().shopOpen = false;
         shopMenuOpen = false;
+    }
+
+    public void DisableEditMode()
+    {
+        if (openEditModeScriptRef)
+        {
+            openEditModeScriptRef.disableEditMode();
+        }
     }
 
     public void AddFruits(List<SCR_Drone.HarvestedFruit> newFruits)

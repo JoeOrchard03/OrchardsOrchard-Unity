@@ -81,7 +81,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2131087579553564738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1302443414277766939}
+        m_TargetAssemblyTypeName: SCR_DecoPlacer, Assembly-CSharp
+        m_MethodName: ReturnEditingDecoToInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &3424163608721495135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -361,7 +373,11 @@ MonoBehaviour:
   decorationType: 0
   decorationSprite: {fileID: 7535218549347347448, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
   spriteRenderer: {fileID: 1960387511753656398}
+  placedDecoHolder: {fileID: 0}
+  inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
+  toBackPackBox: {fileID: 1835380583375254407}
   editingExistingDecos: 0
+  decoToEdit: {fileID: 0}
 --- !u!61 &4262857134547807172
 BoxCollider2D:
   m_ObjectHideFlags: 0
