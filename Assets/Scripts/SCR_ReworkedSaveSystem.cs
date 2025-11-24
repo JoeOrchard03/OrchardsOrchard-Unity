@@ -135,7 +135,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         return new SCR_SaveData();
     }
     
-    public void ClearSaveData()
+    public static void ClearSaveData()
     {
         PlayerPrefs.DeleteKey(SaveKey);
         PlayerPrefs.Save();

@@ -9,6 +9,7 @@ public class SCR_MainMenu : MonoBehaviour
 {
     public string sceneToLoad;
     public GameObject settingsMenu;
+    public GameObject confirmBox;
     
     [Header("Audio sliders")]
     public Slider masterVolumeSlider;
@@ -70,5 +71,23 @@ public class SCR_MainMenu : MonoBehaviour
         {
             Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
         }
+    }
+
+    public void OpenClearSaveBox()
+    {
+        Debug.Log("Opening confirm box");
+        confirmBox.SetActive(true);
+    }
+
+    public void ClearSave()
+    {
+        SCR_ReworkedSaveSystem.ClearSaveData();
+        confirmBox.SetActive(false);
+    }
+
+    public void cancelClearSave()
+    {
+        Debug.Log("Closing confirm box");
+        confirmBox.SetActive(false);
     }
 }

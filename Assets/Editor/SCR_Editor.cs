@@ -23,7 +23,7 @@ public class SCR_Editor : Editor
                     "Yes",
                     "No"))
             {
-                saveSystem.ClearSaveData();
+                SCR_ReworkedSaveSystem.ClearSaveData();
             }
         }
     }
