@@ -149,10 +149,10 @@ MonoBehaviour:
   - {fileID: 364011696542487278, guid: 953b5a4213a8d5047b5c88780b048bc6, type: 3}
   - {fileID: 7691470525059037175, guid: 50e49e25c420d2044b31a5cad2824df2, type: 3}
   growthTimes:
-  - 1
-  - 1
-  - 1
-  - 1
+  - 3
+  - 3
+  - 3
+  - 3
   uncommonFruitMultiplier: 2
   rareFruitMultiplier: 3
   goldSprite: {fileID: 0}

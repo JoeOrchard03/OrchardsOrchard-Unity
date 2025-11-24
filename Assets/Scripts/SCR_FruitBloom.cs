@@ -48,8 +48,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
     private void Awake()
     {
-        goldChance = 0.325f;
-        iridescentChance = 0.105f;
+        goldChance = 0.05f;
+        iridescentChance = 0.005f;
 
         if (goldParticlesPrefab == null)
         {
