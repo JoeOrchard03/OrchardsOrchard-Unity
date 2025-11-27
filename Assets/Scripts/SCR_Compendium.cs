@@ -20,6 +20,8 @@ public class SCR_Compendium : MonoBehaviour
 
     private AudioSource pageTurnAudioSource;
 
+    public string currentCamera;
+
     private void Awake()
     {
         if(instance == null) instance = this;
@@ -39,6 +41,11 @@ public class SCR_Compendium : MonoBehaviour
 
     public void OpenCompendium()
     {
+        if (currentCamera != "MainCamera")
+        {
+            gameObject.GetComponent<SCR_CameraZoomOut>().Interact(this.gameObject);
+        }
+        
         foreach (var fruitEntry in fruitEntries)
         {
             fruitEntry.RefreshEntries();

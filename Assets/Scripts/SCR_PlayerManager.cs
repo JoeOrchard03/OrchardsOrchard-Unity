@@ -127,6 +127,8 @@ public class SCR_PlayerManager : MonoBehaviour
             if (hoveredInteractable == null) { return;} 
             if (hoveredInteractable.GetComponent<INT_Interactable>() == null) { Debug.Log("Item does not have interactable script"); return;}
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
+            hoveredInteractable = null;
+            SetCursorHighlight(false);
         }
     }
 

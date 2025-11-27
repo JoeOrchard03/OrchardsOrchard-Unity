@@ -10,6 +10,12 @@ public class SCR_CompendiumOpen : MonoBehaviour, INT_Interactable
     public AudioClip compendiumOpen;
     public AudioClip compendiumClose;
 
+    public GameObject mainCamera;
+    public GameObject leftZoomedCamera;
+    public GameObject rightZoomedCamera;
+    
+    private bool wasZoomedBeforeOpening = false;
+
     private void Start()
     {
         compendiumAudioSource = gameObject.GetComponent<AudioSource>();
@@ -20,20 +26,44 @@ public class SCR_CompendiumOpen : MonoBehaviour, INT_Interactable
         Debug.Log("Interacting with compendium");
         if (compendiumCanvas.activeInHierarchy)
         {
-            compendiumAudioSource.PlayOneShot(compendiumClose, 0.5f);
-            compendiumCanvas.SetActive(false);
+            CloseCompendium();
+            return;
         }
-        else
+        
+        compendiumAudioSource.PlayOneShot(compendiumOpen);
+        compendiumCanvas.SetActive(true);
+        
+        wasZoomedBeforeOpening = !mainCamera.activeInHierarchy;
+
+        if (wasZoomedBeforeOpening)
         {
-            compendiumAudioSource.PlayOneShot(compendiumOpen);
-            compendiumCanvas.SetActive(true);
-            compendium.GetComponent<SCR_Compendium>().OpenCompendium();
+            GetComponent<SCR_CameraZoomOut>().Interact(this.gameObject);
         }
+        
+        compendium.GetComponent<SCR_Compendium>().OpenCompendium();
     }
 
     public void CloseCompendium()
     {
         compendiumAudioSource.PlayOneShot(compendiumClose, 0.25f);
         compendiumCanvas.SetActive(false);
+        
+        if (wasZoomedBeforeOpening)
+        {
+            Debug.Log("Camera is zoomed, zooming in");
+            gameObject.GetComponent<SCR_CameraZoomIn>().Interact(this.gameObject);
+        }
+    }
+
+    private string CheckCurrentCamera()
+    {
+        if (mainCamera.activeInHierarchy)
+        {
+            return "MainCamera";
+        }
+        else
+        {
+            return "zoomedCamera";
+        }
     }
 }
