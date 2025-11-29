@@ -54,16 +54,5 @@ public class SCR_CompendiumOpen : MonoBehaviour, INT_Interactable
             gameObject.GetComponent<SCR_CameraZoomIn>().Interact(this.gameObject);
         }
     }
-
-    private string CheckCurrentCamera()
-    {
-        if (mainCamera.activeInHierarchy)
-        {
-            return "MainCamera";
-        }
-        else
-        {
-            return "zoomedCamera";
-        }
-    }
+    
 }
