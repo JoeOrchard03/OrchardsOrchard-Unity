@@ -6,11 +6,17 @@ public class SCR_CameraZoomIn : MonoBehaviour, INT_Interactable
     public GameObject mainCamera;
     public GameObject leftZoomedCamera;
     public GameObject moveCameraRightButton;
+    public GameObject tutorialMenu;
     
     public List<Canvas> canvases = new List<Canvas>();
     
     public void Interact(GameObject interactor)
     {
+        if (tutorialMenu.activeSelf)
+        {
+            return;
+        }
+        
         mainCamera.SetActive(false);
         leftZoomedCamera.SetActive(true);
 

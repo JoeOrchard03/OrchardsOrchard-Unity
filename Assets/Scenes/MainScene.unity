@@ -571,6 +571,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 1899780466}
+  tutorialMenu: {fileID: 696743249}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -2872,6 +2873,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 407607951}
+  tutorialMenu: {fileID: 696743249}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -23599,6 +23601,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 407607951}
+  tutorialMenu: {fileID: 696743249}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
