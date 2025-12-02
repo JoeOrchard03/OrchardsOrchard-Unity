@@ -18,6 +18,10 @@ public class SCR_MainMenu : MonoBehaviour
     [Header("Mouse variables")]
     public Texture2D cursorTexture;
     public Texture2D cursorHighlightTexture;
+
+    public GameObject playText;
+    public GameObject settingsText;
+    public GameObject quitText;
     
     private void Start()
     {
@@ -45,12 +49,20 @@ public class SCR_MainMenu : MonoBehaviour
         Debug.Log("Opening settings");
         settingsMenu.SetActive(true);
         
+        playText.SetActive(false);
+        quitText.SetActive(false);
+        settingsText.SetActive(false);
+        
         masterVolumeSlider.value = SCR_AudioManager.instance.GetCurrentMasterVolume();
         musicVolumeSlider.value = SCR_AudioManager.instance.GetCurrentMusicVolume();
     }
 
     public void ClosingSettings()
     {
+        playText.SetActive(true);
+        quitText.SetActive(true);
+        settingsText.SetActive(true);
+        
         Debug.Log("Closing settings");
         settingsMenu.SetActive(false);
     }
@@ -76,18 +88,33 @@ public class SCR_MainMenu : MonoBehaviour
     public void OpenClearSaveBox()
     {
         Debug.Log("Opening confirm box");
+        
+        playText.SetActive(false);
+        quitText.SetActive(false);
+        settingsText.SetActive(false);
+        
         confirmBox.SetActive(true);
     }
 
     public void ClearSave()
     {
         SCR_ReworkedSaveSystem.ClearSaveData();
+        
+        playText.SetActive(true);
+        quitText.SetActive(true);
+        settingsText.SetActive(true);
+        
         confirmBox.SetActive(false);
     }
 
     public void cancelClearSave()
     {
         Debug.Log("Closing confirm box");
+        
+        playText.SetActive(true);
+        quitText.SetActive(true);
+        settingsText.SetActive(true);
+        
         confirmBox.SetActive(false);
     }
 }

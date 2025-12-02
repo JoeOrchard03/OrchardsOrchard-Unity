@@ -196,6 +196,14 @@ PrefabInstance:
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
       value: -2.0653493
       objectReference: {fileID: 0}
+    - target: {fileID: 965418688490259373, guid: 98b45abd218ac24429a1aa52d627dd0d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 965418688490259373, guid: 98b45abd218ac24429a1aa52d627dd0d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1535159
+      objectReference: {fileID: 0}
     - target: {fileID: 4924910305438252816, guid: 98b45abd218ac24429a1aa52d627dd0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.682812

@@ -2365,6 +2365,9 @@ MonoBehaviour:
   musicVolumeSlider: {fileID: 717886844}
   cursorTexture: {fileID: 2800000, guid: ccd2ba0f8f829644fb3fe41baf274d93, type: 3}
   cursorHighlightTexture: {fileID: 2800000, guid: c8e3b1c348acd03458894b02c3bdbab6, type: 3}
+  playText: {fileID: 1953005029}
+  settingsText: {fileID: 1629473374}
+  quitText: {fileID: 546603581}
 --- !u!82 &1034692179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3083,10 +3086,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 789292197}
-  - {fileID: 1536683752}
   - {fileID: 487883636}
   - {fileID: 1696479531}
   - {fileID: 394054804}
+  - {fileID: 1536683752}
   - {fileID: 498097481}
   - {fileID: 1234943233}
   - {fileID: 1333077363}
@@ -4101,6 +4104,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847303965}
   m_CullTransparentMesh: 1
+--- !u!1 &1953005029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6125465307578458530, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+  m_PrefabInstance: {fileID: 5292507355017279866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1997979735
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,6 +4536,10 @@ PrefabInstance:
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_text
       value: play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
+      propertyPath: m_geometrySortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2995691930280106136, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_Name

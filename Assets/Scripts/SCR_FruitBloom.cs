@@ -51,6 +51,9 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         goldChance = 0.05f;
         iridescentChance = 0.005f;
 
+        //Make sure fruit highlight effect is inactive when first spawning
+        transform.GetChild(0).gameObject.SetActive(false);
+
         if (goldParticlesPrefab == null)
         {
             goldParticlesPrefab = Resources.Load<GameObject>("Particles/GoldParticles");
@@ -83,6 +86,8 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         if (currentStage < spriteGrowthStages.Count - 1)
         {
             StartCoroutine(GrowFruit());
+            //Make sure fruit highlight effect is inactive when first spawning
+            transform.GetChild(0).gameObject.SetActive(false);
         }
     }
     
