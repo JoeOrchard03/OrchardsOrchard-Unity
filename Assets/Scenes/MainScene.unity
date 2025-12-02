@@ -596,6 +596,8 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  moveCameraRightButton: {fileID: 407607951}
+  moveCameraLeftButton: {fileID: 1238537833}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -8999,6 +9001,8 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  moveCameraRightButton: {fileID: 407607951}
+  moveCameraLeftButton: {fileID: 1238537833}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -10156,6 +10160,8 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  moveCameraRightButton: {fileID: 407607951}
+  moveCameraLeftButton: {fileID: 1238537833}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -18714,6 +18720,8 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  moveCameraRightButton: {fileID: 407607951}
+  moveCameraLeftButton: {fileID: 1238537833}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -23590,7 +23598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SCR_CameraZoomIn
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
-  moveCameraRightButton: {fileID: 0}
+  moveCameraRightButton: {fileID: 407607951}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -23614,6 +23622,8 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  moveCameraRightButton: {fileID: 407607951}
+  moveCameraLeftButton: {fileID: 1238537833}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
