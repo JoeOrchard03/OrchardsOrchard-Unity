@@ -30,11 +30,24 @@ public class SCR_Weather : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minWeatherStateDuration, maxWeatherStateDuration));
 
-            WeatherType newWeather = (WeatherType)Random.Range(0, 3);
+            WeatherType newWeather = currentWeather;
 
-            if (newWeather == currentWeather) 
+            // Choose valid next state
+            if (currentWeather == WeatherType.None)
+            {
+                // From None: any weather is allowed
+                newWeather = (WeatherType)Random.Range(0, 3);
+            }
+            else
+            {
+                // From Rain or Wind: MUST go to None
+                newWeather = WeatherType.None;
+            }
+
+            // If the roll is same as previous, skip
+            if (newWeather == currentWeather)
                 continue;
-            
+
             ApplyWeather(newWeather);
         }
     }
@@ -52,46 +65,4 @@ public class SCR_Weather : MonoBehaviour
         if (rainState) rainAudioSource.Play(); else rainAudioSource.Stop();
         if (windState) windAudioSource.Play(); else windAudioSource.Stop();
     }
-    
-    // private IEnumerator WeatherChange()
-    // {
-    //     yield return new WaitForSeconds(Random.Range(minWeatherStateDuration, maxWeatherStateDuration));
-    //     int random = Random.Range(0, 2);
-    //     if (windyLeaves.activeSelf)
-    //     {
-    //         windyLeaves.SetActive(false);
-    //         windAudioSource.Stop();
-    //         if (random == 1)
-    //         {
-    //             rainAudioSource.Play();
-    //             rain.SetActive(true);
-    //         }
-    //     }
-    //     else if (rain.activeSelf)
-    //     {
-    //         rainAudioSource.Stop();
-    //         rain.SetActive(false);
-    //         if (random == 1)
-    //         {
-    //             windAudioSource.Play();
-    //             windyLeaves.SetActive(true);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         if (random == 1)
-    //         {
-    //             rainAudioSource.Play();
-    //             rain.SetActive(true);
-    //             windyLeaves.SetActive(false);
-    //         }
-    //         else if (random == 0)
-    //         {
-    //             windAudioSource.Play();
-    //             rain.SetActive(false);
-    //             windyLeaves.SetActive(true);
-    //         }
-    //     }
-    //     StartCoroutine(WeatherChange());
-    // }
 }
