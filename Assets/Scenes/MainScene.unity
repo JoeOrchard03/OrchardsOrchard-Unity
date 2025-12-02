@@ -452,6 +452,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &23893529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -579,7 +580,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!114 &23893534
@@ -606,7 +607,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!4 &26186028 stripped
@@ -1820,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -2251,107 +2256,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 299163935615746552, guid: 7cdc7d3c66db31f4092382cff6f7cb3e, type: 3}
   m_PrefabInstance: {fileID: 1534559798}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &127082264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 127082265}
-  - component: {fileID: 127082268}
-  - component: {fileID: 127082267}
-  - component: {fileID: 127082266}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &127082265
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127082264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &127082266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127082264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &127082267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127082264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &127082268
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127082264}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &128120764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2673,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &141004128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2881,7 +2786,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!1001 &146852006
 PrefabInstance:
@@ -3414,6 +3319,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!82 &190747901
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3663,6 +3569,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: plotNumber
       value: 1
@@ -3752,6 +3662,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -5624,6 +5538,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &407607955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5721,7 +5636,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!1 &414399556
 GameObject:
@@ -9012,7 +8927,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!212 &617961524
 SpriteRenderer:
@@ -9089,6 +9004,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &617961526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9352,6 +9268,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -10170,7 +10090,7 @@ MonoBehaviour:
   - {fileID: 668742780}
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!1 &647253248
 GameObject:
@@ -15055,6 +14975,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &982268888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15429,6 +15350,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -16761,6 +16686,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -17558,6 +17487,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -18708,6 +18641,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &1215593095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18821,7 +18755,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!114 &1218229554 stripped
 MonoBehaviour:
@@ -19025,7 +18959,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!212 &1238537836
 SpriteRenderer:
@@ -19102,6 +19036,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &1238537838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21143,6 +21078,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &1324975420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22727,6 +22663,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &1403911705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23489,6 +23426,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!82 &1444160473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23607,7 +23545,7 @@ MonoBehaviour:
   - {fileID: 634732885}
   - {fileID: 668742780}
   - {fileID: 810672507}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 5009453825870028657}
   - {fileID: 2050200148}
 --- !u!114 &1444160475
@@ -23634,7 +23572,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 127082268}
+  - {fileID: 0}
   - {fileID: 2050200148}
 --- !u!1 &1461744206
 GameObject:
@@ -24131,6 +24069,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1109873635
       objectReference: {fileID: 0}
+    - target: {fileID: 2023822623208072204, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: hoverName
+      value: 
+      objectReference: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: player
       value: 
@@ -26798,6 +26740,107 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cdc7d3c66db31f4092382cff6f7cb3e, type: 3}
+--- !u!1001 &1678028600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_Name
+      value: HoverTagCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327347342103945656, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!1 &1678770502
 GameObject:
   m_ObjectHideFlags: 0
@@ -30662,6 +30705,7 @@ MonoBehaviour:
   stopHighlight: 0
   canHighlight: 1
   bypassHighlight: 0
+  hoverName: {fileID: 3797913996832482026, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
 --- !u!61 &1962681867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35013,7 +35057,7 @@ PrefabInstance:
       objectReference: {fileID: 2833896699892628628, guid: 6fce9ab64304bf844bab8c256e9113be, type: 3}
     - target: {fileID: 8134016196581698051, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8134016196581698051, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
       propertyPath: m_SortingLayerID
@@ -35515,7 +35559,6 @@ SceneRoots:
   - {fileID: 4412680889721081637}
   - {fileID: 69390604}
   - {fileID: 7725032}
-  - {fileID: 127082265}
   - {fileID: 1444160468}
   - {fileID: 646683066}
   - {fileID: 421774661}
@@ -35533,3 +35576,4 @@ SceneRoots:
   - {fileID: 141004130}
   - {fileID: 23893531}
   - {fileID: 725600817}
+  - {fileID: 1678028600}

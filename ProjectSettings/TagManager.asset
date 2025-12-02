@@ -15,6 +15,7 @@ TagManager:
   - DecoMenu
   - decoInventory
   - placedDecoHolder
+  - Buyable
   layers:
   - Default
   - TransparentFX

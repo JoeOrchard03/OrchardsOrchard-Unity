@@ -9,6 +9,7 @@ public class SCR_Highlightable : MonoBehaviour
     public bool stopHighlight = false;
     public bool canHighlight = true;
     public bool bypassHighlight = false;
+    public GameObject hoverName;
 
 
     private void Start()
@@ -26,7 +27,7 @@ public class SCR_Highlightable : MonoBehaviour
             playerPlayerManagerScriptRef.SetCursorHighlight(false);
             return;
         }
-
+        
         if (gameObject.CompareTag("Tree"))
         {
             if (playerPlayerManagerScriptRef.composting)
@@ -88,6 +89,8 @@ public class SCR_Highlightable : MonoBehaviour
         {
             playerPlayerManagerScriptRef.SetShovelHighlight(false);
         }
+        
+        hoverName.SetActive(false);
         
         playerPlayerManagerScriptRef.hoveredInteractable = null;
     }
