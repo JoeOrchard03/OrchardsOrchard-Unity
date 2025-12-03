@@ -12,6 +12,8 @@ public class SCR_BuyableDeco : MonoBehaviour
     public TextMeshProUGUI priceText;
 
     private float decoPrice;
+
+    public string decoName;
     
     private SCR_ShopMenu shopMenuScriptRef;
 
@@ -42,6 +44,7 @@ public class SCR_BuyableDeco : MonoBehaviour
             BuyTextObj.SetActive(true);
             moneyIcon.SetActive(true);
             decoPrice = deco.decoPrice;
+            decoName = deco.DecoName;
             decoSprite.sprite = deco.decoSprite;
             priceText.text = deco.decoPrice.ToString();
         }

@@ -1,22 +1,83 @@
-﻿using Unity.VisualScripting;
+﻿using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SCR_HoverName : MonoBehaviour
 {
-    private GameObject hoverNameOBJ;
-    
-    private void OnTriggerEnter(Collider other)
+    public Camera cam;
+    public LayerMask hoverMask;
+    public GameObject hoverNameOBJ;
+    public TextMeshProUGUI hoverNameText;
+
+    public Vector2 offsetVector;
+
+    private void Start()
     {
-        if (!hoverNameOBJ.activeInHierarchy)
+        if (cam == null)
         {
-            hoverNameOBJ.SetActive(true);
+            cam = Camera.main;
+        }
+        
+        hoverNameOBJ.SetActive(false);
+    }
+
+    private void Update()
+    {
+        //Make a ray from the mouse position
+        RaycastHit2D hit = Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1f, hoverMask);
+
+        if (hit)
+        {
+            Debug.Log(hit.transform.name);
+            //If raycast hits a hover object and its not already active
+            if (!hoverNameOBJ.activeSelf)
+            {
+                //Make hover tag active
+                hoverNameOBJ.SetActive(true);
+            }
+            
+            hoverNameOBJ.transform.position = (hit.point + offsetVector);
+
+            if(hoverNameText.text == "")
+            {
+                Debug.Log("Trying to apply text");
+                hoverNameText.text = ApplyText(hit.transform.gameObject);
+            }
+        }
+        //If not hitting anything with raycast
+        else
+        {
+            //If hover tag is active disable it
+            if (hoverNameOBJ.activeSelf)
+            {
+                hoverNameOBJ.SetActive(false);
+                hoverNameText.text = "";
+            }
         }
     }
-    
-    private void OnTriggerStay(Collider other)
+
+    private string ApplyText(GameObject hoveredOBJ)
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0; // Keep at same depth
-        transform.position = mousePos;
+        if (hoveredOBJ.GetComponent<SCR_BuyableDeco>() != null)
+        {
+            Debug.Log("Found deco script");
+            string returnText;
+            string decoName = hoveredOBJ.GetComponent<SCR_BuyableDeco>().decoName;
+            returnText = decoName;
+            Debug.Log("returning: " + returnText);
+            return returnText;
+        }
+        else if(hoveredOBJ.GetComponent<SCR_BuyableSapling>() != null)
+        {
+            string returnText;
+            var type = hoveredOBJ.GetComponent<SCR_BuyableSapling>().fruitType;
+            returnText = type.ToString() + " sapling";
+            return returnText;
+        }
+        else
+        {
+            Debug.Log("No component found returning null");
+            return "";
+        }
     }
 }

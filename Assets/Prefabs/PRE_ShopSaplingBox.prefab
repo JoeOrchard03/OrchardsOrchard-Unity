@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5349491204143885212}
   - component: {fileID: 2782788443053917952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SPR_MoneyIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 2628
   m_Sprite: {fileID: 1193149996915696525, guid: 4faae42eaa5a53a4d95f4c0ee39b433b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,7 +100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5084556562927959772}
   - component: {fileID: 4733533894051264798}
-  m_Layer: 5
+  - component: {fileID: 4251188547012983463}
+  m_Layer: 6
   m_Name: PRE_ShopSaplingBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,6 +156,52 @@ MonoBehaviour:
   moneyIcon: {fileID: 161456641738660816}
   buttonAudioSource: {fileID: 0}
   playerManagerScriptRef: {fileID: 0}
+--- !u!61 &4251188547012983463
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622391719796425974}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -1.1679993, y: -4.510315}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 58.821228, y: 63.51233}
+  m_EdgeRadius: 0
 --- !u!1 &772602671691088700
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +213,7 @@ GameObject:
   - component: {fileID: 8524163840285449401}
   - component: {fileID: 5167066110293574441}
   - component: {fileID: 7651105256045928985}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: PriceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5652695593577310973}
   - component: {fileID: 3918741012351739870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SaplingSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +416,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: -2604440402899750777, guid: 2c26cf8750dea3e45bf87105ad7dbabc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -395,7 +442,7 @@ GameObject:
   - component: {fileID: 6398847458573988161}
   - component: {fileID: 5955869802353454371}
   - component: {fileID: 6319123641992952634}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +585,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951441561196174329}
   - component: {fileID: 1896392375213451646}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: OutOfStockObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,7 +656,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1601455735
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: 2681500073513639984, guid: 03baac03675b92d4d88889dbab7cd9d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -633,7 +680,7 @@ GameObject:
   - component: {fileID: 7784406575007044379}
   - component: {fileID: 4947012757183682174}
   - component: {fileID: 4121906448553714277}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BuyButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

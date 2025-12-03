@@ -42,6 +42,7 @@ public class SCR_DecoDatabase : ScriptableObject
     public class Deco
     {
         public DecoType type;
+        public string DecoName;
         public GameObject decoPrefab;
         public Sprite decoSprite;
         public float decoPrice;

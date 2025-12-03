@@ -14,146 +14,175 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SCR_DecoDatabase
   decos:
   - type: 0
+    DecoName: Pumpkin
     decoPrefab: {fileID: 4592209782733626304, guid: 66c9516c62de60849ba890dfba640901, type: 3}
     decoSprite: {fileID: -2121756685104678758, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 1
+    DecoName: Small Pumpkin Stack
     decoPrefab: {fileID: 720653776240516419, guid: 267ca4ad44e03964580dd5c73ba02aaf, type: 3}
     decoSprite: {fileID: 5902455131942712440, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 2
+    DecoName: Big Pumpkin Stack
     decoPrefab: {fileID: 2362904164548166743, guid: dae456bb29620f949bc06d43626cfef9, type: 3}
     decoSprite: {fileID: 5044030580424062713, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 3
+    DecoName: Carved Pumpkin
     decoPrefab: {fileID: 3630112177610104043, guid: d420aa313276a784ea0ae5c855a966ca, type: 3}
     decoSprite: {fileID: 7535218549347347448, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 4
+    DecoName: Small Carved Pumpkin Stack
     decoPrefab: {fileID: 9143455247985491610, guid: 642580a19e346334fa0da6b9d360dc73, type: 3}
     decoSprite: {fileID: -4545138590844080768, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 5
+    DecoName: Big Carved Pumpkin Stack
     decoPrefab: {fileID: 1205828482209643351, guid: 0d584b34c7925e04f9acfa6109a7b4d7, type: 3}
     decoSprite: {fileID: 191595726802527039, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 6
+    DecoName: Witch Hat
     decoPrefab: {fileID: 6369385911038423095, guid: 75260edb72401c14cb16e348555b565d, type: 3}
     decoSprite: {fileID: 6767554114615280906, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 7
+    DecoName: Hanging Bat
     decoPrefab: {fileID: 7294629003350600087, guid: d90bbe3fdccc4cf49a5dce0558756324, type: 3}
     decoSprite: {fileID: 7553774692609700744, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 8
+    DecoName: Flying Bat
     decoPrefab: {fileID: 4960635349747651266, guid: 69256553264a43646b1150e815c5e64c, type: 3}
     decoSprite: {fileID: 7678022983043231983, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 9
+    DecoName: Pumpkin Bunting
     decoPrefab: {fileID: 5786085825416630658, guid: 0e76c9cbe7abef64c88c2aaac147b0d0, type: 3}
     decoSprite: {fileID: -7346025313698448718, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 10
+    DecoName: Bat Bunting
     decoPrefab: {fileID: 8801549546733607639, guid: 264bdffc9b228c44693c4a274f0b65e2, type: 3}
     decoSprite: {fileID: -5567201552889449053, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 11
+    DecoName: Skull Bunting
     decoPrefab: {fileID: 2386808281011781878, guid: 9b93525a5559bda4abcdd500c371b62e, type: 3}
     decoSprite: {fileID: -1981386495765514961, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 12
+    DecoName: Leaf Wreath
     decoPrefab: {fileID: 1282272424105331705, guid: 0f8350b76f46c6b4697a25f49359d10e, type: 3}
     decoSprite: {fileID: -619929932321925889, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 13
+    DecoName: Sitting Cat
     decoPrefab: {fileID: 9203053772654187577, guid: c3633b799ceb73c49afa04e981e908b4, type: 3}
     decoSprite: {fileID: 8833652186296498135, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 14
+    DecoName: Laying Cat
     decoPrefab: {fileID: 6141979119902292296, guid: f8f92b4a8c837ab4aa0fae82fa528018, type: 3}
     decoSprite: {fileID: -6316591174206743000, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 15
+    DecoName: Standing Cat
     decoPrefab: {fileID: 6209490458584089039, guid: 6eeac7e26d5f9de47961d435f8143c66, type: 3}
     decoSprite: {fileID: 8457873266878302768, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 16
+    DecoName: Large Cobweb
     decoPrefab: {fileID: 2884869776986871540, guid: 6392f6045e0f6444781f6292eae20ac2, type: 3}
     decoSprite: {fileID: 7397955976549726045, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 17
+    DecoName: Corner Cobweb
     decoPrefab: {fileID: 3138681628296560705, guid: c17ff9ce929d4ae4eb02d14cbbb7c80f, type: 3}
     decoSprite: {fileID: 7876573882153016745, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 18
+    DecoName: Front Facing Skull
     decoPrefab: {fileID: 4081191470793703507, guid: 8d2d51578b10d3a48ba27ca25ad36787, type: 3}
     decoSprite: {fileID: -2563877407285229874, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 19
+    DecoName: Side Facing Skull
     decoPrefab: {fileID: 8549293133999398197, guid: b48e3fe3fe3dd4f4d94f992a50a8ea64, type: 3}
     decoSprite: {fileID: -4707562790947695433, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 20
+    DecoName: Smoke Effect
     decoPrefab: {fileID: 1922969686737721683, guid: 4d3b8016f47efae4bb5db4733000db65, type: 3}
     decoSprite: {fileID: -4452896014466195882, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 21
+    DecoName: Blood Effect
     decoPrefab: {fileID: 5019405168975509489, guid: d3ae72b04c8fa2746ae0f6c0fd9de41a, type: 3}
     decoSprite: {fileID: 7808396844237928513, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 22
+    DecoName: Hanging Spider
     decoPrefab: {fileID: 8881696096424695619, guid: d645e2ee673df6245bea80b461a01e5d, type: 3}
     decoSprite: {fileID: 4195626216447792322, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 23
+    DecoName: Pumpkin Sweet Bowl
     decoPrefab: {fileID: 4204992989997921883, guid: 339e9a155e99be442a1e890742a40bb9, type: 3}
     decoSprite: {fileID: -3645204477157504894, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 24
+    DecoName: Frosty Fairy Lights
     decoPrefab: {fileID: 3812922866959310528, guid: 5a9a7c806601f3045af24c5be47be0aa, type: 3}
     decoSprite: {fileID: 4220850485068980184, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 25
+    DecoName: Green Fairy Lights
     decoPrefab: {fileID: 2219937417524457862, guid: 013ab0d9331f86546816a21be722a199, type: 3}
     decoSprite: {fileID: -1545415939204587542, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 26
+    DecoName: 
     decoPrefab: {fileID: 6395175899269971041, guid: a7fdba4a37825ec47a2092cb158107e8, type: 3}
     decoSprite: {fileID: 2622415717619949835, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 27
+    DecoName: 
     decoPrefab: {fileID: 1289377620784264828, guid: 7a54041f83b426d45bbccf52cbd88ab0, type: 3}
     decoSprite: {fileID: -2876003954393830898, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 28
+    DecoName: 
     decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
     decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
