@@ -11,6 +11,8 @@ public class SCR_MoveCamera : MonoBehaviour, INT_Interactable
     public GameObject moveCameraRightButton;
     public GameObject moveCameraLeftButton;
     
+    public SCR_HoverName hoverNameOBJ;
+    
     public List<Canvas> canvases = new List<Canvas>();
     
     public void Interact(GameObject interactor)
@@ -25,6 +27,7 @@ public class SCR_MoveCamera : MonoBehaviour, INT_Interactable
                 canvas.worldCamera = rightCamera.GetComponent<Camera>();
             }
             
+            hoverNameOBJ.cam = rightCamera.GetComponent<Camera>();
             leftCamera.SetActive(false);
             moveCameraRightButton.SetActive(false);
         }
@@ -38,6 +41,7 @@ public class SCR_MoveCamera : MonoBehaviour, INT_Interactable
                 canvas.worldCamera = leftCamera.GetComponent<Camera>();
             }
             
+            hoverNameOBJ.cam = leftCamera.GetComponent<Camera>();
             rightCamera.SetActive(false);
             moveCameraLeftButton.SetActive(false);
         }

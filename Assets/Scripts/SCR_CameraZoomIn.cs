@@ -8,6 +8,8 @@ public class SCR_CameraZoomIn : MonoBehaviour, INT_Interactable
     public GameObject moveCameraRightButton;
     public GameObject tutorialMenu;
     
+    public SCR_HoverName hoverNameOBJ;
+    
     public List<Canvas> canvases = new List<Canvas>();
     
     public void Interact(GameObject interactor)
@@ -25,6 +27,8 @@ public class SCR_CameraZoomIn : MonoBehaviour, INT_Interactable
             canvas.worldCamera = leftZoomedCamera.GetComponent<Camera>();
         }
 
+        hoverNameOBJ.cam = leftZoomedCamera.GetComponent<Camera>();
+        
         moveCameraRightButton.SetActive(true);
         
         Debug.Log("SCR_CameraZoomIn interact");

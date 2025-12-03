@@ -6,6 +6,8 @@ public class SCR_CameraZoomOut : MonoBehaviour, INT_Interactable
     public GameObject mainCamera;
     public GameObject leftZoomedCamera;
     public GameObject rightZoomedCamera;
+    
+    public SCR_HoverName hoverNameOBJ;
 
     public GameObject moveCameraRightButton;
     public GameObject moveCameraLeftButton;
@@ -25,5 +27,7 @@ public class SCR_CameraZoomOut : MonoBehaviour, INT_Interactable
         {
             canvas.worldCamera = mainCamera.GetComponent<Camera>();
         }
+        
+        hoverNameOBJ.cam = mainCamera.GetComponent<Camera>();
     }
 }

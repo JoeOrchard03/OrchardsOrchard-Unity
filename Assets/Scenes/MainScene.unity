@@ -572,6 +572,7 @@ MonoBehaviour:
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 1899780466}
   tutorialMenu: {fileID: 696743249}
+  hoverNameOBJ: {fileID: 1587891971}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -579,7 +580,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!114 &23893534
@@ -597,6 +598,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  hoverNameOBJ: {fileID: 1587891971}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
@@ -606,7 +608,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!4 &26186028 stripped
@@ -2777,6 +2779,7 @@ MonoBehaviour:
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 407607951}
   tutorialMenu: {fileID: 696743249}
+  hoverNameOBJ: {fileID: 1587891971}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -2784,7 +2787,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!1001 &146852006
 PrefabInstance:
@@ -5625,6 +5628,7 @@ MonoBehaviour:
   rightCamera: {fileID: 1899780466}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
+  hoverNameOBJ: {fileID: 1587891971}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -5632,7 +5636,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!1 &414399556
 GameObject:
@@ -8914,6 +8918,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  hoverNameOBJ: {fileID: 1587891971}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
@@ -8923,7 +8928,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!212 &617961524
 SpriteRenderer:
@@ -10077,6 +10082,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  hoverNameOBJ: {fileID: 1587891971}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
@@ -10085,7 +10091,7 @@ MonoBehaviour:
   - {fileID: 668742780}
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!1 &647253248
 GameObject:
@@ -18739,6 +18745,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  hoverNameOBJ: {fileID: 1587891971}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
@@ -18748,7 +18755,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!114 &1218229554 stripped
 MonoBehaviour:
@@ -18945,6 +18952,7 @@ MonoBehaviour:
   rightCamera: {fileID: 1899780466}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
+  hoverNameOBJ: {fileID: 1587891971}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
@@ -18952,7 +18960,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!212 &1238537836
 SpriteRenderer:
@@ -23529,12 +23537,13 @@ MonoBehaviour:
   leftZoomedCamera: {fileID: 524477493}
   moveCameraRightButton: {fileID: 407607951}
   tutorialMenu: {fileID: 696743249}
+  hoverNameOBJ: {fileID: 1587891971}
   canvases:
   - {fileID: 1700445810}
   - {fileID: 634732885}
   - {fileID: 668742780}
   - {fileID: 810672507}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 5009453825870028657}
   - {fileID: 2050200148}
 --- !u!114 &1444160475
@@ -23552,6 +23561,7 @@ MonoBehaviour:
   mainCamera: {fileID: 519420028}
   leftZoomedCamera: {fileID: 524477493}
   rightZoomedCamera: {fileID: 1899780466}
+  hoverNameOBJ: {fileID: 1587891971}
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
@@ -23561,7 +23571,7 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
-  - {fileID: 0}
+  - {fileID: 1965577150}
   - {fileID: 2050200148}
 --- !u!1 &1461744206
 GameObject:
@@ -31025,6 +31035,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &1965577150 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7327347342103945656, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
+  m_PrefabInstance: {fileID: 1876172374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1967642615 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5256707153668922888, guid: 8c8b28d848f256443a065ebae9f69cfa, type: 3}
