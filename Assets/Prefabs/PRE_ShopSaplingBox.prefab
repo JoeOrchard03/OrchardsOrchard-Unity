@@ -57,14 +57,12 @@ MonoBehaviour:
   fruitType: 0
   fruitDatabase: {fileID: 11400000, guid: dac69b27ba38ef24e9987cbd135086db, type: 2}
   saplingSprite: {fileID: 3918741012351739870}
-  priceText: {fileID: 0}
   inventorySaplingPrefab: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
   saplingInventory: {fileID: 0}
   saplingInventoryBoxCollider: {fileID: 4251188547012983463}
   BuyTextObj: {fileID: 8677833763463400795}
   outOfStockObj: {fileID: 4460152332843870394}
   buttonObj: {fileID: 3798889848463979309}
-  moneyIcon: {fileID: 0}
   buttonAudioSource: {fileID: 0}
   playerManagerScriptRef: {fileID: 0}
 --- !u!61 &4251188547012983463
@@ -375,14 +373,14 @@ RectTransform:
   m_GameObject: {fileID: 4460152332843870394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 27.516233, y: 27.516233, z: 1.1006494}
+  m_LocalScale: {x: 26.45728, y: 26.45728, z: 1.1006494}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5084556562927959772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.7}
+  m_AnchoredPosition: {x: 0, y: 0.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1896392375213451646
@@ -432,7 +430,7 @@ SpriteRenderer:
   m_SortingLayerID: -1601455735
   m_SortingLayer: 8
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2681500073513639984, guid: 03baac03675b92d4d88889dbab7cd9d3, type: 3}
+  m_Sprite: {fileID: -2863194363709421943, guid: 56ce01feffb4cee458718ad348bb771d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

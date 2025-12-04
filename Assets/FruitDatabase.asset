@@ -74,7 +74,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -8310798928462003406, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 0}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 7
     rarity: 1
@@ -83,7 +83,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -8808180596671944499, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 0}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 8
     rarity: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -4883849285390738050, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 2982477333416304490, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 10
     rarity: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 88769463593323489, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: -466307102026263029, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 11
     rarity: 2
@@ -119,7 +119,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 1763214268386150961, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 4853062470945451369, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 12
     rarity: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -1447002395653818925, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 4669277509151643389, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 13
     rarity: 1
@@ -137,7 +137,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -4726563347917290977, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: -9088051717755027747, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 14
     rarity: 2
@@ -146,7 +146,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -5437157502842217257, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 5377974019557599375, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 15
     rarity: 2
@@ -155,7 +155,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 2730570281907979685, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: -596471439446310798, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 16
     rarity: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: -6997710089047918707, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 8098658276706620545, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 17
     rarity: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 2134394253505764230, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 3866817241240071575, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25
   - type: 19
     rarity: 2
@@ -191,7 +191,7 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 3924198096486652078, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 7085757254593644735, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 20
-    saplingPrice: 500
+    saplingPrice: 400
     shopSpawnChance: 0.1
   - type: 20
     rarity: 1
@@ -200,5 +200,5 @@ MonoBehaviour:
     goldFruitSprite: {fileID: 9038684968342996259, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     iridescentFruitSprite: {fileID: 2568817004457844127, guid: 9be911dea7505a144b8683e498dd6b0d, type: 3}
     sellValue: 10
-    saplingPrice: 250
+    saplingPrice: 200
     shopSpawnChance: 0.25

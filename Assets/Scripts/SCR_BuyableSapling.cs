@@ -46,6 +46,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         }
         else
         {
+            DisableSlot();
             Debug.LogError("SAPLING NOT FOUND");
         }
     }
