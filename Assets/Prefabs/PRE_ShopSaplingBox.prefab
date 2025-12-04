@@ -150,6 +150,7 @@ MonoBehaviour:
   priceText: {fileID: 7651105256045928985}
   inventorySaplingPrefab: {fileID: 6729451776724655117, guid: a15ad866dc4cb124d9239a22931ace3b, type: 3}
   saplingInventory: {fileID: 0}
+  saplingInventoryBoxCollider: {fileID: 4251188547012983463}
   BuyTextObj: {fileID: 8677833763463400795}
   outOfStockObj: {fileID: 4460152332843870394}
   buttonObj: {fileID: 3798889848463979309}

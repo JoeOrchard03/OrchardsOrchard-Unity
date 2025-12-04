@@ -28,7 +28,6 @@ public class SCR_HoverName : MonoBehaviour
 
         if (hit)
         {
-            Debug.Log(hit.transform.name);
             //If raycast hits a hover object and its not already active
             if (!hoverNameOBJ.activeSelf)
             {
@@ -58,19 +57,21 @@ public class SCR_HoverName : MonoBehaviour
 
     private string ApplyText(GameObject hoveredOBJ)
     {
+        //If object is a buyable deco
         if (hoveredOBJ.GetComponent<SCR_BuyableDeco>() != null)
         {
-            Debug.Log("Found deco script");
             string returnText;
+            //Set return text to be deco's name
             string decoName = hoveredOBJ.GetComponent<SCR_BuyableDeco>().decoName;
             returnText = decoName;
-            Debug.Log("returning: " + returnText);
             return returnText;
         }
+        //If object is a buyable sapling
         else if(hoveredOBJ.GetComponent<SCR_BuyableSapling>() != null)
         {
             string returnText;
             var type = hoveredOBJ.GetComponent<SCR_BuyableSapling>().fruitType;
+            //Set return text to be fruit type with sapling appended to the end
             returnText = type.ToString() + " sapling";
             return returnText;
         }

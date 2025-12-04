@@ -14,6 +14,8 @@ public class SCR_BuyableDeco : MonoBehaviour
     private float decoPrice;
 
     public string decoName;
+
+    public BoxCollider2D decoBoxCollider;
     
     private SCR_ShopMenu shopMenuScriptRef;
 
@@ -42,6 +44,7 @@ public class SCR_BuyableDeco : MonoBehaviour
             outOfStockObj.SetActive(false);
             buttonObj.SetActive(true);
             BuyTextObj.SetActive(true);
+            decoBoxCollider.enabled = true;
             moneyIcon.SetActive(true);
             decoPrice = deco.decoPrice;
             decoName = deco.DecoName;
@@ -59,6 +62,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         outOfStockObj.SetActive(true);
         buttonObj.SetActive(false);
         moneyIcon.SetActive(false);
+        decoBoxCollider.enabled = false;
         BuyTextObj.SetActive(false);
         decoSprite.sprite = null;
         priceText.text = "";
@@ -88,7 +92,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         
         SCR_ReworkedSaveSystem.SaveDecoShopInventory(
             shopInventoryScriptRef.decoShopSlots,
-            shopInventoryScriptRef.shopRefreshTime);
+            shopInventoryScriptRef.decoShopRefreshTime);
         
         SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;

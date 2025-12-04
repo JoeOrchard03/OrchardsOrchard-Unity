@@ -12,7 +12,8 @@ public class SCR_SaveData
     public bool isDay = true;
 
     //Timers
-    public float shopTimer;
+    public float saplingShopTimer;
+    public float decoShopTimer;
 
     //Scene state
     public List<TreeData> trees;

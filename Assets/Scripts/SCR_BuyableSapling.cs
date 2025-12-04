@@ -18,6 +18,8 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject inventorySaplingPrefab;
     public Transform saplingInventory;
 
+    public BoxCollider2D saplingInventoryBoxCollider;
+    
     public GameObject BuyTextObj;
     public GameObject outOfStockObj;
     public GameObject buttonObj;
@@ -41,6 +43,7 @@ public class SCR_BuyableSapling : MonoBehaviour
             buttonObj.SetActive(true);
             BuyTextObj.SetActive(true);
             moneyIcon.SetActive(true);
+            saplingInventoryBoxCollider.enabled = true;
             saplingPrice = fruit.saplingPrice;
             saplingSprite.sprite = fruit.saplingSprite;
             priceText.text = fruit.saplingPrice.ToString();
@@ -56,6 +59,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         outOfStockObj.SetActive(true);
         buttonObj.SetActive(false);
         moneyIcon.SetActive(false);
+        saplingInventoryBoxCollider.enabled = false;
         BuyTextObj.SetActive(false);
         saplingSprite.sprite = null;
         priceText.text = "";
@@ -85,7 +89,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         
         SCR_ReworkedSaveSystem.SaveSaplingShopInventory(
             shopInventoryScriptRef.saplingShopSlots,
-            shopInventoryScriptRef.shopRefreshTime);
+            shopInventoryScriptRef.saplingShopRefreshTime);
         
         SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         data.money = shopMenuScriptRef.moneyTotal;

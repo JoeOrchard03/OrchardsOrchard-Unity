@@ -59,7 +59,8 @@ public class SCR_ShopMenu : MonoBehaviour
         
         if (shopInventory != null)
         {
-            SCR_ShopInventory.OnShopTimerUpdated += UpdateTimerText;
+            SCR_ShopInventory.OnSaplingShopTimerUpdated += UpdateSaplingTimerText;
+            SCR_ShopInventory.OnDecoShopTimerUpdated += UpdateDecoTimerText;
             SCR_ShopInventory.OnShopRefreshed += UpdateShopUI;
         }
         
@@ -77,15 +78,20 @@ public class SCR_ShopMenu : MonoBehaviour
     {
         if (shopInventory != null)
         {
-            SCR_ShopInventory.OnShopTimerUpdated -= UpdateTimerText;
+            SCR_ShopInventory.OnSaplingShopTimerUpdated -= UpdateSaplingTimerText;
+            SCR_ShopInventory.OnDecoShopTimerUpdated -= UpdateDecoTimerText;
             SCR_ShopInventory.OnShopRefreshed -= UpdateShopUI;
         }
     }
 
-    private void UpdateTimerText(float timeRemaining)
+    private void UpdateSaplingTimerText(float saplingTimeRemaining)
     { 
-        saplingTabTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
-        decorTabTimerText.text = Mathf.CeilToInt(timeRemaining).ToString();
+        saplingTabTimerText.text = Mathf.CeilToInt(saplingTimeRemaining).ToString();
+    }
+    
+    private void UpdateDecoTimerText(float decoTimeRemaining)
+    { 
+        decorTabTimerText.text = Mathf.CeilToInt(decoTimeRemaining).ToString();
     }
     
     public void UpdateShopUI()

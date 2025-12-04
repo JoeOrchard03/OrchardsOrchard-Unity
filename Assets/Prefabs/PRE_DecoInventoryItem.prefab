@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 4744388593745569176}
   - component: {fileID: 3929796533571446178}
   - component: {fileID: 4992252642208348308}
-  - component: {fileID: 2798997684271180004}
   m_Layer: 5
   m_Name: PRE_DecoInventoryItem
   m_TagString: Untagged
@@ -289,20 +288,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 149.94318, y: 149.25363}
   m_EdgeRadius: 0
---- !u!114 &2798997684271180004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6729451776724655117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70778a0d2c4e4d5db3351bffe106441d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SCR_HoverName
-  cam: {fileID: 0}
-  hoverMask:
-    serializedVersion: 2
-    m_Bits: 0
-  hoverNameOBJ: {fileID: 0}

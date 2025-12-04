@@ -149,6 +149,7 @@ MonoBehaviour:
   decoSprite: {fileID: 3918741012351739870}
   priceText: {fileID: 7651105256045928985}
   decoName: 
+  decoBoxCollider: {fileID: 3411376877702276343}
   inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
   decoInventory: {fileID: 0}
   BuyTextObj: {fileID: 8677833763463400795}

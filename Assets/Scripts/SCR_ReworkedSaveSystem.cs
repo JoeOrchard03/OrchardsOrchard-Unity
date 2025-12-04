@@ -334,13 +334,13 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     
     #region Shop : Saplings
 
-    public static void SaveSaplingShopInventory(List<SCR_BuyableSapling> shopSlots, float shopTimer)
+    public static void SaveSaplingShopInventory(List<SCR_BuyableSapling> shopSlots, float saplingShopTimer)
     {
         //Load data
         SCR_SaveData data = LoadGame();
         //Get the shop slots and timer
         data.saplingShopSlots = new List<SaplingShopSlotData>();
-        data.shopTimer = shopTimer;
+        data.saplingShopTimer = saplingShopTimer;
 
         foreach (var slot in shopSlots)
         {
@@ -364,7 +364,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     }
 
     public static void LoadSaplingShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots,
-        ref float shopTimer)
+        ref float saplingShopTimer)
     {
         SCR_SaveData data = LoadGame();
 
@@ -374,7 +374,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
             return;
         }
         
-        shopTimer = data.shopTimer;
+        saplingShopTimer = data.saplingShopTimer;
 
         //For each shop slot
         for (int i = 0; i < shopSlots.Count && i < data.saplingShopSlots.Count; i++)
@@ -403,11 +403,11 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     
     #region Shop : Decorations
 
-    public static void SaveDecoShopInventory(List<SCR_BuyableDeco> shopSlots, float shopTimer)
+    public static void SaveDecoShopInventory(List<SCR_BuyableDeco> shopSlots, float decoShopTimer)
     {
         SCR_SaveData data = LoadGame();
         data.decoShopSlots = new List<DecoShopSlotData>();
-        data.shopTimer = shopTimer;
+        data.decoShopTimer = decoShopTimer;
 
         foreach (var slot in shopSlots)
         {
@@ -427,7 +427,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     }
 
     public static void LoadDecoShopInventory(SCR_DecoDatabase decoDatabase, List<SCR_BuyableDeco> shopSlots,
-        ref float shopTimer)
+        ref float decoShopTimer)
     {
         SCR_SaveData data = LoadGame();
 
@@ -437,7 +437,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
             return;
         }
         
-        shopTimer = data.shopTimer;
+        decoShopTimer = data.decoShopTimer;
         
         //For each shop slot
         for (int i = 0; i < shopSlots.Count && i < data.decoShopSlots.Count; i++)
@@ -466,17 +466,30 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     
     #region Shop : Timer
 
-    public static void SaveShopTimer(float shopTimer)
+    public static void SaveSaplingShopTimer(float saplingShopTimer)
     {
         SCR_SaveData data = LoadGame();
-        data.shopTimer = shopTimer;
+        data.saplingShopTimer = saplingShopTimer;
         SaveGame(data);
     }
 
-    public static float LoadShopTimer()
+    public static void SaveDecoShopTimer(float decoShopTimer)
     {
         SCR_SaveData data = LoadGame();
-        return data.shopTimer;
+        data.decoShopTimer = decoShopTimer;
+        SaveGame(data);
+    }
+
+    public static float LoadSaplingShopTimer()
+    {
+        SCR_SaveData data = LoadGame();
+        return data.saplingShopTimer;
+    }
+    
+    public static float LoadDecoShopTimer()
+    {
+        SCR_SaveData data = LoadGame();
+        return data.decoShopTimer;
     }
     
     #endregion
