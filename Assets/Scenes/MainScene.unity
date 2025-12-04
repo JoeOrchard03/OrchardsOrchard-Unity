@@ -581,7 +581,7 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!114 &23893534
 MonoBehaviour:
@@ -609,7 +609,7 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
   - {fileID: 696743253}
 --- !u!4 &26186028 stripped
 Transform:
@@ -2967,7 +2967,8 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 696743253}
+  - {fileID: 2050200148}
 --- !u!1001 &146852006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10581,7 +10582,8 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!212 &617961524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11865,6 +11867,7 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 1965577150}
   - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!1 &647253248
 GameObject:
   m_ObjectHideFlags: 0
@@ -22093,7 +22096,8 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!114 &1218229554 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
@@ -27596,7 +27600,8 @@ MonoBehaviour:
   - {fileID: 810672507}
   - {fileID: 1965577150}
   - {fileID: 5009453825870028657}
-  - {fileID: 0}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!114 &1444160475
 MonoBehaviour:
   m_ObjectHideFlags: 0
