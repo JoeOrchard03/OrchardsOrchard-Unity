@@ -60,14 +60,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6321008988332179071, guid: 87ae1f38012f1bc49b7f55804af52b2a, type: 3}
+  m_Sprite: {fileID: -2369840268839997319, guid: 56ce01feffb4cee458718ad348bb771d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -113,5 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6be39f60cff30b468f74dd25f8fd0ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopSellBox: 0
+  shopSellBox: 1
   fruitInBox: {fileID: 0}
+  shopMenuAudioSource: {fileID: 0}
+  placeAudio: {fileID: 8300000, guid: 864efdd3b55e2ca4499c54f3ad0567f2, type: 3}

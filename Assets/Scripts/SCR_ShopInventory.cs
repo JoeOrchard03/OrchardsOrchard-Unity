@@ -18,8 +18,15 @@ public class SCR_ShopInventory : MonoBehaviour
 
     [Header("Shop slots")]
     public List<SCR_BuyableSapling> saplingShopSlots = new List<SCR_BuyableSapling>();
+    public List<SCR_BuyableSapling> commonSaplingShopSlots = new List<SCR_BuyableSapling>();
+    public List<SCR_BuyableSapling> uncommonSaplingShopSlots = new List<SCR_BuyableSapling>();
+    public List<SCR_BuyableSapling> rareSaplingShopSlots = new List<SCR_BuyableSapling>();
     public List<SCR_BuyableDeco> decoShopSlots = new List<SCR_BuyableDeco>();
 
+    [Header("Rarity fill chances")]
+    [Range(0f, 1f)] public float uncommonSlotChance = 0.5f;
+    [Range(0f, 1f)] public float rareSlotChance = 0.5f;
+    
     public GameObject shopRefreshNotif;
     
     public static event Action<float> OnSaplingShopTimerUpdated;
@@ -169,4 +176,27 @@ public class SCR_ShopInventory : MonoBehaviour
 
         return decos[Random.Range(0, decos.Length)];
     }
+    
+    // public void RefreshSaplingShopInventory()
+    // {
+    //     Debug.Log("Calling RefreshSaplingShopInventory");
+    //     if (saplingShopSlots == null || saplingShopSlots.Count == 0)
+    //     {
+    //         Debug.Log("No sapling shop slots");
+    //         return;
+    //     }
+    //
+    //     foreach (SCR_BuyableSapling slot in saplingShopSlots)
+    //     {
+    //         if (slot == null) continue;
+    //
+    //         var fruit = GetRandomFruitBySpawnChance();
+    //         slot.fruitType = fruit.type;
+    //         slot.fruitDatabase = fruitDatabase;
+    //         slot.ApplyFruitInfo();
+    //     }
+    //     
+    //     SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, saplingShopTimer);
+    //     Debug.Log($"Saved {saplingShopSlots.Count} shop slots to save data");
+    // }
 }

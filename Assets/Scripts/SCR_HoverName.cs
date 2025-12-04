@@ -39,7 +39,6 @@ public class SCR_HoverName : MonoBehaviour
 
             if(hoverNameText.text == "")
             {
-                Debug.Log("Trying to apply text");
                 hoverNameText.text = ApplyText(hit.transform.gameObject);
             }
         }

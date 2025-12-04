@@ -9,7 +9,6 @@ public class SCR_BuyableSapling : MonoBehaviour
     public SCR_FruitDatabase fruitDatabase;
 
     public SpriteRenderer saplingSprite;
-    public TextMeshProUGUI priceText;
 
     private float saplingPrice;
     
@@ -23,7 +22,6 @@ public class SCR_BuyableSapling : MonoBehaviour
     public GameObject BuyTextObj;
     public GameObject outOfStockObj;
     public GameObject buttonObj;
-    public GameObject moneyIcon;
     public AudioSource buttonAudioSource;
     public SCR_PlayerManager playerManagerScriptRef;
 
@@ -42,11 +40,9 @@ public class SCR_BuyableSapling : MonoBehaviour
             outOfStockObj.SetActive(false);
             buttonObj.SetActive(true);
             BuyTextObj.SetActive(true);
-            moneyIcon.SetActive(true);
             saplingInventoryBoxCollider.enabled = true;
             saplingPrice = fruit.saplingPrice;
             saplingSprite.sprite = fruit.saplingSprite;
-            priceText.text = fruit.saplingPrice.ToString();
         }
         else
         {
@@ -58,11 +54,9 @@ public class SCR_BuyableSapling : MonoBehaviour
     {
         outOfStockObj.SetActive(true);
         buttonObj.SetActive(false);
-        moneyIcon.SetActive(false);
         saplingInventoryBoxCollider.enabled = false;
         BuyTextObj.SetActive(false);
         saplingSprite.sprite = null;
-        priceText.text = "";
     }
     
     public void BuyFruit()

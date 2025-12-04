@@ -29,7 +29,7 @@ public class SCR_ShopMenu : MonoBehaviour
     
     [Header("Shop & Inventory slots")]
     public List<SCR_BuyableSapling> shopSlots =  new List<SCR_BuyableSapling>();
-    public List<SCR_InventorySlot> inventorySlots = new List<SCR_InventorySlot>();
+    public List<SCR_InventorySlot> sellSlots = new List<SCR_InventorySlot>();
     
     [Header("Canvases")]
     public GameObject saplingCanvas;
@@ -69,7 +69,7 @@ public class SCR_ShopMenu : MonoBehaviour
         decorTabTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
         decoCanvas.SetActive(false);
-        menuSpriteRenderer.sprite = SaplingMenuSprite;
+        //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         UpdateShopUI();
     }
@@ -123,7 +123,7 @@ public class SCR_ShopMenu : MonoBehaviour
         }
         
         saplingCanvas.SetActive(true);
-        menuSpriteRenderer.sprite = SaplingMenuSprite;
+        //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         decoCanvas.SetActive(false);
     }
@@ -136,7 +136,7 @@ public class SCR_ShopMenu : MonoBehaviour
         }
 
         decoCanvas.SetActive(true);
-        menuSpriteRenderer.sprite = SaplingMenuSprite;
+        //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         saplingCanvas.SetActive(false);
     }
@@ -149,7 +149,7 @@ public class SCR_ShopMenu : MonoBehaviour
         }
 
         sellCanvas.SetActive(true);
-        menuSpriteRenderer.sprite = SellMenuSprite;
+        //menuSpriteRenderer.sprite = SellMenuSprite;
         saplingCanvas.SetActive(false);
         decoCanvas.SetActive(false);
     }
@@ -158,7 +158,7 @@ public class SCR_ShopMenu : MonoBehaviour
     {
         sellTotal = 0;
 
-        foreach (SCR_InventorySlot slot in inventorySlots)
+        foreach (SCR_InventorySlot slot in sellSlots)
         {
             if (slot.fruitInBox != null)
             {
@@ -190,7 +190,7 @@ public class SCR_ShopMenu : MonoBehaviour
             return;
         }
         
-        foreach (SCR_InventorySlot slot in inventorySlots)
+        foreach (SCR_InventorySlot slot in sellSlots)
         {
             if (slot.fruitInBox != null)
             {
@@ -240,11 +240,16 @@ public class SCR_ShopMenu : MonoBehaviour
         List<SCR_InventorySlot> freeSlots = new List<SCR_InventorySlot>();
         SCR_InventoryFruit[] contentHolderFruits = contentHolder.GetComponentsInChildren<SCR_InventoryFruit>();
         
-        foreach (SCR_InventorySlot slot in inventorySlots)
+        foreach (SCR_InventorySlot slot in sellSlots)
         {
             if (slot.fruitInBox == null)
             {
+                Debug.Log("Adding free slot");
                 freeSlots.Add(slot);
+            }
+            else
+            {
+                Debug.Log(slot.gameObject.name + " fruit in box is not null");
             }
         }
         
@@ -252,6 +257,7 @@ public class SCR_ShopMenu : MonoBehaviour
         {
             if (freeSlots.Count >= 1)
             {
+                Debug.Log("Moving fruit");
                 movedFruit = true;
                 SCR_InventorySlot targetSlot = freeSlots[0];
                 freeSlots.RemoveAt(0);
@@ -267,6 +273,10 @@ public class SCR_ShopMenu : MonoBehaviour
                 {
                     Destroy(originalParent.gameObject);
                 }
+            }
+            else
+            {
+                Debug.Log("No free slot");
             }
         }
 

@@ -170,19 +170,19 @@ MonoBehaviour:
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 26
-    DecoName: 
+    DecoName: Blue Fairy Lights
     decoPrefab: {fileID: 6395175899269971041, guid: a7fdba4a37825ec47a2092cb158107e8, type: 3}
     decoSprite: {fileID: 2622415717619949835, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 27
-    DecoName: 
+    DecoName: Purple Fairy Lights
     decoPrefab: {fileID: 1289377620784264828, guid: 7a54041f83b426d45bbccf52cbd88ab0, type: 3}
     decoSprite: {fileID: -2876003954393830898, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
   - type: 28
-    DecoName: 
+    DecoName: Pink Fairy Lights
     decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
     decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
