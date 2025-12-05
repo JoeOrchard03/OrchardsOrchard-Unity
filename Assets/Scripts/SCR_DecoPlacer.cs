@@ -22,6 +22,8 @@ public class SCR_DecoPlacer : MonoBehaviour
 
     [Header("Deco Editing")] 
     public GameObject toBackPackBox;
+    public GameObject flipNotEditingBox;
+    public GameObject flipEditingBox;
     public bool editingExistingDecos = false;
     public GameObject decoToEdit;
     private Vector2 originalPos;
@@ -43,6 +45,9 @@ public class SCR_DecoPlacer : MonoBehaviour
         decoInventoryBox = decoInventoryBoxRef;
         
         spriteRenderer.sprite = decorationSprite;
+
+        flipNotEditingBox.SetActive(true);
+        flipEditingBox.SetActive(false);
     }
 
     public void PlaceDeco()
@@ -69,6 +74,10 @@ public class SCR_DecoPlacer : MonoBehaviour
         instantiatedDecoObj.transform.parent = placedDecoHolder.transform;
         instantiatedDecoObj.GetComponent<SCR_PlacedDeco>().decoType = decorationType;
         Debug.Log("Placing deco: " + instantiatedDecoObj.name + " at: " + transform.position);
+
+        SpriteRenderer placedRenderer = instantiatedDecoObj.GetComponent<SpriteRenderer>();
+        placedRenderer.flipX = spriteRenderer.flipX;
+        instantiatedDecoObj.GetComponent<SCR_PlacedDeco>().flipped = spriteRenderer.flipX;
         
         SCR_SaveData data2 = SCR_ReworkedSaveSystem.LoadGame();
         data2.placedDecoData = SCR_ReworkedSaveSystem.GetPlacedDecoData(placedDecoHolder.transform);
@@ -110,6 +119,8 @@ public class SCR_DecoPlacer : MonoBehaviour
     {
         editingExistingDecos = true;
         toBackPackBox.SetActive(true);
+        flipNotEditingBox.SetActive(false);
+        flipEditingBox.SetActive(true);
         
         if (placedDecoHolder == null)
         {
@@ -134,6 +145,7 @@ public class SCR_DecoPlacer : MonoBehaviour
         decorationSprite = decoDatabase.GetDeco(decorationType).decoSprite;
         
         spriteRenderer.sprite = decorationSprite;
+        spriteRenderer.flipX = decoToEdit.GetComponent<SpriteRenderer>().flipX;
         
         transform.position = originalPos;
     }
@@ -173,6 +185,21 @@ public class SCR_DecoPlacer : MonoBehaviour
         SCR_ReworkedSaveSystem.SaveGame(data);
 
         Destroy(this.gameObject);
+    }
+
+    public void FlipDeco()
+    {
+        spriteRenderer.flipX = !spriteRenderer.flipX;
+        
+        if (editingExistingDecos && decoToEdit != null)
+        {
+            var renderer = decoToEdit.GetComponent<SpriteRenderer>();
+            renderer.flipX = spriteRenderer.flipX;
+
+            var placedDeco = decoToEdit.GetComponent<SCR_PlacedDeco>();
+            placedDeco.flipped = spriteRenderer.flipX;
+        }
+        
     }
     
     #region Drag

@@ -248,7 +248,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         var data = new List<PlacedDecoData>();
         foreach (Transform deco in parent)
         {
-            data.Add(new PlacedDecoData {decoPosition = deco.position, decoType = deco.gameObject.GetComponent<SCR_PlacedDeco>().decoType});
+            data.Add(new PlacedDecoData {decoPosition = deco.position, decoType = deco.gameObject.GetComponent<SCR_PlacedDeco>().decoType, flipped = deco.GetComponent<SpriteRenderer>().flipX});
         }
 
         return data;
@@ -261,6 +261,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
             GameObject decoObj = decoDatabase.GetDeco(entry.decoType).decoPrefab;
             GameObject instantiatedDecoObj = Instantiate(decoObj, entry.decoPosition, transform.rotation, placedDecoHolder.transform);
             instantiatedDecoObj.GetComponent<SCR_PlacedDeco>().decoType = entry.decoType;
+            instantiatedDecoObj.GetComponent<SpriteRenderer>().flipX = entry.flipped;
         }
     }
     

@@ -63,6 +63,7 @@ public class DecoData
 public class PlacedDecoData
 {
     public DecoType decoType;
+    public bool flipped;
     public Vector2 decoPosition;
 }
 
