@@ -85,13 +85,20 @@ public class SCR_ShopMenu : MonoBehaviour
     }
 
     private void UpdateSaplingTimerText(float saplingTimeRemaining)
-    { 
-        saplingTabTimerText.text = Mathf.CeilToInt(saplingTimeRemaining).ToString();
+    {
+        saplingTabTimerText.text = FormatTimer(saplingTimeRemaining);
     }
     
     private void UpdateDecoTimerText(float decoTimeRemaining)
     { 
-        decorTabTimerText.text = Mathf.CeilToInt(decoTimeRemaining).ToString();
+        decorTabTimerText.text = FormatTimer(decoTimeRemaining);
+    }
+    
+    private string FormatTimer(float timer)
+    {
+        int minutes = Mathf.FloorToInt(timer / 60f);
+        int seconds = Mathf.FloorToInt(timer % 60f);
+        return string.Format("{0}:{1:00}", minutes, seconds);
     }
     
     public void UpdateShopUI()

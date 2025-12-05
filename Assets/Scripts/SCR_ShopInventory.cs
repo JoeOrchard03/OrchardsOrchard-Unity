@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 using Random = UnityEngine.Random;
 
 public class SCR_ShopInventory : MonoBehaviour
@@ -16,6 +17,10 @@ public class SCR_ShopInventory : MonoBehaviour
     private float saplingShopTimer;
     private float decoShopTimer;
 
+    [Header("Reroll prices")]
+    public TextMeshProUGUI saplingShopRefreshPrice;
+    public TextMeshProUGUI decoShopRefreshPrice;
+    
     [Header("Sapling Shop slots")]
     public List<SCR_BuyableSapling> saplingShopSlots = new List<SCR_BuyableSapling>();
     public List<SCR_BuyableSapling> commonSaplingShopSlots = new List<SCR_BuyableSapling>();
@@ -36,6 +41,8 @@ public class SCR_ShopInventory : MonoBehaviour
     public static event Action<float> OnSaplingShopTimerUpdated;
     public static event Action<float> OnDecoShopTimerUpdated;
     public static event Action OnShopRefreshed;
+    
+    public SCR_ShopMenu shopMenuScriptRef;
     
     private void Start()
     {
@@ -79,6 +86,45 @@ public class SCR_ShopInventory : MonoBehaviour
         }
     }
 
+    public void RefreshSaplingShopNow()
+    {
+        float value;
+        if (shopMenuScriptRef.moneyTotal < float.Parse(saplingShopRefreshPrice.text))
+        {
+            return;
+        }
+        
+        shopMenuScriptRef.moneyTotal -= float.Parse(saplingShopRefreshPrice.text);
+        shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        
+        saplingShopTimer = saplingShopRefreshTime;
+        RefreshSaplingShopInventory();
+        shopRefreshNotif.SetActive(true);
+        OnShopRefreshed?.Invoke();
+        SCR_ReworkedSaveSystem.SaveSaplingShopTimer(saplingShopTimer);
+        SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, saplingShopTimer);
+    }
+    
+    public void RefreshDecoShopNow()
+    {
+        if (shopMenuScriptRef.moneyTotal < float.Parse(decoShopRefreshPrice.text))
+        {
+            return;
+        }
+        
+        shopMenuScriptRef.moneyTotal -= float.Parse(decoShopRefreshPrice.text);
+        shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        
+        decoShopTimer  = decoShopRefreshTime;
+        RefreshDecoShopInventory();
+        shopRefreshNotif.SetActive(true);
+        OnShopRefreshed?.Invoke();
+        SCR_ReworkedSaveSystem.SaveDecoShopTimer(decoShopTimer);
+        SCR_ReworkedSaveSystem.SaveDecoShopInventory(decoShopSlots, decoShopTimer);
+    }
+    
     private void OnApplicationQuit()
     {
         SaveShopTimerCall();
