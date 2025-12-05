@@ -80,6 +80,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         shopMenuScriptRef.moneyTotal -= decoPrice;
         shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.upgradeTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject deco = Instantiate(inventoryDecoPrefab, decoInventory);
         deco.GetComponent<SCR_DecoMenuBox>().decoType = decoType;

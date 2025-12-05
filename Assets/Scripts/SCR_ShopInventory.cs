@@ -97,6 +97,7 @@ public class SCR_ShopInventory : MonoBehaviour
         shopMenuScriptRef.moneyTotal -= float.Parse(saplingShopRefreshPrice.text);
         shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.upgradeTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         saplingShopTimer = saplingShopRefreshTime;
         RefreshSaplingShopInventory();

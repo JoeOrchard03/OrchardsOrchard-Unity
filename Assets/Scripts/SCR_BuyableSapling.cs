@@ -70,6 +70,7 @@ public class SCR_BuyableSapling : MonoBehaviour
         shopMenuScriptRef.moneyTotal -= saplingPrice;
         shopMenuScriptRef.saplingTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         shopMenuScriptRef.decorTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
+        shopMenuScriptRef.upgradeTabTotalText.text = shopMenuScriptRef.moneyTotal.ToString();
         
         GameObject sapling = Instantiate(inventorySaplingPrefab, saplingInventory);
         sapling.GetComponent<SCR_SaplingMenuBox>().fruitType = fruitType;

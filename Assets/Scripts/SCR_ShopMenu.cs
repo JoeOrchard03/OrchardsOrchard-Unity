@@ -21,6 +21,7 @@ public class SCR_ShopMenu : MonoBehaviour
     public TextMeshProUGUI saplingTabTotalText;
     public TextMeshProUGUI decorTabTimerText;
     public TextMeshProUGUI decorTabTotalText;
+    public TextMeshProUGUI upgradeTabTotalText;
     public TextMeshProUGUI SellTotalText;
     public GameObject shopRefreshNotif;
     
@@ -35,6 +36,7 @@ public class SCR_ShopMenu : MonoBehaviour
     public GameObject saplingCanvas;
     public GameObject sellCanvas;
     public GameObject decoCanvas;
+    public GameObject upgradeCanvas;
     public SpriteRenderer menuSpriteRenderer;
     public Sprite SellMenuSprite;
     public Sprite SaplingMenuSprite;
@@ -67,8 +69,10 @@ public class SCR_ShopMenu : MonoBehaviour
         shopMenuAudioSource = GetComponent<AudioSource>();
         saplingTabTotalText.text = moneyTotal.ToString();
         decorTabTotalText.text = moneyTotal.ToString();
+        upgradeTabTotalText.text = moneyTotal.ToString();
         saplingCanvas.SetActive(true);
         decoCanvas.SetActive(false);
+        upgradeCanvas.SetActive(false);
         //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         UpdateShopUI();
@@ -133,6 +137,7 @@ public class SCR_ShopMenu : MonoBehaviour
         //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         decoCanvas.SetActive(false);
+        upgradeCanvas.SetActive(false);
     }
 
     public void OpenDecoTab()
@@ -146,6 +151,7 @@ public class SCR_ShopMenu : MonoBehaviour
         //menuSpriteRenderer.sprite = SaplingMenuSprite;
         sellCanvas.SetActive(false);
         saplingCanvas.SetActive(false);
+        upgradeCanvas.SetActive(false);
     }
     
     public void OpenSellTab()
@@ -157,6 +163,21 @@ public class SCR_ShopMenu : MonoBehaviour
 
         sellCanvas.SetActive(true);
         //menuSpriteRenderer.sprite = SellMenuSprite;
+        saplingCanvas.SetActive(false);
+        decoCanvas.SetActive(false);
+        upgradeCanvas.SetActive(false);
+    }
+
+    public void OpenUpgradeTab()
+    {
+        if (upgradeCanvas.activeSelf== true)
+        {
+            return;
+        }
+
+        upgradeCanvas.SetActive(true);
+        //menuSpriteRenderer.sprite = SellMenuSprite;
+        sellCanvas.SetActive(false);
         saplingCanvas.SetActive(false);
         decoCanvas.SetActive(false);
     }
