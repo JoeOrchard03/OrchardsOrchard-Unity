@@ -16,12 +16,16 @@ public class SCR_ShopInventory : MonoBehaviour
     private float saplingShopTimer;
     private float decoShopTimer;
 
-    [Header("Shop slots")]
+    [Header("Sapling Shop slots")]
     public List<SCR_BuyableSapling> saplingShopSlots = new List<SCR_BuyableSapling>();
     public List<SCR_BuyableSapling> commonSaplingShopSlots = new List<SCR_BuyableSapling>();
     public List<SCR_BuyableSapling> uncommonSaplingShopSlots = new List<SCR_BuyableSapling>();
     public List<SCR_BuyableSapling> rareSaplingShopSlots = new List<SCR_BuyableSapling>();
+    
+    [Header("Deco Shop Slots")]
     public List<SCR_BuyableDeco> decoShopSlots = new List<SCR_BuyableDeco>();
+    public List<SCR_BuyableDeco> decoSlotsWithLights = new List<SCR_BuyableDeco>();
+    public List<SCR_BuyableDeco> decoSlotsWithoutLights = new List<SCR_BuyableDeco>();
 
     [Header("Rarity fill chances")]
     [Range(0f, 1f)] public float uncommonSlotChance = 0.5f;
@@ -85,7 +89,9 @@ public class SCR_ShopInventory : MonoBehaviour
         SCR_ReworkedSaveSystem.SaveSaplingShopTimer(saplingShopTimer);
         SCR_ReworkedSaveSystem.SaveDecoShopTimer(decoShopTimer);
     }
-    
+
+    #region Sapling Shop Inventory
+
     public void RefreshSaplingShopInventory()
     {
         Debug.Log("Calling RefreshSaplingShopInventory");
@@ -208,95 +214,89 @@ public class SCR_ShopInventory : MonoBehaviour
         
         return fruits[Random.Range(0, fruits.Count)];
     }
+
+    #endregion
+    
+    #region Deco Shop Inventory
     
     public void RefreshDecoShopInventory()
     {
         Debug.Log("Calling RefreshDecoShopInventory");
         
-        if (decoShopSlots == null || decoShopSlots.Count == 0)
-        {
-            Debug.Log("No deco shop slots");
-            return;
-        }
+        GetDecoPools(out var withLights, out var withoutLights);
         
-        foreach (SCR_BuyableDeco slot in decoShopSlots)
-        {
-            if (slot == null) continue;
-
-            var deco = GetRandomDecoBySpawnChance();
-            slot.decoType = deco.type;
-            slot.decoDatabase = decoDatabase;
-            slot.ApplyDecoInfo();
-        }
+        FillDecoRow(decoSlotsWithLights, withLights);
+        FillDecoRow(decoSlotsWithoutLights, withoutLights);
         
         SCR_ReworkedSaveSystem.SaveDecoShopInventory(decoShopSlots, decoShopTimer);
         Debug.Log($"Saved {decoShopSlots.Count} shop slots to save data");
     }
-    
-    private SCR_FruitDatabase.Fruit GetRandomFruitBySpawnChance()
+
+    //Seperate the pools of decos
+    private void GetDecoPools(out List<SCR_DecoDatabase.Deco> withLights, out List<SCR_DecoDatabase.Deco> withoutLights)
     {
-        var fruits = fruitDatabase.fruits;
-        if (fruits == null || fruits.Length == 0) return null;
+        withLights = new List<SCR_DecoDatabase.Deco>();
+        withoutLights = new List<SCR_DecoDatabase.Deco>();
 
-        float totalWeight = 0f;
-        foreach (var fruit in fruits)
-            totalWeight += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
-
-        float randomValue = Random.Range(0f, totalWeight);
-        float cumulative = 0f;
-
-        foreach (var fruit in fruits)
+        //Foreach deco
+        foreach (var deco in decoDatabase.decos)
         {
-            cumulative += Mathf.Max(fruit.shopSpawnChance, 0.0001f);
-            if (randomValue <= cumulative)
-                return fruit;
+            //If it has children
+            if (deco.decoPrefab.transform.childCount > 0)
+            {
+                //Add to with lights list
+                withLights.Add(deco);
+            }
+            else
+            {
+                //Else add to without lights list
+                withoutLights.Add(deco);
+            }
         }
-
-        return fruits[Random.Range(0, fruits.Length)];
     }
     
-    private SCR_DecoDatabase.Deco GetRandomDecoBySpawnChance()
+    private void FillDecoRow(List<SCR_BuyableDeco> slots, List<SCR_DecoDatabase.Deco> pool)
     {
-        var decos = decoDatabase.decos;
-        if (decos == null || decos.Length == 0) return null;
+        if (pool == null || pool.Count == 0)
+        {
+            Debug.LogWarning("Deco pool empty, cannot fill shop row");
+            return;
+        }
 
-        float totalWeight = 0f;
-        foreach (var deco in decos)
-            totalWeight += Mathf.Max(deco.shopSpawnChance, 0.0001f);
+        for (int i = 0; i < slots.Count; i++)
+        {
+            var deco = GetWeightedDeco(pool);
+            slots[i].decoType = deco.type;
+            slots[i].decoDatabase = decoDatabase;
+            slots[i].ApplyDecoInfo();
+        }
+    }
 
-        float randomValue = Random.Range(0f, totalWeight);
+    private SCR_DecoDatabase.Deco GetWeightedDeco(List<SCR_DecoDatabase.Deco> pool)
+    {
+        float total = 0f;
+        
+        foreach (var deco in pool)
+        {
+            total += deco.shopSpawnChance;
+        }
+        
+        float rand = Random.Range(0f, total);
         float cumulative = 0f;
 
-        foreach (var deco in decos)
+        foreach (var deco in pool)
         {
-            cumulative += Mathf.Max(deco.shopSpawnChance, 0.0001f);
-            if (randomValue <= cumulative)
+            cumulative += deco.shopSpawnChance;
+            if (rand <= cumulative)
+            {
                 return deco;
+            }
         }
-
-        return decos[Random.Range(0, decos.Length)];
+        
+        return pool[Random.Range(0, pool.Count)];
     }
     
-    // public void RefreshSaplingShopInventory()
-    // {
-    //     Debug.Log("Calling RefreshSaplingShopInventory");
-    //     if (saplingShopSlots == null || saplingShopSlots.Count == 0)
-    //     {
-    //         Debug.Log("No sapling shop slots");
-    //         return;
-    //     }
-    //
-    //     foreach (SCR_BuyableSapling slot in saplingShopSlots)
-    //     {
-    //         if (slot == null) continue;
-    //
-    //         var fruit = GetRandomFruitBySpawnChance();
-    //         slot.fruitType = fruit.type;
-    //         slot.fruitDatabase = fruitDatabase;
-    //         slot.ApplyFruitInfo();
-    //     }
-    //     
-    //     SCR_ReworkedSaveSystem.SaveSaplingShopInventory(saplingShopSlots, saplingShopTimer);
-    //     Debug.Log($"Saved {saplingShopSlots.Count} shop slots to save data");
-    // }
+    
+    #endregion
+    
 }

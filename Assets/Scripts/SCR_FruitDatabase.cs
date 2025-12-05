@@ -74,7 +74,6 @@ public class SCR_FruitDatabase : ScriptableObject
             if (fruit.type == type)
                 return fruit;
         }
-        Debug.LogWarning($"No fruit defined for fruit type {type}");
         return null;
     }
     

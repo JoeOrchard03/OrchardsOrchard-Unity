@@ -1224,6 +1224,20 @@ MonoBehaviour:
   - {fileID: 1218229554}
   - {fileID: 1884172624}
   - {fileID: 1911941059}
+  - {fileID: 1548246551}
+  - {fileID: 2026106052}
+  - {fileID: 1989079962}
+  - {fileID: 1191946464}
+  decoSlotsWithLights:
+  - {fileID: 1321250175}
+  - {fileID: 1218229554}
+  - {fileID: 1884172624}
+  - {fileID: 1911941059}
+  decoSlotsWithoutLights:
+  - {fileID: 1548246551}
+  - {fileID: 2026106052}
+  - {fileID: 1989079962}
+  - {fileID: 1191946464}
   uncommonSlotChance: 0.5
   rareSlotChance: 0.5
   shopRefreshNotif: {fileID: 1538667721}
@@ -3109,7 +3123,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (1)
+      value: PRE_LightDecoShopBox2
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -15781,7 +15795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (2)
+      value: PRE_NoLightDecoShopBox3
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -18781,7 +18795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox
+      value: PRE_NoLightDecoShopBox1
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -21418,7 +21432,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (3)
+      value: PRE_NoLightDecoShopBox4
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -21518,6 +21532,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
   m_PrefabInstance: {fileID: 1191946462}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1191946464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1191946462}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1192215744
 GameObject:
   m_ObjectHideFlags: 0
@@ -24432,7 +24457,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox
+      value: PRE_LightDecoShopBox1
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -25149,7 +25174,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (2)
+      value: PRE_LightDecoShopBox3
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -29108,6 +29133,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1548246551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 1046583875}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!4 &1554389470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5256707153668922888, guid: 8c8b28d848f256443a065ebae9f69cfa, type: 3}
@@ -35196,7 +35232,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (3)
+      value: PRE_LightDecoShopBox4
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -36370,6 +36406,17 @@ MonoBehaviour:
   standardCollected: 0
   goldCollected: 0
   iridescentCollected: 0
+--- !u!114 &1989079962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 844005134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1993219999
 GameObject:
   m_ObjectHideFlags: 0
@@ -37242,7 +37289,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 622391719796425974, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: m_Name
-      value: PRE_ShopDecoBox (1)
+      value: PRE_NoLightDecoShopBox2
       objectReference: {fileID: 0}
     - target: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
       propertyPath: decoInventory
@@ -37342,6 +37389,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5084556562927959772, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
   m_PrefabInstance: {fileID: 2026106050}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026106052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
+  m_PrefabInstance: {fileID: 2026106050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2027520160
 GameObject:
   m_ObjectHideFlags: 0
@@ -40344,7 +40402,7 @@ PrefabInstance:
     - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
       propertyPath: compendium
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 646683067}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

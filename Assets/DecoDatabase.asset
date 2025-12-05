@@ -187,3 +187,177 @@ MonoBehaviour:
     decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
+  - type: 29
+    DecoName: Yellow Fairy Lights
+    decoPrefab: {fileID: 1855541482930270269, guid: 0e186b6fbb8beab48b41f658fc473169, type: 3}
+    decoSprite: {fileID: -8148182967911693242, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 30
+    DecoName: Bike
+    decoPrefab: {fileID: 5940629411461623266, guid: f356011b0916f4349967551cdee8bcbc, type: 3}
+    decoSprite: {fileID: 4175517809226048255, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 31
+    DecoName: Blue Flower Pot
+    decoPrefab: {fileID: 2428028036172800721, guid: 32178fb84c7aa8e489d60dc2c256d31f, type: 3}
+    decoSprite: {fileID: 4248282000693168657, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 32
+    DecoName: Blue Flower Turtle
+    decoPrefab: {fileID: 1360487283602921122, guid: f16dec80cdcea854b968e2de3a8e5c14, type: 3}
+    decoSprite: {fileID: -4581545352532265857, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 33
+    DecoName: Butterfly Lights
+    decoPrefab: {fileID: 4804646009155479003, guid: 7805ca9df21359c4fb8a6f207d8aea51, type: 3}
+    decoSprite: {fileID: 7647094583997643333, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 34
+    DecoName: Dark Blue Butterfly
+    decoPrefab: {fileID: 8562369404759714107, guid: 43025fd573e6a8641b74fe2639dbf6a4, type: 3}
+    decoSprite: {fileID: -1108399525116863837, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 35
+    DecoName: Flower Basket
+    decoPrefab: {fileID: 9020906772857231236, guid: 7789412977c8f294ba9599f5df23520c, type: 3}
+    decoSprite: {fileID: 7452426111412232267, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 36
+    DecoName: Giant Leaning Mushroom
+    decoPrefab: {fileID: 2204032717693125158, guid: bb4cf5beb1d886e4f881d1209f87abaf, type: 3}
+    decoSprite: {fileID: -494898069695084089, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 37
+    DecoName: Giant Mushroom
+    decoPrefab: {fileID: 4985359239240083497, guid: 22d4f821ca7ffdc44a083705b1627dfa, type: 3}
+    decoSprite: {fileID: -4940254511649676752, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 38
+    DecoName: Glowing Blue Jar
+    decoPrefab: {fileID: 683850179356440217, guid: 51892ef244ab2f145b1ef7599f3c878c, type: 3}
+    decoSprite: {fileID: 2849657951396130103, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 39
+    DecoName: Glowing Yellow Jar
+    decoPrefab: {fileID: 7374012181460369563, guid: 8ecce0701c11a154e8a7b0d35f5986c5, type: 3}
+    decoSprite: {fileID: -5193324595061984166, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 40
+    DecoName: Green Flower Turtle
+    decoPrefab: {fileID: 2369285526159642082, guid: e19267dbdcee49e48a411b850fc159de, type: 3}
+    decoSprite: {fileID: -5902520694935610195, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 41
+    DecoName: Hanging Lamp
+    decoPrefab: {fileID: 7650157121987836942, guid: 47d0b14305b3c714a86646d3e446aee1, type: 3}
+    decoSprite: {fileID: -4014034674313496280, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 42
+    DecoName: Hanging Orb
+    decoPrefab: {fileID: 6406294033393358257, guid: 1bb4f03484c34d34f801805b6720de38, type: 3}
+    decoSprite: {fileID: -3414259988329897098, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 43
+    DecoName: Lamp
+    decoPrefab: {fileID: 9222346055866170397, guid: 60abb2446236990429d387da60f43617, type: 3}
+    decoSprite: {fileID: -1107325154622530749, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 44
+    DecoName: Light Blue Butterfly
+    decoPrefab: {fileID: 3774596822017868733, guid: 349b754dfec92604d91ab05ed9790d17, type: 3}
+    decoSprite: {fileID: -626166695674481753, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 45
+    DecoName: Orange Butterfly
+    decoPrefab: {fileID: 1144445216914849127, guid: 16dc2dc010ac8ea4d98acc0f80041b49, type: 3}
+    decoSprite: {fileID: 196401949602446718, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 46
+    DecoName: Orchid
+    decoPrefab: {fileID: 1574967754475758768, guid: 4173db91ae5415744820005f9485e203, type: 3}
+    decoSprite: {fileID: -6421581422827145520, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 47
+    DecoName: Pink Butterfly
+    decoPrefab: {fileID: 8956775416845030490, guid: 9a7422f4873314c4581eb5d0e32e98f7, type: 3}
+    decoSprite: {fileID: 6694296607117406068, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    DecoName: Pink Fairy Lights
+    decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    DecoName: Pink Fairy Lights
+    decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    DecoName: Pink Fairy Lights
+    decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    DecoName: Pink Fairy Lights
+    decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 28
+    DecoName: Pink Fairy Lights
+    decoPrefab: {fileID: 321482191533949412, guid: 5846ffb16be88cb46ae9a417de437a36, type: 3}
+    decoSprite: {fileID: 818473952794276268, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 53
+    DecoName: Trowel
+    decoPrefab: {fileID: 4643946087043176071, guid: f675f626be07ff44bbaf5c224672abd5, type: 3}
+    decoSprite: {fileID: -5874189547553935634, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 54
+    DecoName: Vine
+    decoPrefab: {fileID: 1016261325154318222, guid: 37c2a9b2425e40b4d8321a252042d6f7, type: 3}
+    decoSprite: {fileID: -5582373178747697528, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 55
+    DecoName: Wellies
+    decoPrefab: {fileID: 4956929614686983317, guid: 596aae33a0c44354392f3317008c1bbd, type: 3}
+    decoSprite: {fileID: 4472164751371853045, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 56
+    DecoName: Yellow Butterfly
+    decoPrefab: {fileID: 4290407942737091635, guid: ccc9f828c5fe74a45b8db7ff984c6287, type: 3}
+    decoSprite: {fileID: -3268411461695385231, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 58
+    DecoName: Yellow Flower Turtle
+    decoPrefab: {fileID: 2751146608770915218, guid: 77fa4aeca4301c74b9f19aafd4837081, type: 3}
+    decoSprite: {fileID: -1766861417523568187, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5

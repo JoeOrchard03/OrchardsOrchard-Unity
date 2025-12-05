@@ -36,7 +36,6 @@ public class SCR_BuyableSapling : MonoBehaviour
         var fruit = fruitDatabase.GetFruit(fruitType);
         if (fruit != null)
         {
-            Debug.Log("Resetting sapling: " + gameObject.name.ToString());
             outOfStockObj.SetActive(false);
             buttonObj.SetActive(true);
             BuyTextObj.SetActive(true);
@@ -47,7 +46,6 @@ public class SCR_BuyableSapling : MonoBehaviour
         else
         {
             DisableSlot();
-            Debug.LogError("SAPLING NOT FOUND");
         }
     }
 
