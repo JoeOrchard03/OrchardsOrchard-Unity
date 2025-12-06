@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5084556562927959772}
-  - component: {fileID: 4856356838961864365}
+  - component: {fileID: 4704708887170738175}
   - component: {fileID: 3411376877702276343}
   m_Layer: 6
   m_Name: PRE_DroneUpgradeBox
@@ -272,7 +272,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4856356838961864365
+--- !u!114 &4704708887170738175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,23 +281,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 622391719796425974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e8c1bcd4961e84ab8f1da2ae30e6d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 91a5040593ca12d4da7aff752a573580, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  decoType: 23
-  decoDatabase: {fileID: 11400000, guid: 9ade48253806c9e42a352af1fc739366, type: 2}
-  decoSprite: {fileID: 3918741012351739870}
+  m_EditorClassIdentifier: Assembly-CSharp::SCR_BuyableDroneUpgrade
+  maxUpgradeCount: 10
+  upgradeCount: 0
+  buyButtonOBJ: {fileID: 3798889848463979309}
+  upgradeSpriteRenderer: {fileID: 3918741012351739870}
+  upgradeSprite: {fileID: -3645204477157504894, guid: a1d907e5ebe509f42bd2fafe98e5af3d, type: 3}
+  upgradeName: Speed
+  upgradeLevelText: {fileID: 3034952257981836509}
   priceText: {fileID: 7651105256045928985}
-  decoName: 
-  decoBoxCollider: {fileID: 3411376877702276343}
-  inventoryDecoPrefab: {fileID: 6729451776724655117, guid: 6ce10eec935392a44be1b77123817fab, type: 3}
-  decoInventory: {fileID: 0}
   BuyTextObj: {fileID: 8677833763463400795}
-  outOfStockObj: {fileID: 4460152332843870394}
-  buttonObj: {fileID: 3798889848463979309}
   moneyIcon: {fileID: 161456641738660816}
   buttonAudioSource: {fileID: 0}
+  droneSpeedIncrease: 5
+  droneArmSpeedIncrease: 5
   playerManagerScriptRef: {fileID: 0}
+  upgradeBoxCollider: {fileID: 3411376877702276343}
+  upgradeType: 0
 --- !u!61 &3411376877702276343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -692,9 +694,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4856356838961864365}
-        m_TargetAssemblyTypeName: SCR_BuyableDeco, Assembly-CSharp
-        m_MethodName: BuyDeco
+      - m_Target: {fileID: 4704708887170738175}
+        m_TargetAssemblyTypeName: SCR_BuyableDroneUpgrade, Assembly-CSharp
+        m_MethodName: BuyUpgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

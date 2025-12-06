@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class SCR_Drone : MonoBehaviour
 {
-    [SerializeField] private float droneDriveSpeed = 5f;
-    [SerializeField] private float armExtendSpeed = 2f;
-    public float harvestTime = 0.25f;
+    [Header(("Drone base stats"))] 
+    public float baseDroneDriveSpeed = 7f;
+    public float baseArmExtendSpeed = 2f;
 
+    [Header("Drone upgrade variables")]
+    public float droneDriveSpeed;
+    public float armExtendSpeed;
+    public bool lightActive = false;
+    
+    public float harvestTime = 0.25f;
+    public GameObject droneLight;
+    public bool isDay = true;
+    
     private Vector3 chargerPosition;
     private Vector3 originalArmPosition;
     private Vector3 armInventoryPosition;
@@ -47,16 +56,29 @@ public class SCR_Drone : MonoBehaviour
 
     private void Start()
     {
-        drivingAudio = GetComponent<AudioSource>();
         playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
+        
+        drivingAudio = GetComponent<AudioSource>();
         //Set spawn pos as the charger's pos
         chargerPosition = transform.position;
         //Store the original arm location
         originalArmPosition = droneArm.transform.localPosition;
         //Sets the location the arm should go to when pulling into drone inventory
         armInventoryPosition = new Vector3(originalArmPosition.x, originalArmPosition.y - 1.0f, originalArmPosition.z);
-    }
 
+        var saveData = SCR_ReworkedSaveSystem.LoadGame();
+        if (saveData.droneSaveData != null)
+        {
+            LoadDroneUpgrades(saveData.droneSaveData);
+        }
+        else
+        {
+            droneDriveSpeed = baseDroneDriveSpeed;
+            armExtendSpeed = baseArmExtendSpeed;
+            lightActive = false;
+        }
+    }
+    
     public void SetTarget(SCR_FruitBloom fruitTransform)
     {
         //Sanity check
@@ -114,6 +136,11 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator MoveUnderFruit(Transform target)
     {
+        if (lightActive && isDay == false)
+        {
+            droneLight.SetActive(true);
+        }
+        
         if (!(Mathf.Abs(transform.position.x - chargerPosition.x) > 0.03f))
         {
             armAudio.PlayOneShot(droneUnplug, 0.5f);
@@ -157,7 +184,7 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator GrabFruit(SpriteRenderer fruitSprite)
     {
-        Debug.Log($"[HARVEST] Attempting to harvest {currentFruit.name}, harvested = {currentFruit.harvested}");
+       // Debug.Log($"[HARVEST] Attempting to harvest {currentFruit.name}, harvested = {currentFruit.harvested}");
 
         ControlDroneArmSound(false);
         armAudio.PlayOneShot(pickFruit, 0.1f);
@@ -214,7 +241,7 @@ public class SCR_Drone : MonoBehaviour
         // Clear sprite from arm (putting in inventory)
         ControlDroneArmSound(false);
         fruitRenderer.sprite = null;
-        Debug.Log("Harvested: " + currentFruit.fruitType);
+        //Debug.Log("Harvested: " + currentFruit.fruitType);
     }
 
     private IEnumerator ReturnArmToStart()
@@ -252,6 +279,11 @@ public class SCR_Drone : MonoBehaviour
         armAudio.PlayOneShot(fruitDropOff, 0.75f);
         playerInventory.AddFruits(droneInventory);
         droneInventory.Clear();
+        
+        if (droneLight.activeInHierarchy)
+        {
+            droneLight.SetActive(false);
+        }
     }
 
     public void ControlDroneDriveSound(bool driving)
@@ -307,4 +339,57 @@ public class SCR_Drone : MonoBehaviour
             }
         }
     }
+    
+    #region upgrades
+
+    public void ApplyDroneUpgrades(SCR_BuyableDroneUpgrade[] upgrades)
+    {
+        droneDriveSpeed = baseDroneDriveSpeed;
+        armExtendSpeed = baseArmExtendSpeed;
+
+        foreach (var upgrade in upgrades)
+        {
+            switch (upgrade.upgradeType)
+            {
+                case SCR_BuyableDroneUpgrade.droneUpgrade.speedUpgrade:
+                    droneDriveSpeed += upgrade.upgradeCount * upgrade.droneSpeedIncrease;
+                    Debug.Log("Applying drone speed increase");
+                    break;
+                case SCR_BuyableDroneUpgrade.droneUpgrade.armSpeedUpgrade: 
+                    armExtendSpeed += upgrade.upgradeCount * upgrade.droneArmSpeedIncrease;
+                    Debug.Log("Applying drone arm speed increase");
+                    break;
+                case SCR_BuyableDroneUpgrade.droneUpgrade.lightUpgrade:
+                    lightActive = upgrade.upgradeCount > 0;
+                    Debug.Log("Applying drone light upgrade");
+                    break;
+                case SCR_BuyableDroneUpgrade.droneUpgrade.treeShakerUpgrade:
+                    if(upgrade.upgradeCount > 0)
+                    {
+                        EnableTreeShaker();
+                        Debug.Log("Applying tree shaker upgrade");
+                    }
+                    break;
+            }
+        }
+    }
+
+    public void LoadDroneUpgrades(DroneSaveData data)
+    {
+        droneDriveSpeed = baseDroneDriveSpeed + data.speedUpgradeCount * data.droneSpeedIncrease;
+        armExtendSpeed = baseArmExtendSpeed + data.armSpeedUpgradeCount * data.armSpeedIncrease;
+        lightActive = data.lightUpgradeActive;
+
+        if (data.treeShakerActive)
+        {
+            EnableTreeShaker();
+        }
+    }
+    
+    public void EnableTreeShaker()
+    {
+        Debug.Log("Enable Tree Shaker");
+    }
+    
+    #endregion
 }

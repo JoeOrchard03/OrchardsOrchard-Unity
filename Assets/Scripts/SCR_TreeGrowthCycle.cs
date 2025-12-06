@@ -167,7 +167,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         bool allHarvested = tree.fruits.Count > 0 && tree.fruits.TrueForAll(f => f.beenHarvested);
         if (allHarvested)
         {
-            Debug.Log("All previous fruits have been harvested, resetting fruit list for new bloom cycle...");
+            //Debug.Log("All previous fruits have been harvested, resetting fruit list for new bloom cycle...");
             tree.fruits.Clear();
 
             inactiveFruitBloomObjects.Clear();
@@ -188,7 +188,7 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         }
         
         int numberOfBloomsToActivate =  Random.Range(minNumberOfBloomsToActivate, maxNumberOfBloomsToActivate);
-        Debug.Log("Activating " + numberOfBloomsToActivate + " blooms");
+        //Debug.Log("Activating " + numberOfBloomsToActivate + " blooms");
         
         for (int i = 0; i < numberOfBloomsToActivate; i++)
         {

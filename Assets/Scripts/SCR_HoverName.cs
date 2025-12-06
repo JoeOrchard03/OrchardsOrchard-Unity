@@ -76,7 +76,7 @@ public class SCR_HoverName : MonoBehaviour
         }
         else
         {
-            Debug.Log("No component found returning null");
+            //Debug.Log("No component found returning null");
             return "";
         }
     }

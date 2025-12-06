@@ -23,6 +23,8 @@ public class SCR_PlayerManager : MonoBehaviour
     
     [Header("References")]
     public SCR_OpenEditMode openEditModeScriptRef;
+    public SCR_Drone droneScriptRef;
+    public GameObject shopMenu;
     
     [Header("UI variables")]
     public bool shopMenuOpen = false;
@@ -47,6 +49,8 @@ public class SCR_PlayerManager : MonoBehaviour
     
     void Start()
     {
+        shopMenu.SetActive(false);
+        
         List<GameObject> trees = new List<GameObject>();
         foreach (GameObject tree in GameObject.FindGameObjectsWithTag("Tree"))
         {
@@ -208,7 +212,7 @@ public class SCR_PlayerManager : MonoBehaviour
             }
         }
     }
-
+    
     private void PlayHighlightNoise()
     {
         if (!highlightAudio.isPlaying && !playedHover)

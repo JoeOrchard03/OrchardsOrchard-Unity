@@ -257,6 +257,7 @@ public class SCR_ShopMenu : MonoBehaviour
         SellTotalText.text = "0";
         saplingTabTotalText.text = moneyTotal.ToString();
         decorTabTotalText.text = moneyTotal.ToString();
+        upgradeTabTotalText.text = moneyTotal.ToString();
         Debug.Log("Selling items");
         var saveData =  SCR_ReworkedSaveSystem.LoadGame();
         saveData.money = moneyTotal;

@@ -18,6 +18,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     [Header("References")]
     public List<SCR_Plot> plots;
     public SCR_Clock clockScriptRef;
+    public SCR_Drone droneScriptRef;
     public Transform placedDecoHolder;
     public SCR_DecoDatabase decoDatabase;
 
@@ -102,11 +103,15 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         {
             LoadCompendiumData(data.compendiumEntries);
         }
+
+        UpdateTreeAndSaplingCounts();
+        
+        var upgradeSlots = new List<SCR_BuyableDroneUpgrade>(FindObjectsByType<SCR_BuyableDroneUpgrade>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
+        
+        LoadDroneUpgrades(upgradeSlots, droneScriptRef);
         
         //Clock
         SetDay(data.isDay);
-
-        UpdateTreeAndSaplingCounts();
         Debug.Log("Game loaded successfully");
     }
     
@@ -334,7 +339,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
     #endregion
     
     #region Shop : Saplings
-
+    
     public static void SaveSaplingShopInventory(List<SCR_BuyableSapling> shopSlots, float saplingShopTimer)
     {
         //Load data
@@ -364,8 +369,7 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         Debug.Log("Sapling shop saved");
     }
 
-    public static void LoadSaplingShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots,
-        ref float saplingShopTimer)
+    public static void LoadSaplingShopInventory(SCR_FruitDatabase fruitDatabase, List<SCR_BuyableSapling> shopSlots, ref float saplingShopTimer)
     {
         SCR_SaveData data = LoadGame();
 
@@ -528,5 +532,72 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         }
     }
     
+    public static void SaveSingleField(Action<SCR_SaveData> modify)
+    {
+        SCR_SaveData data = LoadGame();
+        modify(data);
+        SaveGame(data);
+    }
+    
     #endregion
+    
+    #region Drone Upgrades
+
+    public static void SaveDroneUpgrades(List<SCR_BuyableDroneUpgrade> upgradeSlots)
+    {
+        SCR_SaveData data = LoadGame();
+        data.droneUpgrades = new List<DroneUpgradeData>();
+
+        foreach (var slot in upgradeSlots)
+        {
+            if (slot == null)
+            {
+                continue;
+            }
+            
+            data.droneUpgrades.Add(new DroneUpgradeData
+            {
+                upgradeType = slot.upgradeType,
+                count = slot.upgradeCount
+            });
+        }
+        
+        SaveGame(data);
+        Debug.Log("Drone upgrades saved");
+    }
+
+    public void LoadDroneUpgrades(List<SCR_BuyableDroneUpgrade> upgradeSlots, SCR_Drone drone)
+    {
+        SCR_SaveData data = LoadGame();
+
+        if (data.droneUpgrades == null || data.droneUpgrades.Count == 0)
+        {
+            Debug.Log("No saved drone upgrades found, skipping...");
+            return;
+        }
+
+        foreach (var saved in data.droneUpgrades)
+        {
+            var slot = upgradeSlots.Find(x => x.upgradeType == saved.upgradeType);
+            if (slot == null)
+            {
+                continue;
+            }
+
+            slot.upgradeCount = saved.count;
+        }
+
+
+        foreach (var slot in upgradeSlots)
+        {
+            slot.RefreshUI();
+        }
+
+        drone.ApplyDroneUpgrades(upgradeSlots.ToArray());
+
+        Debug.Log("Drone upgrades loaded");
+    }
+
+    #endregion
+    
 }

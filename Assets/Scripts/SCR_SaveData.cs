@@ -32,6 +32,10 @@ public class SCR_SaveData
     
     //Placed deco data
     public List<PlacedDecoData> placedDecoData = new List<PlacedDecoData>();
+    
+    //Drone upgrades
+    public List<DroneUpgradeData> droneUpgrades = new List<DroneUpgradeData>();
+    public DroneSaveData droneSaveData;
 }
 
 //Tree in scene's data
@@ -49,6 +53,27 @@ public class TreeData
 public class SaplingData
 {
     public FruitType dataFruitType;
+}
+
+//Drone upgrade data
+[System.Serializable]
+public class DroneUpgradeData
+{
+    public SCR_BuyableDroneUpgrade.droneUpgrade upgradeType;
+    public int count;
+}
+
+//Drone save data
+[System.Serializable]
+public class DroneSaveData
+{
+    public int speedUpgradeCount;
+    public int armSpeedUpgradeCount;
+    public bool lightUpgradeActive;
+    public bool treeShakerActive;
+
+    public float droneSpeedIncrease;
+    public float armSpeedIncrease;
 }
 
 //Decoration in player's inventory data
