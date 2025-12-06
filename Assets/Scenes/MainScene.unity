@@ -38376,6 +38376,7 @@ MonoBehaviour:
   nightClockSprite: {fileID: 1845907361782899313, guid: 0746097f02324e942a4d63f9dad19d9a, type: 3}
   LightRef: {fileID: 619394801}
   shopScreenLight: {fileID: 2072779754}
+  droneScriptRef: {fileID: 2224393760897337177}
   dayLightColor: {r: 1, g: 1, b: 1, a: 0}
   nightLightColor: {r: 0.2924527, g: 0.5754715, b: 1, a: 0}
   nightLightIntensity: 0.15
@@ -42694,6 +42695,10 @@ PrefabInstance:
       propertyPath: compendium
       value: 
       objectReference: {fileID: 646683067}
+    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
+      propertyPath: clockScriptRef
+      value: 
+      objectReference: {fileID: 1962681870}
     - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
       propertyPath: baseArmExtendSpeed
       value: 10

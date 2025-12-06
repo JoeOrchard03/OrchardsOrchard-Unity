@@ -16,6 +16,7 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
     [Header("References")]
     public Light2D LightRef;
     public GameObject shopScreenLight;
+    public SCR_Drone droneScriptRef;
     
     public Color dayLightColor;
     public Color nightLightColor;
@@ -67,6 +68,10 @@ public class SCR_Clock : MonoBehaviour, INT_Interactable
         BackgroundSpriteRenderer.sprite = nightBackgroundSprite;
         ClockSpriteRenderer.sprite = nightClockSprite;
         shopScreenLight.SetActive(true);
+        if (droneScriptRef.droneOutOfCharger)
+        {
+            droneScriptRef.UpdateDroneLight(true);
+        }
         SaveTime();
     }
 

@@ -16,6 +16,8 @@ public class SCR_Drone : MonoBehaviour
     public float harvestTime = 0.25f;
     public GameObject droneLight;
     public bool isDay = true;
+    public bool droneOutOfCharger;
+    public SCR_Clock clockScriptRef;
     
     private Vector3 chargerPosition;
     private Vector3 originalArmPosition;
@@ -136,10 +138,8 @@ public class SCR_Drone : MonoBehaviour
 
     private IEnumerator MoveUnderFruit(Transform target)
     {
-        if (lightActive && isDay == false)
-        {
-            droneLight.SetActive(true);
-        }
+        droneOutOfCharger = true;
+        UpdateDroneLight(true);
         
         if (!(Mathf.Abs(transform.position.x - chargerPosition.x) > 0.03f))
         {
@@ -280,10 +280,8 @@ public class SCR_Drone : MonoBehaviour
         playerInventory.AddFruits(droneInventory);
         droneInventory.Clear();
         
-        if (droneLight.activeInHierarchy)
-        {
-            droneLight.SetActive(false);
-        }
+        droneOutOfCharger = false;
+        UpdateDroneLight(false);
     }
 
     public void ControlDroneDriveSound(bool driving)
@@ -389,6 +387,17 @@ public class SCR_Drone : MonoBehaviour
     public void EnableTreeShaker()
     {
         Debug.Log("Enable Tree Shaker");
+    }
+    
+    public void UpdateDroneLight(bool on)
+    {
+        if (clockScriptRef != null)
+            isDay = clockScriptRef.isDay;
+
+        if (lightActive && !isDay)
+            droneLight.SetActive(on);
+        else
+            droneLight.SetActive(false);
     }
     
     #endregion
