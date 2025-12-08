@@ -33,6 +33,9 @@ public class SCR_PlayerManager : MonoBehaviour
     public bool editModeEnabled = false;
     private Dictionary<FruitType, int> fruits = new Dictionary<FruitType, int>();
     
+    [Header("Upgrade variables")]
+    public bool pickRangeUpgrade = false;
+    
     [Header("Mouse variables")]
     public Texture2D cursorTexture;
     public Texture2D cursorHighlightTexture;

@@ -33,12 +33,20 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     public int minNumberOfBloomsToActivate;
     public int maxNumberOfBloomsToActivate;
 
+    [Header("Collider variables")]
+    public BoxCollider2D bulkHarvestCollider;
+    
     private int currentBatch = 0;
     
     void Start()
     {
         LoadFruits();
 
+        if (playerScriptRef.pickRangeUpgrade)
+        {
+            bulkHarvestCollider.enabled = true;
+        }
+        
         if (currentStage == 0)
         {
             spriteRenderer.sprite = spriteGrowthStages[0];
@@ -80,6 +88,13 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     public void Interact(GameObject interactor)
     {
+        if (bulkHarvestCollider.enabled && playerScriptRef.pickRangeUpgrade && IsTreeFullyGrown())
+        {
+            Debug.Log("Triggering bulk havest from leaf collider");
+            BulkHarvestAllActiveFruit();
+            return;
+        }
+        
         if (playerScriptRef.composting && (playerScriptRef.currentTreeCount > 1 || playerScriptRef.currentSaplingCount >= 1))
         {
             Debug.Log("Taking down tree");
@@ -380,8 +395,71 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         }
     }
 
+    public void EnableBulkCollider()
+    {
+        bulkHarvestCollider.enabled = true;
+    }
+
+    public void SetAllFruitHighlights(bool state)
+    {
+        foreach(GameObject fruit in activeBloomObjects)
+        {
+            if (fruit == null)
+            {
+                continue;
+            }
+
+            if (!(fruit.GetComponent<SCR_FruitBloom>().readyToHarvest))
+            {
+                continue;
+            }
+            
+            SCR_Highlightable highlightable = fruit.gameObject.GetComponent<SCR_Highlightable>();
+            if (highlightable != null && fruit.activeInHierarchy)
+            {
+                highlightable.highlightEffect.SetActive(state);
+            }
+        }
+    }
+    
+    private void BulkHarvestAllActiveFruit()
+    {
+        foreach (var fruit in activeBloomObjects)
+        {
+            if (fruit.GetComponent<SCR_FruitBloom>().readyToHarvest)
+            {
+                fruit.GetComponent<SCR_Highlightable>().stopHighlight = true;
+                fruit.GetComponent<SCR_Highlightable>().highlightEffect.SetActive(false);
+            }
+        }
+        
+        foreach (GameObject fruitOBJ in activeBloomObjects)
+        {
+            if(fruitOBJ == null)
+            {
+                continue;
+            }
+            
+            SCR_FruitBloom fruitBloomScript = fruitOBJ.GetComponent<SCR_FruitBloom>();
+            if (fruitBloomScript != null && fruitBloomScript.readyToHarvest && !fruitBloomScript.harvested)
+            {
+                fruitBloomScript.Harvest();
+            }
+        }
+    }
+    
     private bool IsTreeFullyGrown()
     {
         return currentStage >= spriteGrowthStages.Count - 1;
+    }
+    
+    public bool HasHarvestableFruit()
+    {
+        foreach (var fruit in activeBloomObjects)
+        {
+            if (fruit.GetComponent<SCR_FruitBloom>().readyToHarvest)
+                return true;
+        }
+        return false;
     }
 }

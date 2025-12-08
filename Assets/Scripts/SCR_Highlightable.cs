@@ -25,6 +25,36 @@ public class SCR_Highlightable : MonoBehaviour
             playerPlayerManagerScriptRef.SetCursorHighlight(false);
             return;
         }
+
+        if (playerPlayerManagerScriptRef.pickRangeUpgrade)
+        {
+            if (fruit != null && fruit.readyToHarvest)
+            {
+                SCR_TreeGrowthCycle treeScript = fruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>();
+                if (treeScript != null)
+                {
+                    treeScript.SetAllFruitHighlights(true);
+                }
+            }
+            
+            if(gameObject.CompareTag("Tree"))
+            {
+                SCR_TreeGrowthCycle tree = GetComponentInParent<SCR_TreeGrowthCycle>();
+                
+                if(tree != null)
+                {
+                    if (tree.HasHarvestableFruit())
+                    {
+                        playerPlayerManagerScriptRef.SetCursorHighlight(true);
+                        tree.SetAllFruitHighlights(true);
+                    }
+                    else
+                    {
+                        playerPlayerManagerScriptRef.SetCursorHighlight(false);
+                    }
+                }
+            }
+        }
         
         if (gameObject.CompareTag("Tree"))
         {
@@ -32,6 +62,10 @@ public class SCR_Highlightable : MonoBehaviour
             {
                 playerPlayerManagerScriptRef.hoveredInteractable = this.gameObject;
                 playerPlayerManagerScriptRef.SetShovelHighlight(true);
+            }
+            else
+            {
+                playerPlayerManagerScriptRef.hoveredInteractable = this.gameObject;
             }
             return;
         }
@@ -61,11 +95,35 @@ public class SCR_Highlightable : MonoBehaviour
 
     private void OnMouseExit()
     {
+        SCR_FruitBloom fruit = GetComponent<SCR_FruitBloom>();
+        
         if (gameObject.CompareTag("Tree") && playerPlayerManagerScriptRef.composting)
         {
             playerPlayerManagerScriptRef.SetShovelHighlight(false);
             playerPlayerManagerScriptRef.hoveredInteractable = null;
             return;
+        }
+        
+        if (playerPlayerManagerScriptRef.pickRangeUpgrade)
+        {
+            if (fruit != null)
+            {
+                SCR_TreeGrowthCycle tree = fruit.transform.parent.GetComponent<SCR_TreeGrowthCycle>();
+                if (tree != null)
+                {
+                    tree.SetAllFruitHighlights(false);
+                }
+            }
+            
+            if (gameObject.CompareTag("Tree"))
+            {
+                SCR_TreeGrowthCycle tree = GetComponentInParent<SCR_TreeGrowthCycle>();
+                if (tree != null)
+                {
+                    playerPlayerManagerScriptRef.SetCursorHighlight(false);
+                    tree.SetAllFruitHighlights(false);
+                }
+            }
         }
         
         if (bypassHighlight)

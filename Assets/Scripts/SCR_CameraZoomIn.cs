@@ -21,6 +21,7 @@ public class SCR_CameraZoomIn : MonoBehaviour, INT_Interactable
         
         mainCamera.SetActive(false);
         leftZoomedCamera.SetActive(true);
+        moveCameraRightButton.SetActive(true);
 
         foreach (Canvas canvas in canvases)
         {
@@ -28,8 +29,6 @@ public class SCR_CameraZoomIn : MonoBehaviour, INT_Interactable
         }
 
         hoverNameOBJ.cam = leftZoomedCamera.GetComponent<Camera>();
-        
-        moveCameraRightButton.SetActive(true);
         
         Debug.Log("SCR_CameraZoomIn interact");
         

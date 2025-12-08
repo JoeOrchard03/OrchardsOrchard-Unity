@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SCR_Drone : MonoBehaviour
@@ -18,12 +19,14 @@ public class SCR_Drone : MonoBehaviour
     public bool isDay = true;
     public bool droneOutOfCharger;
     public SCR_Clock clockScriptRef;
+
+    private List<SCR_TreeGrowthCycle> treeList = new List<SCR_TreeGrowthCycle>();
     
     private Vector3 chargerPosition;
     private Vector3 originalArmPosition;
     private Vector3 armInventoryPosition;
     private Coroutine returnCoroutine;
-    private SCR_PlayerManager playerInventory;
+    private SCR_PlayerManager playerManagerScriptRef;
     
     public GameObject armAnchor;
     public GameObject droneArm;
@@ -58,7 +61,7 @@ public class SCR_Drone : MonoBehaviour
 
     private void Start()
     {
-        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
+        playerManagerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         
         drivingAudio = GetComponent<AudioSource>();
         //Set spawn pos as the charger's pos
@@ -277,7 +280,7 @@ public class SCR_Drone : MonoBehaviour
         ControlDroneDriveSound(false);
         drivingAudio.PlayOneShot(dronePlugin, 0.75f);
         armAudio.PlayOneShot(fruitDropOff, 0.75f);
-        playerInventory.AddFruits(droneInventory);
+        playerManagerScriptRef.AddFruits(droneInventory);
         droneInventory.Clear();
         
         droneOutOfCharger = false;
@@ -386,7 +389,12 @@ public class SCR_Drone : MonoBehaviour
     
     public void EnableTreeShaker()
     {
-        Debug.Log("Enable Tree Shaker");
+        playerManagerScriptRef.pickRangeUpgrade = true;
+        treeList = FindObjectsByType<SCR_TreeGrowthCycle>(FindObjectsSortMode.None).ToList();
+        foreach (var tree in treeList)
+        {
+            tree.EnableBulkCollider();
+        }
     }
     
     public void UpdateDroneLight(bool on)

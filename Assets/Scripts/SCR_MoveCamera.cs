@@ -31,7 +31,7 @@ public class SCR_MoveCamera : MonoBehaviour, INT_Interactable
             leftCamera.SetActive(false);
             moveCameraRightButton.SetActive(false);
         }
-        else
+        else if(rightCamera.activeInHierarchy)
         {
             leftCamera.SetActive(true);
             moveCameraRightButton.SetActive(true);

@@ -602,15 +602,15 @@ MonoBehaviour:
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
-  - {fileID: 1700445810}
-  - {fileID: 634732885}
-  - {fileID: 668742780}
-  - {fileID: 810672507}
-  - {fileID: 5009453825870028657}
-  - {fileID: 2961077961328472038}
-  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
+  - {fileID: 668742780}
+  - {fileID: 1965577150}
+  - {fileID: 1700445810}
+  - {fileID: 2961077961328472038}
+  - {fileID: 5009453825870028657}
+  - {fileID: 810672507}
+  - {fileID: 1721951209}
 --- !u!4 &26186028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5256707153668922888, guid: 8c8b28d848f256443a065ebae9f69cfa, type: 3}
@@ -7174,7 +7174,8 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!1 &414399556
 GameObject:
   m_ObjectHideFlags: 0
@@ -11091,15 +11092,15 @@ MonoBehaviour:
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
-  - {fileID: 1700445810}
-  - {fileID: 634732885}
-  - {fileID: 668742780}
-  - {fileID: 810672507}
-  - {fileID: 5009453825870028657}
-  - {fileID: 2961077961328472038}
-  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
+  - {fileID: 668742780}
+  - {fileID: 1965577150}
+  - {fileID: 1700445810}
+  - {fileID: 2961077961328472038}
+  - {fileID: 5009453825870028657}
+  - {fileID: 810672507}
+  - {fileID: 1721951209}
 --- !u!212 &617961524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12380,14 +12381,15 @@ MonoBehaviour:
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
-  - {fileID: 1700445810}
-  - {fileID: 634732885}
-  - {fileID: 668742780}
-  - {fileID: 810672507}
-  - {fileID: 5009453825870028657}
-  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
+  - {fileID: 668742780}
+  - {fileID: 1965577150}
+  - {fileID: 1700445810}
+  - {fileID: 2961077961328472038}
+  - {fileID: 5009453825870028657}
+  - {fileID: 810672507}
+  - {fileID: 1721951209}
 --- !u!1 &647253248
 GameObject:
   m_ObjectHideFlags: 0
@@ -22977,15 +22979,15 @@ MonoBehaviour:
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
-  - {fileID: 1700445810}
-  - {fileID: 634732885}
-  - {fileID: 668742780}
-  - {fileID: 810672507}
-  - {fileID: 5009453825870028657}
-  - {fileID: 2961077961328472038}
-  - {fileID: 1965577150}
   - {fileID: 2050200148}
   - {fileID: 696743253}
+  - {fileID: 668742780}
+  - {fileID: 1965577150}
+  - {fileID: 1700445810}
+  - {fileID: 2961077961328472038}
+  - {fileID: 5009453825870028657}
+  - {fileID: 810672507}
+  - {fileID: 1721951209}
 --- !u!114 &1218229554 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4856356838961864365, guid: 6f95ebab119d85c44a5c66aa09cc321c, type: 3}
@@ -23563,7 +23565,8 @@ MonoBehaviour:
   - {fileID: 5009453825870028657}
   - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
 --- !u!212 &1238537836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29006,14 +29009,15 @@ MonoBehaviour:
   moveCameraRightButton: {fileID: 407607951}
   moveCameraLeftButton: {fileID: 1238537833}
   canvases:
-  - {fileID: 1700445810}
-  - {fileID: 634732885}
+  - {fileID: 2050200148}
+  - {fileID: 696743253}
   - {fileID: 668742780}
-  - {fileID: 810672507}
-  - {fileID: 5009453825870028657}
-  - {fileID: 2961077961328472038}
   - {fileID: 1965577150}
-  - {fileID: 0}
+  - {fileID: 1700445810}
+  - {fileID: 2961077961328472038}
+  - {fileID: 5009453825870028657}
+  - {fileID: 810672507}
+  - {fileID: 1721951209}
 --- !u!1 &1461744206
 GameObject:
   m_ObjectHideFlags: 0
@@ -31086,6 +31090,7 @@ MonoBehaviour:
   decoMenuOpen: 0
   menuOpen: 0
   editModeEnabled: 0
+  pickRangeUpgrade: 0
   cursorTexture: {fileID: 2800000, guid: cdcaceb21f872864babea5456bb3ff95, type: 3}
   cursorHighlightTexture: {fileID: 2800000, guid: 7cc25ed5a75db874a896a6e8fd02412f, type: 3}
   shovelIconTexture: {fileID: 2800000, guid: b0429033fcde1a64f8e587ddb8b02f32, type: 3}
@@ -42699,10 +42704,6 @@ PrefabInstance:
       propertyPath: clockScriptRef
       value: 
       objectReference: {fileID: 1962681870}
-    - target: {fileID: 8033423261169351479, guid: 211809c9d6fa95b44990af59bf572016, type: 3}
-      propertyPath: baseArmExtendSpeed
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

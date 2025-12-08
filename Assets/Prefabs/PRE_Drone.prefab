@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 1dacd8bd91d13a824993e8ff
+  m_ApplyToSortingLayers: 1dacd8bd91d13a824993e8ff1de4b180
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -313,12 +313,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf410b5e7525f54b99e0077bb548cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseDroneDriveSpeed: 7
+  baseArmExtendSpeed: 10
   droneDriveSpeed: 7
   armExtendSpeed: 10
-  harvestTime: 0.25
   lightActive: 0
+  harvestTime: 0.25
   droneLight: {fileID: 3477977587115324248}
   isDay: 1
+  droneOutOfCharger: 0
+  clockScriptRef: {fileID: 0}
   armAnchor: {fileID: 5962941243244488488}
   droneArm: {fileID: 9115197463071557937}
   fruitRenderer: {fileID: 2628783001601893469}

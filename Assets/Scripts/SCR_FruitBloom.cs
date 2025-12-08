@@ -20,7 +20,6 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     public List<float> growthTimes;
     public float uncommonFruitMultiplier;
     public float rareFruitMultiplier;
-    
 
     [Header("Special Variant variables")] 
     public Sprite goldSprite;
@@ -53,6 +52,11 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
 
         //Make sure fruit highlight effect is inactive when first spawning
         transform.GetChild(0).gameObject.SetActive(false);
+        
+        if (motherTree == null)
+        {
+            motherTree = transform.parent.gameObject;
+        }
 
         if (goldParticlesPrefab == null)
         {
@@ -68,6 +72,21 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
         playerPlayerManagerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         drone = GameObject.FindGameObjectWithTag("Drone");
         gameObject.GetComponent<SCR_Highlightable>().canHighlight = false;
+
+    }
+
+    public void Harvest()
+    {
+        if (!readyToHarvest) return;
+        if (harvested || isTargeted) return;
+
+        harvested = true;
+        readyToHarvest = false;
+
+        gameObject.GetComponent<SCR_Highlightable>().highlightEffect.SetActive(false);
+
+        GameObject drone = GameObject.FindGameObjectWithTag("Drone");
+        drone.GetComponent<SCR_Drone>().SetTarget(this);
     }
     
     public void StartGrowthCycle(bool reset = true)
@@ -232,6 +251,14 @@ public class SCR_FruitBloom : MonoBehaviour, INT_Interactable
     
     public void Interact(GameObject interactor)
     {
+        SCR_TreeGrowthCycle tree = motherTree.GetComponent<SCR_TreeGrowthCycle>();
+
+        if (tree != null && tree.bulkHarvestCollider.enabled)
+        {
+            tree.Interact(interactor);
+            return;
+        }
+        
         if (!readyToHarvest) { return;}
         if (harvested || isTargeted) { return;}
 

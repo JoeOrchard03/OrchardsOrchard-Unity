@@ -19,10 +19,10 @@ public class SCR_CameraZoomOut : MonoBehaviour, INT_Interactable
         mainCamera.SetActive(true);
         leftZoomedCamera.SetActive(false);
         rightZoomedCamera.SetActive(false);
-        
+
         moveCameraRightButton.SetActive(false);
         moveCameraLeftButton.SetActive(false);
-
+        
         foreach (Canvas canvas in canvases)
         {
             canvas.worldCamera = mainCamera.GetComponent<Camera>();
