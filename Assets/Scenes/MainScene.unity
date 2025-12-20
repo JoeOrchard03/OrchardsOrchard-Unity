@@ -21957,11 +21957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_text
-      value: Edit Decos
+      value: Edit
       objectReference: {fileID: 0}
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_fontSize
-      value: 41.2
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_margin.w
@@ -21993,7 +21993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_fontSizeBase
-      value: 41.2
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2403943951480967770, guid: 3b372271838b82b4e9a80f257c33e235, type: 3}
       propertyPath: m_isOrthographic
@@ -42999,7 +42999,7 @@ RectTransform:
   m_Father: {fileID: 5528341277827350710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -43214,7 +43214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &2961077961328472038
 Canvas:
   m_ObjectHideFlags: 0
@@ -44236,7 +44236,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 110, y: 110}
   m_Spacing: {x: 15, y: 15}
   m_Constraint: 0
   m_ConstraintCount: 3
@@ -44360,7 +44360,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1.6, y: 5}
+  m_SizeDelta: {x: -1.6, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8614207247352118514
 MonoBehaviour:
