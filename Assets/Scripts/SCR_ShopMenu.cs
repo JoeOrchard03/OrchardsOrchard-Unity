@@ -39,6 +39,7 @@ public class SCR_ShopMenu : MonoBehaviour
     public GameObject upgradeCanvas;
     public SpriteRenderer menuSpriteRenderer;
     public Sprite SellMenuSprite;
+    public Sprite DecoMenuSprite;
     public Sprite SaplingMenuSprite;
 
     [Header("Sell UI variables")] 

@@ -22,12 +22,17 @@ public class SCR_DecoMenuBox : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         decoInventory = transform.parent.gameObject;
         saveSystem = GameObject.Find("SaveManager").GetComponent<SCR_ReworkedSaveSystem>();
+    }
+
+    private void Start()
+    {
         LoadImage();
     }
 
     public void LoadImage()
     {
         decoImage.sprite = decoDatabase.GetDeco(decoType).decoSprite;
+        Debug.Log("Sprite loaded is: " + decoImage.sprite.name);
         decoSprite = decoImage.sprite;
     }
     
