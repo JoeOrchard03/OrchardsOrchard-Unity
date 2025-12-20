@@ -120,7 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7006727018044625867}
   m_HandleRect: {fileID: 9147482410770554216}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.99999243
   m_Size: 0.4651163
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2601171334451345743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +514,9 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -535,6 +538,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
