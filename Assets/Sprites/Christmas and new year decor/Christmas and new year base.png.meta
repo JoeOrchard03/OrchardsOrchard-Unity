@@ -1,0 +1,1929 @@
+fileFormatVersion: 2
+guid: 81180bc423674ef4ba7269ceab489326
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2267474489233383072
+    second: Christmas and new year base_0
+  - first:
+      213: -7118197982727676581
+    second: Christmas and new year base_1
+  - first:
+      213: 8299298718237361715
+    second: Christmas and new year base_2
+  - first:
+      213: -4651987486926573019
+    second: Christmas and new year base_3
+  - first:
+      213: 1874843948160615720
+    second: Christmas and new year base_4
+  - first:
+      213: 8948872549788484762
+    second: Christmas and new year base_5
+  - first:
+      213: -8303070917407590389
+    second: Christmas and new year base_6
+  - first:
+      213: -2945884065582052052
+    second: Christmas and new year base_7
+  - first:
+      213: -1036479254674673184
+    second: Christmas and new year base_8
+  - first:
+      213: -8883135245913791267
+    second: Christmas and new year base_9
+  - first:
+      213: -8836169668195698687
+    second: Christmas and new year base_10
+  - first:
+      213: 3685463270980850544
+    second: Christmas and new year base_11
+  - first:
+      213: -312998667508788779
+    second: Christmas and new year base_12
+  - first:
+      213: -5178505487607055782
+    second: Christmas and new year base_13
+  - first:
+      213: -7127610923801034828
+    second: Christmas and new year base_14
+  - first:
+      213: 3466092431077247175
+    second: Christmas and new year base_15
+  - first:
+      213: -3878598659705495174
+    second: Christmas and new year base_16
+  - first:
+      213: 2365092313349931017
+    second: Christmas and new year base_17
+  - first:
+      213: 1912926834963996956
+    second: Christmas and new year base_18
+  - first:
+      213: -7599224974285936661
+    second: Christmas and new year base_19
+  - first:
+      213: 738654644684998978
+    second: Christmas and new year base_20
+  - first:
+      213: 4113387713475487000
+    second: Christmas and new year base_21
+  - first:
+      213: 3170110540083267166
+    second: Christmas and new year base_22
+  - first:
+      213: 5583882206380361514
+    second: Christmas and new year base_23
+  - first:
+      213: 7850055988132703404
+    second: Christmas and new year base_24
+  - first:
+      213: -2796131447009173114
+    second: Christmas and new year base_25
+  - first:
+      213: 7260101432567935297
+    second: Christmas and new year base_26
+  - first:
+      213: -3563517397599171512
+    second: Christmas and new year base_27
+  - first:
+      213: -938569401802554192
+    second: Christmas and new year base_28
+  - first:
+      213: 6648147554709803378
+    second: Christmas and new year base_29
+  - first:
+      213: 5570072197024385496
+    second: Christmas and new year base_30
+  - first:
+      213: -6794204938699649594
+    second: Christmas and new year base_31
+  - first:
+      213: 3548506218707701567
+    second: Christmas and new year base_32
+  - first:
+      213: 8649286475883565931
+    second: Christmas and new year base_33
+  - first:
+      213: 281939911894109019
+    second: Christmas and new year base_34
+  - first:
+      213: -1683214074771096442
+    second: Christmas and new year base_35
+  - first:
+      213: 8425958920462880102
+    second: Christmas and new year base_36
+  - first:
+      213: -5600011552899443858
+    second: Christmas and new year base_37
+  - first:
+      213: -4752224244275551920
+    second: Christmas and new year base_38
+  - first:
+      213: -3222230169012301153
+    second: Christmas and new year base_39
+  - first:
+      213: -6111691193292642864
+    second: Christmas and new year base_40
+  - first:
+      213: 1181791477847959196
+    second: Christmas and new year base_41
+  - first:
+      213: 8506880161026385146
+    second: Christmas and new year base_42
+  - first:
+      213: -6298942274154812088
+    second: Christmas and new year base_43
+  - first:
+      213: 5974517159786005448
+    second: Christmas and new year base_44
+  - first:
+      213: 6284525001027102166
+    second: Christmas and new year base_45
+  - first:
+      213: -1189729656314256232
+    second: Christmas and new year base_46
+  - first:
+      213: 5260136514453968192
+    second: Christmas and new year base_47
+  - first:
+      213: -5059684037813241398
+    second: Christmas and new year base_48
+  - first:
+      213: 7370091703474949208
+    second: Christmas and new year base_49
+  - first:
+      213: -8354776913966179566
+    second: Christmas and new year base_50
+  - first:
+      213: -2318284337696245606
+    second: Christmas and new year base_51
+  - first:
+      213: -2664924672946496854
+    second: Christmas and new year base_52
+  - first:
+      213: -4738200607600496128
+    second: Christmas and new year base_53
+  - first:
+      213: -1665968309375390807
+    second: Christmas and new year base_54
+  - first:
+      213: 9093702189431692734
+    second: Christmas and new year base_55
+  - first:
+      213: -9216945128979021433
+    second: Christmas and new year base_56
+  - first:
+      213: 7908571176583228865
+    second: Christmas and new year base_57
+  - first:
+      213: -3695781570742656704
+    second: Christmas and new year base_58
+  - first:
+      213: -4918457541586078341
+    second: Christmas and new year base_59
+  - first:
+      213: -4821131473796121255
+    second: Christmas and new year base_60
+  - first:
+      213: -6574454534422316669
+    second: Christmas and new year base_61
+  - first:
+      213: 8274040470311443076
+    second: Christmas and new year base_62
+  - first:
+      213: -957190932877209597
+    second: Christmas and new year base_63
+  - first:
+      213: 8654214641566731023
+    second: Christmas and new year base_64
+  - first:
+      213: 8160266619360991821
+    second: Christmas and new year base_65
+  - first:
+      213: -4785088657117046895
+    second: Christmas and new year base_66
+  - first:
+      213: -3626575087366990523
+    second: Christmas and new year base_67
+  - first:
+      213: -6607681584728733587
+    second: Christmas and new year base_68
+  - first:
+      213: 6360173586330846421
+    second: Christmas and new year base_69
+  - first:
+      213: 4980261918427617185
+    second: Christmas and new year base_70
+  - first:
+      213: 5126571734293171016
+    second: Christmas and new year base_71
+  - first:
+      213: 2296683056618384689
+    second: Christmas and new year base_72
+  - first:
+      213: -2118203757916372818
+    second: Christmas and new year base_73
+  - first:
+      213: -7091373611275241074
+    second: Christmas and new year base_74
+  - first:
+      213: -8494864005295603046
+    second: Christmas and new year base_75
+  - first:
+      213: -2721544350147621415
+    second: Christmas and new year base_76
+  - first:
+      213: -1569621091759318407
+    second: Christmas and new year base_77
+  - first:
+      213: 1004517374999588182
+    second: Christmas and new year base_78
+  - first:
+      213: -3258885093632092802
+    second: Christmas and new year base_79
+  - first:
+      213: 7759038997805303836
+    second: Christmas and new year base_80
+  - first:
+      213: 6634308448543725657
+    second: Christmas and new year base_81
+  - first:
+      213: 4478122201744802529
+    second: Christmas and new year base_82
+  - first:
+      213: 4227997291917229044
+    second: Christmas and new year base_83
+  - first:
+      213: 3224752471879048272
+    second: Christmas and new year base_84
+  - first:
+      213: -2434689781122813536
+    second: Christmas and new year base_85
+  - first:
+      213: -8475306820057814440
+    second: Christmas and new year base_86
+  - first:
+      213: 1183981409718352936
+    second: Christmas and new year base_87
+  - first:
+      213: 8440483381482510003
+    second: Christmas and new year base_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Christmas and new year base_8
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 1986
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1fd000c9fad91f0800000000000000
+      internalID: -1036479254674673184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_9
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1986
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd46e870f83c8b480800000000000000
+      internalID: -8883135245913791267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1776
+        width: 332
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249442c5c7a304a00800000000000000
+      internalID: 738654644684998978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_22
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1789
+        width: 327
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5682608dbe7efb20800000000000000
+      internalID: 3170110540083267166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_24
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1800
+        width: 337
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cace39f645001fc60800000000000000
+      internalID: 7850055988132703404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_26
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1784
+        width: 331
+        height: 521
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141348989cf01c460800000000000000
+      internalID: 7260101432567935297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_28
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1791
+        width: 344
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b402801a1889f2f0800000000000000
+      internalID: -938569401802554192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_30
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1833
+        width: 337
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d90be4d62fdc4d40800000000000000
+      internalID: 5570072197024385496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_31
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 1656
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd4a910b9226b1a0800000000000000
+      internalID: -6794204938699649594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_32
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1656
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f4659ea93de3130800000000000000
+      internalID: 3548506218707701567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_33
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1611
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6351a35930780870800000000000000
+      internalID: 8649286475883565931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_34
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1611
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b04782bd6a9e300800000000000000
+      internalID: 281939911894109019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_35
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1491
+        width: 317
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cb45097b504a8e0800000000000000
+      internalID: -1683214074771096442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_36
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1626
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d493adef40fe470800000000000000
+      internalID: 8425958920462880102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_37
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1611
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63585ba923c842b0800000000000000
+      internalID: -5600011552899443858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_38
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1611
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051e4fa6a35bc0eb0800000000000000
+      internalID: -4752224244275551920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_39
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1611
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92997fbbb65843d0800000000000000
+      internalID: -3222230169012301153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_40
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1611
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5a8e6ad39ee2ba0800000000000000
+      internalID: -6111691193292642864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_41
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1611
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9626b37611966010800000000000000
+      internalID: 1181791477847959196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_42
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1611
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4abc06f628e0670800000000000000
+      internalID: 8506880161026385146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_43
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1656
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84daf48ff59a598a0800000000000000
+      internalID: -6298942274154812088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_44
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1521
+        width: 227
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c34585d3bfb9e250800000000000000
+      internalID: 5974517159786005448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_45
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1581
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5284c013e173750800000000000000
+      internalID: 6284525001027102166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_46
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 1401
+        width: 137
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89424a85e2b3d7fe0800000000000000
+      internalID: -1189729656314256232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_47
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 1311
+        width: 257
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045171e5a42cff840800000000000000
+      internalID: 5260136514453968192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_48
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1491
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac97d6acc2468c9b0800000000000000
+      internalID: -5059684037813241398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_49
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1491
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c8dab1b53d74660800000000000000
+      internalID: 7370091703474949208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_50
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1491
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b596989aedd0c80800000000000000
+      internalID: -8354776913966179566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_51
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1491
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98734b7dacc3dfd0800000000000000
+      internalID: -2318284337696245606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_52
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1491
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa99db1129440bd0800000000000000
+      internalID: -2664924672946496854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_53
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1491
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002be65c6a78e3eb0800000000000000
+      internalID: -4738200607600496128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_54
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1521
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab2f9836aa41e8e0800000000000000
+      internalID: -1665968309375390807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_55
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1536
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd9446f5f1533e70800000000000000
+      internalID: 9093702189431692734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_56
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1506
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78140f81d35d61080800000000000000
+      internalID: -9216945128979021433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_57
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1371
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cde22d6593e0cd60800000000000000
+      internalID: 7908571176583228865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_58
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1476
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041e2741e32f5bcc0800000000000000
+      internalID: -3695781570742656704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_59
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1476
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75bbeecce02ebbb0800000000000000
+      internalID: -4918457541586078341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_60
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1431
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d3de0d776e71db0800000000000000
+      internalID: -4821131473796121255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_61
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 771
+        width: 437
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3893dc31f68d2c4a0800000000000000
+      internalID: -6574454534422316669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_62
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1341
+        width: 62
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a9e1258fb43d270800000000000000
+      internalID: 8274040470311443076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_63
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1341
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30011affaef57b2f0800000000000000
+      internalID: -957190932877209597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_64
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1341
+        width: 107
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bc1905d52f91870800000000000000
+      internalID: 8654214641566731023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_65
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1341
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a5d7f51471f3170800000000000000
+      internalID: 8160266619360991821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_66
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1371
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19799c50833f79db0800000000000000
+      internalID: -4785088657117046895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_67
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1371
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54595362c21dbadc0800000000000000
+      internalID: -3626575087366990523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_68
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1401
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d688a519b9ccc44a0800000000000000
+      internalID: -6607681584728733587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_69
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1401
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4821bdd20e34850800000000000000
+      internalID: 6360173586330846421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_70
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1356
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7984804d17d1540800000000000000
+      internalID: 4980261918427617185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_71
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1296
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b4a12a4dd352740800000000000000
+      internalID: 5126571734293171016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_72
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1116
+        width: 92
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13da56752157fdf10800000000000000
+      internalID: 2296683056618384689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_73
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1146
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea04f77a7e0aa92e0800000000000000
+      internalID: -2118203757916372818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_74
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1146
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e893c52b541669d90800000000000000
+      internalID: -7091373611275241074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_75
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1251
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a928a15e13e2c1a80800000000000000
+      internalID: -8494864005295603046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_76
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1251
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddcaf835d12b3ad0800000000000000
+      internalID: -2721544350147621415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_77
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1281
+        width: 257
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a99b9eee5973ae0800000000000000
+      internalID: -1569621091759318407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_78
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 981
+        width: 257
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dee8bfa33c0fd00800000000000000
+      internalID: 1004517374999588182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_79
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1161
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e755e3e064d16c2d0800000000000000
+      internalID: -3258885093632092802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_80
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 966
+        width: 77
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18869efbd4adab60800000000000000
+      internalID: 7759038997805303836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_81
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 951
+        width: 107
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95852d5426cc11c50800000000000000
+      internalID: 6634308448543725657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_82
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1146
+        width: 302
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e20ac79a6c752e30800000000000000
+      internalID: 4478122201744802529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_83
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 651
+        width: 137
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb3a08d22ddcaa30800000000000000
+      internalID: 4227997291917229044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_84
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 651
+        width: 92
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cd9e6a94f90cc20800000000000000
+      internalID: 3224752471879048272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_85
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 651
+        width: 92
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1b6e92b8e363ed0800000000000000
+      internalID: -2434689781122813536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_86
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 816
+        width: 47
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a220ce959a16a80800000000000000
+      internalID: -8475306820057814440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_87
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 816
+        width: 47
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cbde2b1d85e6010800000000000000
+      internalID: 1183981409718352936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year base_88
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 711
+        width: 227
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b65ad57aee922570800000000000000
+      internalID: 8440483381482510003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 80859a7d64f2d594c83368788eaefeae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: beb0751582e0a5746803cd7b615c4c93, type: 3}
+      name: Normal_
+    - texture: {fileID: 2800000, guid: 6b45a45379d5a3341a1f34928683339c, type: 3}
+      name: Emission_
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Christmas and new year base_0: -2267474489233383072
+      Christmas and new year base_1: -7118197982727676581
+      Christmas and new year base_10: -8836169668195698687
+      Christmas and new year base_11: 3685463270980850544
+      Christmas and new year base_12: -312998667508788779
+      Christmas and new year base_13: -5178505487607055782
+      Christmas and new year base_14: -7127610923801034828
+      Christmas and new year base_15: 3466092431077247175
+      Christmas and new year base_16: -3878598659705495174
+      Christmas and new year base_17: 2365092313349931017
+      Christmas and new year base_18: 1912926834963996956
+      Christmas and new year base_19: -7599224974285936661
+      Christmas and new year base_2: 8299298718237361715
+      Christmas and new year base_20: 738654644684998978
+      Christmas and new year base_21: 4113387713475487000
+      Christmas and new year base_22: 3170110540083267166
+      Christmas and new year base_23: 5583882206380361514
+      Christmas and new year base_24: 7850055988132703404
+      Christmas and new year base_25: -2796131447009173114
+      Christmas and new year base_26: 7260101432567935297
+      Christmas and new year base_27: -3563517397599171512
+      Christmas and new year base_28: -938569401802554192
+      Christmas and new year base_29: 6648147554709803378
+      Christmas and new year base_3: -4651987486926573019
+      Christmas and new year base_30: 5570072197024385496
+      Christmas and new year base_31: -6794204938699649594
+      Christmas and new year base_32: 3548506218707701567
+      Christmas and new year base_33: 8649286475883565931
+      Christmas and new year base_34: 281939911894109019
+      Christmas and new year base_35: -1683214074771096442
+      Christmas and new year base_36: 8425958920462880102
+      Christmas and new year base_37: -5600011552899443858
+      Christmas and new year base_38: -4752224244275551920
+      Christmas and new year base_39: -3222230169012301153
+      Christmas and new year base_4: 1874843948160615720
+      Christmas and new year base_40: -6111691193292642864
+      Christmas and new year base_41: 1181791477847959196
+      Christmas and new year base_42: 8506880161026385146
+      Christmas and new year base_43: -6298942274154812088
+      Christmas and new year base_44: 5974517159786005448
+      Christmas and new year base_45: 6284525001027102166
+      Christmas and new year base_46: -1189729656314256232
+      Christmas and new year base_47: 5260136514453968192
+      Christmas and new year base_48: -5059684037813241398
+      Christmas and new year base_49: 7370091703474949208
+      Christmas and new year base_5: 8948872549788484762
+      Christmas and new year base_50: -8354776913966179566
+      Christmas and new year base_51: -2318284337696245606
+      Christmas and new year base_52: -2664924672946496854
+      Christmas and new year base_53: -4738200607600496128
+      Christmas and new year base_54: -1665968309375390807
+      Christmas and new year base_55: 9093702189431692734
+      Christmas and new year base_56: -9216945128979021433
+      Christmas and new year base_57: 7908571176583228865
+      Christmas and new year base_58: -3695781570742656704
+      Christmas and new year base_59: -4918457541586078341
+      Christmas and new year base_6: -8303070917407590389
+      Christmas and new year base_60: -4821131473796121255
+      Christmas and new year base_61: -6574454534422316669
+      Christmas and new year base_62: 8274040470311443076
+      Christmas and new year base_63: -957190932877209597
+      Christmas and new year base_64: 8654214641566731023
+      Christmas and new year base_65: 8160266619360991821
+      Christmas and new year base_66: -4785088657117046895
+      Christmas and new year base_67: -3626575087366990523
+      Christmas and new year base_68: -6607681584728733587
+      Christmas and new year base_69: 6360173586330846421
+      Christmas and new year base_7: -2945884065582052052
+      Christmas and new year base_70: 4980261918427617185
+      Christmas and new year base_71: 5126571734293171016
+      Christmas and new year base_72: 2296683056618384689
+      Christmas and new year base_73: -2118203757916372818
+      Christmas and new year base_74: -7091373611275241074
+      Christmas and new year base_75: -8494864005295603046
+      Christmas and new year base_76: -2721544350147621415
+      Christmas and new year base_77: -1569621091759318407
+      Christmas and new year base_78: 1004517374999588182
+      Christmas and new year base_79: -3258885093632092802
+      Christmas and new year base_8: -1036479254674673184
+      Christmas and new year base_80: 7759038997805303836
+      Christmas and new year base_81: 6634308448543725657
+      Christmas and new year base_82: 4478122201744802529
+      Christmas and new year base_83: 4227997291917229044
+      Christmas and new year base_84: 3224752471879048272
+      Christmas and new year base_85: -2434689781122813536
+      Christmas and new year base_86: -8475306820057814440
+      Christmas and new year base_87: 1183981409718352936
+      Christmas and new year base_88: 8440483381482510003
+      Christmas and new year base_9: -8883135245913791267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

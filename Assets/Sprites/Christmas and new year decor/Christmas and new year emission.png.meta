@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 6b45a45379d5a3341a1f34928683339c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1585068074381575955
+    second: Christmas and new year emission_0
+  - first:
+      213: -8310868362269196991
+    second: Christmas and new year emission_1
+  - first:
+      213: -3473514597108421068
+    second: Christmas and new year emission_2
+  - first:
+      213: -5376094183632416000
+    second: Christmas and new year emission_3
+  - first:
+      213: -1425622016511639638
+    second: Christmas and new year emission_4
+  - first:
+      213: 259038768042960556
+    second: Christmas and new year emission_5
+  - first:
+      213: 6341343576561396379
+    second: Christmas and new year emission_6
+  - first:
+      213: 7096166685929477564
+    second: Christmas and new year emission_7
+  - first:
+      213: 7208521887441703952
+    second: Christmas and new year emission_8
+  - first:
+      213: 2267170448335860089
+    second: Christmas and new year emission_9
+  - first:
+      213: -621063057509763736
+    second: Christmas and new year emission_10
+  - first:
+      213: -1886429018882518210
+    second: Christmas and new year emission_11
+  - first:
+      213: -8062960292898944371
+    second: Christmas and new year emission_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Christmas and new year emission_0
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2106
+        width: 167
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317835ef30b4ff510800000000000000
+      internalID: 1585068074381575955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_1
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 2196
+        width: 107
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d79e3e14dd9ac80800000000000000
+      internalID: -8310868362269196991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_2
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 1986
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ee73d90e89bcfc0800000000000000
+      internalID: -3473514597108421068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_3
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1986
+        width: 167
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003db81e2d64465b0800000000000000
+      internalID: -5376094183632416000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_4
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1851
+        width: 302
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaff8d9445c273ce0800000000000000
+      internalID: -1425622016511639638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_5
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 1971
+        width: 257
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca66148136a489300800000000000000
+      internalID: 259038768042960556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1611
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9aa5af826af00850800000000000000
+      internalID: 6341343576561396379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_7
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1611
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb599c5f006aa7260800000000000000
+      internalID: 7096166685929477564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_8
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1251
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0145798d670d90460800000000000000
+      internalID: 7208521887441703952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_9
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1296
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9717252c28b967f10800000000000000
+      internalID: 2267170448335860089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_10
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 966
+        width: 77
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8653302907a8167f0800000000000000
+      internalID: -621063057509763736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_11
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 951
+        width: 107
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33d4835dce02d5e0800000000000000
+      internalID: -1886429018882518210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Christmas and new year emission_12
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 711
+        width: 227
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8acdaf355c9a1090800000000000000
+      internalID: -8062960292898944371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Christmas and new year emission_0: 1585068074381575955
+      Christmas and new year emission_1: -8310868362269196991
+      Christmas and new year emission_10: -621063057509763736
+      Christmas and new year emission_11: -1886429018882518210
+      Christmas and new year emission_12: -8062960292898944371
+      Christmas and new year emission_2: -3473514597108421068
+      Christmas and new year emission_3: -5376094183632416000
+      Christmas and new year emission_4: -1425622016511639638
+      Christmas and new year emission_5: 259038768042960556
+      Christmas and new year emission_6: 6341343576561396379
+      Christmas and new year emission_7: 7096166685929477564
+      Christmas and new year emission_8: 7208521887441703952
+      Christmas and new year emission_9: 2267170448335860089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
