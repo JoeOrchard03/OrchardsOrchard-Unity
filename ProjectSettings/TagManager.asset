@@ -24,9 +24,9 @@ TagManager:
   - Water
   - UI
   - HoverItems
-  - 
-  - 
-  - 
+  - SnowHouseTreeCollider
+  - SnowFenceCollider
+  - SnowGroundCollider
   - 
   - 
   - 

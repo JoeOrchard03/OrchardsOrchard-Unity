@@ -6,6 +6,7 @@ public class SCR_Weather : MonoBehaviour
 {
     public GameObject windyLeaves;
     public GameObject rain;
+    public GameObject snow;
 
     public float minWeatherStateDuration = 1f;
     public float maxWeatherStateDuration = 3f;
@@ -13,7 +14,7 @@ public class SCR_Weather : MonoBehaviour
     public AudioSource rainAudioSource;
     public AudioSource windAudioSource;
     
-    public enum WeatherType{None, Rain, Wind}
+    public enum WeatherType{None, Rain, Wind, Snow}
     private WeatherType currentWeather  = WeatherType.None;
     
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class SCR_Weather : MonoBehaviour
     {
         windyLeaves.SetActive(false);
         rain.SetActive(false);
+        snow.SetActive(false);
         StartCoroutine(WeatherChange());
     }
 
@@ -36,11 +38,11 @@ public class SCR_Weather : MonoBehaviour
             if (currentWeather == WeatherType.None)
             {
                 // From None: any weather is allowed
-                newWeather = (WeatherType)Random.Range(0, 3);
+                newWeather = (WeatherType)Random.Range(0, 4);
             }
             else
             {
-                // From Rain or Wind: MUST go to None
+                // From Rain, Wind or Snow: MUST go to None
                 newWeather = WeatherType.None;
             }
 
@@ -58,11 +60,18 @@ public class SCR_Weather : MonoBehaviour
         
         bool rainState = type == WeatherType.Rain;
         bool windState = type == WeatherType.Wind;
+        bool snowState = type == WeatherType.Snow;
         
         rain.SetActive(rainState);
         windyLeaves.SetActive(windState);
+        snow.SetActive(snowState);
         
         if (rainState) rainAudioSource.Play(); else rainAudioSource.Stop();
         if (windState) windAudioSource.Play(); else windAudioSource.Stop();
+        if (snowState)
+        {
+            windAudioSource.Stop();
+            rainAudioSource.Stop();
+        }
     }
 }
