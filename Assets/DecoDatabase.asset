@@ -361,3 +361,387 @@ MonoBehaviour:
     decoSprite: {fileID: -1766861417523568187, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
     decoPrice: 20
     shopSpawnChance: 0.5
+  - type: 59
+    DecoName: Christmas Bauble Blue
+    decoPrefab: {fileID: 3927231967931631387, guid: 13fe266b79836f140ad3fbd8bc626ece, type: 3}
+    decoSprite: {fileID: 1181791477847959196, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 60
+    DecoName: Christmas Bauble Blue Stripe
+    decoPrefab: {fileID: 2384925598428589064, guid: 8aaf972abada1064cafa5219a4bd8785, type: 3}
+    decoSprite: {fileID: 8506880161026385146, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 61
+    DecoName: Christmas Bauble Diamond Blue
+    decoPrefab: {fileID: 5448804177552622337, guid: 2063db2e74c0f8d43a7e91df7a5b6df2, type: 3}
+    decoSprite: {fileID: -8354776913966179566, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 62
+    DecoName: Christmas Bauble Diamond Pink
+    decoPrefab: {fileID: 4025516699528574023, guid: 51401ad310e7e064d89d75e3815edf2c, type: 3}
+    decoSprite: {fileID: -5059684037813241398, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 63
+    DecoName: Christmas Bauble Diamond Red
+    decoPrefab: {fileID: 9122135156558946991, guid: 98b5e431e7788834b91503765c84a168, type: 3}
+    decoSprite: {fileID: -2318284337696245606, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 64
+    DecoName: Christmas Bauble Diamond Yellow
+    decoPrefab: {fileID: 8177548216881018678, guid: 92fbeb88754bdef48b3f4204dfabce0b, type: 3}
+    decoSprite: {fileID: 7370091703474949208, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 65
+    DecoName: Christmas Bauble Icicle
+    decoPrefab: {fileID: 6313711580263611181, guid: 2bde783c628d55b47b5867e5ad43b831, type: 3}
+    decoSprite: {fileID: 7908571176583228865, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 66
+    DecoName: Christmas Bauble Light
+    decoPrefab: {fileID: 4008918154757581649, guid: 4320f3097f100e346af207ae536e05ea, type: 3}
+    decoSprite: {fileID: -8494864005295603046, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 67
+    DecoName: Christmas Bauble Pink
+    decoPrefab: {fileID: 2530646364337446087, guid: f7aadefe9ee97d644a7644413acf0c16, type: 3}
+    decoSprite: {fileID: -3222230169012301153, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 68
+    DecoName: Christmas Bauble Pink Stripe
+    decoPrefab: {fileID: 7903511811572719052, guid: 04b042b40e3590749b85481a04503462, type: 3}
+    decoSprite: {fileID: -6111691193292642864, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 69
+    DecoName: Christmas Bauble Red
+    decoPrefab: {fileID: 7874658417195967832, guid: 5f06b1e6389e71c479311313f656cf68, type: 3}
+    decoSprite: {fileID: -2664924672946496854, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 70
+    DecoName: Christmas Bauble Red Stripe
+    decoPrefab: {fileID: 2655722571411017341, guid: 46bc8ef19fd54fa49b4bed743171c303, type: 3}
+    decoSprite: {fileID: -4738200607600496128, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 71
+    DecoName: Christmas Baublel Star
+    decoPrefab: {fileID: 3925519930601546621, guid: c4ac392a13165074e820086b13b7d55a, type: 3}
+    decoSprite: {fileID: -1665968309375390807, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 72
+    DecoName: Christmas Bauble Yellow
+    decoPrefab: {fileID: 280471079289378656, guid: 69851df8026850547aa46b064f93c9cc, type: 3}
+    decoSprite: {fileID: -4785088657117046895, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 73
+    DecoName: Christmas Bauble Yellow Stripe
+    decoPrefab: {fileID: 1496355939662764305, guid: 1f607d130a82aa9478a45b4cd17b907a, type: 3}
+    decoSprite: {fileID: -3626575087366990523, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 74
+    DecoName: Christmas Bow Big
+    decoPrefab: {fileID: 396591265467395592, guid: 913bfdf17a069fb458c7d97620598e62, type: 3}
+    decoSprite: {fileID: -1683214074771096442, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 75
+    DecoName: Christmas Bow Small
+    decoPrefab: {fileID: 4236061917905563250, guid: 99a49d0a03fa1e8439c42f8365f4e2dc, type: 3}
+    decoSprite: {fileID: -2721544350147621415, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 76
+    DecoName: Christmas Candy Cane Pink
+    decoPrefab: {fileID: 7211422386268383769, guid: dab110bf016d22d439cd4fffabd9fe44, type: 3}
+    decoSprite: {fileID: -4752224244275551920, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 77
+    DecoName: Christmas Candy Cane Red
+    decoPrefab: {fileID: 7351077609148122173, guid: 7c241b49599dc3b4caa6053052b739dd, type: 3}
+    decoSprite: {fileID: -5600011552899443858, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 78
+    DecoName: Christmas Garland Blue
+    decoPrefab: {fileID: 4371671934823429725, guid: e218c521d8508e4449c76d2a2d31d74c, type: 3}
+    decoSprite: {fileID: -9216945128979021433, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 79
+    DecoName: Christmas Garland Green
+    decoPrefab: {fileID: 5586156069479076190, guid: f9eaad0a40169d246861abe276adbfb5, type: 3}
+    decoSprite: {fileID: -6298942274154812088, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 80
+    DecoName: Christmas Garland Pink
+    decoPrefab: {fileID: 2344552465913326666, guid: 1e281e0d35e35054d811241fad3fb3b8, type: 3}
+    decoSprite: {fileID: -4821131473796121255, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 81
+    DecoName: Christmas Garland Red
+    decoPrefab: {fileID: 8454473394835478491, guid: 07743377d4ec1f4469d6f5d07fd6c0ed, type: 3}
+    decoSprite: {fileID: -1569621091759318407, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 82
+    DecoName: Christmas Garland White
+    decoPrefab: {fileID: 7301639466961014077, guid: 6c938fffdb3afe7429f8094f7fca6feb, type: 3}
+    decoSprite: {fileID: 4980261918427617185, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 83
+    DecoName: Christmas Garland Yellow
+    decoPrefab: {fileID: 8515756944883752752, guid: 3d171d7398eef224083a7681ce1b6bf2, type: 3}
+    decoSprite: {fileID: 6284525001027102166, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 84
+    DecoName: Christmas Mistletoe
+    decoPrefab: {fileID: 3862024912090703760, guid: 7115de3e7881a1043ab1470750dcbfd2, type: 3}
+    decoSprite: {fileID: -1189729656314256232, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 85
+    DecoName: Christmas Present Flat
+    decoPrefab: {fileID: 3445115918487367372, guid: ef6f611139fc9ac458f7485b1466c051, type: 3}
+    decoSprite: {fileID: 8654214641566731023, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 86
+    DecoName: Christmas Present Small
+    decoPrefab: {fileID: 6198272660212847667, guid: ac75e9daf0686f5449cf70bcc82f642b, type: 3}
+    decoSprite: {fileID: -957190932877209597, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 87
+    DecoName: Christmas Present Square
+    decoPrefab: {fileID: 737813200182871474, guid: 6fc011a0304030c478194bf02d1b198e, type: 3}
+    decoSprite: {fileID: 8160266619360991821, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 88
+    DecoName: Christmas Present Tall
+    decoPrefab: {fileID: 5833736440565421326, guid: c5876591e3653a345868396e98d22788, type: 3}
+    decoSprite: {fileID: 8274040470311443076, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 89
+    DecoName: Christmas Reindeer
+    decoPrefab: {fileID: 1861419080414079123, guid: 91e63a1aaad0f0f42ad4a15e48152d7a, type: 3}
+    decoSprite: {fileID: -6794204938699649594, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 90
+    DecoName: Christmas Reindeer Light Blue
+    decoPrefab: {fileID: 1191179923341030575, guid: 6a061a654a310184c9f04109ed3f922c, type: 3}
+    decoSprite: {fileID: -1036479254674673184, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 91
+    DecoName: Christmas Reindeer Light Pink
+    decoPrefab: {fileID: 3444293372845787096, guid: 8cf92bc0d3e2d464592c86e8cc73c23c, type: 3}
+    decoSprite: {fileID: -8883135245913791267, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 92
+    DecoName: Christmas Reindeer Rudolf
+    decoPrefab: {fileID: 5725568352914019793, guid: 88d7d29ede7c13a43aeefe95d2a348c3, type: 3}
+    decoSprite: {fileID: 3548506218707701567, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 93
+    DecoName: Christmas Snowball
+    decoPrefab: {fileID: 4902433808362297506, guid: f5e9a8e8dc601ed4287f8c3162faa4c8, type: 3}
+    decoSprite: {fileID: 8425958920462880102, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 94
+    DecoName: Christmas Snowflake Diamond
+    decoPrefab: {fileID: 4885142817652567777, guid: 41bef3ea6b60bcb449ebbe3a5724abb0, type: 3}
+    decoSprite: {fileID: -7091373611275241074, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 95
+    DecoName: Christmas Snowflake Round
+    decoPrefab: {fileID: 3254595966470432533, guid: 3a2a9500cfa07c54da14ea2670ae00ec, type: 3}
+    decoSprite: {fileID: -2118203757916372818, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 96
+    DecoName: Christmas Snowflake Square
+    decoPrefab: {fileID: 4033010901183950511, guid: 801a19b31fc2160468413f678fce433c, type: 3}
+    decoSprite: {fileID: -3258885093632092802, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 97
+    DecoName: Christmas Snowman
+    decoPrefab: {fileID: 6699192572959211464, guid: d99ecbb8109bfe64e87d8a7997f6a5a4, type: 3}
+    decoSprite: {fileID: 5260136514453968192, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 98
+    DecoName: Christmas Snowman Hat
+    decoPrefab: {fileID: 353573612114956124, guid: ebca60708ed689b4eae75dc90b9db0ba, type: 3}
+    decoSprite: {fileID: 1004517374999588182, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 99
+    DecoName: Christmas Starlight
+    decoPrefab: {fileID: 876739702943035310, guid: 813498bddffdca74d9bca2fb97955450, type: 3}
+    decoSprite: {fileID: 5126571734293171016, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 100
+    DecoName: Christmas Stocking
+    decoPrefab: {fileID: 2372013624817881493, guid: ebab7f351523b4e4e9d5abdcd4f7a809, type: 3}
+    decoSprite: {fileID: 2296683056618384689, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 101
+    DecoName: Christmas Tree
+    decoPrefab: {fileID: 9138365939940296245, guid: ef73795960502fa4b90ad59b85a576ec, type: 3}
+    decoSprite: {fileID: -6574454534422316669, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 102
+    DecoName: Christmas Tree Lights Blue
+    decoPrefab: {fileID: 5971853000089112875, guid: 2ecdcbcdcaf48a844b2ddcc4cad92c59, type: 3}
+    decoSprite: {fileID: 5570072197024385496, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 103
+    DecoName: Christmas Tree Lights Pink
+    decoPrefab: {fileID: 3511671412025869011, guid: 6e9935efc9e85bd43827f50996d76845, type: 3}
+    decoSprite: {fileID: 5570072197024385496, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 105
+    DecoName: Christmas Tree Lights White
+    decoPrefab: {fileID: 1510358540719040273, guid: f446319821aae9741a5cb27f1c1ac048, type: 3}
+    decoSprite: {fileID: 5570072197024385496, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 104
+    DecoName: Christmas Tree Lights Yellow
+    decoPrefab: {fileID: 1967192375496195678, guid: 085975df28886814c814d316ab676a6f, type: 3}
+    decoSprite: {fileID: 5570072197024385496, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 106
+    DecoName: Christmas Tree Tinsel Blue
+    decoPrefab: {fileID: 7315451070522110228, guid: bd9e4fef1ca409c4083ec93ae287b681, type: 3}
+    decoSprite: {fileID: 3170110540083267166, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 107
+    DecoName: Christmas Tree Tinsel Pink
+    decoPrefab: {fileID: 2751146608770915218, guid: 77fa4aeca4301c74b9f19aafd4837081, type: 3}
+    decoSprite: {fileID: -938569401802554192, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 108
+    DecoName: Christmas Tree Tinsel Red
+    decoPrefab: {fileID: 7885596911786011022, guid: 206b3ef326afa22499b3eec842ae0527, type: 3}
+    decoSprite: {fileID: 738654644684998978, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 109
+    DecoName: Christmas Tree Tinsel White
+    decoPrefab: {fileID: 5437689181302692159, guid: 3cc14bdf7c426ea4cb1ea42d8c8878c6, type: 3}
+    decoSprite: {fileID: 7260101432567935297, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 110
+    DecoName: Christmas Tree Tinsel Yellow
+    decoPrefab: {fileID: 7556937543377223191, guid: 40072ddcff6571342a4370de97fae90e, type: 3}
+    decoSprite: {fileID: 7850055988132703404, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 111
+    DecoName: Christmas Tree Topper Angel
+    decoPrefab: {fileID: 2751146608770915218, guid: 77fa4aeca4301c74b9f19aafd4837081, type: 3}
+    decoSprite: {fileID: 8649286475883565931, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 112
+    DecoName: Christmas Tree Topper Star
+    decoPrefab: {fileID: 4757848172317368888, guid: 0c718200bcb15ff4ba470b592d69af80, type: 3}
+    decoSprite: {fileID: 281939911894109019, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 113
+    DecoName: Christmas Wreath
+    decoPrefab: {fileID: 8865743900701698782, guid: 4cee793c645215946b20b2b859005e49, type: 3}
+    decoSprite: {fileID: 5974517159786005448, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 114
+    DecoName: New Year Balloon Star
+    decoPrefab: {fileID: 3789273926835567677, guid: 52591544708b7764782d8f613d819d06, type: 3}
+    decoSprite: {fileID: 4227997291917229044, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 115
+    DecoName: New Year Balloon White
+    decoPrefab: {fileID: 1295706450094521548, guid: 84c467a72135070438f0ee1c7f1e4c1c, type: 3}
+    decoSprite: {fileID: -2434689781122813536, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 116
+    DecoName: New Year Balloon Yellow
+    decoPrefab: {fileID: 5723284584901010846, guid: ce532dca2899aea4181c812bf66a1db5, type: 3}
+    decoSprite: {fileID: 3224752471879048272, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 117
+    DecoName: New Year Drop Light
+    decoPrefab: {fileID: 4193981194926546618, guid: a761e2eefe9b8594c8cb4e7623408f2c, type: 3}
+    decoSprite: {fileID: 8440483381482510003, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 118
+    DecoName: New Year Hanging White
+    decoPrefab: {fileID: 5900243886205583233, guid: d7363b3bde81671479d9a5a917d570b3, type: 3}
+    decoSprite: {fileID: -8475306820057814440, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 119
+    DecoName: New Year Hanging Yellow
+    decoPrefab: {fileID: 4789951882725072273, guid: 54669b6c7860dad48b7da6cdbc7c82a1, type: 3}
+    decoSprite: {fileID: 1183981409718352936, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 120
+    DecoName: New Year Sparkler
+    decoPrefab: {fileID: 913339884232668231, guid: df2aac0c2c8709c41a0fb4e8a29a2110, type: 3}
+    decoSprite: {fileID: 6634308448543725657, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 121
+    DecoName: New Year Tree Light
+    decoPrefab: {fileID: 4276164524520216849, guid: 2d8af0502f1149e498350bc2e1e9a9a5, type: 3}
+    decoSprite: {fileID: 7759038997805303836, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
+  - type: 122
+    DecoName: New Year Bunting
+    decoPrefab: {fileID: 8000939486167009642, guid: 4526e870d51ca2944b2d332c84925cf1, type: 3}
+    decoSprite: {fileID: 4478122201744802529, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
+    decoPrice: 20
+    shopSpawnChance: 0.5
