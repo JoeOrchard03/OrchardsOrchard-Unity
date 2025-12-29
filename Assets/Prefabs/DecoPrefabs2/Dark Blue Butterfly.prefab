@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1109873635
-  m_SortingLayer: 4
+  m_SortingLayerID: -2110074479
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1108399525116863837, guid: 6c0841563b386164fb6e996ccb4da088, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   decoType: 0
   decoPlacerPrefab: {fileID: 4187310436341033708, guid: 87cee35d4668b854ba722de9566d9595, type: 3}
+  flipped: 0
 --- !u!61 &401009403811663495
 BoxCollider2D:
   m_ObjectHideFlags: 0
