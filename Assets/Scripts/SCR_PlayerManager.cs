@@ -54,19 +54,10 @@ public class SCR_PlayerManager : MonoBehaviour
     {
         shopMenu.SetActive(false);
         
-        List<GameObject> trees = new List<GameObject>();
-        foreach (GameObject tree in GameObject.FindGameObjectsWithTag("Tree"))
-        {
-            trees.Add(tree);
-        }
-        currentTreeCount = trees.Count;
-        
-        List<GameObject> saplings = new List<GameObject>();
-        foreach (Transform child in saplingContainer.transform)
-        {
-            saplings.Add(child.gameObject);
-        }
-        currentSaplingCount =  saplings.Count;
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
+
+        currentTreeCount = saveData.trees.Count;
+        currentSaplingCount = saveData.saplings.Count;
         
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -223,20 +214,11 @@ public class SCR_PlayerManager : MonoBehaviour
             highlightAudio.PlayOneShot(highlightSound);
         }
     }
-
-    public void UpdateCounts()
+    
+    public void RefreshCountsFromSave()
     {
-        currentTreeCount = GameObject.FindGameObjectsWithTag("Tree").Length;
-
-        if (saplingContainer != null)
-        {
-            currentSaplingCount = saplingContainer.transform.childCount;
-        }
-        else
-        {
-            currentSaplingCount = 0;
-        }
-        
-        //Debug.Log($"[PlayerManager] Trees: {currentTreeCount}, Saplings: {currentSaplingCount}");
+        SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
+        currentTreeCount = data.trees?.Count ?? 0;
+        currentSaplingCount = data.saplings?.Count ?? 0;
     }
 }

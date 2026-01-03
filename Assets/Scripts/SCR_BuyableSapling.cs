@@ -90,6 +90,6 @@ public class SCR_BuyableSapling : MonoBehaviour
         data.saplings = SCR_ReworkedSaveSystem.GetSaplingData(saplingInventory);
         SCR_ReworkedSaveSystem.SaveGame(data);
         
-        playerManagerScriptRef.UpdateCounts();
+        playerManagerScriptRef.RefreshCountsFromSave();
     }
 }

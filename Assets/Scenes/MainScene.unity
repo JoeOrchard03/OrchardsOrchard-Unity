@@ -6112,6 +6112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282433668}
   - component: {fileID: 282433669}
+  - component: {fileID: 282433670}
   m_Layer: 5
   m_Name: LightsDecorationGrid
   m_TagString: Untagged
@@ -6139,8 +6140,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -981.26, y: -546}
-  m_SizeDelta: {x: 407.7, y: 137.6985}
+  m_AnchoredPosition: {x: -981.26, y: -544.62}
+  m_SizeDelta: {x: 407.7, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282433669
 MonoBehaviour:
@@ -6166,6 +6167,20 @@ MonoBehaviour:
   m_Spacing: {x: 55.6, y: 17}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &282433670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282433667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &297723811
 GameObject:
   m_ObjectHideFlags: 0
@@ -13198,6 +13213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615942154}
   - component: {fileID: 615942155}
+  - component: {fileID: 615942156}
   m_Layer: 5
   m_Name: StandardDecorationGrid
   m_TagString: Untagged
@@ -13225,8 +13241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -981.26, y: -551.79}
-  m_SizeDelta: {x: 407.7, y: 137.6985}
+  m_AnchoredPosition: {x: -981.26, y: -550.0903}
+  m_SizeDelta: {x: 407.7, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615942155
 MonoBehaviour:
@@ -13252,6 +13268,20 @@ MonoBehaviour:
   m_Spacing: {x: 55.6, y: 17}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &615942156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615942153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &617961521
 GameObject:
   m_ObjectHideFlags: 0
@@ -14264,7 +14294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &634732882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38126,7 +38156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1702348269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41847,11 +41877,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 17.51822
+      value: 238.8
       objectReference: {fileID: 0}
     - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.82337
+      value: -146.9
       objectReference: {fileID: 0}
     - target: {fileID: 6512743798097698380, guid: 767effd5bc4bc644297b8c0ecf5cf166, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

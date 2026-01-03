@@ -42,6 +42,9 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     {
         LoadFruits();
 
+        inactiveFruitBloomObjects ??= new List<GameObject>();
+        activeBloomObjects ??= new List<GameObject>();
+        
         if (playerScriptRef.pickRangeUpgrade)
         {
             bulkHarvestCollider.enabled = true;
@@ -58,9 +61,6 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             bloomCycleCoroutine = null;
         }
         bloomCycleRunning = false;
-        
-        playerScriptRef.currentTreeCount++;
-        playerScriptRef.currentSaplingCount--;
         
         bool treeFullyGrown = currentStage >= spriteGrowthStages.Count - 1;
         
@@ -155,23 +155,59 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
     
     public void StartBloomCycle()
     {
+        inactiveFruitBloomObjects ??= new List<GameObject>();
+        activeBloomObjects ??= new List<GameObject>();
+        
+        if (this == null || gameObject == null)
+            return;
+
+        if (!IsTreeFullyGrown())
+            return;
+        
         if (bloomCycleRunning)
         {
             Debug.LogWarning("Bloom cycle already running, skipping duplicate bloom cycle");
             return;
         }
         
-        bloomCycleRunning = true;
-        
-        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
-        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
-        
-        if (tree == null)
+        if (motherPlot == null)
         {
-            Debug.LogWarning("TreeData not found for plot " + motherPlot.GetComponent<SCR_Plot>().plotNumber);
+            Debug.LogWarning("StartBloomCycle aborted: motherPlot is null");
+            bloomCycleRunning = false;
             return;
         }
 
+        SCR_Plot plot = motherPlot.GetComponent<SCR_Plot>();
+        if (plot == null)
+        {
+            Debug.LogWarning("StartBloomCycle aborted: SCR_Plot missing on motherPlot");
+            bloomCycleRunning = false;
+            return;
+        }
+        
+        SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
+        if (saveData == null || saveData.trees == null)
+        {
+            Debug.LogWarning("StartBloomCycle aborted: saveData or trees list is null");
+            bloomCycleRunning = false;
+            return;
+        }
+        
+        TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == plot.plotNumber);
+        if (tree == null)
+        {
+            Debug.LogWarning("TreeData not found for plot " + plot.plotNumber);
+            bloomCycleRunning = false;
+            return;
+        }
+        
+        if (tree.fruits == null)
+        {
+            tree.fruits = new List<FruitData>();
+        }
+
+        bloomCycleRunning = true;
+        
         int prefabFruitCount = transform.childCount;
         if (tree.fruits.Count > prefabFruitCount)
         {
@@ -211,8 +247,20 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             
             int randomIndex = Random.Range(0, inactiveFruitBloomObjects.Count);
             GameObject fruitOBJ = inactiveFruitBloomObjects[randomIndex];
+            if (fruitOBJ == null)
+            {
+                Debug.LogWarning("Fruit object in inactiveFruitBloomObjects is null at index " + randomIndex);
+                inactiveFruitBloomObjects.RemoveAt(randomIndex);
+                continue;
+            }
+            
             SCR_FruitBloom fruit = fruitOBJ.GetComponent<SCR_FruitBloom>();
-
+            if (fruit == null)
+            {
+                Debug.LogWarning("SCR_FruitBloom missing on fruitOBJ: " + fruitOBJ.name);
+                continue;
+            }
+            
             if (tree.fruits.Count >= prefabFruitCount)
             {
                 Debug.LogWarning("Max fruit data entries reached, reusing existing slot");
@@ -257,11 +305,20 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
         
         SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
-        if (tree != null && fruitScriptRef.fruitIndex < tree.fruits.Count)
+
+        if (tree == null || tree.fruits == null)
         {
-            tree.fruits[fruitScriptRef.fruitIndex].beenHarvested = true;
-            SCR_ReworkedSaveSystem.SaveGame(saveData);
+            return;
         }
+
+
+        if (fruitScriptRef.fruitIndex < 0 || fruitScriptRef.fruitIndex >= tree.fruits.Count)
+        {
+            return;
+        }
+        
+        tree.fruits[fruitScriptRef.fruitIndex].beenHarvested = true;
+        SCR_ReworkedSaveSystem.SaveGame(saveData);
 
         fruitScriptRef.fruitIndex = -1;
         
@@ -291,9 +348,14 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             yield break;
         }
         yield return new WaitForSeconds(timeToFirstBloom);
+
+        if (this == null || gameObject == null)
+        {
+            yield break;
+        }
+        
         StartBloomCycle();
         bloomCycleCoroutine = null;
-        bloomCycleRunning = false;
     }
 
     private void UpdateSavedGrowthStage()
@@ -310,6 +372,9 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
 
     private void LoadFruits()
     {
+        inactiveFruitBloomObjects ??= new List<GameObject>();
+        activeBloomObjects ??= new List<GameObject>();
+        
         playerScriptRef = GameObject.FindGameObjectWithTag("Player").GetComponent<SCR_PlayerManager>();
         SCR_SaveData saveData = SCR_ReworkedSaveSystem.LoadGame();
         TreeData tree = saveData.trees.Find(t => t.dataPlotNumber == motherPlot.GetComponent<SCR_Plot>().plotNumber);
@@ -319,6 +384,11 @@ public class SCR_TreeGrowthCycle : MonoBehaviour, INT_Interactable
             return;
         }
 
+        if (tree.fruits == null)
+        {
+            tree.fruits = new List<FruitData>();
+        }
+        
         inactiveFruitBloomObjects.Clear();
         activeBloomObjects.Clear();
         

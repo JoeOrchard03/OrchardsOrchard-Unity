@@ -103,8 +103,6 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         {
             LoadCompendiumData(data.compendiumEntries);
         }
-
-        UpdateTreeAndSaplingCounts();
         
         var upgradeSlots = new List<SCR_BuyableDroneUpgrade>(FindObjectsByType<SCR_BuyableDroneUpgrade>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
         
@@ -520,15 +518,6 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         else
         {
             clockScriptRef.SetNight(false);
-        }
-    }
-    
-    private void UpdateTreeAndSaplingCounts()
-    {
-        var player = FindFirstObjectByType<SCR_PlayerManager>();
-        if (player != null)
-        {
-            player.UpdateCounts();
         }
     }
     
