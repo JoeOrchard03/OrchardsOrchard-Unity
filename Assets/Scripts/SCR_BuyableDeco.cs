@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SCR_BuyableDeco : MonoBehaviour
 {
     public DecoType decoType;
     public SCR_DecoDatabase decoDatabase;
 
-    public SpriteRenderer decoSprite;
+    public Image decoImage;
     public TextMeshProUGUI priceText;
 
     private float decoPrice;
@@ -48,7 +49,8 @@ public class SCR_BuyableDeco : MonoBehaviour
             moneyIcon.SetActive(true);
             decoPrice = deco.decoPrice;
             decoName = deco.DecoName;
-            decoSprite.sprite = deco.decoSprite;
+            Debug.Log("what is being loaded is: " + decoDatabase.GetDeco(decoType).decoSprite);
+            decoImage.sprite = decoDatabase.GetDeco(decoType).decoSprite;
             priceText.text = deco.decoPrice.ToString();
         }
         else
@@ -64,7 +66,7 @@ public class SCR_BuyableDeco : MonoBehaviour
         moneyIcon.SetActive(false);
         decoBoxCollider.enabled = false;
         BuyTextObj.SetActive(false);
-        decoSprite.sprite = null;
+        decoImage.sprite = null;
         priceText.text = "";
     }
     
