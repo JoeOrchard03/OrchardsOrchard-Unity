@@ -55,6 +55,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: NoiseModule.strengthY.scalar
       value: 0
       objectReference: {fileID: 0}
@@ -98,6 +102,10 @@ PrefabInstance:
       propertyPath: InitialModule.gravityModifier.scalar
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 6360173586330846421, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
     - target: {fileID: 3139160079458769043, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: m_SortingLayer
       value: 7
@@ -185,6 +193,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: NoiseModule.strengthY.scalar
       value: 0
       objectReference: {fileID: 0}
@@ -228,6 +240,10 @@ PrefabInstance:
       propertyPath: InitialModule.gravityModifier.scalar
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 6360173586330846421, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
     - target: {fileID: 3139160079458769043, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: m_SortingLayer
       value: 7
@@ -315,6 +331,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: NoiseModule.strengthY.scalar
       value: 0
       objectReference: {fileID: 0}
@@ -358,6 +378,10 @@ PrefabInstance:
       propertyPath: InitialModule.gravityModifier.scalar
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 2112040287506131147, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 6360173586330846421, guid: 81180bc423674ef4ba7269ceab489326, type: 3}
     - target: {fileID: 3139160079458769043, guid: 971e38b96c5f54b43a0ca35030fd6026, type: 3}
       propertyPath: m_SortingLayer
       value: 7

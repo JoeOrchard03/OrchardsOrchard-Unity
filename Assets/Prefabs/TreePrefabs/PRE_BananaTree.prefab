@@ -48,6 +48,7 @@ Transform:
   - {fileID: 8584380890249168290}
   - {fileID: 1781858253036994198}
   - {fileID: 148993909115846168}
+  - {fileID: 4116380228412775398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9220909520486006075
@@ -377,6 +378,137 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.645849, y: 4.631172}
   m_EdgeRadius: 0
+--- !u!1 &8931213587363361723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4116380228412775398}
+  - component: {fileID: 4516745065716678578}
+  m_Layer: 7
+  m_Name: SnowCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4116380228412775398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931213587363361723}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3999, y: 5.11617, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6910650185011215988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &4516745065716678578
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931213587363361723}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.7388568, y: -0.89717865}
+  - {x: -1.7429757, y: -0.44294596}
+  - {x: -1.5894258, y: -0.44760132}
+  - {x: -1.5871918, y: 0.0040545464}
+  - {x: -1.4386778, y: 0.0033783913}
+  - {x: -1.4459863, y: 0.30794907}
+  - {x: -1.2871623, y: 0.306983}
+  - {x: -1.2895064, y: 0.462214}
+  - {x: -1.5931923, y: 0.6074319}
+  - {x: -1.7407663, y: 0.6071501}
+  - {x: -1.7407091, y: 0.7539458}
+  - {x: -1.5896072, y: 0.75151825}
+  - {x: -1.5875487, y: 1.0537229}
+  - {x: -1.4403436, y: 1.0524516}
+  - {x: -1.4402022, y: 1.2056804}
+  - {x: -1.2914684, y: 1.2032652}
+  - {x: -1.2887764, y: 1.3550043}
+  - {x: -0.99219894, y: 1.3532395}
+  - {x: -0.9907099, y: 1.5039663}
+  - {x: -0.38914657, y: 1.5054541}
+  - {x: -0.38884282, y: 1.6559868}
+  - {x: 0.5078055, y: 1.6590781}
+  - {x: 0.50770694, y: 1.5051126}
+  - {x: 0.9617107, y: 1.5030684}
+  - {x: 0.95861846, y: 1.805665}
+  - {x: 1.1142621, y: 1.8048306}
+  - {x: 1.1122199, y: 1.9540267}
+  - {x: 1.4141814, y: 1.9572096}
+  - {x: 1.4088203, y: 1.8059306}
+  - {x: 1.563179, y: 1.8047457}
+  - {x: 1.5574123, y: 1.3535686}
+  - {x: 1.7107825, y: 1.3563952}
+  - {x: 1.7134032, y: 1.5082178}
+  - {x: 2.0077484, y: 1.5061712}
+  - {x: 2.0131965, y: 1.6551971}
+  - {x: 2.7576125, y: 1.6541739}
+  - {x: 2.759861, y: 1.805181}
+  - {x: 3.5088093, y: 1.807301}
+  - {x: 3.5115645, y: 1.6538706}
+  - {x: 4.1100073, y: 1.6572714}
+  - {x: 4.108291, y: 1.5049167}
+  - {x: 4.261792, y: 1.5082526}
+  - {x: 4.2619567, y: 1.3540888}
+  - {x: 4.4122324, y: 1.3567591}
+  - {x: 4.409652, y: 1.203804}
+  - {x: 4.560487, y: 1.2062001}
+  - {x: 4.5567727, y: 1.0530496}
+  - {x: 4.407437, y: 1.0520916}
+  - {x: 3.3623838, y: 0.90938663}
+  - {x: 3.3613772, y: 0.75423336}
+  - {x: 3.662138, y: 0.7566366}
+  - {x: 3.6593032, y: 0.6019902}
+  - {x: 3.8089347, y: 0.6060257}
+  - {x: 3.8086023, y: 0.45509672}
+  - {x: 3.952765, y: 0.45256996}
+  - {x: 3.9613752, y: 0.006904125}
+  - {x: 4.100032, y: 0.008143425}
+  - {x: 4.1104145, y: -0.743556}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &1144943902081776802
 PrefabInstance:
   m_ObjectHideFlags: 0

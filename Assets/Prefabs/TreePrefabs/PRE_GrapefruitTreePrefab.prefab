@@ -1,5 +1,142 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &996739862271146262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3950897794914938165}
+  - component: {fileID: 4448006445400825059}
+  m_Layer: 7
+  m_Name: SnowCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3950897794914938165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996739862271146262}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.18, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6910650185011215988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &4448006445400825059
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996739862271146262}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.6793203, y: 2.8569257}
+  - {x: -2.8315394, y: 2.8555324}
+  - {x: -2.831529, y: 3.4495208}
+  - {x: -2.9793274, y: 3.448768}
+  - {x: -2.9815433, y: 3.9089823}
+  - {x: -2.8308809, y: 3.906545}
+  - {x: -2.830772, y: 4.058479}
+  - {x: -3.0994048, y: 4.0586395}
+  - {x: -3.1010695, y: 4.2110033}
+  - {x: -2.9746158, y: 4.2092767}
+  - {x: -2.9763136, y: 4.6541924}
+  - {x: -2.82365, y: 4.6577253}
+  - {x: -2.821681, y: 5.2677913}
+  - {x: -2.5310974, y: 5.265469}
+  - {x: -2.5337346, y: 5.1221213}
+  - {x: -2.3753042, y: 5.1241183}
+  - {x: -2.377767, y: 5.426094}
+  - {x: -2.5242188, y: 5.426678}
+  - {x: -2.526824, y: 5.8687806}
+  - {x: -2.3766394, y: 5.8687634}
+  - {x: -2.3784945, y: 6.017677}
+  - {x: -2.2213154, y: 6.019018}
+  - {x: -2.2235436, y: 5.8670692}
+  - {x: -2.0642948, y: 5.867485}
+  - {x: -2.0703583, y: 6.016866}
+  - {x: -1.919369, y: 6.017883}
+  - {x: -1.921713, y: 6.1682014}
+  - {x: -1.7640225, y: 6.1711993}
+  - {x: -1.7653642, y: 6.6290703}
+  - {x: -1.6108739, y: 6.6270156}
+  - {x: -1.6141086, y: 6.7792463}
+  - {x: -1.4595593, y: 6.779349}
+  - {x: -1.4627187, y: 6.928304}
+  - {x: -1.3223126, y: 6.9267745}
+  - {x: -1.3211555, y: 6.779771}
+  - {x: -1.1629058, y: 6.7774496}
+  - {x: -1.1660402, y: 6.930184}
+  - {x: -0.7060846, y: 6.9341836}
+  - {x: -0.70636475, y: 7.080885}
+  - {x: -0.26022452, y: 7.0754757}
+  - {x: -0.26231074, y: 6.932244}
+  - {x: 0.19563222, y: 6.932407}
+  - {x: 0.19118664, y: 7.0800896}
+  - {x: 0.95005304, y: 7.077965}
+  - {x: 0.9517225, y: 6.930987}
+  - {x: 1.3962553, y: 6.93324}
+  - {x: 1.3986211, y: 6.7803926}
+  - {x: 1.7113035, y: 6.781494}
+  - {x: 1.7064896, y: 6.6274242}
+  - {x: 2.1598954, y: 6.629733}
+  - {x: 2.159726, y: 6.177028}
+  - {x: 2.011939, y: 6.1779966}
+  - {x: 2.0120335, y: 6.02029}
+  - {x: 2.1661122, y: 6.0211377}
+  - {x: 2.311757, y: 6.018213}
+  - {x: 2.3066106, y: 5.8699155}
+  - {x: 2.4602592, y: 5.869765}
+  - {x: 2.4613178, y: 5.1184764}
+  - {x: 2.610299, y: 5.120471}
+  - {x: 2.6104085, y: 4.958926}
+  - {x: 2.7459629, y: 4.9608955}
+  - {x: 2.7447522, y: 4.810941}
+  - {x: 2.6136625, y: 4.813068}
+  - {x: 2.6093638, y: 4.361812}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2499254726488180106
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,6 +173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3950897794914938165}
   - {fileID: 2887814112377855832}
   - {fileID: 1632894036513318277}
   - {fileID: 4624773020314063075}
