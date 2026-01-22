@@ -9,6 +9,8 @@ public class SCR_MainMenu : MonoBehaviour
 {
     public string sceneToLoad;
     public GameObject settingsMenu;
+    public GameObject audioSettingsMenu;
+    public GameObject videoSettingsMenu;
     public GameObject confirmBox;
     
     [Header("Audio sliders")]
@@ -52,19 +54,46 @@ public class SCR_MainMenu : MonoBehaviour
         playText.SetActive(false);
         quitText.SetActive(false);
         settingsText.SetActive(false);
-        
+    }
+
+    public void OpenAudioSettings()
+    {
+        Debug.Log("Opening audio settings");
+
+        settingsMenu.SetActive(false);
+        audioSettingsMenu.SetActive(true);
         masterVolumeSlider.value = SCR_AudioManager.instance.GetCurrentMasterVolume();
         musicVolumeSlider.value = SCR_AudioManager.instance.GetCurrentMusicVolume();
     }
 
+    public void OpenVideoSettings()
+    {
+        settingsMenu.SetActive(false);
+        videoSettingsMenu.SetActive(true);
+        Debug.Log("Opening video settings");
+    }
+
     public void ClosingSettings()
     {
+        if (audioSettingsMenu.activeInHierarchy || videoSettingsMenu.activeInHierarchy)
+        {
+            audioSettingsMenu.SetActive(false);
+            videoSettingsMenu.SetActive(false);
+            settingsMenu.SetActive(true);
+            return;
+        }
+        
         playText.SetActive(true);
         quitText.SetActive(true);
         settingsText.SetActive(true);
         
         Debug.Log("Closing settings");
         settingsMenu.SetActive(false);
+    }
+
+    public void ToggleFullscreen()
+    {
+        Debug.Log("Toggling full screen");
     }
     
     public void Quit()
