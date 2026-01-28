@@ -111,6 +111,8 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         //Clock
         SetDay(data.isDay);
         Debug.Log("Game loaded successfully");
+
+        Screen.fullScreen = data.isFullscreen;
     }
     
     #endregion
@@ -143,6 +145,11 @@ public class SCR_ReworkedSaveSystem : MonoBehaviour
         PlayerPrefs.DeleteKey(SaveKey);
         PlayerPrefs.Save();
         Debug.Log("Save data cleared");
+    }
+
+    public static void SaveFullscreen(bool isFullscreen)
+    {
+        SaveSingleField(data => data.isFullscreen = isFullscreen);
     }
     
     #endregion

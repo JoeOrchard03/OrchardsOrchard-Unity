@@ -93,7 +93,12 @@ public class SCR_MainMenu : MonoBehaviour
 
     public void ToggleFullscreen()
     {
-        Debug.Log("Toggling full screen");
+        bool newState = !Screen.fullScreen;
+        Screen.fullScreen = newState;
+        
+        SCR_ReworkedSaveSystem.SaveFullscreen(newState);
+        
+        Debug.Log("Full screen set to: " + newState);
     }
     
     public void Quit()

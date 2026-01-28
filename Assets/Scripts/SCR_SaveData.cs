@@ -36,6 +36,9 @@ public class SCR_SaveData
     //Drone upgrades
     public List<DroneUpgradeData> droneUpgrades = new List<DroneUpgradeData>();
     public DroneSaveData droneSaveData;
+    
+    //Video
+    public bool isFullscreen;
 }
 
 //Tree in scene's data
