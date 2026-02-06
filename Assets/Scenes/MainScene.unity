@@ -2695,6 +2695,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -4462,6 +4466,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -4558,6 +4566,10 @@ PrefabInstance:
       propertyPath: plotInteract
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
@@ -13703,6 +13715,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -21137,6 +21153,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -23093,6 +23113,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -24396,6 +24420,10 @@ PrefabInstance:
       propertyPath: plotInteract
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
@@ -33894,6 +33922,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: a3c613fcfd2f5e0439ea1bea68e0f7a3, type: 3}
     - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
+      propertyPath: saplingInventory
+      value: 
+      objectReference: {fileID: 1814688288}
+    - target: {fileID: 4503794586341938546, guid: 373ca768091bbbd44b7b6a782fe88a30, type: 3}
       propertyPath: treeDestroyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 25a7c528dfcda784db766cc67bbf390f, type: 3}
@@ -35950,6 +35982,7 @@ MonoBehaviour:
   openEditModeScriptRef: {fileID: 7226881330418973967}
   droneScriptRef: {fileID: 2224393760897337177}
   shopMenu: {fileID: 1702348268}
+  clickParticle: {fileID: 2690021470741136466, guid: 2b290b07b2c2e664d9a05bf60d0e304d, type: 3}
   shopMenuOpen: 0
   decoMenuOpen: 0
   menuOpen: 0
@@ -48928,6 +48961,10 @@ PrefabInstance:
     - target: {fileID: 158877013864569376, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
       propertyPath: m_Name
       value: PRE_
+      objectReference: {fileID: 0}
+    - target: {fileID: 705738745479724644, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 765061144760404891, guid: 788b435b8f9a9fe4d81b98af38632403, type: 3}
       propertyPath: m_AnchorMax.y

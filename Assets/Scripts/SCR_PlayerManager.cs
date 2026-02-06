@@ -25,6 +25,7 @@ public class SCR_PlayerManager : MonoBehaviour
     public SCR_OpenEditMode openEditModeScriptRef;
     public SCR_Drone droneScriptRef;
     public GameObject shopMenu;
+    public GameObject clickParticle;
     
     [Header("UI variables")]
     public bool shopMenuOpen = false;
@@ -122,6 +123,7 @@ public class SCR_PlayerManager : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
+            StartCoroutine(ClickEffect());
             if (hoveredInteractable == null) { return;} 
             if (hoveredInteractable.GetComponent<INT_Interactable>() == null) { Debug.Log("Item does not have interactable script"); return;}
             hoveredInteractable.GetComponent<INT_Interactable>().Interact(this.gameObject);
@@ -220,5 +222,17 @@ public class SCR_PlayerManager : MonoBehaviour
         SCR_SaveData data = SCR_ReworkedSaveSystem.LoadGame();
         currentTreeCount = data.trees?.Count ?? 0;
         currentSaplingCount = data.saplings?.Count ?? 0;
+    }
+
+    IEnumerator ClickEffect()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = 10f;
+        
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        
+        GameObject particle = Instantiate(clickParticle, worldPos, Quaternion.identity);
+        yield return new WaitForSeconds(1.0f);
+        Destroy(particle);
     }
 }

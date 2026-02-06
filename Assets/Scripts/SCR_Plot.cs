@@ -31,6 +31,7 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
     [Header("References")]
     [SerializeField] private GameObject SaplingMenu;
     private SCR_PlayerManager playerPlayerManagerScriptRef;
+    public Transform saplingInventory;
     
     [Header("Audio")]
     private AudioSource plotAudioSource;
@@ -95,6 +96,7 @@ public class SCR_Plot : MonoBehaviour, INT_Interactable
         SaplingMenu.SetActive(false);
         playerPlayerManagerScriptRef.SetCursorHighlight(false);
         playerPlayerManagerScriptRef.menuOpen = false;
+        playerPlayerManagerScriptRef.currentSaplingCount--;
         plotOccupied = true;
         GetComponent<AudioSource>().Play();
         GetComponent<SCR_Highlightable>().stopHighlight = true;
