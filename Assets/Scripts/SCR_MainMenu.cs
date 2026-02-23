@@ -7,7 +7,10 @@ using UnityEngine.UI;
 
 public class SCR_MainMenu : MonoBehaviour
 {
-    public string sceneToLoad;
+    private const string SaveKey = "GameSave";
+    
+    public string gameScene;
+    public string introScene;
     public GameObject settingsMenu;
     public GameObject audioSettingsMenu;
     public GameObject videoSettingsMenu;
@@ -43,7 +46,14 @@ public class SCR_MainMenu : MonoBehaviour
     
     public void Play()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        if (PlayerPrefs.HasKey(SaveKey))
+        {
+            SceneManager.LoadScene(gameScene);
+        }
+        else
+        {
+            SceneManager.LoadScene(introScene);
+        }
     }
     
     public void OpenSettings()
