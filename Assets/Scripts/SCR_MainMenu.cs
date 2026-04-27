@@ -10,7 +10,6 @@ public class SCR_MainMenu : MonoBehaviour
     private const string SaveKey = "GameSave";
     
     public string gameScene;
-    public string introScene;
     public GameObject settingsMenu;
     public GameObject audioSettingsMenu;
     public GameObject videoSettingsMenu;
@@ -46,14 +45,7 @@ public class SCR_MainMenu : MonoBehaviour
     
     public void Play()
     {
-        if (PlayerPrefs.HasKey(SaveKey))
-        {
-            SceneManager.LoadScene(gameScene);
-        }
-        else
-        {
-            SceneManager.LoadScene(introScene);
-        }
+        SceneManager.LoadScene(gameScene);
     }
     
     public void OpenSettings()

@@ -2688,7 +2688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameScene: MainScene
-  introScene: IntroScene
   settingsMenu: {fileID: 1046010463}
   audioSettingsMenu: {fileID: 1234943232}
   videoSettingsMenu: {fileID: 1789849386}
